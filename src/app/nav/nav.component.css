@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        position: fixed;
+        bottom: 0;
+    }
+}
