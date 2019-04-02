@@ -10,6 +10,9 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { VocabularyComponent } from './vocabulary/vocabulary.component';
+import { VocabularyCardComponent } from './vocabulary-card/vocabulary-card.component';
+import { ProgressComponent } from './progress/progress.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { VocabularyComponent } from './vocabulary/vocabulary.component';
     FooterComponent,
     MainComponent,
     VocabularyComponent,
+    VocabularyCardComponent,
+    ProgressComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,
