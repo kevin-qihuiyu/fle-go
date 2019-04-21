@@ -13,6 +13,7 @@ import { VocabularyComponent } from './vocabulary/vocabulary.component';
 import { VocabularyCardComponent } from './vocabulary-card/vocabulary-card.component';
 import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SettingsComponent } from './settings/settings.component';
     VocabularyCardComponent,
     ProgressComponent,
     SettingsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
