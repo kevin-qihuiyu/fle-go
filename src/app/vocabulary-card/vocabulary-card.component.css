@@ -1,4 +1,23 @@
+.mat-card {
+    margin: 0.3em;
+}
+
+
 .title {
     display: flex;
     flex-direction: row;
+}
+
+.mat-card-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mat-card-content {
+    margin: 0.8em 0.3em;
+}
+
+.indigo {
+    color: #5C6BC0;
 }
