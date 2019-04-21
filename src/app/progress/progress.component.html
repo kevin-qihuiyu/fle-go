@@ -1,3 +1,69 @@
-<p>
-  progress works!
-</p>
+<div class="placeholder"></div>
+
+<mat-card id="card-bg">
+  <mat-card-title>
+      <span>Progression Globale:</span>
+      <!-- This fills the remaining space of the current row -->
+      <span class="fill-remaining-space"></span>
+      <span>25%</span>
+    </mat-card-title>
+  <mat-card-content>
+    <mat-progress-bar [color]="purple-green" [value]="35"></mat-progress-bar>
+  </mat-card-content>
+</mat-card>
+
+<h2>Progression par theme</h2>
+
+<mat-card>
+  <mat-card-title>
+    <span>Administration</span>
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <span>15%</span>
+  </mat-card-title>
+  <mat-card-content>
+    <mat-progress-bar [value]="15"></mat-progress-bar>
+  </mat-card-content>
+</mat-card>
+
+
+
+<mat-card>
+  <mat-card-title>
+    <span>Les transport</span>
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <span>25%</span>
+  </mat-card-title>
+  <mat-card-content>
+    <mat-progress-bar [value]="25"></mat-progress-bar>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>
+    <span>Mes environment</span>
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <span>65%</span>
+  </mat-card-title>
+  <mat-card-content>
+    <mat-progress-bar [value]="65"></mat-progress-bar>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>
+    <span>Le logement</span>
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <span>3%</span>
+  </mat-card-title>
+  <mat-card-content>
+    <mat-progress-bar [value]="3"></mat-progress-bar>
+  </mat-card-content>
+</mat-card>
+
+
+
+

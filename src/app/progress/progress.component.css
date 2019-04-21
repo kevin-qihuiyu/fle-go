@@ -1,0 +1,32 @@
+.placeholder {
+    height: 80px;
+}
+
+.mat-card {
+    margin: 0.3em;
+}
+
+.mat-card-content {
+    margin: 0.8em 0.3em;
+}
+
+#card-bg {
+    padding: 50px;  
+    background: rgb(79, 76, 207);
+    color: white;
+}
+
+h2 {
+    padding: 0.5em 1em;
+}
+
+mat-card-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
