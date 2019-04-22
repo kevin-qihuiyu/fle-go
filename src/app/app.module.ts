@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from './shared/shared.module';
 
@@ -33,6 +34,7 @@ import { CategoryCardComponent } from './category-card/category-card.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     SharedModule,
   ],
   providers: [],

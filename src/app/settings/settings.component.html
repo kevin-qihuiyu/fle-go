@@ -1,3 +1,24 @@
-<p>
-  settings works!
-</p>
+<div class="placeholder"></div>
+
+<div class="container">
+  <mat-card>
+    <img mat-card-avatar src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="User Avatar">
+    <p>Victoire</p>
+    <p>Since Avril, 2019</p>
+  </mat-card>
+
+  <mat-divider></mat-divider>
+
+  <label id="radio-group-label">Study mode</label>
+  <mat-radio-group class="radio-group" aria-labelledby="radio-group-label" [(ngModel)]="studyMode">
+    <mat-radio-button class="radio-button" *ngFor="let mode of modes" [value]="mode">
+      {{mode}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div>Your study mode is: {{studyMode}}</div>
+
+  <mat-divider></mat-divider>
+
+  Feedback and Function Requests
+
+</div>

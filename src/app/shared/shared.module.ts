@@ -5,6 +5,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatCheckboxModule,
     MatCardModule,
     MatProgressBarModule,
+    MatRadioModule,
+    MatDividerModule
   ],
   exports: [
     MatToolbarModule,
@@ -23,6 +27,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatCheckboxModule,
     MatCardModule,
     MatProgressBarModule,
+    MatRadioModule,
+    MatDividerModule
   ]
 })
 export class SharedModule { }
