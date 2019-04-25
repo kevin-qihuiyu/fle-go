@@ -5,3 +5,19 @@
     padding: 0;
     margin: 0;
 }
+
+/* Color chosen for custom theme:
+https://material.io/design/color/#tools-for-picking-colors
+
+primary:
+mat-teal 700, 100, 900
+#00796B, #B2DFDB, #004D40
+
+accent: 
+mat-blue, 400, 100, 900
+#42A5F5, #BBDEFB, #0D47A1
+
+warn:
+mat-red
+#F44336
+*/
