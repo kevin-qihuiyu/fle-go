@@ -16,6 +16,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
 import { CategoryCardComponent } from './category-card/category-card.component';
+import { WorkspaceComponent } from './workspace/workspace.component';
+import { QcmTextComponent } from './workspace/qcm-text/qcm-text.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { CategoryCardComponent } from './category-card/category-card.component';
     SettingsComponent,
     HeaderComponent,
     CategoryCardComponent,
+    WorkspaceComponent,
+    QcmTextComponent,
   ],
   imports: [
     BrowserModule,
