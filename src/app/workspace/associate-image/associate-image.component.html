@@ -1,0 +1,16 @@
+<div class="cdkDropList" (cdkDropListDropped)="drop($event)">
+  <div class="box" *ngFor="let order of descOrder" cdkDrag>
+    {{sampleQuestion.choices[order].desc}}
+  </div>
+</div>
+
+<!-- 
+
+<div *ngFor="let order of displayOrder">
+  {{sampleQuestion.choices[order.desc].desc}}
+  <img [src]="sampleQuestion.choices[order.image].imgSrc" alt="Image not available">
+</div> -->
+
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop2($event)">
+    <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+  </div>

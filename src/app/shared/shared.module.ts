@@ -8,6 +8,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDividerModule} from '@angular/material/divider';
 
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
+
 
 @NgModule({
   declarations: [],
@@ -19,7 +22,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatCardModule,
     MatProgressBarModule,
     MatRadioModule,
-    MatDividerModule
+    MatDividerModule,
+    DragDropModule,
   ],
   exports: [
     MatToolbarModule,
@@ -28,7 +32,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatCardModule,
     MatProgressBarModule,
     MatRadioModule,
-    MatDividerModule
+    MatDividerModule,
+    DragDropModule
   ]
 })
 export class SharedModule { }

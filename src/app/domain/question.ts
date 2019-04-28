@@ -30,3 +30,8 @@ export class QCMImage extends Question {
     numOfChoices: number;
     choices: ImageAnswer[];
 } 
+
+export class AssociateImage extends Question {
+    numOfChoices: number;
+    choices: ImageAnswer[];
+}
