@@ -12,7 +12,7 @@
 
 #card-bg {
     padding: 50px;  
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../assets/img/category/7-vie-amoureuse-2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("src/assets/img/category/7-vie-amoureuse-2.jpg");
     background-size: cover;
     color: white;
 }
