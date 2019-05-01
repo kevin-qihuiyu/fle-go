@@ -33,7 +33,7 @@
       [cdkDropListData]="item4"
       [cdkDropListConnectedTo]="[pool]"
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item4" >{{item}}</div>
+      <div class="box" *ngFor="let item of item4" cdkDrag>{{item}}</div>
     </div>
   </div>
   <div class="pool" cdkDropList cdkDropListOrientation="horizontal" 

@@ -1,0 +1,48 @@
+.container {
+    margin-top: 1em;
+}
+
+.qcm-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.desc {
+    font-size: 1.5em;
+    margin: 1em 0 1em 1em;
+}
+
+.qcm-button {
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+.wrap-mat-radio-label {
+    white-space: normal;
+}
+
+.audio-container {
+    margin: 2em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.q-picture {
+    width: 80%;
+    height: auto;
+}
+
+.question-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.material-icons {
+    font-size: 40px;
+}
+
+.teal {
+    color:#00796B;
+}

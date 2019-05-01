@@ -31,6 +31,13 @@ export class QCMImage extends Question {
     choices: ImageAnswer[];
 } 
 
+export class QCMAudioText extends Question {
+    numOfChoices: number;
+    audioSrc: string;
+    choices: Answer[];
+    correctChoiceId: number;
+} 
+
 export class AssociateImage extends Question {
     numOfChoices: number;
     choices: ImageAnswer[];

@@ -19,6 +19,7 @@ import { CategoryCardComponent } from './category-card/category-card.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
 import { QcmTextComponent } from './workspace/qcm-text/qcm-text.component';
 import { AssociateImageComponent } from './workspace/associate-image/associate-image.component';
+import { QcmAudioTextComponent } from './workspace/qcm-audio-text/qcm-audio-text.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { AssociateImageComponent } from './workspace/associate-image/associate-i
     WorkspaceComponent,
     QcmTextComponent,
     AssociateImageComponent,
+    QcmAudioTextComponent,
   ],
   imports: [
     BrowserModule,
