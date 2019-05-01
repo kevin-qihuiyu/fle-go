@@ -8,6 +8,8 @@ import { QuestionType, QCMAudioText } from 'src/app/domain/question';
 })
 export class QcmAudioTextComponent implements OnInit {
 
+  choice;
+
   sampleQuestion : QCMAudioText = {
     name: "Comprendre un message d'annulation",
     questionType: QuestionType.LISEZ_ET_CHOISISSEZ,
