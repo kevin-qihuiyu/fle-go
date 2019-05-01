@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { AssociateImage, QuestionType } from 'src/app/domain/question';
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-associate-image',
@@ -12,7 +12,14 @@ export class AssociateImageComponent implements OnInit {
   numOfChoices = 4;
   descOrder = [0, 1, 2, 3];
   imageOrder = [0, 1, 2, 3];
-  displayOrder = [];
+  randomChoices = [];
+
+  // item box and pool containing items to drag-n-drop
+  item1 = [];
+  item2 = [];
+  item3 = [];
+  item4 = [];
+  pool = [];
 
   sampleQuestion : AssociateImage = {
     name: "À la gare",
@@ -22,22 +29,23 @@ export class AssociateImageComponent implements OnInit {
     choices: [
       {
         desc: "Je regarde les horaires.",
-        imgSrc: "../../../assets/img/question/q3/1/1-regarder-les-horaires.jpg"
+        imgSrc: "assets/img/question/q3/1/1-regarder-les-horaires.jpg"
       },
       {
         desc: "J'achète un billet.",
-        imgSrc: "../../../assets/img/question/q3/1/2-acheter-billet.jpg"
+        imgSrc: "assets/img/question/q3/1/2-acheter-billet.jpg"
       },
       {
         desc: "Je composte mon billet.",
-        imgSrc: "../../../assets/img/question/q3/1/3-composter-mon-billet.jpg"
+        imgSrc: "assets/img/question/q3/1/3-composter-mon-billet.jpg"
       },
       {
         desc: "J'attends sur le quai.",
-        imgSrc: "../../../assets/img/question/q3/1/4-sur-le-quai.jpg"
+        imgSrc: "assets/img/question/q3/1/4-sur-le-quai.jpg"
       }
     ],
   };
+
 
   constructor() { }
 
@@ -45,14 +53,24 @@ export class AssociateImageComponent implements OnInit {
     AssociateImageComponent.shuffleArray(this.descOrder);
     AssociateImageComponent.shuffleArray(this.imageOrder);
     for (var i = 0; i < this.numOfChoices; i++) {
-      this.displayOrder.push({
-        desc: this.descOrder[i],
-        image: this.imageOrder[i] 
-      });
-    }
+      let item = this.imageOrder.pop();
+      let choice = this.sampleQuestion.choices[item];
 
+      let descItem = this.descOrder.pop();
+      let choiceDesc = this.sampleQuestion.choices[descItem].desc;
+
+      this.pool.push(choiceDesc);
+
+      this.randomChoices.push(choice); 
+    }
   }
 
+  /**
+   * An implementation of the Durstenfeld shuffle, a computer-optimized version of Fisher-Yates algorithm.
+   * The Fisher-Yates algorithm works by picking one random element for each original array element, and then excluding it from the next draw. 
+   * Just like randomly picking from a deck of cards.
+   * @param array 
+   */
   static shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -61,22 +79,14 @@ export class AssociateImageComponent implements OnInit {
   }
 
   drop(event: CdkDragDrop<string[]>) {
-    moveItemInArray(this.descOrder, event.previousIndex, event.currentIndex);
-  }
-
-  movies = [
-    'Episode I - The Phantom Menace',
-    'Episode II - Attack of the Clones',
-    'Episode III - Revenge of the Sith',
-    'Episode IV - A New Hope',
-    'Episode V - The Empire Strikes Back',
-    'Episode VI - Return of the Jedi',
-    'Episode VII - The Force Awakens',
-    'Episode VIII - The Last Jedi'
-  ];
-
-  drop2(event: CdkDragDrop<string[]>) {
-    moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
+    if (event.previousContainer === event.container) {
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    } else {
+      transferArrayItem(event.previousContainer.data,
+                        event.container.data,
+                        event.previousIndex,
+                        event.currentIndex);
+    }  
   }
 
 }
