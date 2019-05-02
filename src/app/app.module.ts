@@ -18,7 +18,7 @@ import { HeaderComponent } from './header/header.component';
 import { CategoryCardComponent } from './category-card/category-card.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
 import { QcmTextComponent } from './workspace/qcm-text/qcm-text.component';
-import { AssociateImageComponent } from './workspace/associate-image/associate-image.component';
+import { AssociateTextImageComponent } from './workspace/associate-text-image/associate-text-image.component';
 import { QcmAudioTextComponent } from './workspace/qcm-audio-text/qcm-audio-text.component';
 
 @NgModule({
@@ -35,7 +35,7 @@ import { QcmAudioTextComponent } from './workspace/qcm-audio-text/qcm-audio-text
     CategoryCardComponent,
     WorkspaceComponent,
     QcmTextComponent,
-    AssociateImageComponent,
+    AssociateTextImageComponent,
     QcmAudioTextComponent,
   ],
   imports: [

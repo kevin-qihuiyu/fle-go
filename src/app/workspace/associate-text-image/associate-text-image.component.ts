@@ -3,11 +3,11 @@ import { AssociateImage, QuestionType } from 'src/app/domain/question';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'app-associate-image',
-  templateUrl: './associate-image.component.html',
-  styleUrls: ['./associate-image.component.css']
+  selector: 'app-associate-text-image',
+  templateUrl: './associate-text-image.component.html',
+  styleUrls: ['./associate-text-image.component.css']
 })
-export class AssociateImageComponent implements OnInit {
+export class AssociateTextImageComponent implements OnInit {
 
   numOfChoices = 4;
   descOrder = [0, 1, 2, 3];
@@ -50,8 +50,8 @@ export class AssociateImageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    AssociateImageComponent.shuffleArray(this.descOrder);
-    AssociateImageComponent.shuffleArray(this.imageOrder);
+    AssociateTextImageComponent.shuffleArray(this.descOrder);
+    AssociateTextImageComponent.shuffleArray(this.imageOrder);
     for (var i = 0; i < this.numOfChoices; i++) {
       let item = this.imageOrder.pop();
       let choice = this.sampleQuestion.choices[item];
