@@ -20,6 +20,8 @@ import { WorkspaceComponent } from './workspace/workspace.component';
 import { QcmTextComponent } from './workspace/qcm-text/qcm-text.component';
 import { AssociateTextImageComponent } from './workspace/associate-text-image/associate-text-image.component';
 import { QcmAudioTextComponent } from './workspace/qcm-audio-text/qcm-audio-text.component';
+import { ActivityListComponent } from './activity-list/activity-list.component';
+import { ActivityCardComponent } from './activity-card/activity-card.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { QcmAudioTextComponent } from './workspace/qcm-audio-text/qcm-audio-text
     QcmTextComponent,
     AssociateTextImageComponent,
     QcmAudioTextComponent,
+    ActivityListComponent,
+    ActivityCardComponent,
   ],
   imports: [
     BrowserModule,

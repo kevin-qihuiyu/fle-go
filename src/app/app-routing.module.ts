@@ -5,6 +5,7 @@ import { MainComponent } from './main/main.component';
 import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
+import { ActivityListComponent } from './activity-list/activity-list.component';
 
 const routes: Routes = [
   {path: 'main', component: MainComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'vocabulary', component: VocabularyComponent },
   {path: 'settings', component: SettingsComponent },
   {path: 'workspace', component: WorkspaceComponent },
+  {path: 'activities', component: ActivityListComponent },
   {path: '', redirectTo: 'main', pathMatch: 'full'}
 ];
 
