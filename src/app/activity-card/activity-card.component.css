@@ -1,0 +1,38 @@
+.activity-card {
+    margin: 0.3em;
+}
+
+.card-header-container {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+}
+
+.titles {
+    display: flex;
+    direction: column;
+}
+
+.card-title{
+    color:teal;
+    font-size: 1.2em;
+}
+
+.difficulty-tag {
+    border: 2px solid teal;
+    border-radius: 5px;
+    padding: 0.1em;
+    color:teal;
+}
+
+.play-button {
+    margin-right: 0;
+}
+
+.teal {
+    color: #00796B;
+}
+
+.md-32 {
+    font-size: 32px;
+}

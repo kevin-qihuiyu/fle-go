@@ -1,3 +1,14 @@
-<p>
-  activity-card works!
-</p>
+<mat-card class="activity-card">
+  <div class="card-header-container">
+    <div class="titles">
+      <div class="card-title">{{activity.name}}</div>
+      <div class="card-subtitle">
+        <p class="difficulty-tag">
+        {{activity.difficulty}}</p>
+      </div>
+    </div>
+    <button mat-button class="play-button">
+      <i class="material-icons md-32">play_circle_filled</i>
+    </button> 
+  </div>
+</mat-card>
