@@ -1,14 +1,13 @@
 <mat-card class="activity-card">
-  <div class="card-header-container">
-    <div class="titles">
-      <div class="card-title">{{activity.name}}</div>
-      <div class="card-subtitle">
-        <p class="difficulty-tag">
-        {{activity.difficulty}}</p>
-      </div>
+  <div class="titles">
+    <div class="card-title">
+      {{activity.name}}
     </div>
-    <button mat-button class="play-button">
-      <i class="material-icons md-32">play_circle_filled</i>
-    </button> 
+    <div class="card-subtitle">
+      <span class="difficulty-tag">{{activity.difficulty}}</span>
+    </div>
   </div>
+  <button mat-button class="play-button">
+    <i class="material-icons md-32">play_circle_filled</i>
+  </button> 
 </mat-card>

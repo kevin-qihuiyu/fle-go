@@ -1,8 +1,6 @@
 .activity-card {
     margin: 0.3em;
-}
-
-.card-header-container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: flex;
     direction: row;
     justify-content: space-between;
@@ -10,24 +8,33 @@
 
 .titles {
     display: flex;
-    direction: column;
+    flex-direction: column;
 }
 
-.card-title{
-    color:teal;
+.card-title {
+    color: black;
     font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    margin-top: 1em;
 }
 
 .difficulty-tag {
     border: 2px solid teal;
     border-radius: 5px;
-    padding: 0.1em;
+    padding: 0.3em;
     color:teal;
 }
 
-.play-button {
-    margin-right: 0;
+.blue {
+    color: blue;
 }
+
+/* .play-button {
+    margin-right: 0;
+} */
 
 .teal {
     color: #00796B;
