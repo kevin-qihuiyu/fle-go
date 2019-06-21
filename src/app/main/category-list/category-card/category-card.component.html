@@ -5,7 +5,7 @@
   </mat-card-header>
   <img mat-card-image bind-src="category.imgSrc" alt="Image not available">
   <mat-card-actions align="end">
-    <button mat-button>Details</button>
+    <button mat-button [routerLink]="['/categories', category.id]">Details</button>
     <button mat-button>Practice</button>
   </mat-card-actions>
 </mat-card>

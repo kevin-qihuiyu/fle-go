@@ -1,8 +1,8 @@
 <div class="placeholder"></div>
 
 <div class="container">
-  <div class="cover-image">
-      <div class="title">Administration</div>
+  <div class="cover-image" *ngIf="category$ | async as category">
+      <div class="title">{{category.name}}</div>
       <div class="content">
         <div class="percent">23%</div>
         <div class="progress">14/100</div>
