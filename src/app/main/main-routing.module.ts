@@ -7,14 +7,8 @@ import { WorkspaceComponent } from '../workspace/workspace.component';
 
 const mainRoutes: Routes = [
   { path: 'categories', component: CategoryListComponent },
-  { path: 'categories/:id', 
-    component: ActivityListComponent,
-    children: [
-      {
-        path:':qid',
-        component: WorkspaceComponent
-      }
-    ]}
+  { path: 'categories/:id', component: ActivityListComponent },
+  { path: 'categories/:id/:qid',component: WorkspaceComponent }
 ];
 
 @NgModule({
