@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from '../../domain/category';
-import { Activity, Difficulty } from '../../domain/activity';
+import { Category } from '../../../domain/category';
+import { Activity, Difficulty } from '../../../domain/activity';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
-import { CategoriesService } from '../categories.service';
+import { CategoriesService } from '../../categories.service';
 import { Observable } from 'rxjs';
-import { ActivitiesService } from '../activities.service';
+import { ActivitiesService } from '../../activities.service';
 
 @Component({
   selector: 'app-activity-list',
@@ -14,6 +14,7 @@ import { ActivitiesService } from '../activities.service';
 })
 export class ActivityListComponent implements OnInit {
 
+  categoryId: number;
   category$: Observable<Category>;
   activities$: Observable<Activity[]>;
 

@@ -2,13 +2,19 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
  
 import { CategoryListComponent } from './category-list/category-list.component';
-import { ActivityListComponent } from './activity-list/activity-list.component';
+import { ActivityListComponent } from './activities/activity-list/activity-list.component';
 import { WorkspaceComponent } from '../workspace/workspace.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 const mainRoutes: Routes = [
   { path: 'categories', component: CategoryListComponent },
-  { path: 'categories/:id', component: ActivityListComponent },
-  { path: 'categories/:id/:qid',component: WorkspaceComponent }
+  { path: 'categories/:id', component: ActivitiesComponent,
+    children:[
+      { path: '', redirectTo: 'activities' , pathMatch: 'full'},
+      { path: 'activities', component: ActivityListComponent },
+      { path: 'activities/:qid', component: WorkspaceComponent }
+    ]    
+  }
 ];
 
 @NgModule({

@@ -7,7 +7,7 @@
       <span class="difficulty-tag">{{activity.difficulty}}</span>
     </div>
   </div>
-  <button mat-button class="play-button">
+  <button mat-button class="play-button" [routerLink]="[activity.questionId]">
     <i class="material-icons md-32">play_circle_filled</i>
   </button> 
 </mat-card>
