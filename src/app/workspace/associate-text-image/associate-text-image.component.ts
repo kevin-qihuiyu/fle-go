@@ -1,5 +1,5 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { AssociateImage, QuestionType } from 'src/app/domain/question';
+import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
+import { AssociateTextToImage, QuestionType, Question } from 'src/app/domain/question';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
@@ -8,6 +8,8 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
   styleUrls: ['./associate-text-image.component.css']
 })
 export class AssociateTextImageComponent implements OnInit {
+
+  @Input() question: AssociateTextToImage;
 
   numOfChoices = 4;
   descOrder = [0, 1, 2, 3];
@@ -21,25 +23,29 @@ export class AssociateTextImageComponent implements OnInit {
   item4 = [];
   pool = [];
 
-  sampleQuestion : AssociateImage = {
+  sampleQuestion : AssociateTextToImage = {
+    qid: 999,
     name: "À la gare",
-    questionType: QuestionType.ASSOCIEZ,
+    questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
     desc: "Qu'est-ce que vous faites à la gare?",
-    numOfChoices: 4,
     choices: [
       {
+        id: 1,
         desc: "Je regarde les horaires.",
         imgSrc: "assets/img/question/q3/1/1-regarder-les-horaires.jpg"
       },
       {
+        id: 2,
         desc: "J'achète un billet.",
         imgSrc: "assets/img/question/q3/1/2-acheter-billet.jpg"
       },
       {
+        id: 3,
         desc: "Je composte mon billet.",
         imgSrc: "assets/img/question/q3/1/3-composter-mon-billet.jpg"
       },
       {
+        id: 4,
         desc: "J'attends sur le quai.",
         imgSrc: "assets/img/question/q3/1/4-sur-le-quai.jpg"
       }
@@ -54,10 +60,10 @@ export class AssociateTextImageComponent implements OnInit {
     AssociateTextImageComponent.shuffleArray(this.imageOrder);
     for (var i = 0; i < this.numOfChoices; i++) {
       let item = this.imageOrder.pop();
-      let choice = this.sampleQuestion.choices[item];
+      let choice = this.question.choices[item];
 
       let descItem = this.descOrder.pop();
-      let choiceDesc = this.sampleQuestion.choices[descItem].desc;
+      let choiceDesc = this.question.choices[descItem].desc;
 
       this.pool.push(choiceDesc);
 

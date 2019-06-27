@@ -1,12 +1,11 @@
 import { Question } from './question';
-import { Category } from './category';
 
 export class Activity {
     name: string;
-    category: Category;
+    categoryId: number;
     difficulty?: Difficulty;
-    unlocked: true;
-    question?: Question;
+    unlocked?: true;
+    questionId: number;
 }
 
 export enum Difficulty {

@@ -1,4 +1,17 @@
 <div class="placeholder"></div>
 <!-- <app-qcm-text></app-qcm-text> -->
 <!-- <app-qcm-audio-text></app-qcm-audio-text> -->
-<app-associate-text-image></app-associate-text-image>
+<!-- <app-associate-text-image></app-associate-text-image> -->
+<div *ngIf="question$ | async as question">
+    <h1>{{question.qid}}</h1>
+    <h2>{{question.name}}</h2>
+    <h2>{{question.questionType}}</h2>
+</div>
+
+<div [ngSwitch]="(question$ | async ).questionType">
+    <app-qcm-select-text *ngSwitchCase="1"></app-qcm-select-text>
+    <app-qcm-select-text *ngSwitchCase="3" [question] = "(question$ | async)"></app-qcm-select-text>
+    <app-associate-text-image *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image> 
+</div>
+
+<div class="placeholder"></div>

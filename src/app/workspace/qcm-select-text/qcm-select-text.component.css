@@ -29,6 +29,13 @@
     align-items: center;
 }
 
+.audio-container {
+    margin: 2em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .q-picture {
     width: 80%;
     height: auto;
@@ -38,3 +45,6 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+
+

@@ -7,8 +7,9 @@ import { WorkspaceComponent } from '../workspace/workspace.component';
 import { ActivitiesComponent } from './activities/activities.component';
 
 const mainRoutes: Routes = [
-  { path: 'categories', component: CategoryListComponent },
+  { path: 'categories', component: CategoryListComponent, data: {animation: 'categories'}},
   { path: 'categories/:id', component: ActivitiesComponent,
+  data: {animation: 'activities'},
     children:[
       { path: '', redirectTo: 'activities' , pathMatch: 'full'},
       { path: 'activities', component: ActivityListComponent },

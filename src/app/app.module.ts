@@ -16,9 +16,9 @@ import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
-import { QcmTextComponent } from './workspace/qcm-text/qcm-text.component';
+import { QcmSelectTextComponent } from './workspace/qcm-select-text/qcm-select-text.component';
 import { AssociateTextImageComponent } from './workspace/associate-text-image/associate-text-image.component';
-import { QcmAudioTextComponent } from './workspace/qcm-audio-text/qcm-audio-text.component';
+import { ActivitiesComponent } from './main/activities/activities.component';
 
 
 @NgModule({
@@ -32,9 +32,9 @@ import { QcmAudioTextComponent } from './workspace/qcm-audio-text/qcm-audio-text
     SettingsComponent,
     HeaderComponent,
     WorkspaceComponent,
-    QcmTextComponent,
+    QcmSelectTextComponent,
     AssociateTextImageComponent,
-    QcmAudioTextComponent,
+    ActivitiesComponent
   ],
   imports: [
     BrowserModule,

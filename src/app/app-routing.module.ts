@@ -4,19 +4,26 @@ import { VocabularyComponent } from './vocabulary/vocabulary.component';
 import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
-import { ActivityListComponent } from './main/activity-list/activity-list.component';
+import { ActivityListComponent } from './main/activities/activity-list/activity-list.component';
+import { CategoryListComponent } from './main/category-list/category-list.component';
 
 const routes: Routes = [
-  {path: 'progress', component: ProgressComponent },
-  {path: 'vocabulary', component: VocabularyComponent },
+  {path: 'main', component: CategoryListComponent , data: {animation: 'categories'},},
+  {path: 'progress', component: ProgressComponent,     data: {animation: 'activities'},},
+  {path: 'vocabulary', component: VocabularyComponent,      },
   {path: 'settings', component: SettingsComponent },
-  {path: 'workspace', component: WorkspaceComponent },
-  {path: 'activities', component: ActivityListComponent },
-  {path: '', redirectTo: 'progress', pathMatch: 'full'}
+  // {path: 'workspace', component: WorkspaceComponent },
+  // {path: 'activities', component: ActivityListComponent },
+  {path: '', redirectTo: 'main', pathMatch: 'full'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  // Use paramsInheritanceStrategy to enable router params pass from parent to children
+  imports: [RouterModule.forRoot(routes,
+    {
+      paramsInheritanceStrategy: 'always'
+    }
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
