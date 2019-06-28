@@ -1,0 +1,25 @@
+<div class="container">
+  <div *ngIf="hasAudio" class="audio-container">
+    <button mat-button (click)="togglePlayAudio()" >
+      <i class="material-icons" [ngClass]="audio.paused ? '' : 'teal'">volume_up</i>
+    </button> 
+  </div>
+  <div *ngIf="hasImage" class="image-container">
+    <img class="q-picture" [src]="question.imgDesc">
+  </div>
+
+  <div class="question-container">
+    <label id="qcm-group-desc">{{question.desc}}</label>
+    <mat-radio-group
+      aria-labelledby="qcm-group-desc"
+      class="qcm-group"
+      [(ngModel)]="choice">
+      <mat-radio-button class="qcm-button" *ngFor="let choice of question.choices" [value]="choice.value">
+        <!-- <span class="wrap-mat-radio-label">{{choice.desc}}</span> -->
+        <img class="q-picture" [src]="choice.imgSrc">
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <!-- <div>Your choice is: {{choice}}</div> -->
+</div>

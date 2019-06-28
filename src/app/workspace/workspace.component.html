@@ -9,9 +9,15 @@
 </div>
 
 <div [ngSwitch]="(question$ | async ).questionType">
-    <app-qcm-select-text *ngSwitchCase="1"></app-qcm-select-text>
+    <!-- Question Type 1: LISEZ_ET_CHOISISSEZ -->
+    <app-qcm-select-text *ngSwitchCase="1" [question] = "(question$ | async)"></app-qcm-select-text>
+    <app-qcm-select-image *ngSwitchCase="2" [question] = "(question$ | async)"></app-qcm-select-image>
+    <!-- Question Type 2: ECOUTEZ_ET_CHOISISSEZ -->
     <app-qcm-select-text *ngSwitchCase="3" [question] = "(question$ | async)"></app-qcm-select-text>
+    <app-qcm-select-image *ngSwitchCase="4" [question] = "(question$ | async)"></app-qcm-select-image>
+    <!-- Question Type 3: ASSOCIEZ -->
     <app-associate-text-image *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image> 
+    <app-associate-image-to-goal *ngSwitchCase="6" [question] = "(question$ | async)"></app-associate-image-to-goal> 
 </div>
 
 <div class="placeholder"></div>

@@ -91,19 +91,3 @@ export class CardsortingImageTo2Goals extends Question {
     choices: Answer[];
     goals: string[];
 }
-
-
-
-// export class QCMText extends Question {
-//     choices: Answer[];
-//     correctChoiceId: number;
-// } 
-
-
-
-// export class QCMAudioText extends Question {
-//     numOfChoices: number;
-//     audioSrc: string;
-//     choices: Answer[];
-//     correctChoiceId: number;
-// } 

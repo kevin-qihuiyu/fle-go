@@ -1,0 +1,26 @@
+<div class="container">
+  <div *ngIf="hasAudio" class="audio-container">
+    <button mat-button (click)="togglePlayAudio()" >
+      <i class="material-icons" [ngClass]="audio.paused ? '' : 'teal'">volume_up</i>
+    </button> 
+  </div>
+  <div *ngIf="hasImage" class="image-container">
+    <img class="q-picture" [src]="question.imgDesc">
+  </div>
+
+  <div class="question-container">
+    <label id="qcm-group-desc">{{question.desc}}</label>
+    <div class="pool" cdkDropList cdkDropListOrientation="horizontal" #poolList="cdkDropList" 
+        [cdkDropListData]="pool"
+        [cdkDropListConnectedTo]="[Goal]"
+        (cdkDropListDropped)="drop($event)">
+        <img class="q-picture" *ngFor="let choice of pool" [src]="choice.imgSrc" cdkDrag>
+    </div> 
+    <div class="drop-container" cdkDropList #Goal="cdkDropList" 
+      [cdkDropListData]="goalContains"
+      [cdkDropListConnectedTo]="[poolList]"
+      (cdkDropListDropped)="drop($event)">
+      <img class="q-picture" *ngFor="let chosen of goalContains" [src]="chosen.imgSrc" cdkDrag>
+    </div>
+  </div>
+</div>

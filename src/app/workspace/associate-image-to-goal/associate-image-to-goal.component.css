@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.drop-container {
+    min-height: 50px;
+    width: 99%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #cfcfcf;
+    border: solid #cfcfcf 1px;
+    border-radius: 5px;
+}
+
+.pool {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.q-picture {
+    width: 60px;
+    height: auto;
+}
