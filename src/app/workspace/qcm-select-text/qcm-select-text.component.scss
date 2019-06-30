@@ -1,5 +1,11 @@
+@import '~@angular/material/theming';
+
 .container {
     margin-top: 1em;
+}
+
+h2, h3 {
+    text-align: center;
 }
 
 .qcm-group {

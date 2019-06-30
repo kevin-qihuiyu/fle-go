@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Category } from '../domain/category';
-import { QSET_1 } from '../data/course-content/contents';
+import { QSET_1 } from 'src/assets/activities';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { QCMSelectText, QCMSelectImage, AssociateTextToImage, AssociateImageToGoal, CardsortingTextTo2Goals, Question } from '../domain/question';

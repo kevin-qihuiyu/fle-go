@@ -2,9 +2,9 @@ import { QCMSelectText,
     QCMSelectImage, 
     AssociateTextToImage, 
     AssociateImageToGoal, 
-    CardsortingTextTo2Goals } 
-from '../../domain/question';
-import { QuestionType } from '../../domain/question';
+    CardsortingTextTo2Goals,
+    QuestionType} 
+from 'src/app/domain/question';
 
 export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | CardsortingTextTo2Goals)[] = [
     {
@@ -12,7 +12,7 @@ export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | As
       name: "Acheter des chaussures",
       questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
       desc: "De quoi elle parle?",
-      audioDesc: "q1set/q1_audio.mp3",
+      audioDesc: "assets/q1set/q1_audio.mp3",
       choices:[
         {
             id: 1,

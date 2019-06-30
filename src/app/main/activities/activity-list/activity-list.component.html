@@ -1,7 +1,9 @@
 <div class="placeholder"></div>
 
 <div class="container">
-  <div class="cover-image" *ngIf="category$ | async as category">
+  <div class="cover-image" 
+  *ngIf="category$ | async as category"
+  [ngStyle]="{'background-image': 'linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)), url(' + category.imgSrc +')'}">
       <div class="title">{{category.name}}</div>
       <div class="content">
         <div class="percent">23%</div>

@@ -133,5 +133,10 @@
       }
     }
   },
-  "defaultProject": "fle-go"
+  "defaultProject": "fle-go",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

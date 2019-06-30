@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ACTIVITIES_1, ACTIVITIES_2 } from '../data/course-content/activities';
+import { ACTIVITIES_1, ACTIVITIES_2 } from 'src/assets/activity-list';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Activity } from '../domain/activity';

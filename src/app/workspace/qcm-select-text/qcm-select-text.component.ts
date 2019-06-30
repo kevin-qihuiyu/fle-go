@@ -4,7 +4,7 @@ import { QCMSelectText, QuestionType, Question } from 'src/app/domain/question';
 @Component({
   selector: 'app-qcm-select-text',
   templateUrl: './qcm-select-text.component.html',
-  styleUrls: ['./qcm-select-text.component.css']
+  styleUrls: ['./qcm-select-text.component.scss']
 })
 export class QcmSelectTextComponent implements OnInit {
 

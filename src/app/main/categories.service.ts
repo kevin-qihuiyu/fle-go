@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Category } from '../domain/category';
-import { CATEGORIES } from '../data/course-content/categories';
+import { CATEGORIES } from 'src/assets/categories';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
