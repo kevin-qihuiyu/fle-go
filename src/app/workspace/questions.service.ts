@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Category } from '../domain/category';
-import { QSET_1 } from 'src/assets/activities';
+import { QSET } from 'src/assets/activities';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { QCMSelectText, QCMSelectImage, AssociateTextToImage, AssociateImageToGoal, CardsortingTextTo2Goals, Question } from '../domain/question';
+import { QCMSelectText, QCMSelectImage, AssociateTextToImage, AssociateImageToGoal, CardsortingTextTo2Goals, Question, SelectOnCalendar } from '../domain/question';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +11,8 @@ export class QuestionsService {
 
   constructor() { }
 
-  getQuestions(): Observable<(QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | CardsortingTextTo2Goals)[]> {
-    return of(QSET_1);
+  getQuestions(): Observable<(QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | SelectOnCalendar)[]> {
+    return of(QSET);
   }
 
   getQuestion(qid: number | string) {

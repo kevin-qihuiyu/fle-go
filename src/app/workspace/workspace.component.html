@@ -1,12 +1,4 @@
 <div class="placeholder"></div>
-<!-- <app-qcm-text></app-qcm-text> -->
-<!-- <app-qcm-audio-text></app-qcm-audio-text> -->
-<!-- <app-associate-text-image></app-associate-text-image> -->
-<!-- <div *ngIf="question$ | async as question">
-    <h1>{{question.qid}}</h1>
-    <h2>{{question.name}}</h2>
-    <h2>{{question.questionType}}</h2>
-</div> -->
 
 <div [ngSwitch]="(question$ | async ).questionType">
     <!-- Question Type 1: LISEZ_ET_CHOISISSEZ -->
@@ -18,6 +10,8 @@
     <!-- Question Type 3: ASSOCIEZ -->
     <app-associate-text-image *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image> 
     <app-associate-image-to-goal *ngSwitchCase="6" [question] = "(question$ | async)"></app-associate-image-to-goal> 
+    <!-- Question Type 4: CHOISISSEZ SUR CALENDRIER -->
+    <app-select-calendar *ngSwitchCase="9" [question] = "(question$ | async)"></app-select-calendar> 
 </div>
 
 <div class="placeholder"></div>
