@@ -5,7 +5,7 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 @Component({
   selector: 'app-associate-image-to-goal',
   templateUrl: './associate-image-to-goal.component.html',
-  styleUrls: ['./associate-image-to-goal.component.css']
+  styleUrls: ['./associate-image-to-goal.component.scss']
 })
 export class AssociateImageToGoalComponent implements OnInit {
 
@@ -14,9 +14,35 @@ export class AssociateImageToGoalComponent implements OnInit {
   pool: ImageAnswer[] = [];
   goalContains: ImageAnswer[] = [];
 
+   // Audio Description Management
+   audio;
+   hasAudio: boolean = false;
+ 
+   loadAudio(audioDesc: string){
+     this.audio = new Audio();
+     this.audio.src = audioDesc;
+     this.audio.load();
+   }
+ 
+   togglePlayAudio(){
+     return this.audio.paused ? this.audio.play() : this.audio.pause();
+   }
+ 
+   // Image Description
+   hasImage: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+    if (this.question.audioDesc) {
+      this.loadAudio(this.question.audioDesc);
+      this.hasAudio = true;
+    }
+    if (this.question.imgDesc) {
+      this.hasImage = true;
+    }
+
+    // Prepare pools
     this.pool = [...this.question.choices];
     AssociateImageToGoalComponent.shuffleArray(this.pool);
   }

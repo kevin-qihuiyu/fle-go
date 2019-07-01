@@ -12,7 +12,7 @@ export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | As
       name: "Acheter des chaussures",
       questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
       desc: "De quoi elle parle?",
-      audioDesc: "assets/q1set/q1_audio.mp3",
+      audioDesc: "assets/qsets/q1set/q1_audio.mp3",
       choices:[
         {
             id: 1,
@@ -59,7 +59,8 @@ export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | As
       qid: 103,
       name: "Acheter un billet de train",
       questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
-      imgDesc: "assets/qsets/qset1/q3_billet_de_train.jpg",
+      imgDesc: "assets/qsets/qset1/q3_images/q3_billet_de_train.jpg",
+      desc: "Payez vos achats.",
       choices:[
         {
             id: 1,
@@ -154,7 +155,7 @@ export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | As
             {
                 id: 4,
                 desc: "un manteau",
-                imgSrc: "assets/qsets/qset1/q5_images/q4_manteau.jpg"
+                imgSrc: "assets/qsets/qset1/q5_images/q5_manteau.jpg"
             }
         ]
     },
@@ -192,22 +193,22 @@ export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | As
             {
                 id: 1,
                 desc: "un oignon",
-                imgSrc: "assets/qsets/qset1/q5_images/q7_onion.jpg"
+                imgSrc: "assets/qsets/qset1/q7_images/q7_onion.jpg"
             },
             {
                 id: 2,
                 desc: "'des salades",
-                imgSrc: "assets/qsets/qset1/q5_images/q7_salade.jpg"
+                imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
             },
             {
                 id: 3,
                 desc: "des tomates",
-                imgSrc: "assets/qsets/qset1/q5_images/q7_tomate.jpg"
+                imgSrc: "assets/qsets/qset1/q7_images/q7_tomate.jpg"
             },
             {
                 id: 4,
                 desc: "une tortilla",
-                imgSrc: "assets/qsets/qset1/q5_images/q7_tortillas.jpg"
+                imgSrc: "assets/qsets/qset1/q7_images/q7_tortillas.jpg"
             }
         ]
     },
