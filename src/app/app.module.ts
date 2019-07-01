@@ -11,9 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
-import { FooterComponent } from './footer/footer.component';
 import { VocabularyComponent } from './vocabulary/vocabulary.component';
-import { VocabularyCardComponent } from './vocabulary-card/vocabulary-card.component';
+import { VocabularyCardComponent } from './vocabulary/vocabulary-card/vocabulary-card.component';
 import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,7 +22,6 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     NavComponent,
-    FooterComponent,
     VocabularyComponent,
     VocabularyCardComponent,
     ProgressComponent,

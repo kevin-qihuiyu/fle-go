@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -9,7 +8,6 @@ import { QcmSelectTextComponent } from './qcm-select-text/qcm-select-text.compon
 import { QcmSelectImageComponent } from './qcm-select-image/qcm-select-image.component';
 import { AssociateTextImageComponent } from './associate-text-image/associate-text-image.component';
 import { AssociateImageToGoalComponent } from './associate-image-to-goal/associate-image-to-goal.component';
-
 
 @NgModule({
   declarations: [
@@ -22,7 +20,6 @@ import { AssociateImageToGoalComponent } from './associate-image-to-goal/associa
   imports: [
     FormsModule,
     SharedModule,
-    BrowserModule
   ],
   providers: [],
   bootstrap: [WorkspaceComponent]
