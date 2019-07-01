@@ -5,6 +5,7 @@ import { SharedModule } from '../shared/shared.module';
  
 import { CategoryListComponent }    from './category-list/category-list.component';
 import { CategoryCardComponent }  from './category-list/category-card/category-card.component';
+import { ActivitiesComponent } from './activities/activities.component';
 import { ActivityListComponent } from './activities/activity-list/activity-list.component';
 import { ActivityCardComponent } from './activities/activity-list/activity-card/activity-card.component';
  
@@ -20,8 +21,9 @@ import { MainRoutingModule } from './main-routing.module';
   declarations: [
     CategoryListComponent,
     CategoryCardComponent,
+    ActivitiesComponent,
     ActivityListComponent,
-    ActivityCardComponent 
+    ActivityCardComponent
   ]
 })
 export class MainModule {}

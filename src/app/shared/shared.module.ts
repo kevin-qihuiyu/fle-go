@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
@@ -11,11 +12,11 @@ import {MatDividerModule} from '@angular/material/divider';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
-
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    BrowserModule,
     MatToolbarModule,
     MatButtonModule, 
     MatCheckboxModule,
