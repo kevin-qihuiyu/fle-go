@@ -25,6 +25,9 @@ export enum QuestionType {
     // Question Type 3: ASSOCIEZ
     // Sub type: cardsorting, image to 2 goals (class)
     CARDSORTING_IMAGE_TO_2_GOALS = 8,
+
+    // Question Type 4: SELECT_ON_CALENDAR
+    SELECT_ON_CALENDAR = 9
 }
 
 export class Question {
@@ -90,4 +93,9 @@ export class CardsortingImageTo2Goals extends Question {
     numOfChoices: number;
     choices: Answer[];
     goals: string[];
+}
+
+export class SelectOnCalendar extends Question {
+    selectedDate;
+    correctDate;
 }

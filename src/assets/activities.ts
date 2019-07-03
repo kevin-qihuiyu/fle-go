@@ -3,10 +3,11 @@ import { QCMSelectText,
     AssociateTextToImage, 
     AssociateImageToGoal, 
     CardsortingTextTo2Goals,
-    QuestionType} 
+    QuestionType,
+    SelectOnCalendar} 
 from 'src/app/domain/question';
 
-export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | CardsortingTextTo2Goals)[] = [
+export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | SelectOnCalendar)[] = [
     {
       qid: 101,
       name: "Acheter des chaussures",
@@ -187,7 +188,7 @@ export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | As
         qid: 107,
         name: "Acheter un kebab",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        audioDesc: "q1set/q7_audio.mp3",
+        audioDesc: "assets/qsets/q1set/q7_audio.mp3",
         choices: [
             {
                 id: 1,
@@ -260,27 +261,27 @@ export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | As
         ],
         goal: "2.2"
     },
-    {
-        qid: 109,
-        name: "Identifier les catégories de produits",
-        questionType: QuestionType.CARDSORTING_TEXT_TO_2_GOALS,
-        imgDesc: "assets/qsets/qset1/q9_image.jpg",
-        choices: [
-            {
-                id:1,
-                desc:'Courgettes'
-            }, 
-            {
-                id:2,
-                desc:'Beurre'
-            },
-            {
-                id:3,
-                desc:'Carottes'
-            }     
-        ],
-        goals: ['Légumes', 'Produits laitiers']
-    },
+    // {
+    //     qid: 109,
+    //     name: "Identifier les catégories de produits",
+    //     questionType: QuestionType.CARDSORTING_TEXT_TO_2_GOALS,
+    //     imgDesc: "assets/qsets/qset1/q9_image.jpg",
+    //     choices: [
+    //         {
+    //             id:1,
+    //             desc:'Courgettes'
+    //         }, 
+    //         {
+    //             id:2,
+    //             desc:'Beurre'
+    //         },
+    //         {
+    //             id:3,
+    //             desc:'Carottes'
+    //         }     
+    //     ],
+    //     goals: ['Légumes', 'Produits laitiers']
+    // },
     {
         qid: 110,
         name: "Identifier un moyen de paiement",
@@ -301,5 +302,137 @@ export const QSET_1: (QCMSelectText | QCMSelectImage | AssociateTextToImage | As
             }
         ],
         correctChoiceId:3 
-    }
+    },
+    {
+        qid: 201,
+        name: "Aller à la Poste",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Qu'est qu'on peut faire à la Poste?",
+        choices: [
+            {
+                id: 1,
+                desc: "Venir chercher un colis",
+                imgSrc: "assets/qsets/qset2/q1_images/1-envoyer-un-colis.jpg"
+            },
+            {
+                id: 2,
+                desc: "'Prendre un abonnement de téléphone",
+                imgSrc: "assets/qsets/qset2/q1_images/2-prendre-un-abonnement-mobile.jpg"
+            },
+            {
+                id: 3,
+                desc: "Retirer de l'argent",
+                imgSrc: "assets/qsets/qset2/q1_images/3-retirer-l-argent.jpg"
+            },
+            {
+                id: 4,
+                desc: "Timbrer/Affranchir son courrier",
+                imgSrc: "assets/qsets/qset2/q1_images/4-affranchir.jpg"
+            }
+        ]
+    },
+    {
+        qid: 202,
+        name: "Apporter ses documents",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_IMAGE,
+        desc: "Qu'est-ce qu'il faut apporter au rendez-vous?",
+        imgDesc: "assets/qsets/qset2/q2_images/img_desc.jpg",
+        choices: [
+            {
+                id: 1,
+                imgSrc: "assets/qsets/qset2/q2_images/option_1.jpg"
+            },
+            {
+                id: 2,
+                imgSrc: "assets/qsets/qset2/q2_images/option_2.jpg"
+            },
+            {
+                id: 3,
+                imgSrc: "assets/qsets/qset2/q2_images/option_3.jpg"
+            }
+        ],
+        correctChoiceId:2 
+    },
+    {
+        qid: 203,
+        name: "Comprendre un message d'annulation",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Qu'est-ce qui se passe pour le rendrez-vous?",
+        audioDesc: "assets/qsets/qset2/q3_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                desc: "C'était hier."
+            },
+            {
+                id: 2,
+                desc:"Il faut y aller aujourd'hui à 15h."
+            },
+            {
+                id: 3,
+                desc: "Il est reporté le 15."
+            },
+            {
+                id:4,
+                desc: "Il est annulé."
+            }
+        ],
+        correctChoiceId:3
+    },
+    {
+        qid: 205,
+        name: "Identifier la date de fin de validité d'un document",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Quelle est la date de fin de validité de ce titre de séjour?",
+        imgDesc: "assets/qsets/qset2/q5_image.png",
+        choices: [
+            {
+                id: 1,
+                desc: "le mai 06, 2022"
+            },
+            {
+                id: 2,
+                desc: "le mai 06, 2022"
+            },
+            {
+                id: 3,
+                desc: "le mai 06, 2022"
+            }
+        ],
+        correctChoiceId:2
+    },
+    {
+        qid: 206,
+        name: "Identifier un courrier administratif",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Quel organisme vous écrit?",
+        imgDesc: "assets/qsets/qset2/q6_image.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "C'est l'Assurance Maladie."
+            },
+            {
+                id: 2,
+                desc: "C'est la banque."
+            },
+            {
+                id: 3,
+                desc: "C'est la CAF."
+            },
+            {
+                id: 4,
+                desc: "C'est Pôle Emploi."
+            }
+        ],
+        correctChoiceId:1
+    },
+    {
+        qid: 208,
+        name: "Noter une date",
+        questionType: QuestionType.SELECT_ON_CALENDAR,
+        audioDesc: "assets/qsets/qset2/q8_audio.mp3",
+        selectedDate: new Date("2019/04/01"),
+        correctDate: new Date("2019/04/12"),
+    },
 ]

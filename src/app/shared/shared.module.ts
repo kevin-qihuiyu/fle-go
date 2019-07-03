@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
@@ -8,6 +7,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material';
 
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
@@ -16,7 +17,6 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
   declarations: [],
   imports: [
     CommonModule,
-    BrowserModule,
     MatToolbarModule,
     MatButtonModule, 
     MatCheckboxModule,
@@ -24,6 +24,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatProgressBarModule,
     MatRadioModule,
     MatDividerModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     DragDropModule,
   ],
   exports: [
@@ -34,6 +36,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatProgressBarModule,
     MatRadioModule,
     MatDividerModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     DragDropModule
   ]
 })
