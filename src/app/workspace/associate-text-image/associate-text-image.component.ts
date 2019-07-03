@@ -52,6 +52,20 @@ export class AssociateTextImageComponent implements OnInit {
     ],
   };
 
+ // Audio Description Management
+ audio;
+ hasAudio: boolean = false;
+
+ loadAudio(audioDesc: string){
+   this.audio = new Audio();
+   this.audio.src = audioDesc;
+   this.audio.load();
+ }
+
+ togglePlayAudio(){
+   return this.audio.paused ? this.audio.play() : this.audio.pause();
+ }
+
 
   constructor() { }
 
@@ -68,6 +82,11 @@ export class AssociateTextImageComponent implements OnInit {
       this.pool.push(choiceDesc);
 
       this.randomChoices.push(choice); 
+    }
+
+    if (this.question.audioDesc) {
+      this.loadAudio(this.question.audioDesc);
+      this.hasAudio = true;
     }
   }
 

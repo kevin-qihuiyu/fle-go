@@ -9,6 +9,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
@@ -26,6 +27,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatDividerModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatTabsModule,
     DragDropModule,
   ],
   exports: [
@@ -38,6 +40,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatDividerModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatTabsModule,
     DragDropModule
   ]
 })

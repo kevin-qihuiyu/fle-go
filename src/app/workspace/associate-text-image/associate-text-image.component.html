@@ -1,6 +1,12 @@
 <h2>{{question.name}}</h2>
 <h3>Associez</h3>
 
+<div *ngIf="hasAudio" class="audio-container">
+  <button mat-button (click)="togglePlayAudio()" >
+    <i class="material-icons teal" id="icon-size-48" [ngClass]="audio.paused ? '' : 'teal'">volume_up</i>
+  </button> 
+</div>
+
 <div class="container">
   <div class="item">
     <img bind-src="randomChoices[0].imgSrc" alt="Image not available">

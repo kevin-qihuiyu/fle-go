@@ -13,7 +13,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
       name: "Acheter des chaussures",
       questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
       desc: "De quoi elle parle?",
-      audioDesc: "assets/qsets/q1set/q1_audio.mp3",
+      audioDesc: "assets/qsets/qset1/q1_audio.mp3",
       choices:[
         {
             id: 1,
@@ -189,7 +189,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         qid: 107,
         name: "Acheter un kebab",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        audioDesc: "assets/qsets/q1set/q7_audio.mp3",
+        audioDesc: "assets/qsets/qset1/q7_audio.mp3",
         choices: [
             {
                 id: 1,
@@ -287,7 +287,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         qid: 110,
         name: "Identifier un moyen de paiement",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "q1set/q10_audio.mp3",
+        audioDesc: "assets/qsets/qset1/q10_audio.mp3",
         choices: [
             {
                 id: 1,

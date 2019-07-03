@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Vocabulary } from 'src/app/domain/vocabulary';
 
 @Component({
   selector: 'app-vocabulary-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vocabulary-card.component.css']
 })
 export class VocabularyCardComponent implements OnInit {
+
+  @Input() vocabulary: Vocabulary;
 
   constructor() { }
 

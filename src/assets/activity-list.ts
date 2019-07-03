@@ -50,12 +50,12 @@ export const ACTIVITIES_1: Activity[] = [
       difficulty: Difficulty.DÉBUTANT,
       questionId: 108
     },
-    {
-      name: "Identifier les catégories de produits",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 109
-    },
+    // {
+    //   name: "Identifier les catégories de produits",
+    //   categoryId: 1,
+    //   difficulty: Difficulty.DÉBUTANT,
+    //   questionId: 109
+    // },
     {
       name: "Identifier un moyen de paiement",
       categoryId: 1,
@@ -85,12 +85,12 @@ export const ACTIVITIES_2: Activity[] = [
         difficulty: Difficulty.DÉBUTANT,
         questionId: 203
     },
-    {
-        name: "Envoyer un courrier",
-        categoryId: 2,
-        difficulty: Difficulty.DÉBUTANT,
-        questionId: 204
-    },
+    // {
+    //     name: "Envoyer un courrier",
+    //     categoryId: 2,
+    //     difficulty: Difficulty.DÉBUTANT,
+    //     questionId: 204
+    // },
     {
         name: "Identifier la date de fin de validité d'un document",
         categoryId: 2,
@@ -103,28 +103,28 @@ export const ACTIVITIES_2: Activity[] = [
         difficulty: Difficulty.DÉBUTANT,
         questionId: 206
     },
-    {
-        name: "Lire un texto",
-        categoryId: 2,
-        difficulty: Difficulty.DÉBUTANT,
-        questionId: 207
-    },
-    {
-        name: "Noter une date",
-        categoryId: 2,
-        difficulty: Difficulty.DÉBUTANT,
-        questionId: 208
-    },
-    {
-        name: "SMS Administratif",
-        categoryId: 2,
-        difficulty: Difficulty.DÉBUTANT,
-        questionId: 209
-    },
-    {
-        name: "Utiliser un calendrier",
-        categoryId: 2,
-        difficulty: Difficulty.DÉBUTANT,
-        questionId: 210
-    },
+    // {
+    //     name: "Lire un texto",
+    //     categoryId: 2,
+    //     difficulty: Difficulty.DÉBUTANT,
+    //     questionId: 207
+    // },
+    // {
+    //     name: "Noter une date",
+    //     categoryId: 2,
+    //     difficulty: Difficulty.DÉBUTANT,
+    //     questionId: 208
+    // },
+    // {
+    //     name: "SMS Administratif",
+    //     categoryId: 2,
+    //     difficulty: Difficulty.DÉBUTANT,
+    //     questionId: 209
+    // },
+    // {
+    //     name: "Utiliser un calendrier",
+    //     categoryId: 2,
+    //     difficulty: Difficulty.DÉBUTANT,
+    //     questionId: 210
+    // },
 ]
