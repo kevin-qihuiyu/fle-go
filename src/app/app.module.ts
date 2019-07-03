@@ -16,6 +16,7 @@ import { VocabularyCardComponent } from './vocabulary/vocabulary-card/vocabulary
 import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { HeaderComponent } from './header/header.component';
     ProgressComponent,
     SettingsComponent,
     HeaderComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
