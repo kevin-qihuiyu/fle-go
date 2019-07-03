@@ -1,7 +1,15 @@
 <div class="container">
+  <h2>{{question.name}}</h2>
+  <div [ngSwitch]="question.questionType">
+    <!-- Question Type 1: LISEZ_ET_CHOISISSEZ_TEXT -->
+    <h3 *ngSwitchCase="2">Lisez et choississez</h3>
+      <!-- Question Type 3: ECOUTEZ_ET_CHOISISSEZ_TEXT -->
+    <h3 *ngSwitchCase="4">Écoutez et choississez</h3>
+  </div>
+
   <div *ngIf="hasAudio" class="audio-container">
     <button mat-button (click)="togglePlayAudio()" >
-      <i class="material-icons" [ngClass]="audio.paused ? '' : 'teal'">volume_up</i>
+      <i class="material-icons teal" id="icon-size-48" [ngClass]="audio.paused ? '' : 'teal'">volume_up</i>
     </button> 
   </div>
   <div *ngIf="hasImage" class="image-container">

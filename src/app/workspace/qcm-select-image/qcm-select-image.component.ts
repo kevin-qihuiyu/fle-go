@@ -4,7 +4,7 @@ import { QCMSelectImage, QuestionType, Question } from 'src/app/domain/question'
 @Component({
   selector: 'app-qcm-select-image',
   templateUrl: './qcm-select-image.component.html',
-  styleUrls: ['./qcm-select-image.component.css']
+  styleUrls: ['./qcm-select-image.component.scss']
 })
 export class QcmSelectImageComponent implements OnInit {
 

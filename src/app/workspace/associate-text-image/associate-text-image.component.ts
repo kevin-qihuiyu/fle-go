@@ -5,7 +5,7 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 @Component({
   selector: 'app-associate-text-image',
   templateUrl: './associate-text-image.component.html',
-  styleUrls: ['./associate-text-image.component.css']
+  styleUrls: ['./associate-text-image.component.scss']
 })
 export class AssociateTextImageComponent implements OnInit {
 
