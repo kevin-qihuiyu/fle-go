@@ -8,7 +8,10 @@ import { QCMSelectText, QuestionType, Question } from 'src/app/domain/question';
 })
 export class QcmSelectTextComponent implements OnInit {
 
-  @Input() question: Question;
+  //@Input() question: Question;
+  @Input() question: QCMSelectText;
+
+  userChoice;
 
   sampleQuestion : QCMSelectText = {
     qid: 999,

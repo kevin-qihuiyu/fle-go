@@ -8,7 +8,9 @@ import { QCMSelectImage, QuestionType, Question } from 'src/app/domain/question'
 })
 export class QcmSelectImageComponent implements OnInit {
 
-  @Input() question: Question;
+  //@Input() question: Question;
+  @Input() question: QCMSelectImage;
+  userChoice;
 
   // Audio Description Management
   audio;
