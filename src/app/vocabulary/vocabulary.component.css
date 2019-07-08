@@ -1,12 +1,17 @@
-.placeholder {
-    height: 80px;
+.placeholder-tab-group {
+    height: 55px;
 }
 
-.header {
-    text-align: center;
-    font-size: 20px;
+.container {
+    height:100%;
 }
 
 mat-tab-group {
-    margin-bottom: 45px;
+    height:100%;
+}
+
+:host ::ng-deep .mat-tab-header{
+    position: fixed;
+    background: white;
+    z-index: 10;
 }
