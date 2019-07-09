@@ -10,8 +10,16 @@ mat-tab-group {
     height:100%;
 }
 
+/* TO IMPROVE: tab header fix after the global nav hard coded top distance*/
 :host ::ng-deep .mat-tab-header{
-    position: fixed;
+    position: sticky;
+    top: 56px;
+    
     background: white;
     z-index: 10;
+} 
+
+::ng-deep .mat-tab-body.mat-tab-body-active {
+    z-index: 0 !important;
 }
+

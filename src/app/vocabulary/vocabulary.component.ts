@@ -11,20 +11,47 @@ import { Observable } from 'rxjs';
 })
 export class VocabularyComponent implements OnInit {
 
-  volcabulaireCat1$: Observable<Vocabulary[]>;
-  volcabulaireCat2$: Observable<Vocabulary[]>;
-  volcabulaireCat3: Vocabulary[] ;
-  volcabulaireCat4: Vocabulary[] ;
-  volcabulaireCat5: Vocabulary[] ;
-  volcabulaireCat6: Vocabulary[] ;
-  volcabulaireCat7: Vocabulary[] ;
-  volcabulaireCat8: Vocabulary[] ;
+  library = [
+    {
+      name:"Vie Quotidienne", 
+      volcabularies$: new Observable<Vocabulary[]>()  
+    },
+    {
+      name:"Administration", 
+      volcabularies$: new Observable<Vocabulary[]>()     
+    },
+    // {
+    //   name:"Voyager", 
+    //   volcabularies$: new Observable<Vocabulary[]>()      
+    // },
+    // {
+    //   name:"Logement", 
+    //   volcabularies$: new Observable<Vocabulary[]>()      
+    // },
+    // {
+    //   name:"Activités", 
+    //   volcabularies$: new Observable<Vocabulary[]>()      
+    // },
+    // {
+    //   name:"Santé", 
+    //   volcabularies$: new Observable<Vocabulary[]>()      
+    // },
+    // {
+    //   name:"Vie Amoureuse", 
+    //   volcabularies$: new Observable<Vocabulary[]>()      
+    // },
+    // {
+    //   name:"Vie Professionnelle", 
+    //   volcabularies$: new Observable<Vocabulary[]>()      
+    // }
+  ]
 
   constructor(private vocabularyService: VocabularyService) { }
 
   ngOnInit() {
-    this.volcabulaireCat1$ = this.vocabularyService.getVocabulary(1);
-    this.volcabulaireCat2$ = this.vocabularyService.getVocabulary(2);
+    this.library.forEach((element, index) => {
+      element.volcabularies$ = this.vocabularyService.getVocabulary(index + 1);
+    });
   }
 
 }

@@ -1,36 +1,9 @@
 <div class="placeholder-tab-group"></div>
 
 <div class="container">
-  <mat-tab-group dynamicHeight="True">
-    <mat-tab label="Vie Quotidienne">
-      <app-vocabulary-card *ngFor="let vocab of (volcabulaireCat1$ | async)" [vocabulary]="vocab"></app-vocabulary-card>
-    </mat-tab>
-    <mat-tab label="Administration">
-      <app-vocabulary-card *ngFor="let vocab of (volcabulaireCat2$ | async)" [vocabulary]="vocab"></app-vocabulary-card>
-    </mat-tab>
-    <mat-tab label="Voyager">
-      <h1>Some tab content</h1>
-      <p>...</p>
-    </mat-tab>
-    <mat-tab label="Logement">
-      <h1>Some more tab content</h1>
-      <p>...</p>
-    </mat-tab>
-    <mat-tab label="Activités">
-      <h1>Some tab content</h1>
-      <p>...</p>
-    </mat-tab>
-    <mat-tab label="Santé">
-      <h1>Some more tab content</h1>
-      <p>...</p>
-    </mat-tab>
-    <mat-tab label="Vie amoureuse">
-      <h1>Some more tab content</h1>
-      <p>...</p>
-    </mat-tab>
-    <mat-tab label="Vie professionnelle">
-      <h1>Some more tab content</h1>
-      <p>...</p>
-    </mat-tab>
+  <mat-tab-group>
+    <mat-tab  *ngFor="let item of library" label="{{item.name}}">
+      <app-vocabulary-card *ngFor="let vocab of (item.volcabularies$ | async)" [vocabulary]="vocab"></app-vocabulary-card>
+    </mat-tab> 
   </mat-tab-group>  
 </div>

@@ -16,7 +16,39 @@ export const VOCABULARY_1: Vocabulary[] = [
     audioSrc: "string",
     explanation: "string",
     usage: "string"
-}
+},
+{
+    id: 101,
+    name: "string",
+    categoryId: 1,
+    audioSrc: "string",
+    explanation: "string",
+    usage: "string"
+},
+{
+    id: 102,
+    name: "string",
+    categoryId: 1,
+    audioSrc: "string",
+    explanation: "string",
+    usage: "string"
+},
+{
+    id: 101,
+    name: "string",
+    categoryId: 1,
+    audioSrc: "string",
+    explanation: "string",
+    usage: "string"
+},
+{
+    id: 102,
+    name: "string",
+    categoryId: 1,
+    audioSrc: "string",
+    explanation: "string",
+    usage: "string"
+},
 ]
 
 export const VOCABULARY_2: Vocabulary[] = [
