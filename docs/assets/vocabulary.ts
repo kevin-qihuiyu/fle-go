@@ -18,7 +18,7 @@ export const VOCABULARY_1: Vocabulary[] = [
     usage: "string"
 },
 {
-    id: 103,
+    id: 101,
     name: "string",
     categoryId: 1,
     audioSrc: "string",
@@ -26,7 +26,7 @@ export const VOCABULARY_1: Vocabulary[] = [
     usage: "string"
 },
 {
-    id: 104,
+    id: 102,
     name: "string",
     categoryId: 1,
     audioSrc: "string",
@@ -34,7 +34,7 @@ export const VOCABULARY_1: Vocabulary[] = [
     usage: "string"
 },
 {
-    id: 105,
+    id: 101,
     name: "string",
     categoryId: 1,
     audioSrc: "string",
@@ -42,39 +42,7 @@ export const VOCABULARY_1: Vocabulary[] = [
     usage: "string"
 },
 {
-    id: 106,
-    name: "string",
-    categoryId: 1,
-    audioSrc: "string",
-    explanation: "string",
-    usage: "string"
-},
-{
-    id: 107,
-    name: "string",
-    categoryId: 1,
-    audioSrc: "string",
-    explanation: "string",
-    usage: "string"
-},
-{
-    id: 108,
-    name: "string",
-    categoryId: 1,
-    audioSrc: "string",
-    explanation: "string",
-    usage: "string"
-},
-{
-    id: 109,
-    name: "string",
-    categoryId: 1,
-    audioSrc: "string",
-    explanation: "string",
-    usage: "string"
-},
-{
-    id: 110,
+    id: 102,
     name: "string",
     categoryId: 1,
     audioSrc: "string",
