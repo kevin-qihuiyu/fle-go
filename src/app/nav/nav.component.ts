@@ -9,7 +9,7 @@ export class NavComponent implements OnInit {
 
   navItems = [
     {
-      name: 'Main',
+      name: 'Learn',
       link: '/main',
       icon: 'face'
     },
