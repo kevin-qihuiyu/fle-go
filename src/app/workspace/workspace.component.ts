@@ -8,12 +8,13 @@ import { QuestionsService } from './questions.service';
 @Component({
   selector: 'app-workspace',
   templateUrl: './workspace.component.html',
-  styleUrls: ['./workspace.component.css']
+  styleUrls: ['./workspace.component.css'],
 })
 export class WorkspaceComponent implements OnInit {
 
   question$: Observable<Question>
   qid$: Observable<string>
+  userAnswer = "Default"
 
   constructor(private route: ActivatedRoute,
     private questionsService: QuestionsService) { }
@@ -28,5 +29,4 @@ export class WorkspaceComponent implements OnInit {
         this.questionsService.getQuestion(params.get('qid')))
     );
   }
-
 }

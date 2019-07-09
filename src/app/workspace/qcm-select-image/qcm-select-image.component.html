@@ -21,13 +21,12 @@
     <mat-radio-group
       aria-labelledby="qcm-group-desc"
       class="qcm-group"
-      [(ngModel)]="userChoice">
-      <mat-radio-button class="qcm-button" *ngFor="let choice of question.choices" [value]="choice.value">
+      [(ngModel)]="userChoice"
+      (ngModelChange)="onUserChoiceChange($event)">
+      <mat-radio-button class="qcm-button" *ngFor="let choice of question.choices" [value]="choice.id">
         <!-- <span class="wrap-mat-radio-label">{{choice.desc}}</span> -->
         <img class="q-picture" [src]="choice.imgSrc">
       </mat-radio-button>
     </mat-radio-group>
   </div>
-
-  <!-- <div>Your choice is: {{choice}}</div> -->
 </div>

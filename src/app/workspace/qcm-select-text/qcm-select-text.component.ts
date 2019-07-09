@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { QCMSelectText, QuestionType, Question } from 'src/app/domain/question';
+import { MatRadioChange } from '@angular/material';
 
 @Component({
   selector: 'app-qcm-select-text',
@@ -10,8 +11,9 @@ export class QcmSelectTextComponent implements OnInit {
 
   //@Input() question: Question;
   @Input() question: QCMSelectText;
-
-  userChoice;
+  
+  @Input() userChoice: string;
+  @Output() userChoiceChange = new EventEmitter();
 
   sampleQuestion : QCMSelectText = {
     qid: 999,
@@ -44,6 +46,7 @@ export class QcmSelectTextComponent implements OnInit {
   // Audio Description Management
   audio;
   hasAudio: boolean = false;
+  selectedAnswer;
 
   loadAudio(audioDesc: string){
     this.audio = new Audio();
@@ -70,6 +73,11 @@ export class QcmSelectTextComponent implements OnInit {
     if (this.question.imgDesc) {
       this.hasImage = true;
     }
+  }
+
+  change(newValue){
+    this.selectedAnswer = newValue;
+    this.userChoiceChange.emit(newValue);
   }
 
 }

@@ -21,12 +21,13 @@
     <mat-radio-group
       aria-labelledby="qcm-group-desc"
       class="qcm-group"
-      [(ngModel)]="userChoice">
+      [(ngModel)]="userChoice"
+      (ngModelChange)="change($event)">
       <mat-radio-button class="qcm-button" *ngFor="let choice of question.choices" [value]="choice.desc">
         <span class="wrap-mat-radio-label">{{choice.desc}}</span>
       </mat-radio-button>
     </mat-radio-group>
   </div>
 
-  <!-- <div>Your choice is: {{choice}}</div> -->
+  <div>Your choice is: {{selectedAnswer}}</div>
 </div>

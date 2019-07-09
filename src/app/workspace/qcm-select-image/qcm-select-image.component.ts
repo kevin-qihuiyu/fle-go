@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { QCMSelectImage, QuestionType, Question } from 'src/app/domain/question';
 
 @Component({
@@ -10,7 +10,9 @@ export class QcmSelectImageComponent implements OnInit {
 
   //@Input() question: Question;
   @Input() question: QCMSelectImage;
-  userChoice;
+  @Input() userChoice;
+  @Output() userChoiceChange = new EventEmitter();
+
 
   // Audio Description Management
   audio;
@@ -41,6 +43,10 @@ export class QcmSelectImageComponent implements OnInit {
     if (this.question.imgDesc) {
       this.hasImage = true;
     }
+  }
+
+  onUserChoiceChange(newValue){
+    this.userChoiceChange.emit(newValue);
   }
 
 }
