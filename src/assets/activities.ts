@@ -28,7 +28,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             imgSrc:'assets/qsets/qset1/q1_images/q1_pantalon.jpg'
         }
        ],
-       correctChoiceId:2 
+       correctChoiceId:1 
     },
     {
       qid: 102,

@@ -49,4 +49,8 @@ export class QcmSelectImageComponent implements OnInit {
     this.userChoiceChange.emit(newValue);
   }
 
+  validateSelect(): boolean {
+    return (this.userChoice == this.question.correctChoiceId.toString())
+  }
+
 }

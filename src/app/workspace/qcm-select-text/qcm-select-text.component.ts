@@ -75,9 +75,13 @@ export class QcmSelectTextComponent implements OnInit {
     }
   }
 
-  change(newValue){
+  userSelect(newValue){
     this.selectedAnswer = newValue;
     this.userChoiceChange.emit(newValue);
+  }
+
+  validateSelect(): boolean {
+    return (this.userChoice == this.question.correctChoiceId.toString())
   }
 
 }
