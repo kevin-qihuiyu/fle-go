@@ -35,7 +35,10 @@ export class ProgressService {
   }
 
   addDoneQuestionsWithId(id: string) {
-    this.progressData[+id.charAt(0) -1].doneQuestionIds.push(id);
+    let index = +id.charAt(0) -1; // hardcoded solution: first digit of qid indicates category
+    
+    if (!this.progressData[index].doneQuestionIds.includes(id))
+      this.progressData[index].doneQuestionIds.push(id);
   }
 
   clearAllDoneQuestions() {

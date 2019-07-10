@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Location } from '@angular/common';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Question } from '../domain/question';
 import { switchMap } from 'rxjs/operators';
@@ -7,6 +8,7 @@ import { QuestionsService } from './questions.service';
 import { QcmSelectTextComponent } from './qcm-select-text/qcm-select-text.component';
 import { QcmSelectImageComponent } from './qcm-select-image/qcm-select-image.component';
 import { AssociateTextImageComponent } from './associate-text-image/associate-text-image.component';
+import { ProgressService } from '../progress/progress.service';
 
 @Component({
   selector: 'app-workspace',
@@ -24,8 +26,13 @@ export class WorkspaceComponent implements OnInit {
   correctness = false
   correctAnswers = []
 
+  done: boolean = false;
+
   constructor(private route: ActivatedRoute,
-    private questionsService: QuestionsService) { }
+    private location: Location,
+    private questionsService: QuestionsService,
+    private progressService: ProgressService
+    ) { }
 
   ngOnInit() {
     this.qid$ = this.route.paramMap.pipe(
@@ -48,5 +55,16 @@ export class WorkspaceComponent implements OnInit {
     if (this.associateTextImage) {
       this.correctAnswers = this.associateTextImage.validateMatch();
     }
+
+    this.processDone();
+  }
+
+  private processDone() {
+    this.question$.subscribe(question => this.progressService.addDoneQuestionsWithId(question.qid.toString()));
+    this.done = true;
+  }
+
+  goBack() {
+    this.location.back(); // <-- go back to previous location
   }
 }

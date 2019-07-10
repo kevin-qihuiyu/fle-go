@@ -22,6 +22,7 @@
 <div>The selected answer is: {{userAnswer}}</div>
 
 <button mat-raised-button (click)="validateSelection()">Validate</button>
+<button *ngIf="done" mat-raised-button (click)="goBack()">Back</button>
 <div>Your answer is: {{correctness}}</div>
 <div>Your correct answers id are: {{correctAnswers}}</div>
 
