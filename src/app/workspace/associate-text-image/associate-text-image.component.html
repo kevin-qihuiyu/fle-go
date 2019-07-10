@@ -9,48 +9,47 @@
 
 <div class="container">
   <div class="item">
-    <img bind-src="randomChoices[0].imgSrc" alt="Image not available">
+    <img bind-src="randomImages[0].imgSrc" alt="Image not available">
     <div class="drop-container" cdkDropList #item1Box="cdkDropList" 
       [cdkDropListData]="item1"
       [cdkDropListConnectedTo]="[poolList, item2Box, item3Box, item4Box]"
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item1" cdkDrag>{{item}}</div>
+      <div class="box" *ngFor="let item of item1" cdkDrag>{{item.desc}}</div>
     </div>
   </div> 
   <div class="item">
-    <img bind-src="randomChoices[1].imgSrc" alt="Image not available">
+    <img bind-src="randomImages[1].imgSrc" alt="Image not available">
     <div class="drop-container" cdkDropList #item2Box="cdkDropList" 
       [cdkDropListData]="item2"
       [cdkDropListConnectedTo]="[poolList, item1Box, item3Box, item4Box]"    
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item2" cdkDrag>{{item}}</div>
+      <div class="box" *ngFor="let item of item2" cdkDrag>{{item.desc}}</div>
     </div>
   </div>
   <div class="item">
-    <img bind-src="randomChoices[2].imgSrc" alt="Image not available">
+    <img bind-src="randomImages[2].imgSrc" alt="Image not available">
     <div class="drop-container" cdkDropList #item3Box="cdkDropList" 
       [cdkDropListData]="item3"
       [cdkDropListConnectedTo]="[poolList, item1Box, item2Box, item4Box]"
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item3" cdkDrag>{{item}}</div>
+      <div class="box" *ngFor="let item of item3" cdkDrag>{{item.desc}}</div>
     </div>
   </div>
   <div class="item">
-    <img bind-src="randomChoices[3].imgSrc" alt="Image not available">
+    <img bind-src="randomImages[3].imgSrc" alt="Image not available">
     <div class="drop-container" cdkDropList #item4Box="cdkDropList" 
       [cdkDropListData]="item4"
       [cdkDropListConnectedTo]="[poolList, item1Box, item2Box, item3Box]"
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item4" cdkDrag>{{item}}</div>
+      <div class="box" *ngFor="let item of item4" cdkDrag>{{item.desc}}</div>
     </div>
   </div> 
-  <div>
-    <div class="pool" cdkDropList cdkDropListOrientation="horizontal" #poolList="cdkDropList" 
-      [cdkDropListData]="pool"
-      [cdkDropListConnectedTo]="[item1Box,item2Box,item3Box, item4Box]"
-      (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let poolItem of pool" cdkDrag>{{poolItem}}</div>
-    </div>  
-  </div>
+  <div class="pool" cdkDropList cdkDropListOrientation="horizontal" #poolList="cdkDropList" 
+    [cdkDropListData]="randomTextPool"
+    [cdkDropListConnectedTo]="[item1Box,item2Box,item3Box, item4Box]"
+    (cdkDropListDropped)="drop($event)">
+    <div class="box" *ngFor="let poolItem of randomTextPool" cdkDrag>{{poolItem.desc}}</div>
+  </div>  
+
  
 </div> 

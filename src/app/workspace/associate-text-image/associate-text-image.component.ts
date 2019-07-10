@@ -12,16 +12,19 @@ export class AssociateTextImageComponent implements OnInit {
   @Input() question: AssociateTextToImage;
 
   numOfChoices = 4;
-  descOrder = [0, 1, 2, 3];
-  imageOrder = [0, 1, 2, 3];
-  randomChoices = [];
 
-  // item box and pool containing items to drag-n-drop
+  // Questions
+  randomImages = [];
+
+  // Container for answer pool
+  randomTextPool = [];
+
+  // Container for answers under each image
   item1 = [];
   item2 = [];
   item3 = [];
   item4 = [];
-  pool = [];
+
 
   sampleQuestion : AssociateTextToImage = {
     qid: 999,
@@ -70,19 +73,12 @@ export class AssociateTextImageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    AssociateTextImageComponent.shuffleArray(this.descOrder);
-    AssociateTextImageComponent.shuffleArray(this.imageOrder);
-    for (var i = 0; i < this.numOfChoices; i++) {
-      let item = this.imageOrder.pop();
-      let choice = this.question.choices[item];
 
-      let descItem = this.descOrder.pop();
-      let choiceDesc = this.question.choices[descItem].desc;
+    this.randomImages = [...this.question.choices];
+    this.randomTextPool = [...this.question.choices];
 
-      this.pool.push(choiceDesc);
-
-      this.randomChoices.push(choice); 
-    }
+    AssociateTextImageComponent.shuffleArray(this.randomImages);
+    AssociateTextImageComponent.shuffleArray(this.randomTextPool);
 
     if (this.question.audioDesc) {
       this.loadAudio(this.question.audioDesc);
@@ -112,6 +108,16 @@ export class AssociateTextImageComponent implements OnInit {
                         event.previousIndex,
                         event.currentIndex);
     }  
+  }
+
+  validateMatch() {
+    var correctIndex = [];
+    if(this.item1.length == 1 && this.randomImages[0].id == this.item1[0].id) correctIndex.push('1');
+    if(this.item2.length == 1 && this.randomImages[1].id == this.item2[0].id) correctIndex.push('2');
+    if(this.item3.length == 1 && this.randomImages[2].id == this.item3[0].id) correctIndex.push('3');
+    if(this.item4.length == 1 && this.randomImages[3].id == this.item4[0].id) correctIndex.push('4');
+    
+    return correctIndex;
   }
 
 }

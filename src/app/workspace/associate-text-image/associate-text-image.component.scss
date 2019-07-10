@@ -36,8 +36,13 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    //justify-content: space-between;
+    
     margin: 0.5em;
+    margin-top: 1em;
+    width: 100%;
+    min-height: 4em;
+    background-color: lightgray;
 }
 
 .box {
