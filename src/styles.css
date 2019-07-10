@@ -41,4 +41,17 @@ h3 {
     color: #00796B;
 }
 
+/* For mat-radio-button colors */
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color:#00796B !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+    color:#00796B important;
+    background-color:#00796B !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+    background-color:#00796B !important;
+}
 

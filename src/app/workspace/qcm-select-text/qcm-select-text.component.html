@@ -16,10 +16,9 @@
     <img class="q-picture" [src]="question.imgDesc">
   </div>
 
+  <div id="desc">{{question.desc}}</div>
   <div class="question-container">
-    <label id="qcm-group-desc">{{question.desc}}</label>
     <mat-radio-group
-      aria-labelledby="qcm-group-desc"
       class="qcm-group"
       [(ngModel)]="userChoice"
       (ngModelChange)="userSelect($event)">
@@ -29,5 +28,5 @@
     </mat-radio-group>
   </div>
 
-  <div>Your choice is: {{selectedAnswer}}</div>
+  <!-- <div>Your choice is: {{selectedAnswer}}</div> -->
 </div>

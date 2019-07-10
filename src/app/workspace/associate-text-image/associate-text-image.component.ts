@@ -115,6 +115,7 @@ export class AssociateTextImageComponent implements OnInit {
                         event.previousIndex,
                         event.currentIndex);
     }  
+    // TODO: Clear style of current box
   }
 
   validateMatch() {

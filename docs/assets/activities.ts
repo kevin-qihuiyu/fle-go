@@ -28,7 +28,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             imgSrc:'assets/qsets/qset1/q1_images/q1_pantalon.jpg'
         }
        ],
-       correctChoiceId:2 
+       correctChoiceId:1 
     },
     {
       qid: 102,
@@ -164,7 +164,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         qid: 106,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "q1set/q6_audio.mp3",
+        audioDesc: "assets/qsets/qset1//q6_audio.mp3",
         choices: [
             {
                 id: 1,

@@ -11,7 +11,7 @@ import { RouterOutlet, Router } from '@angular/router';
 export class AppComponent {
   title = 'fle-go';
 
-  constructor(private router: Router){
+  constructor(public router: Router){
 
   }
 

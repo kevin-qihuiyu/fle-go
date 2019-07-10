@@ -34,7 +34,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
       qid: 102,
       name: "Acheter des vêtements",
       questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
-    //   imgDesc: "assets/qsets/qset1/q2_image.jpg",
+      imgDesc: "assets/qsets/qset1/q2_image.jpg",
       audioDesc: "assets/qsets/qset1/q2_audio.mp3",
       choices: [
         {

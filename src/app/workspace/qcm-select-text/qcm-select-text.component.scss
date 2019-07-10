@@ -13,8 +13,12 @@ h2, h3 {
 }
 
 #qcm-group-desc {
-    font-size: 1.5em;
-    margin: 1em;
+    // font-size: 1.5em;
+    // margin: auto;
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
 }
 
 .qcm-button {
@@ -34,7 +38,7 @@ h2, h3 {
 }
 
 .audio-container {
-    margin: 2em 1em 1em 1em;
+    margin: 1.5em 1em 1em 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,10 +52,16 @@ h2, h3 {
 .question-container {
     margin-top: 1em;
     margin-bottom: 1em;
+    margin-left: 2em;  /* Workaround for centering issue */
 }
 
 .teal { 
     /* mat-teal */
     color: #00796B;
+}
+
+#desc {
+    font-size: 1.5em;
+    text-align: center;
 }
 

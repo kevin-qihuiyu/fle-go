@@ -1,4 +1,6 @@
+<div class="placeholder-header"></div>
 <div class="placeholder"></div>
+
 
 <div [ngSwitch]="(question$ | async ).questionType">
     <!-- Question Type 1: LISEZ_ET_CHOISISSEZ -->
@@ -19,12 +21,18 @@
     <app-select-calendar *ngSwitchCase="9" [question] = "(question$ | async)"></app-select-calendar> 
 </div>
 
-<div>The selected answer is: {{userAnswer}}</div>
+<!-- <div>The selected answer is: {{userAnswer}}</div> -->
 
-<button mat-raised-button (click)="validateSelection()">Validate</button>
-<button *ngIf="done" mat-raised-button (click)="goBack()">Back</button>
+<div class="control-container">
+    <div class="control">
+        <button mat-raised-button id="validate" (click)="validateSelection()">Validate</button>
+        <button mat-fab id="goback" *ngIf="done"  (click)="goBack()">Back</button>
+    </div>
+</div>
+
+<!-- 
 <div>Your answer is: {{correctness}}</div>
-<div>Your correct answers id are: {{correctAnswers}}</div>
+<div>Your correct answers id are: {{correctAnswers}}</div> -->
 
 <div class="placeholder"></div>
 <div class="placeholder"></div>
