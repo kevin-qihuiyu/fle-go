@@ -14,7 +14,7 @@
       [cdkDropListData]="item1"
       [cdkDropListConnectedTo]="[poolList, item2Box, item3Box, item4Box]"
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item1" cdkDrag>{{item.desc}}</div>
+      <div class="box" [ngClass]="{'match-correct': item1matched == 1, 'match-incorrect': item1matched == 0}" *ngFor="let item of item1" cdkDrag>{{item.desc}}</div>
     </div>
   </div> 
   <div class="item">
@@ -23,7 +23,7 @@
       [cdkDropListData]="item2"
       [cdkDropListConnectedTo]="[poolList, item1Box, item3Box, item4Box]"    
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item2" cdkDrag>{{item.desc}}</div>
+      <div class="box" [ngClass]="{'match-correct': item2matched == 1, 'match-incorrect': item2matched == 0}" *ngFor="let item of item2" cdkDrag>{{item.desc}}</div>
     </div>
   </div>
   <div class="item">
@@ -32,7 +32,7 @@
       [cdkDropListData]="item3"
       [cdkDropListConnectedTo]="[poolList, item1Box, item2Box, item4Box]"
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item3" cdkDrag>{{item.desc}}</div>
+      <div class="box" [ngClass]="{'match-correct': item3matched == 1, 'match-incorrect': item3matched == 0}" *ngFor="let item of item3" cdkDrag>{{item.desc}}</div>
     </div>
   </div>
   <div class="item">
@@ -41,7 +41,7 @@
       [cdkDropListData]="item4"
       [cdkDropListConnectedTo]="[poolList, item1Box, item2Box, item3Box]"
       (cdkDropListDropped)="drop($event)">
-      <div class="box" *ngFor="let item of item4" cdkDrag>{{item.desc}}</div>
+      <div class="box" [ngClass]="{'match-correct': item4matched == 1, 'match-incorrect': item4matched == 0}" *ngFor="let item of item4" cdkDrag>{{item.desc}}</div>
     </div>
   </div> 
   <div class="pool" cdkDropList cdkDropListOrientation="horizontal" #poolList="cdkDropList" 

@@ -25,6 +25,11 @@ export class AssociateTextImageComponent implements OnInit {
   item3 = [];
   item4 = [];
 
+  // Status value used to style selection and show correctness
+  item1matched;
+  item2matched;
+  item3matched;
+  item4matched;
 
   sampleQuestion : AssociateTextToImage = {
     qid: 999,
@@ -70,6 +75,8 @@ export class AssociateTextImageComponent implements OnInit {
  }
 
 
+  matched = undefined;
+
   constructor() { }
 
   ngOnInit() {
@@ -112,10 +119,34 @@ export class AssociateTextImageComponent implements OnInit {
 
   validateMatch() {
     var correctIndex = [];
-    if(this.item1.length == 1 && this.randomImages[0].id == this.item1[0].id) correctIndex.push('1');
-    if(this.item2.length == 1 && this.randomImages[1].id == this.item2[0].id) correctIndex.push('2');
-    if(this.item3.length == 1 && this.randomImages[2].id == this.item3[0].id) correctIndex.push('3');
-    if(this.item4.length == 1 && this.randomImages[3].id == this.item4[0].id) correctIndex.push('4');
+
+    if(this.item1.length == 1 && this.randomImages[0].id == this.item1[0].id) {
+      correctIndex.push('1');
+      this.item1matched = 1;
+    } else {
+      this.item1matched = 0;
+    }
+
+    if(this.item2.length == 1 && this.randomImages[1].id == this.item2[0].id) {
+      correctIndex.push('2');
+      this.item2matched = 1;
+    } else {
+      this.item2matched = 0;
+    }
+
+    if(this.item3.length == 1 && this.randomImages[2].id == this.item3[0].id) {
+      correctIndex.push('3');
+      this.item3matched = 1;
+    } else {
+      this.item3matched = 0;
+    }
+
+    if(this.item4.length == 1 && this.randomImages[3].id == this.item4[0].id) {
+      correctIndex.push('4');
+      this.item4matched = 1;
+    } else {
+      this.item4matched = 0;
+    }
     
     return correctIndex;
   }

@@ -59,6 +59,14 @@ img {
     font-size: 14px;      
 }
 
+.match-correct {
+    border: 1px solid green;
+}
+
+.match-incorrect {
+    border: 1px solid red;
+}
+
 .audio-container {
     margin: 2em 1em 1em 1em;
     display: flex;
