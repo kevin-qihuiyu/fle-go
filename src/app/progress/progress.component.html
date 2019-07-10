@@ -5,63 +5,28 @@
       <span>Global Progression</span>
       <!-- This fills the remaining space of the current row -->
       <span class="fill-remaining-space"></span>
-      <span>25%</span>
+      <span>{{ globalTotalValue | percent }}</span>
     </mat-card-title>
   <mat-card-content>
-    <mat-progress-bar [value]="35"></mat-progress-bar>
+    <mat-progress-bar [value]="globalTotalValue*100"></mat-progress-bar>
     <!-- <mat-progress-bar [color]="purple-green" [value]="35"></mat-progress-bar> -->
   </mat-card-content>
 </mat-card>
 
 <h2>Progression by themes</h2>
 
-<mat-card>
+<mat-card *ngFor="let progressItem of progressData">
   <mat-card-title>
-    <span>Administration</span>
+    <span>{{progressItem.name}}</span>
     <!-- This fills the remaining space of the current row -->
     <span class="fill-remaining-space"></span>
-    <span>15%</span>
+    <span>{{progressItem.doneQuestionIds.length/progressItem.total | percent}}</span>
   </mat-card-title>
   <mat-card-content>
-    <mat-progress-bar [value]="15"></mat-progress-bar>
-  </mat-card-content>
-</mat-card>
- 
-<mat-card>
-  <mat-card-title>
-    <span>Les transport</span>
-    <!-- This fills the remaining space of the current row -->
-    <span class="fill-remaining-space"></span>
-    <span>25%</span>
-  </mat-card-title>
-  <mat-card-content>
-    <mat-progress-bar [value]="25"></mat-progress-bar>
+    <mat-progress-bar [value]="progressItem.doneQuestionIds.length/progressItem.total*100"></mat-progress-bar>
   </mat-card-content>
 </mat-card>
 
-<mat-card>
-  <mat-card-title>
-    <span>Mes environment</span>
-    <!-- This fills the remaining space of the current row -->
-    <span class="fill-remaining-space"></span>
-    <span>65%</span>
-  </mat-card-title>
-  <mat-card-content>
-    <mat-progress-bar [value]="65"></mat-progress-bar>
-  </mat-card-content>
-</mat-card>
-
-<mat-card>
-  <mat-card-title>
-    <span>Le logement</span>
-    <!-- This fills the remaining space of the current row -->
-    <span class="fill-remaining-space"></span>
-    <span>3%</span>
-  </mat-card-title>
-  <mat-card-content>
-    <mat-progress-bar [value]="3"></mat-progress-bar>
-  </mat-card-content>
-</mat-card>
 
 
 
