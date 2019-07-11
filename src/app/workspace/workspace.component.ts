@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Location } from '@angular/common';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Question } from '../domain/question';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
@@ -30,7 +30,12 @@ export class WorkspaceComponent implements OnInit {
   //When done, Next button and Goback button appear
   done: boolean = false;
 
-  constructor(private route: ActivatedRoute,
+  question;
+
+
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
     private location: Location,
     private questionsService: QuestionsService,
     private progressService: ProgressService,
@@ -46,6 +51,8 @@ export class WorkspaceComponent implements OnInit {
       switchMap((params: ParamMap) =>
         this.questionsService.getQuestion(params.get('qid')))
     );
+
+    this.question$.subscribe(question => this.question = question);
   }
 
   snackBarRef;
@@ -62,7 +69,7 @@ export class WorkspaceComponent implements OnInit {
     }
 
 
-    if(this.correctness) {
+    if(this.correctness || this.correctAnswers.length == 4) {
       this.snackBarRef = this.openSnackBar('Correct!', '', 'teal-snackbar');
     } 
     else{
@@ -72,14 +79,25 @@ export class WorkspaceComponent implements OnInit {
   }
 
   private processDone() {
-    this.question$.subscribe(question => this.progressService.addDoneQuestionsWithId(question.qid.toString()));
+    this.progressService.addDoneQuestionsWithId(this.question.qid.toString());
     // When done, Next button and Goback button appear
     this.done = true;
   }
 
   goBack() {
+    //this.location.back(); // <-- go back to previous location
+    //
     this.snackBarRef.dismiss();
-    this.location.back(); // <-- go back to previous location
+    this.router.navigate([ '../' ], { relativeTo: this.route });
+  }
+
+  goNext() {
+    this.snackBarRef.dismiss();
+    //this.location.go("../" + (this.question.qid+1).toString());
+    this.router.navigate([ '../' + (this.question.qid+1).toString() ], { relativeTo: this.route });
+    // this.ngOnInit();
+    this.done = false;
+    // this.question$.subscribe(question => this.question = question);
   }
 
   openSnackBar(message: string, action: string, className: string) {

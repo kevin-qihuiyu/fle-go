@@ -26,6 +26,7 @@
 <div class="control-container">
     <div class="control">
         <button mat-raised-button id="validate" (click)="validateSelection()">Validate</button>
+        <button mat-fab id="goback" *ngIf="done"  (click)="goNext()">Next</button>
         <button mat-fab id="goback" *ngIf="done"  (click)="goBack()">Back</button>
     </div>
 </div>
