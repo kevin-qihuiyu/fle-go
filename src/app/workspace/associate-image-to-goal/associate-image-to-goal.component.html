@@ -4,14 +4,8 @@
 </div>
 
 <div class="container">
-  <div *ngIf="hasAudio" class="audio-container">
-    <button mat-button (click)="togglePlayAudio()" >
-      <i class="material-icons teal" id="icon-size-48" [ngClass]="audio.paused ? '' : 'teal'">volume_up</i>
-    </button> 
-  </div>
-  <div *ngIf="hasImage" class="image-container">
-    <img class="imgDesc" [src]="question.imgDesc">
-  </div>
+  <app-audio-desc *ngIf="hasAudio" [audioDesc]="question.audioDesc"></app-audio-desc>
+  <app-image-desc *ngIf="hasImage" [imgDesc]="question.imgDesc"></app-image-desc>
 
   <div class="question-container">
     <div id="qcm-group-desc">{{question.desc}}</div>

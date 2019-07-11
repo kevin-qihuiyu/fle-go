@@ -43,20 +43,8 @@ export class QcmSelectTextComponent implements OnInit {
     correctChoiceId: 1
   };
 
-  // Audio Description Management
-  audio;
   hasAudio: boolean = false;
-  selectedAnswer;
 
-  loadAudio(audioDesc: string){
-    this.audio = new Audio();
-    this.audio.src = audioDesc;
-    this.audio.load();
-  }
-
-  togglePlayAudio(){
-    return this.audio.paused ? this.audio.play() : this.audio.pause();
-  }
 
   // Image Description
   hasImage: boolean = false;
@@ -67,7 +55,6 @@ export class QcmSelectTextComponent implements OnInit {
 
   ngOnInit() {
     if (this.question.audioDesc) {
-      this.loadAudio(this.question.audioDesc);
       this.hasAudio = true;
     }
     if (this.question.imgDesc) {
@@ -76,7 +63,6 @@ export class QcmSelectTextComponent implements OnInit {
   }
 
   userSelect(newValue){
-    this.selectedAnswer = newValue;
     this.userChoiceChange.emit(newValue);
   }
 

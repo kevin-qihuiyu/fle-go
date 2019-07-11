@@ -30,35 +30,12 @@ h2, h3 {
     white-space: normal;
 }
 
-.image-container {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.audio-container {
-    margin: 1.5em 1em 1em 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.q-picture {
-    width: 80%;
-    height: auto;
-}
-
 .question-container {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 2em;  /* Workaround for centering issue */
 }
 
-.teal { 
-    /* mat-teal */
-    color: #00796B;
-}
 
 #desc {
     font-size: 1.5em;

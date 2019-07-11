@@ -61,19 +61,7 @@ export class AssociateTextImageComponent implements OnInit {
   };
 
  // Audio Description Management
- audio;
  hasAudio: boolean = false;
-
- loadAudio(audioDesc: string){
-   this.audio = new Audio();
-   this.audio.src = audioDesc;
-   this.audio.load();
- }
-
- togglePlayAudio(){
-   return this.audio.paused ? this.audio.play() : this.audio.pause();
- }
-
 
   matched = undefined;
 
@@ -87,10 +75,8 @@ export class AssociateTextImageComponent implements OnInit {
     AssociateTextImageComponent.shuffleArray(this.randomImages);
     AssociateTextImageComponent.shuffleArray(this.randomTextPool);
 
-    if (this.question.audioDesc) {
-      this.loadAudio(this.question.audioDesc);
-      this.hasAudio = true;
-    }
+    if (this.question.audioDesc) this.hasAudio = true;
+
   }
 
   /**

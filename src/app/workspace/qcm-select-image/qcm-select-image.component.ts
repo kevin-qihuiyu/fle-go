@@ -13,20 +13,7 @@ export class QcmSelectImageComponent implements OnInit {
   @Input() userChoice;
   @Output() userChoiceChange = new EventEmitter();
 
-
-  // Audio Description Management
-  audio;
   hasAudio: boolean = false;
-
-  loadAudio(audioDesc: string){
-    this.audio = new Audio();
-    this.audio.src = audioDesc;
-    this.audio.load();
-  }
-
-  togglePlayAudio(){
-    return this.audio.paused ? this.audio.play() : this.audio.pause();
-  }
 
   // Image Description
   hasImage: boolean = false;
@@ -37,7 +24,6 @@ export class QcmSelectImageComponent implements OnInit {
 
   ngOnInit() {
     if (this.question.audioDesc) {
-      this.loadAudio(this.question.audioDesc);
       this.hasAudio = true;
     }
     if (this.question.imgDesc) {
