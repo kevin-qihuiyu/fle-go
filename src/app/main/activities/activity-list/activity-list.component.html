@@ -6,8 +6,8 @@
   [ngStyle]="{'background-image': 'linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)), url(' + category.imgSrc +')'}">
       <div class="title">{{category.name}}</div>
       <div class="content">
-        <div class="percent">23%</div>
-        <div class="progress">14/100</div>
+        <div class="percent">{{progressData.doneQuestionIds.length/progressData.total | percent }}</div>
+        <div class="progress">{{progressData.doneQuestionIds.length}}/{{progressData.total}}</div>
     </div>
   </div>
   <app-activity-card *ngFor="let activity of activities$ | async as activities" [activity]="activity" ></app-activity-card>

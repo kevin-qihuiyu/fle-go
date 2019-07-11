@@ -24,6 +24,10 @@ export class ProgressService {
     return this.progressData;
   }
 
+  getProgressByCategoryId(id: string | number) {
+    return this.progressData[+id-1];
+  }
+
   getGlobalProgressValue() {
     let total = 0;
     let done = 0;

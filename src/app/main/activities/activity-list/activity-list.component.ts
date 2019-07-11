@@ -6,6 +6,7 @@ import { switchMap } from 'rxjs/operators';
 import { CategoriesService } from '../../categories.service';
 import { Observable } from 'rxjs';
 import { ActivitiesService } from '../../activities.service';
+import { ProgressService } from 'src/app/progress/progress.service';
 
 @Component({
   selector: 'app-activity-list',
@@ -18,11 +19,13 @@ export class ActivityListComponent implements OnInit {
   category$: Observable<Category>;
   activities$: Observable<Activity[]>;
 
+  progressData;
+
   constructor(  
     private route: ActivatedRoute,
-    private router: Router,
     private categoriesService: CategoriesService,
-    private activitiesService: ActivitiesService
+    private activitiesService: ActivitiesService,
+    private progressService: ProgressService,
     ) { 
 
     
@@ -40,6 +43,9 @@ export class ActivityListComponent implements OnInit {
         this.activitiesService.getActivities(params.get('id'))
       )
     );
+
+    this.category$.subscribe(category => this.categoryId = category.id); 
+    this.progressData = this.progressService.getProgressByCategoryId(this.categoryId);
   }
 
 }
