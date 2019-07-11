@@ -1,0 +1,44 @@
+.container {
+    margin-top: 1em;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.qcm-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+#qcm-group-desc {
+    // font-size: 1.5em;
+    // margin: auto;
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+}
+
+.qcm-button {
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+.wrap-mat-radio-label {
+    white-space: normal;
+}
+
+.question-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;  /* Workaround for centering issue */
+}
+
+
+#desc {
+    font-size: 1.5em;
+    text-align: center;
+}
+

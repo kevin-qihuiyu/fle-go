@@ -1,0 +1,114 @@
+1_Acheter des chaussures
+
+ÉCOUTEZ ET CHOISISSEZ
+QCM_IMAGE_IMAGE
+
+[AUDIO] Quel est votre pointure?
+
+
+De quoi elle parle?
+
+
+
+2_Acheter des vêtements
+
+ÉCOUTEZ ET CHOISISSEZ
+QCM_IMAGE_TEXT
+
+[AUDIO] Quel est votre taille?
+
+- 07 05 30 45 06 30 79
+- 42
+- Z
+- Numéro 2 
+
+
+
+3_Acheter un billet de train
+
+ASSOCIATE_IMAGE_TEXT
+IMAGE_DESC
+
+- 5,2 euro
+
+
+
+
+4_Connaître les noms de vêtements
+
+ASSOCIATE_TEXT_IMAGE
+
+- un short
+- un pantalon
+- un t-shirt
+- une chemise
+
+
+
+5_Connaître les noms de vêtements
+
+ASSOCIATE_TEXT_IMAGE
+
+- un pull
+- un jean
+- un blouson
+- une manteau
+
+
+
+
+6_Connaître les noms de vêtements
+
+ÉCOUTEZ ET CHOISISSEZ
+QCM_AUDIO_IMAGE
+
+[AUDIO] Il fait froid. Prends ton bonnet et ton échappe.
+
+
+
+
+
+7_Acheter un kebab
+
+ASSOCIATE_TEXT_IMAGE
+AUDIO_DESC
+
+[AUDIO] Salade, tomate, onion?
+
+
+
+
+8_À la boulangerie
+
+ASSOCIATE_IMAGE_TEXT
+AUDIO_DESC
+
+[AUDIO] Ça fait deux euro vingt, monsieur.
+- 2,20 euro
+
+
+
+9_Identifier les catégories de produits
+
+ASSOCIATE_TEXT_TEXT
+IMAGE_DESC
+
+Options:
+Courgettes
+Beurre
+Carottes
+
+
+- Légumes
+- Produits laitiers
+
+
+
+10_Identifier un moyen de paiement
+
+ÉCOUTEZ ET CHOISISSEZ
+QCM_AUDIO_IMAGE
+
+[AUDIO] Vous réglez comment? - En espèce.
+
+

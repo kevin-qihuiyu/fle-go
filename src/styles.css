@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+
+/* Color chosen for default theme:
+https://material.io/design/color/#tools-for-picking-colors
+
+primary:
+mat-teal 700, 400, 900
+#00796B, #1DE9B6, #004D40
+
+accent: 
+mat-blue, 400, 100, 900
+#42A5F5, #BBDEFB, #0D47A1
+
+warn:
+mat-red
+#F44336
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 { 
+    /* mat-teal */
+    color: #00796B;
+}
+
+h3 {
+    /* mat-teal light: 100 */
+    color: #1DE9B6;
+}
+
+#icon-size-48 {
+    font-size: 48px;
+}
+
+.teal { 
+    /* mat-teal */
+    color: #00796B;
+}
+
+/* For mat-radio-button colors */
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color:#00796B !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+    color:#00796B important;
+    background-color:#00796B !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+    background-color:#00796B !important;
+}
+
+

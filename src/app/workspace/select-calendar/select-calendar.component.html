@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>{{question.name}}</h2>
+  <h3 *ngIf="!hasAudio">Lisez et choississez</h3>
+  <h3 *ngIf="hasAudio">Écoutez et choississez</h3>
+
+  <div *ngIf="hasAudio" class="audio-container">
+    <button mat-button (click)="togglePlayAudio()" >
+      <i class="material-icons" [ngClass]="audio.paused ? '' : 'teal'">volume_up</i>
+    </button> 
+  </div>
+  <div *ngIf="hasImage" class="image-container">
+    <img class="q-picture" [src]="question.imgDesc">
+  </div>
+
+  <mat-calendar [selected]="selectedDate" (selectedChange)="selectedDate = $event"> </mat-calendar>
+  <div>Your choice is: {{selectedDate}}</div>
+</div>

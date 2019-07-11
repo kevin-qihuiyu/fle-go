@@ -1,0 +1,12 @@
+<div class="container">
+  <button mat-button 
+    *ngFor="let navItem of navItems"
+    [routerLink]="navItem.link" 
+    (click)="onClick(navItem)">
+    <div class="button-container">
+      <i class="material-icons md-32 gray" [ngClass]="{'active': navItem == activeNavItem}">{{navItem.icon}}</i>
+      <p>{{navItem.name}}</p>
+    </div>
+  </button>
+</div>
+

@@ -1,0 +1,33 @@
+<div class="placeholder"></div>
+
+<mat-card id="card-bg">
+  <mat-card-title>
+      <span>Global Progression</span>
+      <!-- This fills the remaining space of the current row -->
+      <span class="fill-remaining-space"></span>
+      <span>{{ globalTotalValue | percent }}</span>
+    </mat-card-title>
+  <mat-card-content>
+    <mat-progress-bar [value]="globalTotalValue*100"></mat-progress-bar>
+    <!-- <mat-progress-bar [color]="purple-green" [value]="35"></mat-progress-bar> -->
+  </mat-card-content>
+</mat-card>
+
+<h2>Progression by themes</h2>
+
+<mat-card *ngFor="let progressItem of progressData">
+  <mat-card-title>
+    <span>{{progressItem.name}}</span>
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <span>{{progressItem.doneQuestionIds.length/progressItem.total | percent}}</span>
+  </mat-card-title>
+  <mat-card-content>
+    <mat-progress-bar [value]="progressItem.doneQuestionIds.length/progressItem.total*100"></mat-progress-bar>
+  </mat-card-content>
+</mat-card>
+
+
+
+
+

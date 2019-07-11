@@ -1,0 +1,37 @@
+.placeholder {
+    height: 80px;
+}
+
+.mat-card {
+    margin: 0.3em;
+}
+
+.mat-card-content {
+    margin: 0.8em 0.3em;
+}
+
+#card-bg {
+    padding: 50px;  
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("src/assets/img/category/7-vie-amoureuse-2.jpg");
+    background-size: cover;
+    color: white;
+}
+
+h2 {
+    padding: 0.5em 1em;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+mat-card-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }

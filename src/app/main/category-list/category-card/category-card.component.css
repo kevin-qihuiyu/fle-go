@@ -1,0 +1,17 @@
+:host {
+    margin: 0.3em;
+}
+
+img {
+    object-fit: cover;
+    object-position: 0 -2em;
+    height: 8em;
+}
+
+.mat-card-image {
+    margin-bottom: 0;
+}
+
+mat-card-actions {
+    padding-top: 0;
+}

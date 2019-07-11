@@ -1,0 +1,38 @@
+.placeholder {
+    height: 3em;
+}
+
+.cover-image {
+    display: flex;
+    flex-direction: column;
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)), 
+        url("../../../../assets/img/category/2-administration.jpg"); */
+    height: 12em;
+    /* container relative + .title absolute for bottom alignment */
+    position: relative;
+}
+
+.content {
+    color: white;
+    position: absolute;
+    bottom: 0.8em;
+    right: 1em;
+}
+
+.title {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    position: absolute;
+    bottom: 0.6em;
+    left: 1em;
+}
+
+.percent {
+    font-size: 32px;
+}
+
+.progress {
+    font-size: 18px;
+    float: right;
+}
