@@ -51,13 +51,13 @@
     width:60% !important;
     margin-left:auto !important;
     margin-right: auto !important;
-    margin-bottom: 4.5em !important;
+    /* margin-bottom: 4.5em !important; */
 
     background: #00796B !important;
     color: white;
     text-align: center !important;
 
-    pointer-events: none !important;
+    /* pointer-events: none !important; */
 
 }
 
@@ -73,6 +73,6 @@
     color: white;
     text-align: center !important;
 
-    pointer-events: none !important;
+    /* pointer-events: none !important; */
 
 }

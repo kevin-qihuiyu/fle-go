@@ -90,7 +90,14 @@ export class WorkspaceComponent implements OnInit {
   goNext() {
     this.snackBarRef.dismiss();
     this.router.navigate([ '../' + (this.question.qid+1).toString() ], { relativeTo: this.route });
+
+    // Reset component variables
     this.done = false;
+    this.snackBarRef = null;
+    this.correctness = false;
+    this.correctAnswers = []
+
+    // this.ngOnInit();
   }
 
   openSnackBar(message: string, action: string, className: string) {
