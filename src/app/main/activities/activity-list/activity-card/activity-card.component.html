@@ -1,14 +1,9 @@
 <mat-card mat-ripple class="activity-card" [routerLink]="[activity.questionId]">
   <div class="titles">
-    <div class="card-title">
-      {{activity.name}}
-    </div>
-    <div class="card-subtitle">
-      <span class="difficulty-tag">{{activity.difficulty}}</span>
-    </div>
+    <div class="title">{{activity.name}}</div>
+    <div class="subtitle"> <span class="difficulty-tag">{{activity.difficulty}}</span> </div>
   </div>
-  <button mat-button class="play-button">
-    <!-- <i class="material-icons md-32">play_circle_filled</i> -->
-    <i class="material-icons md-32 light-gray">arrow_forward_ios</i>
-  </button> 
+  <div id="sign">
+    <i class="material-icons icon-size-32 light-gray">arrow_forward_ios</i>
+  </div> 
 </mat-card>
