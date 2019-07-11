@@ -23,14 +23,14 @@ export class WorkspaceComponent implements OnInit {
   question$: Observable<Question>
   qid$: Observable<string>
   userAnswer = "Default"
-  correctness = false
+  correct = false
   correctAnswers = []
 
-  //When done, Next button and Goback button appear
-  done: boolean = false;
+  //When tried, Next button and Goback button appear
+  tried: boolean = false;
 
   question;
-
+  snackBarRef;
 
   constructor(
     private router: Router,
@@ -53,21 +53,20 @@ export class WorkspaceComponent implements OnInit {
     this.question$.subscribe(question => this.question = question);
   }
 
-  snackBarRef;
 
   validateSelection() {
     if (this.selectText) {
-      this.correctness = this.selectText.validateSelect();
+      this.correct = this.selectText.validateSelect();
     }
     if (this.selectImage) {
-      this.correctness = this.selectImage.validateSelect();
+      this.correct = this.selectImage.validateSelect();
     }
     if (this.associateTextImage) {
       this.correctAnswers = this.associateTextImage.validateMatch();
     }
 
 
-    if(this.correctness || this.correctAnswers.length == 4) {
+    if(this.correct || this.correctAnswers.length == 4) {
       this.snackBarRef = this.openSnackBar('Correct!', '', 'teal-snackbar');
     } 
     else{
@@ -77,27 +76,27 @@ export class WorkspaceComponent implements OnInit {
   }
 
   private processDone() {
-    this.progressService.addDoneQuestionsWithId(this.question.qid.toString());
-    // When done, Next button and Goback button appear
-    this.done = true;
+    // When a try is attempted , Goback button appear;
+    // When answer is correct, GoNext button appear
+    this.tried = true;
+
+    if (this.correct)  this.progressService.addDoneQuestionsWithId(this.question.qid.toString());
   }
 
   goBack() {
-    this.snackBarRef.dismiss();
+    if(this.snackBarRef) this.snackBarRef.dismiss();
     this.router.navigate([ '../' ], { relativeTo: this.route });
   }
 
   goNext() {
-    this.snackBarRef.dismiss();
+    if(this.snackBarRef) this.snackBarRef.dismiss();
     this.router.navigate([ '../' + (this.question.qid+1).toString() ], { relativeTo: this.route });
 
     // Reset component variables
-    this.done = false;
+    this.tried = false;
     this.snackBarRef = null;
-    this.correctness = false;
+    this.correct = false
     this.correctAnswers = []
-
-    // this.ngOnInit();
   }
 
   openSnackBar(message: string, action: string, className: string) {

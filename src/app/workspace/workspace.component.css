@@ -39,6 +39,12 @@
     color: white;
 }
 
+#gonext {    
+    font: 1em arial san-serif;
+    background-color: rgb(31, 192, 173);
+    color: white;
+}
+
 /* Styles for snack bar */
 ::ng-deep .mat-simple-snackbar span {
     margin:auto;
