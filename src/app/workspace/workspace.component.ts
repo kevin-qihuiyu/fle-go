@@ -9,6 +9,7 @@ import { QcmSelectTextComponent } from './qcm-select-text/qcm-select-text.compon
 import { QcmSelectImageComponent } from './qcm-select-image/qcm-select-image.component';
 import { AssociateTextImageComponent } from './associate-text-image/associate-text-image.component';
 import { ProgressService } from '../progress/progress.service';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-workspace',
@@ -26,12 +27,14 @@ export class WorkspaceComponent implements OnInit {
   correctness = false
   correctAnswers = []
 
+  //When done, Next button and Goback button appear
   done: boolean = false;
 
   constructor(private route: ActivatedRoute,
     private location: Location,
     private questionsService: QuestionsService,
-    private progressService: ProgressService
+    private progressService: ProgressService,
+    public snackBar: MatSnackBar
     ) { }
 
   ngOnInit() {
@@ -45,6 +48,8 @@ export class WorkspaceComponent implements OnInit {
     );
   }
 
+  snackBarRef;
+
   validateSelection() {
     if (this.selectText) {
       this.correctness = this.selectText.validateSelect();
@@ -56,15 +61,31 @@ export class WorkspaceComponent implements OnInit {
       this.correctAnswers = this.associateTextImage.validateMatch();
     }
 
+
+    if(this.correctness) {
+      this.snackBarRef = this.openSnackBar('Correct!', '', 'teal-snackbar');
+    } 
+    else{
+      this.snackBarRef = this.openSnackBar("Wrong Answer.", '', 'red-snackbar');
+    }
     this.processDone();
   }
 
   private processDone() {
     this.question$.subscribe(question => this.progressService.addDoneQuestionsWithId(question.qid.toString()));
+    // When done, Next button and Goback button appear
     this.done = true;
   }
 
   goBack() {
+    this.snackBarRef.dismiss();
     this.location.back(); // <-- go back to previous location
+  }
+
+  openSnackBar(message: string, action: string, className: string) {
+    return this.snackBar.open(message, action, {
+      duration: 3000,
+      panelClass: [className]
+    });
   }
 }

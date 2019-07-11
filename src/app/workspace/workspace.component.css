@@ -8,7 +8,7 @@
 
 .control-container {
     position: fixed;
-    bottom: 1em;
+    bottom: 0.8em;
     z-index: 10;
     width: 100%;
 
@@ -36,4 +36,36 @@
     font: 1em arial san-serif;
     background-color: rgb(11, 155, 138);
     color: white;
+}
+
+/* Styles for snack bar */
+::ng-deep .mat-simple-snackbar span {
+    margin:auto;
+    text-align: center;
+}
+
+::ng-deep .teal-snackbar {
+    border-radius: 1.6em !important;
+
+    width:60% !important;
+    margin-left:auto !important;
+    margin-right: auto !important;
+    margin-bottom: 4.5em !important;
+
+    background: #00796B !important;
+    color: white;
+    text-align: center !important;
+}
+
+::ng-deep .red-snackbar {
+    border-radius: 1.6em !important;
+
+    width:60% !important;
+    margin-left:auto !important;
+    margin-right: auto !important;
+    margin-bottom: 4.5em !important;
+
+    background: #792200 !important;
+    color: white;
+    text-align: center !important;
 }
