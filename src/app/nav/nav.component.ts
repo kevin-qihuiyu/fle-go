@@ -11,7 +11,7 @@ export class NavComponent implements OnInit {
   navItems = [
     {
       name: 'Learn',
-      link: '/main',
+      link: '/categories',
       icon: 'face'
     },
     {
@@ -34,7 +34,6 @@ export class NavComponent implements OnInit {
   constructor(private route: Router) { }
 
   ngOnInit() {
-    console.log(this.route.url);
   }
 
 }

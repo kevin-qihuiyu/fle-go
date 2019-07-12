@@ -33,3 +33,24 @@ mat-card {
 #card-bg-colored {
     background: #B2DFDB;
 }
+
+p {
+    font-family: arial;
+    font-size: 1em;
+}
+
+.action-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+::ng-deep .mat-raised-button {
+    margin: auto;
+    padding: 1.1em;
+    border-radius: 1.6em;
+
+    font: 1.2em arial san-serif;
+    color: white;
+    background-color: #00796B;   /* mat-teal */
+} 

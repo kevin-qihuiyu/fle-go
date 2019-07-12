@@ -30,26 +30,6 @@
     align-items: center;
 }
 
-.indigo {
-    color: #5C6BC0;
-}
-
-.gray {
-    color:gray;
-}
-
-.teal {
-    color: #00796B;
-}
-
 .active-link {
     color: #00796B;
-}
-
-.md-32 {
-    font-size: 32px;
-}
-
-.md-48 {
-    font-size: 48px;
 }

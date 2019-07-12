@@ -32,11 +32,13 @@ h3 {
     color: #1DE9B6;
 }
 
-.icon-size-32 {
+
+/* Styles for icons, must use id to override default style */
+#icon-size-32 {
     font-size: 32px;
 }
 
-.icon-size-48 {
+#icon-size-48 {
     font-size: 48px;
 }
 
@@ -47,6 +49,10 @@ h3 {
 
 .light-gray {
     color: #e9e9e9;
+}
+
+.gray {
+    color:gray;
 }
 
 /* For mat-radio-button colors */

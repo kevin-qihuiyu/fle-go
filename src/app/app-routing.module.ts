@@ -7,12 +7,12 @@ import { CategoryListComponent } from './main/category-list/category-list.compon
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path: 'main', component: CategoryListComponent },
+  {path: 'categories', component: CategoryListComponent },
   {path: 'progress', component: ProgressComponent},
   {path: 'vocabulary', component: VocabularyComponent,      },
   {path: 'settings', component: SettingsComponent },
   // {path: 'login', component: LoginComponent },
-  {path: '', redirectTo: 'main', pathMatch: 'full'}
+  {path: '', redirectTo: 'categories', pathMatch: 'full'}
 ];
 
 @NgModule({
