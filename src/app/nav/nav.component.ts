@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -30,15 +31,10 @@ export class NavComponent implements OnInit {
     },
   ]
 
-  activeNavItem = this.navItems[0];
-
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
-  }
-
-  onClick(item) {
-    this.activeNavItem = item;
+    console.log(this.route.url);
   }
 
 }

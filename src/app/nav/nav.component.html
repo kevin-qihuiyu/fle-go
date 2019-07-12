@@ -2,9 +2,10 @@
   <button mat-button 
     *ngFor="let navItem of navItems"
     [routerLink]="navItem.link" 
-    (click)="onClick(navItem)">
+    routerLinkActive="active-link"
+    #routerActiveStatus="routerLinkActive">
     <div class="button-container">
-      <i class="material-icons md-32 gray" [ngClass]="{'active': navItem == activeNavItem}">{{navItem.icon}}</i>
+      <i class="material-icons md-32 gray" [ngClass]="{'active-link': routerActiveStatus.isActive}">{{navItem.icon}}</i>
       <p>{{navItem.name}}</p>
     </div>
   </button>
