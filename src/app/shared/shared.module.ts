@@ -12,6 +12,7 @@ import {MatNativeDateModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatRippleModule} from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
 
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
@@ -33,6 +34,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     DragDropModule,
     MatSnackBarModule,
     MatRippleModule,
+    MatSelectModule
   ],
   exports: [
     MatToolbarModule,
@@ -47,7 +49,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatTabsModule,
     DragDropModule,
     MatSnackBarModule,
-    MatRippleModule
+    MatRippleModule,
+    MatSelectModule
   ]
 })
 export class SharedModule { }

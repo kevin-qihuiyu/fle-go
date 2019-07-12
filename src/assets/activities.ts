@@ -56,56 +56,56 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         ],
         correctChoiceId:2 
     },
-    {
-      qid: 103,
-      name: "Acheter un billet de train",
-      questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
-      imgDesc: "assets/qsets/qset1/q3_images/q3_billet_de_train.jpg",
-      desc: "Payez vos achats.",
-      choices:[
-        {
-            id: 1,
-            value: 1,
-            imgSrc:'assets/qsets/qset1/q3_images/q3_1_euro.jpg'
-        },
-        {
-            id: 2,
-            value: 2,
-            imgSrc:'assets/qsets/qset1/q3_images/q3_2_euro.jpg'
-        },
-        {
-            id: 3,
-            value: 5,
-            imgSrc:'assets/qsets/qset1/q3_images/q3_5_euros.jpg'
-        },
-        {
-            id: 4,
-            value: 10,
-            imgSrc:'assets/qsets/qset1/q3_images/q3_10_euros.jpg'
-        },
-        {
-            id: 5,
-            value: 0.05,
-            imgSrc:'assets/qsets/qset1/q3_images/q3_5_centimes.jpg'
-        },
-        {
-            id: 6,
-            value: 0.1,
-            imgSrc:'assets/qsets/qset1/q3_images/q3_10_centimes.jpg'
-        },
-        {
-            id: 7,
-            value: 0.2,
-            imgSrc:'assets/qsets/qset1/q3_images/q3_20_centimes.jpg'
-        },
-        {
-            id: 8,
-            value: 0.5,
-            imgSrc:'assets/qsets/qset1/q3_images/q3_50_centimes.jpg'
-        }
-       ],
-      goal: "5.2"
-    },
+    // {
+    //   qid: 103,
+    //   name: "Acheter un billet de train",
+    //   questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
+    //   imgDesc: "assets/qsets/qset1/q3_images/q3_billet_de_train.jpg",
+    //   desc: "Payez vos achats.",
+    //   choices:[
+    //     {
+    //         id: 1,
+    //         value: 1,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_1_euro.jpg'
+    //     },
+    //     {
+    //         id: 2,
+    //         value: 2,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_2_euro.jpg'
+    //     },
+    //     {
+    //         id: 3,
+    //         value: 5,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_5_euros.jpg'
+    //     },
+    //     {
+    //         id: 4,
+    //         value: 10,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_10_euros.jpg'
+    //     },
+    //     {
+    //         id: 5,
+    //         value: 0.05,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_5_centimes.jpg'
+    //     },
+    //     {
+    //         id: 6,
+    //         value: 0.1,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_10_centimes.jpg'
+    //     },
+    //     {
+    //         id: 7,
+    //         value: 0.2,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_20_centimes.jpg'
+    //     },
+    //     {
+    //         id: 8,
+    //         value: 0.5,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_50_centimes.jpg'
+    //     }
+    //    ],
+    //   goal: "5.2"
+    // },
     {
         qid: 104,
         name: "Connaître les noms de vêtements",
@@ -213,55 +213,55 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             }
         ]
     },
-    {
-        qid: 108,
-        name: "À la boulangerie",
-        questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
-        audioDesc: "assets/qsets/qset1/q8_audio.mp3",
-        choices:[
-            {
-                id: 1,
-                value: 1,
-                imgSrc:'assets/qsets/qset1/q3_images/q3_1_euro.jpg'
-            },
-            {
-                id: 2,
-                value: 2,
-                imgSrc:'assets/qsets/qset1/q3_images/q3_2_euro.jpg'
-            },
-            {
-                id: 3,
-                value: 5,
-                imgSrc:'assets/qsets/qset1/q3_images/q3_5_euros.jpg'
-            },
-            {
-                id: 4,
-                value: 10,
-                imgSrc:'assets/qsets/qset1/q3_images/q3_10_euros.jpg'
-            },
-            {
-                id: 5,
-                value: 0.05,
-                imgSrc:'assets/qsets/qset1/q3_images/q3_5_centimes.jpg'
-            },
-            {
-                id: 6,
-                value: 0.1,
-                imgSrc:'assets/qsets/qset1/q3_images/q3_10_centimes.jpg'
-            },
-            {
-                id: 7,
-                value: 0.2,
-                imgSrc:'assets/qsets/qset1/q3_images/q3_20_centimes.jpg'
-            },
-            {
-                id: 8,
-                value: 0.5,
-                imgSrc:'assets/qsets/qset1/q3_images/q3_50_centimes.jpg'
-            }
-        ],
-        goal: "2.2"
-    },
+    // {
+    //     qid: 108,
+    //     name: "À la boulangerie",
+    //     questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
+    //     audioDesc: "assets/qsets/qset1/q8_audio.mp3",
+    //     choices:[
+    //         {
+    //             id: 1,
+    //             value: 1,
+    //             imgSrc:'assets/qsets/qset1/q3_images/q3_1_euro.jpg'
+    //         },
+    //         {
+    //             id: 2,
+    //             value: 2,
+    //             imgSrc:'assets/qsets/qset1/q3_images/q3_2_euro.jpg'
+    //         },
+    //         {
+    //             id: 3,
+    //             value: 5,
+    //             imgSrc:'assets/qsets/qset1/q3_images/q3_5_euros.jpg'
+    //         },
+    //         {
+    //             id: 4,
+    //             value: 10,
+    //             imgSrc:'assets/qsets/qset1/q3_images/q3_10_euros.jpg'
+    //         },
+    //         {
+    //             id: 5,
+    //             value: 0.05,
+    //             imgSrc:'assets/qsets/qset1/q3_images/q3_5_centimes.jpg'
+    //         },
+    //         {
+    //             id: 6,
+    //             value: 0.1,
+    //             imgSrc:'assets/qsets/qset1/q3_images/q3_10_centimes.jpg'
+    //         },
+    //         {
+    //             id: 7,
+    //             value: 0.2,
+    //             imgSrc:'assets/qsets/qset1/q3_images/q3_20_centimes.jpg'
+    //         },
+    //         {
+    //             id: 8,
+    //             value: 0.5,
+    //             imgSrc:'assets/qsets/qset1/q3_images/q3_50_centimes.jpg'
+    //         }
+    //     ],
+    //     goal: "2.2"
+    // },
     // {
     //     qid: 109,
     //     name: "Identifier les catégories de produits",

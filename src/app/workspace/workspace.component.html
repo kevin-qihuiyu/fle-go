@@ -11,14 +11,19 @@
     <!-- Question Type 2: ECOUTEZ_ET_CHOISISSEZ -->
     <app-qcm-select-text *ngSwitchCase="3" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-text>
     <app-qcm-select-image *ngSwitchCase="4" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image>
+
+    <!-- Question Type 3: ASSOCIEZ_SELECTION-->
+    <!-- Improve Usability of associate question using selection instead of drag and drop. -->
+    <app-associate-text-image-select *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image-select> 
+
     <!-- Question Type 3: ASSOCIEZ -->
-    <app-associate-text-image *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image> 
-    <app-associate-image-to-goal *ngSwitchCase="6" [question] = "(question$ | async)"></app-associate-image-to-goal> 
-    
+    <!-- Work in progress -->
+    <!-- <app-associate-text-image *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image>  -->
+    <!-- <app-associate-image-to-goal *ngSwitchCase="6" [question] = "(question$ | async)"></app-associate-image-to-goal>  -->
     
     <!-- Question Type 4: CHOISISSEZ SUR CALENDRIER -->
     <!-- Work in progress -->
-    <app-select-calendar *ngSwitchCase="9" [question] = "(question$ | async)"></app-select-calendar> 
+    <!-- <app-select-calendar *ngSwitchCase="9" [question] = "(question$ | async)"></app-select-calendar>  -->
 </div>
 
 <!-- <div>The selected answer is: {{userAnswer}}</div> -->
@@ -31,9 +36,8 @@
     </div>
 </div>
 
-<!-- 
-<div>Your answer is: {{correctness}}</div>
-<div>Your correct answers id are: {{correctAnswers}}</div> -->
+
+<div>Your correct answers id are: {{correctAnswers}}</div>
 
 <div class="placeholder"></div>
 <div class="placeholder"></div>

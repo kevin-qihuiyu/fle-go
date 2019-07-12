@@ -9,6 +9,7 @@ import { QcmSelectImageComponent } from './qcm-select-image/qcm-select-image.com
 import { AssociateTextImageComponent } from './associate-text-image/associate-text-image.component';
 import { ProgressService } from '../progress/progress.service';
 import { MatSnackBar } from '@angular/material';
+import { AssociateTextImageSelectComponent } from './associate-text-image-select/associate-text-image-select.component';
 
 @Component({
   selector: 'app-workspace',
@@ -19,6 +20,7 @@ export class WorkspaceComponent implements OnInit {
   @ViewChild(QcmSelectTextComponent) selectText : QcmSelectTextComponent;
   @ViewChild(QcmSelectImageComponent) selectImage : QcmSelectImageComponent;
   @ViewChild(AssociateTextImageComponent) associateTextImage : AssociateTextImageComponent;
+  @ViewChild(AssociateTextImageSelectComponent) associateTextImageSelect : AssociateTextImageSelectComponent;
 
   question$: Observable<Question>
   qid$: Observable<string>
@@ -64,9 +66,12 @@ export class WorkspaceComponent implements OnInit {
     if (this.associateTextImage) {
       this.correctAnswers = this.associateTextImage.validateMatch();
     }
+    if (this.associateTextImageSelect) {
+      this.correct = this.associateTextImageSelect.validateMatch();
+    }
 
 
-    if(this.correct || this.correctAnswers.length == 4) {
+    if(this.correct) {
       this.snackBarRef = this.openSnackBar('Correct!', '', 'teal-snackbar');
     } 
     else{

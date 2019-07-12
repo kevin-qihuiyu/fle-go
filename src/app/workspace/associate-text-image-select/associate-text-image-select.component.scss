@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.item {
+    margin: 0.5em;
+    width: 45%;
+    height: auto;
+    overflow: auto;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.match-correct {
+    border: 1px solid green;
+}
+
+.match-incorrect {
+    border: 1px solid red;
+}
+

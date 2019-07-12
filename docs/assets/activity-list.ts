@@ -14,12 +14,12 @@ export const ACTIVITIES_1: Activity[] = [
       difficulty: Difficulty.DÉBUTANT,
       questionId: 102
     },
-    {
-      name: "Acheter un billet de train",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 103
-    },
+    // {
+    //   name: "Acheter un billet de train",
+    //   categoryId: 1,
+    //   difficulty: Difficulty.DÉBUTANT,
+    //   questionId: 103
+    // },
     {
       name: "Connaître les noms de vêtements",
       categoryId: 1,
@@ -44,12 +44,12 @@ export const ACTIVITIES_1: Activity[] = [
       difficulty: Difficulty.DÉBUTANT,
       questionId: 107
     },
-    {
-      name: "À la boulangerie",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 108
-    },
+    // {
+    //   name: "À la boulangerie",
+    //   categoryId: 1,
+    //   difficulty: Difficulty.DÉBUTANT,
+    //   questionId: 108
+    // },
     // {
     //   name: "Identifier les catégories de produits",
     //   categoryId: 1,

@@ -89,15 +89,21 @@ THE SOFTWARE.
 
 @angular/material/card
 
+@angular/material/core
+
 @angular/material/datepicker
 
 @angular/material/dialog
 
 @angular/material/divider
 
+@angular/material/form-field
+
 @angular/material/progress-bar
 
 @angular/material/radio
+
+@angular/material/select
 
 @angular/material/snack-bar
 
