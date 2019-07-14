@@ -3,6 +3,7 @@ export class Vocabulary {
     name: string;
     categoryId?: number;
     audioSrc?: string;
+    attr?: string;
     explanation?: string;
     usage?: string;
 }

@@ -4,6 +4,7 @@
   <mat-tab-group>
     <mat-tab  *ngFor="let item of library" label="{{item.name}}">
       <app-vocabulary-card *ngFor="let vocab of (item.volcabularies$ | async)" [vocabulary]="vocab"></app-vocabulary-card>
-    </mat-tab> 
+      <div class="placeholder-nav"></div>
+    </mat-tab>
   </mat-tab-group>  
 </div>

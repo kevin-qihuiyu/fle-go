@@ -18,10 +18,20 @@
     margin: 0.8em 0.3em;
 }
 
-.indigo {
-    color: #5C6BC0;
+#definition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1em;
 }
 
-.teal {
-    color:#00796B;
+#nature {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#example {
+    font-size: 1em;
+    color: teal;
 }

@@ -7,6 +7,12 @@
       <p>{{vocabulary.name}}</p>
     </mat-card-title>
   </div>
-  <mat-card-content>{{vocabulary.explanation}}</mat-card-content>
-  <mat-card-content>{{vocabulary.usage}}</mat-card-content>
+  <mat-card-content id="definition">
+    <span id="nature">{{vocabulary.attr}}</span>
+    &nbsp;
+    <div>
+        {{vocabulary.explanation}}
+    </div>
+  </mat-card-content>
+  <mat-card-content id="example">{{vocabulary.usage}}</mat-card-content>
 </mat-card>
