@@ -128,3 +128,33 @@ export const ACTIVITIES_2: Activity[] = [
     //     questionId: 210
     // },
 ]
+
+export const ACTIVITIES_3: Activity[] = [
+  {
+      name: "Moyen de transport",
+      categoryId: 3,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 301
+  },
+  {
+      name: "Moyen de transport",
+      categoryId: 3,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 302
+  },
+]
+
+export const ACTIVITIES_4: Activity[] = [
+  {
+      name: "Identifier les pièces d'un logement",
+      categoryId: 4,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 401
+  },
+  {
+      name: "Identifier les pièces d'un logement",
+      categoryId: 4,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 402
+  },
+]

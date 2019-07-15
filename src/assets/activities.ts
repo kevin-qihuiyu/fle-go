@@ -436,4 +436,119 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         selectedDate: new Date("2019/04/01"),
         correctDate: new Date("2019/04/12"),
     },
+    {
+        qid: 301,
+        name: "Moyen de transport",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Qu'est-ce que c'est?",
+        choices: [
+            {
+                id: 1,
+                desc: "un vélo",
+                imgSrc: "assets/qsets/qset3/q1_images/q1_velo.jpg"
+            },
+            {
+                id: 2,
+                desc: "le bus",
+                imgSrc: "assets/qsets/qset3/q1_images/q1_bus.jpg"
+            },
+            {
+                id: 3,
+                desc: "le tramway",
+                imgSrc: "assets/qsets/qset3/q1_images/q1_tramway.jpg"
+            },
+            {
+                id: 4,
+                desc: "le métro",
+                imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
+            }
+        ]
+    },
+    {
+        qid: 302,
+        name: "Moyen de transport",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        desc: "Il faut prendre quel moyen de transport?",        
+        audioDesc: "assets/qsets/qset3/q2_audio.mp3",       
+        choices: [
+            {
+                id: 1,
+                desc: "un vélo",
+                imgSrc: "assets/qsets/qset3/q1_images/q1_velo.jpg"
+            },
+            {
+                id: 2,
+                desc: "le bus",
+                imgSrc: "assets/qsets/qset3/q1_images/q1_bus.jpg"
+            },
+            {
+                id: 3,
+                desc: "le tramway",
+                imgSrc: "assets/qsets/qset3/q1_images/q1_tramway.jpg"
+            },
+            {
+                id: 4,
+                desc: "le métro",
+                imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
+            }
+        ],
+        correctChoiceId:1
+    },
+
+    {
+        qid: 401,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "le salon",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+            },
+            {
+                id: 2,
+                desc: "la cuisine",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+            },
+            {
+                id: 3,
+                desc: "la chambre",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+            },
+            {
+                id: 4,
+                desc: "la salle de bain",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+            }
+        ]
+    },
+    {
+        qid: 402,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },
 ]

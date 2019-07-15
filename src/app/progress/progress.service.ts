@@ -16,6 +16,16 @@ export class ProgressService {
       total: 10,
       doneQuestionIds: [],
     },
+    {
+      name:"Voyager", 
+      total: 10,
+      doneQuestionIds: [],
+    },
+    {
+      name:"Se loger", 
+      total: 10,
+      doneQuestionIds: [],
+    },
   ]
 
   constructor() { }

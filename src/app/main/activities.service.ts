@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ACTIVITIES_1, ACTIVITIES_2 } from 'src/assets/activity-list';
+import { ACTIVITIES_1, ACTIVITIES_2, ACTIVITIES_4, ACTIVITIES_3 } from 'src/assets/activity-list';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Activity } from '../domain/activity';
@@ -19,6 +19,14 @@ export class ActivitiesService {
       }
       case 2: {
         return of(ACTIVITIES_2);
+        break;
+      }
+      case 3: {
+        return of(ACTIVITIES_3);
+        break;
+      }
+      case 4: {
+        return of(ACTIVITIES_4);
         break;
       }
     }
