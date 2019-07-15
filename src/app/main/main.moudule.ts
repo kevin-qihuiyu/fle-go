@@ -8,6 +8,7 @@ import { CategoryCardComponent }  from './category-list/category-card/category-c
 import { ActivitiesComponent } from './activities/activities.component';
 import { ActivityListComponent } from './activities/activity-list/activity-list.component';
 import { ActivityCardComponent } from './activities/activity-list/activity-card/activity-card.component';
+import { IntroductionComponent } from './category-list/introduction/introduction.component';
  
 import { MainRoutingModule } from './main-routing.module';
  
@@ -23,7 +24,8 @@ import { MainRoutingModule } from './main-routing.module';
     CategoryCardComponent,
     ActivitiesComponent,
     ActivityListComponent,
-    ActivityCardComponent
+    ActivityCardComponent,
+    IntroductionComponent,
   ]
 })
 export class MainModule {}

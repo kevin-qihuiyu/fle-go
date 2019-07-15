@@ -18,7 +18,6 @@ import { SettingsComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
