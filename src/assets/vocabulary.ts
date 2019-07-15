@@ -222,45 +222,53 @@ export const VOCABULARY_6: Vocabulary[] = [
     explanation: "Outil pour mesurer la température",
     usage: "Le thermomètre indique 38 degres; elle a de la fièvre."
 },
+{
+    id: 604,
+    name: "la sérologie",
+    categoryId: 6,
+    attr: "n.",
+    audioSrc: "",
+    explanation: "La sérologie est un examen du sérum sanguin. Il consiste à détecter et étudier les anticorps correspondant à une maladie spécifique présents dans le sérum.",
+    usage: "Sérologie hépatite b; Sérologie VIH"
+},
 ]
-    
-    
-    export const VOCABULARY_7: Vocabulary[] = [
-    {
-        id: 701,
-        name: "un préservatif",
-        categoryId: 7,
-        attr: "n.",
-        audioSrc: "",
-        explanation: "On le utilise pour une raison contraceptive et pour la protection contre les infections sexuellement transmissibles.",
-        usage: "On va utiliser un préservatif."
-    },
-    {
-        id: 702,
-        name: "un signe astrologique",
-        categoryId: 7,
-        audioSrc: "",
-        attr: "n.",
-        explanation: "Les 12 signes astrologique sont censés correspondre à des types de personnalité caratéristiques.",
-        usage: "De quel signe astrologique es-tu?"
-    },
-    ]
-    
-    export const VOCABULARY_8: Vocabulary[] = [
-    {
-        id: 801,
-        name: "",
-        categoryId: 8,
-        audioSrc: "",
-        explanation: "",
-        usage: ""
-    },
-    {
-        id: 802,
-        name: "",
-        categoryId: 8,
-        audioSrc: "",
-        explanation: "",
-        usage: ""
-    },
-    ]
+
+export const VOCABULARY_7: Vocabulary[] = [
+{
+    id: 701,
+    name: "un préservatif",
+    categoryId: 7,
+    attr: "n.",
+    audioSrc: "",
+    explanation: "On le utilise pour une raison contraceptive et pour la protection contre les infections sexuellement transmissibles.",
+    usage: "On va utiliser un préservatif."
+},
+{
+    id: 702,
+    name: "un signe astrologique",
+    categoryId: 7,
+    audioSrc: "",
+    attr: "n.",
+    explanation: "Les 12 signes astrologique sont censés correspondre à des types de personnalité caratéristiques.",
+    usage: "De quel signe astrologique es-tu?"
+},
+]
+
+export const VOCABULARY_8: Vocabulary[] = [
+{
+    id: 801,
+    name: "",
+    categoryId: 8,
+    audioSrc: "",
+    explanation: "",
+    usage: ""
+},
+{
+    id: 802,
+    name: "",
+    categoryId: 8,
+    audioSrc: "",
+    explanation: "",
+    usage: ""
+},
+]
