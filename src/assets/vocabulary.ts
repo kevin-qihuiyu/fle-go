@@ -40,19 +40,21 @@ export const VOCABULARY_1: Vocabulary[] = [
 },
 {
     id: 105,
-    name: "",
+    name: "un rayon",
     categoryId: 1,
     audioSrc: "",
-    explanation: "",
-    usage: ""
+    attr: "n.",
+    explanation: "Dans un supermarché, on trouve plusieurs rayons: fruits et légumes, viande, épicerie, etc",
+    usage: "Le coca? C'est au rayon boisson."
 },
 {
     id: 106,
-    name: "",
+    name: "une étiquette",
     categoryId: 1,
     audioSrc: "",
-    explanation: "",
-    usage: ""
+    attr: "n.",
+    explanation: "Elle est collée aux produits ou arrochée aux vêtements, il y a le prix dessus.",
+    usage: "Je vais couper l'étiquette pour mettre cette chemise."
 },
 ]
 
@@ -174,6 +176,15 @@ export const VOCABULARY_4: Vocabulary[] = [
     explanation: "Dans un tiroir on range des papiers ou des vêtements par exemple.",
     usage: "Ce bureau a trois tiroirs."
 },
+{
+    id: 405,
+    name: "la poubelle de tri",
+    categoryId: 4,
+    attr: "n. ",
+    audioSrc: "",
+    explanation: "Une poubelle où on jette les déchets qui peuvent être recyclés.",
+    usage: "Les légumes vont dans cette poubelleet le carton dans la poubelle du tri."
+},
 ]
 
 // Cat5: Activités et sortir
@@ -184,7 +195,7 @@ export const VOCABULARY_5: Vocabulary[] = [
     categoryId: 5,
     attr: "n.",
     audioSrc: "",
-    explanation: "Un endroit qu'on vosite pour voir des oeuvres d'art comme des peintures ou des sculptrures.",
+    explanation: "Un endroit qu'on vosite pour voir des oeuvres d'art comme des peintures ou des sculptures.",
     usage: "L'entrée du musée est gratuite tous les premier dimanches du mois."
 },
 {
@@ -235,6 +246,15 @@ export const VOCABULARY_6: Vocabulary[] = [
     audioSrc: "",
     explanation: "La sérologie est un examen du sérum sanguin. Il consiste à détecter et étudier les anticorps correspondant à une maladie spécifique présents dans le sérum.",
     usage: "Sérologie hépatite b; Sérologie VIH"
+},
+{
+    id: 605,
+    name: "Doliprane",
+    categoryId: 6,
+    attr: "n.",
+    audioSrc: "",
+    explanation: "C'est un médicament qui contient du paracétamol, utilisé pour traiter la douleur et la fièvre.",
+    usage: "Doliprane (Paracétamol), 500mg, 1 boîte, 16 comprimés"
 },
 ]
 

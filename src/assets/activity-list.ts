@@ -183,7 +183,7 @@ export const ACTIVITIES_5: Activity[] = [
 // Cat6: Santé & Bien-être
 export const ACTIVITIES_6: Activity[] = [
   {
-      name: "Identifier les pièces d'un logement",
+      name: "Comprendre les consignes du médecin",
       categoryId: 6,
       difficulty: Difficulty.DÉBUTANT,
       questionId: 601

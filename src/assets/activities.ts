@@ -619,31 +619,33 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
     // Cat6: Santé & Bien-être
     {
         qid: 601,
-        name: "Identifier les pièces d'un logement",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        desc: "Comment s'appellent ces pièces?",
+        name: "Comprendre les consignes du médecin",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        desc: "Qu'est-ce que le médecin ne demande pas?",
+        audioDesc: "assets/qsets/qset6/q1_audio.mp3",       
         choices: [
             {
                 id: 1,
-                desc: "le salon",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+                desc: "Asseyez-vous",
+                imgSrc: "assets/qsets/qset6/q1_images/q1_sit.jpg"
             },
             {
                 id: 2,
-                desc: "la cuisine",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+                desc: "Balance",
+                imgSrc: "assets/qsets/qset6/q1_images/q1_scale.jpg"
             },
             {
                 id: 3,
-                desc: "la chambre",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+                desc: "Allongez-vous",
+                imgSrc: "assets/qsets/qset6/q1_images/q1_long_chair.jpg"
             },
             {
                 id: 4,
-                desc: "la salle de bain",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+                desc: "Ouvrez la bouche",
+                imgSrc: "assets/qsets/qset6/q1_images/q1_mouth.jpg"
             }
-        ]
+        ],
+        correctChoiceId: 4
     },
     {
         qid: 602,
