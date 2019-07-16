@@ -19,7 +19,4 @@ export class AppComponent {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 
-  // console.log(this.router.url);
-  // if (this.router.url.includes('progress')) this.activeNavItem = this.navItems[1];
-  // if (this.router.url.includes('vocabulary')) this.activeNavItem = this.navItems[2];
 }

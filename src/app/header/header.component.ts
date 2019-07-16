@@ -8,8 +8,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(    private router: Router,
-    private route: ActivatedRoute,) { }
+  constructor(public router: Router,
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
