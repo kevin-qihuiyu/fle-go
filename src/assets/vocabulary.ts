@@ -1,5 +1,6 @@
 import { Vocabulary } from 'src/app/domain/vocabulary';
 
+// Cat1: Vie quotidienne
 export const VOCABULARY_1: Vocabulary[] = [
 {
     id: 101,
@@ -55,6 +56,7 @@ export const VOCABULARY_1: Vocabulary[] = [
 },
 ]
 
+// Cat2: Administration
 export const VOCABULARY_2: Vocabulary[] = [
 {
     id: 201,
@@ -107,11 +109,12 @@ export const VOCABULARY_2: Vocabulary[] = [
     categoryId: 1,
     attr: "n.",
     audioSrc: "",
-    explanation: "Un cahier ou sur un téléphone. Il y a les jours et les dates, et ça sert à nopter des rendez-vous.",
+    explanation: "Un cahier ou sur un téléphone. Il y a les jours et les dates, et ça sert à noter des rendez-vous.",
     usage: "Elle note le rendez-vous sur son agenda."
 },
 ]
 
+// Cat3: Voyager
 export const VOCABULARY_3: Vocabulary[] = [
 {
     id: 301,
@@ -173,6 +176,7 @@ export const VOCABULARY_4: Vocabulary[] = [
 },
 ]
 
+// Cat5: Activités et sortir
 export const VOCABULARY_5: Vocabulary[] = [
 {
     id: 501,
@@ -181,7 +185,7 @@ export const VOCABULARY_5: Vocabulary[] = [
     attr: "n.",
     audioSrc: "",
     explanation: "Un endroit qu'on vosite pour voir des oeuvres d'art comme des peintures ou des sculptrures.",
-    usage: "L'entrée du musée est gratuite tous les premier dimanche du mois."
+    usage: "L'entrée du musée est gratuite tous les premier dimanches du mois."
 },
 {
     id: 502,
@@ -194,6 +198,7 @@ export const VOCABULARY_5: Vocabulary[] = [
 },
 ]
 
+// Cat6: Santé & Bien-être
 export const VOCABULARY_6: Vocabulary[] = [
 {
     id: 601,
@@ -233,6 +238,7 @@ export const VOCABULARY_6: Vocabulary[] = [
 },
 ]
 
+// Cat7: Vie amoureuse
 export const VOCABULARY_7: Vocabulary[] = [
 {
     id: 701,
@@ -254,6 +260,7 @@ export const VOCABULARY_7: Vocabulary[] = [
 },
 ]
 
+// Cat8: Vie professionnelle
 export const VOCABULARY_8: Vocabulary[] = [
 {
     id: 801,

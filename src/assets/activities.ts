@@ -8,6 +8,7 @@ import { QCMSelectText,
 from 'src/app/domain/question';
 
 export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | SelectOnCalendar)[] = [
+    // Cat1: Vie quotidienne
     {
       qid: 101,
       name: "Acheter des chaussures",
@@ -304,6 +305,8 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         ],
         correctChoiceId:3 
     },
+
+    // Cat2: Administration
     {
         qid: 201,
         name: "Aller à la Poste",
@@ -436,6 +439,8 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         selectedDate: new Date("2019/04/01"),
         correctDate: new Date("2019/04/12"),
     },
+
+    // Cat3: Voyager
     {
         qid: 301,
         name: "Moyen de transport",
@@ -495,6 +500,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         correctChoiceId:1
     },
 
+    // Cat4: Se loger
     {
         qid: 401,
         name: "Identifier les pièces d'un logement",
@@ -525,6 +531,238 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
     },
     {
         qid: 402,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },
+    
+    // Cat5: Activités et sortir
+    {
+        qid: 501,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "le salon",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+            },
+            {
+                id: 2,
+                desc: "la cuisine",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+            },
+            {
+                id: 3,
+                desc: "la chambre",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+            },
+            {
+                id: 4,
+                desc: "la salle de bain",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+            }
+        ]
+    },
+    {
+        qid: 502,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },
+
+    // Cat6: Santé & Bien-être
+    {
+        qid: 601,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "le salon",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+            },
+            {
+                id: 2,
+                desc: "la cuisine",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+            },
+            {
+                id: 3,
+                desc: "la chambre",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+            },
+            {
+                id: 4,
+                desc: "la salle de bain",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+            }
+        ]
+    },
+    {
+        qid: 602,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },
+
+    // Cat7: Vie amoureuse
+    {
+        qid: 701,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "le salon",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+            },
+            {
+                id: 2,
+                desc: "la cuisine",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+            },
+            {
+                id: 3,
+                desc: "la chambre",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+            },
+            {
+                id: 4,
+                desc: "la salle de bain",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+            }
+        ]
+    },
+    {
+        qid: 702,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },
+
+    // Cat8: Vie professionnelle
+    {
+        qid: 801,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "le salon",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+            },
+            {
+                id: 2,
+                desc: "la cuisine",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+            },
+            {
+                id: 3,
+                desc: "la chambre",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+            },
+            {
+                id: 4,
+                desc: "la salle de bain",
+                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+            }
+        ]
+    },
+    {
+        qid: 802,
         name: "Identifier les pièces d'un logement",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "De quoi ils parlent?",

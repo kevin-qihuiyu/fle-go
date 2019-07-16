@@ -26,6 +26,26 @@ export class ProgressService {
       total: 10,
       doneQuestionIds: [],
     },
+    {
+      name:"Activité, sortir", 
+      total: 10,
+      doneQuestionIds: [],
+    },
+    {
+      name:"Santé", 
+      total: 10,
+      doneQuestionIds: [],
+    },
+    {
+      name:"Vie amoureuse", 
+      total: 10,
+      doneQuestionIds: [],
+    },
+    {
+      name:"Vie professionnelle", 
+      total: 10,
+      doneQuestionIds: [],
+    },
   ]
 
   constructor() { }
