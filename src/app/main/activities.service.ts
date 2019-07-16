@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
-import { ACTIVITIES_1, ACTIVITIES_2, ACTIVITIES_4, ACTIVITIES_3, ACTIVITIES_5 } from 'src/assets/activity-list';
+import { ACTIVITIES_1, ACTIVITIES_2, ACTIVITIES_3, ACTIVITIES_4, ACTIVITIES_5, ACTIVITIES_6, ACTIVITIES_7, ACTIVITIES_8  } from 'src/assets/activity-list';
 import { Observable, of } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { Activity } from '../domain/activity';
-import { ACTIVITIES_6, ACTIVITIES_7, ACTIVITIES_8 } from 'docs/assets/activity-list';
 
 @Injectable({
   providedIn: 'root'
