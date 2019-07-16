@@ -14,9 +14,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  // Go back Left Arrow button only appears on /categories/{id} page
+  // Go back Left Arrow button 
   goBack() {
-    this.router.navigate([ '../' ], { relativeTo: this.route });
+    let url = this.router.url;
+    // Go up 2 levels 
+    url = url.substr(0, url.lastIndexOf('/'));
+    url = url.substr(0, url.lastIndexOf('/'));
+    this.router.navigate([ url ]);
   }
   
 
