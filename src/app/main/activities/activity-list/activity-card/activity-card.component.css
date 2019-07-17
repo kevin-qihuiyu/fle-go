@@ -12,6 +12,12 @@
     align-items: center;
 }
 
+#status {
+    display: flex;
+    direction: column;
+    justify-content: center;
+}
+
 .titles {
     display: flex;
     flex-direction: column;
@@ -20,12 +26,12 @@
 
 .title {
     color: black;
-    font-size: 1.2em;
+    font-size: 1em;
     /* font-weight: bold; */
 }
 
 .subtitle {
-    margin-top: 1em;
+    margin-top: 0.6em;
 }
 
 .difficulty-tag {
@@ -33,6 +39,7 @@
     border-radius: 5px;
     padding: 0.3em;
     color:teal;
+    font-size: 0.8em;
 }
 
 #action-sign {

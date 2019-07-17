@@ -9,7 +9,7 @@
 .control-container {
     position: fixed;
     /* bottom: 0.8em; */
-    bottom: 3em;
+    bottom: 0.3em;
     z-index: 10;
     width: 100%;
 

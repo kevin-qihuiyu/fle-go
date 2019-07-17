@@ -105,9 +105,10 @@ export class WorkspaceComponent implements OnInit {
     this.correctAnswers = []
   }
 
+  // SnackBar showing Check result: appear for 1.5s
   openSnackBar(message: string, action: string, className: string) {
     return this.snackBar.open(message, action, {
-      duration: 3000,
+      duration: 1500,
       panelClass: [className]
     });
   }

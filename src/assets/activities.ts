@@ -21,7 +21,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             },
             {
                 id: 2,
-                desc: "'un pantalon",
+                desc: "un pantalon",
                 imgSrc: "assets/qsets/qset1/q4_images/q4_pantalon.jpg"
             },
             {
@@ -102,7 +102,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             },
             {
                 id: 2,
-                desc: "'un jean",
+                desc: "un jean",
                 imgSrc: "assets/qsets/qset1/q5_images/q5_jean.jpg"
             },
             {
@@ -155,7 +155,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             },
             {
                 id: 2,
-                desc: "'des salades",
+                desc: "des salades",
                 imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
             },
             {
@@ -208,7 +208,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             },
             {
                 id: 2,
-                desc: "'les escargots",
+                desc: "les escargots",
                 imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
             },
             {
@@ -236,7 +236,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             },
             {
                 id: 2,
-                desc: "'couscous royale",
+                desc: "couscous royale",
                 imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
             },
             {
@@ -415,7 +415,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             },
             {
                 id: 2,
-                desc: "'Prendre un abonnement de téléphone",
+                desc: "Prendre un abonnement de téléphone",
                 imgSrc: "assets/qsets/qset2/q1_images/2-prendre-un-abonnement-mobile.jpg"
             },
             {
