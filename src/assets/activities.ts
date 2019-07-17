@@ -10,26 +10,31 @@ from 'src/app/domain/question';
 export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | SelectOnCalendar)[] = [
     // Cat1: Vie quotidienne
     {
-      qid: 101,
-      name: "Acheter des chaussures",
-      questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-      desc: "De quoi elle parle?",
-      audioDesc: "assets/qsets/qset1/q1_audio.mp3",
-      choices:[
-        {
-            id: 1,
-            imgSrc:'assets/qsets/qset1/q1_images/q1_blouson.jpg'
-        },
-        {
-            id: 2,
-            imgSrc:'assets/qsets/qset1/q1_images/q1_chaussure.jpg'
-        },
-        {
-            id: 3,
-            imgSrc:'assets/qsets/qset1/q1_images/q1_pantalon.jpg'
-        }
-       ],
-       correctChoiceId:2 
+        qid: 104,
+        name: "Connaître les noms de vêtements",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        choices: [
+            {
+                id: 1,
+                desc: "un short",
+                imgSrc: "assets/qsets/qset1/q4_images/q4_short.jpg"
+            },
+            {
+                id: 2,
+                desc: "'un pantalon",
+                imgSrc: "assets/qsets/qset1/q4_images/q4_pantalon.jpg"
+            },
+            {
+                id: 3,
+                desc: "un t-shirt",
+                imgSrc: "assets/qsets/qset1/q4_images/q4_t.jpg"
+            },
+            {
+                id: 4,
+                desc: "une chemise",
+                imgSrc: "assets/qsets/qset1/q4_images/q4_chemise.jpg"
+            }
+        ]
     },
     {
       qid: 102,
@@ -57,83 +62,30 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         ],
         correctChoiceId:2 
     },
-    // {
-    //   qid: 103,
-    //   name: "Acheter un billet de train",
-    //   questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
-    //   imgDesc: "assets/qsets/qset1/q3_images/q3_billet_de_train.jpg",
-    //   desc: "Payez vos achats.",
-    //   choices:[
-    //     {
-    //         id: 1,
-    //         value: 1,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_1_euro.jpg'
-    //     },
-    //     {
-    //         id: 2,
-    //         value: 2,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_2_euro.jpg'
-    //     },
-    //     {
-    //         id: 3,
-    //         value: 5,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_5_euros.jpg'
-    //     },
-    //     {
-    //         id: 4,
-    //         value: 10,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_10_euros.jpg'
-    //     },
-    //     {
-    //         id: 5,
-    //         value: 0.05,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_5_centimes.jpg'
-    //     },
-    //     {
-    //         id: 6,
-    //         value: 0.1,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_10_centimes.jpg'
-    //     },
-    //     {
-    //         id: 7,
-    //         value: 0.2,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_20_centimes.jpg'
-    //     },
-    //     {
-    //         id: 8,
-    //         value: 0.5,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_50_centimes.jpg'
-    //     }
-    //    ],
-    //   goal: "5.2"
-    // },
     {
-        qid: 104,
-        name: "Connaître les noms de vêtements",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        choices: [
-            {
-                id: 1,
-                desc: "un short",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_short.jpg"
-            },
-            {
-                id: 2,
-                desc: "'un pantalon",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_pantalon.jpg"
-            },
-            {
-                id: 3,
-                desc: "un t-shirt",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_t.jpg"
-            },
-            {
-                id: 4,
-                desc: "une chemise",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_chemise.jpg"
-            }
-        ]
-    },
+        qid: 101,
+        name: "Acheter des chaussures",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        desc: "De quoi elle parle?",
+        audioDesc: "assets/qsets/qset1/q1_audio.mp3",
+        choices:[
+          {
+              id: 1,
+              imgSrc:'assets/qsets/qset1/q1_images/q1_blouson.jpg'
+          },
+          {
+              id: 2,
+              imgSrc:'assets/qsets/qset1/q1_images/q1_chaussure.jpg'
+          },
+          {
+              id: 3,
+              imgSrc:'assets/qsets/qset1/q1_images/q1_pantalon.jpg'
+          }
+         ],
+         correctChoiceId:2 
+      },
+ 
+    
     {
         qid: 105,
         name: "Connaître les noms de vêtements",
@@ -214,6 +166,161 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             }
         ]
     },
+    {
+        qid: 110,
+        name: "Identifier un moyen de paiement",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        audioDesc: "assets/qsets/qset1/q10_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                imgSrc: "assets/qsets/qset1/q10_images/q10_carte.jpg"
+            },
+            {
+                id: 2,
+                imgSrc: "assets/qsets/qset1/q10_images/q10_cheque.jpg"
+            },
+            {
+                id: 3,
+                imgSrc: "assets/qsets/qset1/q10_images/q10_espece.jpg"
+            }
+        ],
+        correctChoiceId:3 
+    },
+    {
+        qid: 111,
+        name: "Identifier la cuisine française",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        audioDesc: "assets/qsets/qset1/q7_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                desc: "la boeuf bouguignon",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_onion.jpg"
+            },
+            {
+                id: 2,
+                desc: "'les escargots",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
+            },
+            {
+                id: 3,
+                desc: "le confit de carnard",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_tomate.jpg"
+            },
+            {
+                id: 4,
+                desc: "le steak tartare",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_tortillas.jpg"
+            }
+        ]
+      },
+    {
+        qid: 111,
+        name: "Identifier la cuisine française",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        audioDesc: "assets/qsets/qset1/q7_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                desc: "la sourit d'agneau",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_onion.jpg"
+            },
+            {
+                id: 2,
+                desc: "'couscous royale",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
+            },
+            {
+                id: 3,
+                desc: "la paella",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_tomate.jpg"
+            },
+            {
+                id: 4,
+                desc: "le cordon bleu",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_tortillas.jpg"
+            }
+        ]
+      },
+    {
+        qid: 111,
+        name: "Choisir la cuisson",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        audioDesc: "assets/qsets/qset1/q7_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                desc: "bleu",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_onion.jpg"
+            },
+            {
+                id: 2,
+                desc: "saignant",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
+            },
+            {
+                id: 3,
+                desc: "à point",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_tomate.jpg"
+            },
+            {
+                id: 4,
+                desc: "bien cuit",
+                imgSrc: "assets/qsets/qset1/q7_images/q7_tortillas.jpg"
+            }
+        ]
+      },
+    // {
+    //   qid: 103,
+    //   name: "Acheter un billet de train",
+    //   questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
+    //   imgDesc: "assets/qsets/qset1/q3_images/q3_billet_de_train.jpg",
+    //   desc: "Payez vos achats.",
+    //   choices:[
+    //     {
+    //         id: 1,
+    //         value: 1,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_1_euro.jpg'
+    //     },
+    //     {
+    //         id: 2,
+    //         value: 2,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_2_euro.jpg'
+    //     },
+    //     {
+    //         id: 3,
+    //         value: 5,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_5_euros.jpg'
+    //     },
+    //     {
+    //         id: 4,
+    //         value: 10,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_10_euros.jpg'
+    //     },
+    //     {
+    //         id: 5,
+    //         value: 0.05,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_5_centimes.jpg'
+    //     },
+    //     {
+    //         id: 6,
+    //         value: 0.1,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_10_centimes.jpg'
+    //     },
+    //     {
+    //         id: 7,
+    //         value: 0.2,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_20_centimes.jpg'
+    //     },
+    //     {
+    //         id: 8,
+    //         value: 0.5,
+    //         imgSrc:'assets/qsets/qset1/q3_images/q3_50_centimes.jpg'
+    //     }
+    //    ],
+    //   goal: "5.2"
+    // },
     // {
     //     qid: 108,
     //     name: "À la boulangerie",
@@ -284,27 +391,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
     //     ],
     //     goals: ['Légumes', 'Produits laitiers']
     // },
-    {
-        qid: 110,
-        name: "Identifier un moyen de paiement",
-        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "assets/qsets/qset1/q10_audio.mp3",
-        choices: [
-            {
-                id: 1,
-                imgSrc: "assets/qsets/qset1/q10_images/q10_carte.jpg"
-            },
-            {
-                id: 2,
-                imgSrc: "assets/qsets/qset1/q10_images/q10_cheque.jpg"
-            },
-            {
-                id: 3,
-                imgSrc: "assets/qsets/qset1/q10_images/q10_espece.jpg"
-            }
-        ],
-        correctChoiceId:3 
-    },
+
 
     // Cat2: Administration
     {
@@ -431,14 +518,14 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         ],
         correctChoiceId:1
     },
-    {
-        qid: 208,
-        name: "Noter une date",
-        questionType: QuestionType.SELECT_ON_CALENDAR,
-        audioDesc: "assets/qsets/qset2/q8_audio.mp3",
-        selectedDate: new Date("2019/04/01"),
-        correctDate: new Date("2019/04/12"),
-    },
+    // {
+    //     qid: 208,
+    //     name: "Noter une date",
+    //     questionType: QuestionType.SELECT_ON_CALENDAR,
+    //     audioDesc: "assets/qsets/qset2/q8_audio.mp3",
+    //     selectedDate: new Date("2019/04/01"),
+    //     correctDate: new Date("2019/04/12"),
+    // },
 
     // Cat3: Voyager
     {
@@ -449,7 +536,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         choices: [
             {
                 id: 1,
-                desc: "un vélo",
+                desc: "le rer",
                 imgSrc: "assets/qsets/qset3/q1_images/q1_velo.jpg"
             },
             {
@@ -466,6 +553,34 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
                 id: 4,
                 desc: "le métro",
                 imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
+            }
+        ]
+    },
+    {
+        qid: 301,
+        name: "Moyen de transport",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Qu'est-ce que c'est?",
+        choices: [
+            {
+                id: 1,
+                desc: "une trottinette",
+                imgSrc: "assets/qsets/qset3/q1_images/trottinette.jpg"
+            },
+            {
+                id: 2,
+                desc: "un vélo",
+                imgSrc: "assets/qsets/qset3/q1_images/velo.jpg"
+            },
+            {
+                id: 3,
+                desc: "une voiture",
+                imgSrc: "assets/qsets/qset3/q1_images/voiture.jpg"
+            },
+            {
+                id: 4,
+                desc: "le skate",
+                imgSrc: "assets/qsets/qset3/q1_images/skate.jpg"
             }
         ]
     },
@@ -531,8 +646,64 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
     },
     {
         qid: 402,
-        name: "Identifier les pièces d'un logement",
+        name: "Identifier l'équipement d'un appartement",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces équipment?",
+        choices: [
+            {
+                id: 1,
+                desc: "un canapé",
+                imgSrc: "assets/qsets/qset4/q1_images/canape.jpg"
+            },
+            {
+                id: 2,
+                desc: "un lit double",
+                imgSrc: "assets/qsets/qset4/q1_images/lit_double.jpg"
+            },
+            {
+                id: 3,
+                desc: "une bibliotèque",
+                imgSrc: "assets/qsets/qset4/q1_images/biblioteque.jpg"
+            },
+            {
+                id: 4,
+                desc: "une armoire",
+                imgSrc: "assets/qsets/qset4/q1_images/armoire.jpg"
+            }
+        ]
+    },
+    {
+        qid: 403,
+        name: "Comprendre l'information sur le logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },
+    {
+        qid: 404,
+        name: "Lire une annonce immobilière",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "De quoi ils parlent?",
         choices: [
             {
@@ -561,7 +732,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
     // Cat5: Activités et sortir
     {
         qid: 501,
-        name: "Identifier les pièces d'un logement",
+        name: "Assister à une soirée",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces pièces?",
         choices: [
@@ -589,7 +760,63 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
     },
     {
         qid: 502,
-        name: "Identifier les pièces d'un logement",
+        name: "Visiter un musée",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },
+    {
+        qid: 503,
+        name: "À la station de ski",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },
+    {
+        qid: 504,
+        name: "Au poney club",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "De quoi ils parlent?",
         choices: [
@@ -649,7 +876,35 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
     },
     {
         qid: 602,
-        name: "Identifier les pièces d'un logement",
+        name: "Aller chez un médecin",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Mon code c'est 98A03.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+            },
+            {
+                id: 2,
+                desc: "Ferme les volets.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+            },
+            {
+                id: 3,
+                desc: "J'ai perdu mes clés.",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+            },
+            {
+                id: 4,
+                desc: "Il faut sonner à la porte avant d'entrer",
+                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+            }
+        ]
+    },    
+    {
+        qid: 602,
+        name: "Aller chez un médecin",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "De quoi ils parlent?",
         choices: [

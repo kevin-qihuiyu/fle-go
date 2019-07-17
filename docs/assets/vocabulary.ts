@@ -56,6 +56,16 @@ export const VOCABULARY_1: Vocabulary[] = [
     explanation: "Elle est collée aux produits ou arrochée aux vêtements, il y a le prix dessus.",
     usage: "Je vais couper l'étiquette pour mettre cette chemise."
 },
+{
+    id: 107,
+    name: "la garniture",
+    categoryId: 1,
+    audioSrc: "",
+    attr: "n.",
+    explanation: "Aliments que l'on ajoute à un plat avant de le servir pour le compléter ou pour le décorer.",
+    usage: "On prends les frites et les jeune pousse comme garniture."
+},
+
 ]
 
 // Cat2: Administration
