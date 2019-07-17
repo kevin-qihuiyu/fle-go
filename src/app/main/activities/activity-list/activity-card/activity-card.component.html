@@ -1,9 +1,14 @@
 <mat-card mat-ripple class="activity-card" [routerLink]="[activity.questionId]">
-  <div class="titles">
-    <div class="title">{{activity.name}}</div>
-    <div class="subtitle"> <span class="difficulty-tag">{{activity.difficulty}}</span> </div>
+  <div class="activity-info-container">
+    <div id="status">
+      <i class="material-icons light-gray" id="icon-size-32" [ngClass]="{'activity-done': activityStatus}">brightness_1</i>
+    </div> 
+    <div class="titles">
+      <div class="title">{{activity.name}}</div>
+      <div class="subtitle"> <span class="difficulty-tag">{{activity.difficulty}}</span> </div>
+    </div>
   </div>
-  <div id="sign">
+  <div id="action-sign">
     <i class="material-icons light-gray" id="icon-size-32">arrow_forward_ios</i>
   </div> 
 </mat-card>

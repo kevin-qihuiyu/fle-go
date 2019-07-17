@@ -10,7 +10,9 @@
         <div class="progress">{{progressData.doneQuestionIds.length}}/{{progressData.total}}</div>
     </div>
   </div>
-  <app-activity-card *ngFor="let activity of activities$ | async as activities" [activity]="activity" ></app-activity-card>
+  <app-activity-card *ngFor="let activity of activities$ | async as activities" 
+    [activity]="activity" [activityStatus]="progressData.doneQuestionIds.includes(activity.questionId.toString())" >
+  </app-activity-card>
 </div>
 
 <div class="placeholder"></div>

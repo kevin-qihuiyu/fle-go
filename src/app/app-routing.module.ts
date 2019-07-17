@@ -19,7 +19,8 @@ const routes: Routes = [
   // Use paramsInheritanceStrategy to enable router params pass from parent to children
   imports: [RouterModule.forRoot(routes,
     {
-      paramsInheritanceStrategy: 'always'
+      paramsInheritanceStrategy: 'always',
+      scrollPositionRestoration: 'enabled' 
     }
   )],
   exports: [RouterModule]
