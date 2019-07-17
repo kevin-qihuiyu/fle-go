@@ -14,6 +14,7 @@ import { AssociateTextImageSelectComponent } from './associate-text-image-select
 
 import { AssociateImageToGoalComponent } from './associate-image-to-goal/associate-image-to-goal.component';
 import { SelectCalendarComponent } from './select-calendar/select-calendar.component';
+import { QcmSelectImage2x2Component } from './qcm-select-image2x2/qcm-select-image2x2.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { SelectCalendarComponent } from './select-calendar/select-calendar.compo
     AssociateTextImageSelectComponent,
     AssociateImageToGoalComponent,
     SelectCalendarComponent,
+    QcmSelectImage2x2Component,
   ],
   imports: [
     FormsModule,

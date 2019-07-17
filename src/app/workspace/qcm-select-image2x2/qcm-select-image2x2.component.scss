@@ -1,0 +1,58 @@
+.container {
+    margin-top: 1em;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.qcm-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+#qcm-group-desc {
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.qcm-button {
+    font-size: 1.2em;
+    margin: 0.6em;
+}
+
+.wrap-mat-radio-label {
+    white-space: normal;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.q-picture {
+    width: 100%;
+}
+
+.mat-radio-label {
+    flex-direction: column-reverse !important;
+}
+
+.question-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#desc {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.teal { 
+    /* mat-teal */
+    color: #00796B;
+}
+
+
+

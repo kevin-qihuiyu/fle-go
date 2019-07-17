@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>{{question.name}}</h2>
+  <div [ngSwitch]="question.questionType">
+    <!-- Question Type 1: LISEZ_ET_CHOISISSEZ_TEXT -->
+    <h3 *ngSwitchCase="2">Lisez et choississez</h3>
+      <!-- Question Type 3: ECOUTEZ_ET_CHOISISSEZ_TEXT -->
+    <h3 *ngSwitchCase="4">Écoutez et choississez</h3>
+  </div>
+
+  <app-audio-desc *ngIf="hasAudio" [audioDesc]="question.audioDesc"></app-audio-desc>
+  <app-image-desc *ngIf="hasImage" [imgDesc]="question.imgDesc"></app-image-desc>
+
+  <div id="desc">{{question.desc}}</div>
+  <div class="question-container">
+    <mat-radio-group
+      class="qcm-group"
+      [(ngModel)]="userChoice"
+      (ngModelChange)="onUserChoiceChange($event)">
+      <div class="row">
+        <mat-radio-button class="qcm-button" [value]="question.choices[0].id"><img class="q-picture" [src]="question.choices[0].imgSrc"></mat-radio-button>
+        <mat-radio-button class="qcm-button" [value]="question.choices[1].id"><img class="q-picture" [src]="question.choices[1].imgSrc"></mat-radio-button>
+      </div>
+      <div class="row">
+        <mat-radio-button class="qcm-button" [value]="question.choices[2].id"><img class="q-picture" [src]="question.choices[2].imgSrc"></mat-radio-button>
+        <mat-radio-button class="qcm-button" [value]="question.choices[3].id"><img class="q-picture" [src]="question.choices[3].imgSrc"></mat-radio-button>
+      </div>
+    </mat-radio-group>
+  </div>
+</div>
