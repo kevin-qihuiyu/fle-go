@@ -7,6 +7,7 @@ import { CategoriesService } from '../../categories.service';
 import { Observable } from 'rxjs';
 import { ActivitiesService } from '../../activities.service';
 import { ProgressService } from 'src/app/progress/progress.service';
+import { AppTitleService } from 'src/app/app-title.service';
 
 @Component({
   selector: 'app-activity-list',
@@ -26,6 +27,7 @@ export class ActivityListComponent implements OnInit {
     private categoriesService: CategoriesService,
     private activitiesService: ActivitiesService,
     private progressService: ProgressService,
+    private appTitleService: AppTitleService
     ) { 
 
     
@@ -44,8 +46,12 @@ export class ActivityListComponent implements OnInit {
       )
     );
 
-    this.category$.subscribe(category => this.categoryId = category.id); 
+    this.category$.subscribe(category => {
+      this.categoryId = category.id; 
+      // this.appTitleService.setTitle(category.name);
+    });
     this.progressData = this.progressService.getProgressByCategoryId(this.categoryId);
+
   }
 
 }

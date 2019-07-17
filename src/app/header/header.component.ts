@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { AppTitleService } from '../app-title.service';
 
 @Component({
   selector: 'app-header',
@@ -8,10 +9,13 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  title: String;
+
   constructor(public router: Router,
-    private route: ActivatedRoute) { }
+    private appTitleService: AppTitleService) { }
 
   ngOnInit() {
+    this.appTitleService.getTitle().subscribe(appTitle => this.title = appTitle);
   }
 
   goBack() {
