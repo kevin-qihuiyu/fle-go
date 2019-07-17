@@ -80,6 +80,10 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
           {
               id: 3,
               imgSrc:'assets/qsets/qset1/q1_images/q1_pantalon.jpg'
+          },
+          {
+              id: 4,
+              imgSrc:'assets/qsets/qset1/q1_images/q1_pantalon.jpg'
           }
          ],
          correctChoiceId:2 
@@ -183,7 +187,11 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             {
                 id: 3,
                 imgSrc: "assets/qsets/qset1/q10_images/q10_espece.jpg"
-            }
+            },
+            {
+                id: 4,
+                imgSrc: "assets/qsets/qset1/q10_images/q10_espece.jpg"
+            },
         ],
         correctChoiceId:3 
     },
