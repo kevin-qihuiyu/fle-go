@@ -14,10 +14,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  // Go back Left Arrow button 
   goBack() {
     let url = this.router.url;
-    // Go up 2 levels 
+    // To go back to the upper level, we actually need to go up 2 levels in url address (../../) to match the router design for main feature area
     url = url.substr(0, url.lastIndexOf('/'));
     url = url.substr(0, url.lastIndexOf('/'));
     this.router.navigate([ url ]);
