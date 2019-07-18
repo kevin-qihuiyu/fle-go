@@ -3,7 +3,6 @@ import { Vocabulary } from '../domain/vocabulary';
 import { VocabularyService } from "./vocabulary.service";
 import { Observable } from 'rxjs';
 
-
 @Component({
   selector: 'app-vocabulary',
   templateUrl: './vocabulary.component.html',

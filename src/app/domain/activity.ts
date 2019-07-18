@@ -1,5 +1,3 @@
-import { Question } from './question';
-
 export class Activity {
     name: string;
     categoryId: number;
