@@ -55,19 +55,19 @@ export const ACTIVITIES_1: Activity[] = [
       name: "Identifier la cuisine française",
       categoryId: 1,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 106
+      questionId: 111
     },
     {
       name: "Identifier la cuisine française",
       categoryId: 1,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 106
+      questionId: 112
     },
     {
       name: "Choisir la cuisson",
       categoryId: 1,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 106
+      questionId: 113
     },
     {
       name: "Choisir la garniture",

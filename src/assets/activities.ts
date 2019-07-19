@@ -199,83 +199,81 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         qid: 111,
         name: "Identifier la cuisine française",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        audioDesc: "assets/qsets/qset1/q7_audio.mp3",
         choices: [
             {
                 id: 1,
                 desc: "la boeuf bouguignon",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_onion.jpg"
+                imgSrc: "assets/qsets/qset1/q11_images/boeuf-bourguignon.jpg"
             },
             {
                 id: 2,
                 desc: "les escargots",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
+                imgSrc: "assets/qsets/qset1/q11_images/escargots.jpg"
             },
             {
                 id: 3,
                 desc: "le confit de carnard",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_tomate.jpg"
+                imgSrc: "assets/qsets/qset1/q11_images/canard.jpg"
             },
             {
                 id: 4,
                 desc: "le steak tartare",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_tortillas.jpg"
+                imgSrc: "assets/qsets/qset1/q11_images/tartare.jpg"
             }
         ]
       },
     {
-        qid: 111,
+        qid: 112,
         name: "Identifier la cuisine française",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        audioDesc: "assets/qsets/qset1/q7_audio.mp3",
         choices: [
             {
                 id: 1,
-                desc: "la sourit d'agneau",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_onion.jpg"
+                desc: "la souris d'agneau",
+                imgSrc: "assets/qsets/qset1/q12_images/souris.jpg"
             },
             {
                 id: 2,
                 desc: "couscous royale",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
+                imgSrc: "assets/qsets/qset1/q12_images/couscous-royale.jpg"
             },
             {
                 id: 3,
                 desc: "la paella",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_tomate.jpg"
+                imgSrc: "assets/qsets/qset1/q12_images/paella.jpg"
             },
             {
                 id: 4,
                 desc: "le cordon bleu",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_tortillas.jpg"
+                imgSrc: "assets/qsets/qset1/q12_images/cordon-bleu.jpg"
             }
         ]
       },
     {
-        qid: 111,
+        qid: 113,
         name: "Choisir la cuisson",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        audioDesc: "assets/qsets/qset1/q7_audio.mp3",
+        audioDesc: "assets/qsets/qset1/q13_audio.mp3",
         choices: [
             {
                 id: 1,
                 desc: "bleu",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_onion.jpg"
+                imgSrc: "assets/qsets/qset1/q13_images/bleu.jpg"
             },
             {
                 id: 2,
                 desc: "saignant",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
+                imgSrc: "assets/qsets/qset1/q13_images/saignant.jpg"
             },
             {
                 id: 3,
                 desc: "à point",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_tomate.jpg"
+                imgSrc: "assets/qsets/qset1/q13_images/a-point.jpg"
             },
             {
                 id: 4,
                 desc: "bien cuit",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_tortillas.jpg"
+                imgSrc: "assets/qsets/qset1/q13_images/bien-cuit.jpg"
             }
         ]
       },
