@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
 import { AssociateTextToImage, QuestionType, Question } from 'src/app/domain/question';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-associate-text-image-select',
@@ -57,7 +58,11 @@ export class AssociateTextImageSelectComponent implements OnInit {
 
   matched = undefined;
 
-  constructor() { }
+  constructor(private router: Router) {
+    this.router.routeReuseStrategy.shouldReuseRoute = function(){
+      return false;
+    }
+  }
 
   ngOnInit() {
 

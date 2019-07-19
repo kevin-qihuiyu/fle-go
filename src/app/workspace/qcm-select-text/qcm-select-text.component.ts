@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { QCMSelectText, QuestionType, Question } from 'src/app/domain/question';
 import { MatRadioChange } from '@angular/material';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-qcm-select-text',
@@ -51,7 +52,11 @@ export class QcmSelectTextComponent implements OnInit {
 
 
   //////////////////////////////////////////////////////////////////////////////
-  constructor() { }
+  constructor(private router: Router) { 
+    this.router.routeReuseStrategy.shouldReuseRoute = function(){
+      return false;
+    }
+  }
 
   ngOnInit() {
     if (this.question.audioDesc) {

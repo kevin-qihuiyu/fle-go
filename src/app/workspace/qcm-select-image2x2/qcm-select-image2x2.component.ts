@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { QCMSelectImage } from 'src/app/domain/question';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-qcm-select-image2x2',
@@ -19,7 +20,11 @@ export class QcmSelectImage2x2Component implements OnInit {
 
 
   //////////////////////////////////////////////////////////////////////////////
-  constructor() { }
+  constructor(private router: Router) {
+    this.router.routeReuseStrategy.shouldReuseRoute = function(){
+      return false;
+    }
+   }
 
   ngOnInit() {
     if (this.question.audioDesc) {
