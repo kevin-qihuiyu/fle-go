@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
   studyMode: string = 'Free Browsing';
-  modes: string[] = ['Free Browsing','Scheduled(upcoming feature)'];
+  modes: string[] = ['Free Browsing','Scheduled (Upcoming feature)'];
 
   constructor() { }
 

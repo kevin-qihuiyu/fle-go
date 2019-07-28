@@ -22,16 +22,37 @@ mat-red
     margin: 0;
 }
 
+/* title for the whole application, we can have only one, aka: FLE-GO */
+h1 {
+    font-family: 'Righteous', cursive !important;
+}
+
 h2 { 
-    /* mat-teal */
-    color: #00796B;
+    font-family: 'Righteous', cursive !important;
 }
 
 h3 {
-    /* mat-teal light: 100 */
-    color: #00aa8e;
+    font-family: 'Raleway', sans-serif  !important;
+    font-weight: 400;
 }
 
+h4 {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400;
+}
+
+/* h5 and h6 by default is smaller than browser text. So use for disclaimer and copyright texts. */
+h5 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif !important;
+}
 
 /* Styles for icons, must use id to override default style */
 #icon-size-24 {
@@ -49,6 +70,11 @@ h3 {
 .teal { 
     /* mat-teal */
     color: #00796B;
+}
+
+.light-teal {
+    /* mat-teal light: 100 */
+    color: #00856f;
 }
 
 .light-gray {

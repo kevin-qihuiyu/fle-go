@@ -3,21 +3,21 @@
 <div class="container">
   <mat-card id="card-bg-colored">
     <img class="avatar" src="assets/img/avatar/1-avatar-1.png" alt="User Avatar">
-    <p><b>Victoire</b></p>
+    <h2>Victoire</h2>
     <p>1 day of study</p>
   </mat-card>
 
   <mat-divider></mat-divider>
 
-  <label id="radio-group-label"><h2>Study mode</h2></label>
+  <label id="radio-group-label"><h2 class="teal">Study mode</h2></label>
   <mat-radio-group class="radio-group" aria-labelledby="radio-group-label" [(ngModel)]="studyMode">
     <mat-radio-button class="radio-button" *ngFor="let mode of modes" [value]="mode">
-      {{mode}}
+      <p>{{mode}}</p>
     </mat-radio-button>
   </mat-radio-group>
-  <div>
+  <!-- <div>
     <p>Your study mode is: <b>{{studyMode}}</b></p>
-  </div>
+  </div> -->
 
   <mat-divider></mat-divider>
   <div class="action-container">

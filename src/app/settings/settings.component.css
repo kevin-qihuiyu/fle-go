@@ -47,8 +47,8 @@ p {
 
 ::ng-deep .mat-raised-button {
     margin: auto;
-    padding: 1.1em;
-    border-radius: 1.6em;
+    padding: 0.5em;
+    border-radius: 1em;
 
     font: 1.2em arial san-serif;
     color: white;
