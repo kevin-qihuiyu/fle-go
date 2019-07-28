@@ -49,6 +49,8 @@
 ::ng-deep .mat-simple-snackbar span {
     margin:auto;
     text-align: center;
+    font-family: 'Righteous', cursive !important;
+    font-size: 18px !important;
 }
 
 ::ng-deep .teal-snackbar {
@@ -79,6 +81,7 @@
     color: white;
     text-align: center !important;
 
+    font-family: 'Righteous', cursive !important;
     /* pointer-events: none !important; */
 
 }

@@ -10,6 +10,7 @@ import { AssociateTextImageComponent } from './associate-text-image/associate-te
 import { ProgressService } from '../progress/progress.service';
 import { MatSnackBar } from '@angular/material';
 import { AssociateTextImageSelectComponent } from './associate-text-image-select/associate-text-image-select.component';
+import { QcmSelectImage2x2Component } from './qcm-select-image2x2/qcm-select-image2x2.component';
 
 @Component({
   selector: 'app-workspace',
@@ -19,8 +20,10 @@ import { AssociateTextImageSelectComponent } from './associate-text-image-select
 export class WorkspaceComponent implements OnInit {
   @ViewChild(QcmSelectTextComponent) selectText : QcmSelectTextComponent;
   @ViewChild(QcmSelectImageComponent) selectImage : QcmSelectImageComponent;
+  @ViewChild(QcmSelectImage2x2Component) selectImage2x2 : QcmSelectImage2x2Component;
   @ViewChild(AssociateTextImageComponent) associateTextImage : AssociateTextImageComponent;
   @ViewChild(AssociateTextImageSelectComponent) associateTextImageSelect : AssociateTextImageSelectComponent;
+
 
   question$: Observable<Question>
   qid$: Observable<string>
@@ -62,6 +65,9 @@ export class WorkspaceComponent implements OnInit {
     }
     if (this.selectImage) {
       this.correct = this.selectImage.validateSelect();
+    }
+    if (this.selectImage2x2) {
+      this.correct = this.selectImage2x2.validateSelect();
     }
     if (this.associateTextImage) {
       this.correctAnswers = this.associateTextImage.validateMatch();
