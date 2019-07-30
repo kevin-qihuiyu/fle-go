@@ -6,8 +6,8 @@
     <!-- Question Type 1: LISEZ_ET_CHOISISSEZ -->
     <app-qcm-select-text *ngSwitchCase="1"[question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-text>
 
-    <app-qcm-select-image *ngSwitchCase="2" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image>
-    <!-- <app-qcm-select-image2x2 *ngSwitchCase="2" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image2x2> -->
+    <!-- <app-qcm-select-image *ngSwitchCase="2" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image> -->
+    <app-qcm-select-image2x2 *ngSwitchCase="2" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image2x2>
 
     <!-- Question Type 2: ECOUTEZ_ET_CHOISISSEZ -->
     <app-qcm-select-text *ngSwitchCase="3" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-text>
@@ -17,18 +17,7 @@
     <!-- Question Type 3: ASSOCIEZ_SELECTION-->
     <!-- Improve Usability of associate question using selection instead of drag and drop. -->
     <app-associate-text-image-select *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image-select> 
-
-    <!-- Question Type 3: ASSOCIEZ -->
-    <!-- Work in progress -->
-    <!-- <app-associate-text-image *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image>  -->
-    <!-- <app-associate-image-to-goal *ngSwitchCase="6" [question] = "(question$ | async)"></app-associate-image-to-goal>  -->
-    
-    <!-- Question Type 4: CHOISISSEZ SUR CALENDRIER -->
-    <!-- Work in progress -->
-    <!-- <app-select-calendar *ngSwitchCase="9" [question] = "(question$ | async)"></app-select-calendar>  -->
 </div>
-
-<!-- <div>The selected answer is: {{userAnswer}}</div> -->
 
 <div class="control-container">
     <div class="control">

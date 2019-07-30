@@ -1,16 +1,13 @@
 import { QCMSelectText, 
     QCMSelectImage, 
     AssociateTextToImage, 
-    AssociateImageToGoal, 
-    CardsortingTextTo2Goals,
-    QuestionType,
-    SelectOnCalendar} 
+    QuestionType} 
 from 'src/app/domain/question';
 
-export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | SelectOnCalendar)[] = [
+export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
     // Cat1: Vie quotidienne
     {
-        qid: 104,
+        qid: 101,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -63,7 +60,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         correctChoiceId:2 
     },
     {
-        qid: 101,
+        qid: 103,
         name: "Acheter des chaussures",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         desc: "De quoi elle parle?",
@@ -87,9 +84,32 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
           }
          ],
          correctChoiceId:2 
-      },
- 
-    
+    },  
+    {
+        qid: 104,
+        name: "Identifier un moyen de paiement",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        audioDesc: "assets/qsets/qset1/q10_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                imgSrc: "assets/qsets/qset1/q10_images/carte.jpg"
+            },
+            {
+                id: 2,
+                imgSrc: "assets/qsets/qset1/q10_images/cheque.jpg"
+            },
+            {
+                id: 3,
+                imgSrc: "assets/qsets/qset1/q10_images/espece.jpg"
+            },
+            {
+                id: 4,
+                imgSrc: "assets/qsets/qset1/q10_images/wechat.jpg"
+            },
+        ],
+        correctChoiceId:3 
+    },
     {
         qid: 105,
         name: "Connaître les noms de vêtements",
@@ -170,33 +190,9 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             }
         ]
     },
+    
     {
-        qid: 110,
-        name: "Identifier un moyen de paiement",
-        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "assets/qsets/qset1/q10_audio.mp3",
-        choices: [
-            {
-                id: 1,
-                imgSrc: "assets/qsets/qset1/q10_images/q10_carte.jpg"
-            },
-            {
-                id: 2,
-                imgSrc: "assets/qsets/qset1/q10_images/q10_cheque.jpg"
-            },
-            {
-                id: 3,
-                imgSrc: "assets/qsets/qset1/q10_images/q10_espece.jpg"
-            },
-            {
-                id: 4,
-                imgSrc: "assets/qsets/qset1/q10_images/q10_espece.jpg"
-            },
-        ],
-        correctChoiceId:3 
-    },
-    {
-        qid: 111,
+        qid: 108,
         name: "Identifier la cuisine française",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -223,7 +219,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         ]
       },
     {
-        qid: 112,
+        qid: 109,
         name: "Identifier la cuisine française",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -250,7 +246,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         ]
       },
     {
-        qid: 113,
+        qid: 110,
         name: "Choisir la cuisson",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         audioDesc: "assets/qsets/qset1/q13_audio.mp3",
@@ -277,126 +273,22 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             }
         ]
       },
-    // {
-    //   qid: 103,
-    //   name: "Acheter un billet de train",
-    //   questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
-    //   imgDesc: "assets/qsets/qset1/q3_images/q3_billet_de_train.jpg",
-    //   desc: "Payez vos achats.",
-    //   choices:[
-    //     {
-    //         id: 1,
-    //         value: 1,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_1_euro.jpg'
-    //     },
-    //     {
-    //         id: 2,
-    //         value: 2,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_2_euro.jpg'
-    //     },
-    //     {
-    //         id: 3,
-    //         value: 5,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_5_euros.jpg'
-    //     },
-    //     {
-    //         id: 4,
-    //         value: 10,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_10_euros.jpg'
-    //     },
-    //     {
-    //         id: 5,
-    //         value: 0.05,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_5_centimes.jpg'
-    //     },
-    //     {
-    //         id: 6,
-    //         value: 0.1,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_10_centimes.jpg'
-    //     },
-    //     {
-    //         id: 7,
-    //         value: 0.2,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_20_centimes.jpg'
-    //     },
-    //     {
-    //         id: 8,
-    //         value: 0.5,
-    //         imgSrc:'assets/qsets/qset1/q3_images/q3_50_centimes.jpg'
-    //     }
-    //    ],
-    //   goal: "5.2"
-    // },
-    // {
-    //     qid: 108,
-    //     name: "À la boulangerie",
-    //     questionType: QuestionType.ASSOCIEZ_IMAGE_TO_GOAL,
-    //     audioDesc: "assets/qsets/qset1/q8_audio.mp3",
-    //     choices:[
-    //         {
-    //             id: 1,
-    //             value: 1,
-    //             imgSrc:'assets/qsets/qset1/q3_images/q3_1_euro.jpg'
-    //         },
-    //         {
-    //             id: 2,
-    //             value: 2,
-    //             imgSrc:'assets/qsets/qset1/q3_images/q3_2_euro.jpg'
-    //         },
-    //         {
-    //             id: 3,
-    //             value: 5,
-    //             imgSrc:'assets/qsets/qset1/q3_images/q3_5_euros.jpg'
-    //         },
-    //         {
-    //             id: 4,
-    //             value: 10,
-    //             imgSrc:'assets/qsets/qset1/q3_images/q3_10_euros.jpg'
-    //         },
-    //         {
-    //             id: 5,
-    //             value: 0.05,
-    //             imgSrc:'assets/qsets/qset1/q3_images/q3_5_centimes.jpg'
-    //         },
-    //         {
-    //             id: 6,
-    //             value: 0.1,
-    //             imgSrc:'assets/qsets/qset1/q3_images/q3_10_centimes.jpg'
-    //         },
-    //         {
-    //             id: 7,
-    //             value: 0.2,
-    //             imgSrc:'assets/qsets/qset1/q3_images/q3_20_centimes.jpg'
-    //         },
-    //         {
-    //             id: 8,
-    //             value: 0.5,
-    //             imgSrc:'assets/qsets/qset1/q3_images/q3_50_centimes.jpg'
-    //         }
-    //     ],
-    //     goal: "2.2"
-    // },
-    // {
-    //     qid: 109,
-    //     name: "Identifier les catégories de produits",
-    //     questionType: QuestionType.CARDSORTING_TEXT_TO_2_GOALS,
-    //     imgDesc: "assets/qsets/qset1/q9_image.jpg",
-    //     choices: [
-    //         {
-    //             id:1,
-    //             desc:'Courgettes'
-    //         }, 
-    //         {
-    //             id:2,
-    //             desc:'Beurre'
-    //         },
-    //         {
-    //             id:3,
-    //             desc:'Carottes'
-    //         }     
-    //     ],
-    //     goals: ['Légumes', 'Produits laitiers']
-    // },
+      // Workaround for end of question contents
+      {
+        qid: 111,
+        name: "End of category",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "You have reach the end of this category.",
+        imgDesc: "assets/qsets/cong.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "Please go back and try other activities."
+            },
+        ],
+        correctChoiceId:2
+    },
+   
 
 
     // Cat2: Administration
@@ -446,6 +338,10 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             {
                 id: 3,
                 imgSrc: "assets/qsets/qset2/q2_images/option_3.jpg"
+            },
+            {
+                id: 4,
+                imgSrc: "assets/qsets/qset2/q2_images/option_4.jpg"
             }
         ],
         correctChoiceId:2 
@@ -474,10 +370,10 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
                 desc: "Il est annulé."
             }
         ],
-        correctChoiceId:3
+        correctChoiceId:4
     },
     {
-        qid: 205,
+        qid: 204,
         name: "Identifier la date de fin de validité d'un document",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Quelle est la date de fin de validité de ce titre de séjour?",
@@ -489,17 +385,17 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             },
             {
                 id: 2,
-                desc: "le mai 06, 2022"
+                desc: "le juin 05, 2022"
             },
             {
                 id: 3,
-                desc: "le mai 06, 2022"
+                desc: "le juillet 05, 2018"
             }
         ],
-        correctChoiceId:2
+        correctChoiceId:1
     },
     {
-        qid: 206,
+        qid: 205,
         name: "Identifier un courrier administratif",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Quel organisme vous écrit?",
@@ -524,14 +420,23 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
         ],
         correctChoiceId:1
     },
-    // {
-    //     qid: 208,
-    //     name: "Noter une date",
-    //     questionType: QuestionType.SELECT_ON_CALENDAR,
-    //     audioDesc: "assets/qsets/qset2/q8_audio.mp3",
-    //     selectedDate: new Date("2019/04/01"),
-    //     correctDate: new Date("2019/04/12"),
-    // },
+    
+    // Workaround for end of question contents
+    {
+        qid: 206,
+        name: "End of category",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "You have reach the end of this category.",
+        imgDesc: "assets/qsets/cong.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "Please go back and try other activities."
+            },
+        ],
+        correctChoiceId:2
+    },
+
 
     // Cat3: Voyager
     {
@@ -543,7 +448,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             {
                 id: 1,
                 desc: "le rer",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_velo.jpg"
+                imgSrc: "assets/qsets/qset3/q1_images/rer.jpg"
             },
             {
                 id: 2,
@@ -559,34 +464,6 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
                 id: 4,
                 desc: "le métro",
                 imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
-            }
-        ]
-    },
-    {
-        qid: 301,
-        name: "Moyen de transport",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        desc: "Qu'est-ce que c'est?",
-        choices: [
-            {
-                id: 1,
-                desc: "une trottinette",
-                imgSrc: "assets/qsets/qset3/q1_images/trottinette.jpg"
-            },
-            {
-                id: 2,
-                desc: "un vélo",
-                imgSrc: "assets/qsets/qset3/q1_images/velo.jpg"
-            },
-            {
-                id: 3,
-                desc: "une voiture",
-                imgSrc: "assets/qsets/qset3/q1_images/voiture.jpg"
-            },
-            {
-                id: 4,
-                desc: "le skate",
-                imgSrc: "assets/qsets/qset3/q1_images/skate.jpg"
             }
         ]
     },
@@ -618,7 +495,50 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
                 imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
             }
         ],
-        correctChoiceId:1
+        correctChoiceId:2
+    },
+    {
+        qid: 303,
+        name: "Moyen de transport",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Qu'est-ce que c'est?",
+        choices: [
+            {
+                id: 1,
+                desc: "une trottinette",
+                imgSrc: "assets/qsets/qset3/q3_images/trottinette.jpg"
+            },
+            {
+                id: 2,
+                desc: "un vélo",
+                imgSrc: "assets/qsets/qset3/q3_images/velo.jpg"
+            },
+            {
+                id: 3,
+                desc: "une voiture",
+                imgSrc: "assets/qsets/qset3/q3_images/voiture.jpg"
+            },
+            {
+                id: 4,
+                desc: "un skate",
+                imgSrc: "assets/qsets/qset3/q3_images/skate.jpg"
+            }
+        ]
+    },
+    // Workaround for end of question contents
+    {
+        qid: 304,
+        name: "End of category",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "You have reach the end of this category.",
+        imgDesc: "assets/qsets/cong.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "Please go back and try other activities."
+            },
+        ],
+        correctChoiceId:2
     },
 
     // Cat4: Se loger
@@ -659,22 +579,22 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             {
                 id: 1,
                 desc: "un canapé",
-                imgSrc: "assets/qsets/qset4/q1_images/canape.jpg"
+                imgSrc: "assets/qsets/qset4/q2_images/canape.jpg"
             },
             {
                 id: 2,
                 desc: "un lit double",
-                imgSrc: "assets/qsets/qset4/q1_images/lit_double.jpg"
+                imgSrc: "assets/qsets/qset4/q2_images/lit.jpg"
             },
             {
                 id: 3,
                 desc: "une bibliotèque",
-                imgSrc: "assets/qsets/qset4/q1_images/biblioteque.jpg"
+                imgSrc: "assets/qsets/qset4/q2_images/biblioteque.jpg"
             },
             {
                 id: 4,
                 desc: "une armoire",
-                imgSrc: "assets/qsets/qset4/q1_images/armoire.jpg"
+                imgSrc: "assets/qsets/qset4/q2_images/armoire.jpg"
             }
         ]
     },
@@ -687,53 +607,53 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage | Asso
             {
                 id: 1,
                 desc: "Mon code c'est 98A03.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+                imgSrc: "assets/qsets/qset4/q3_images/q2_digicode.jpg"
             },
             {
                 id: 2,
                 desc: "Ferme les volets.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+                imgSrc: "assets/qsets/qset4/q3_images/q2_volets.jpg"
             },
             {
                 id: 3,
                 desc: "J'ai perdu mes clés.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+                imgSrc: "assets/qsets/qset4/q3_images/q2_cles.jpg"
             },
             {
                 id: 4,
                 desc: "Il faut sonner à la porte avant d'entrer",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+                imgSrc: "assets/qsets/qset4/q3_images/q2_sonner.jpg"
             }
         ]
     },
-    {
-        qid: 404,
-        name: "Lire une annonce immobilière",
-        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
-        desc: "De quoi ils parlent?",
-        choices: [
-            {
-                id: 1,
-                desc: "Mon code c'est 98A03.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
-            },
-            {
-                id: 2,
-                desc: "Ferme les volets.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
-            },
-            {
-                id: 3,
-                desc: "J'ai perdu mes clés.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
-            },
-            {
-                id: 4,
-                desc: "Il faut sonner à la porte avant d'entrer",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
-            }
-        ]
-    },
+    // {
+    //     qid: 404,
+    //     name: "Lire une annonce immobilière",
+    //     questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+    //     desc: "De quoi ils parlent?",
+    //     choices: [
+    //         {
+    //             id: 1,
+    //             desc: "Mon code c'est 98A03.",
+    //             imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+    //         },
+    //         {
+    //             id: 2,
+    //             desc: "Ferme les volets.",
+    //             imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+    //         },
+    //         {
+    //             id: 3,
+    //             desc: "J'ai perdu mes clés.",
+    //             imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+    //         },
+    //         {
+    //             id: 4,
+    //             desc: "Il faut sonner à la porte avant d'entrer",
+    //             imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+    //         }
+    //     ]
+    // },
     
     // Cat5: Activités et sortir
     {

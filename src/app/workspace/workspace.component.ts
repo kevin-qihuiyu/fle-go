@@ -5,8 +5,6 @@ import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { QuestionsService } from './questions.service';
 import { QcmSelectTextComponent } from './qcm-select-text/qcm-select-text.component';
-import { QcmSelectImageComponent } from './qcm-select-image/qcm-select-image.component';
-import { AssociateTextImageComponent } from './associate-text-image/associate-text-image.component';
 import { ProgressService } from '../progress/progress.service';
 import { MatSnackBar } from '@angular/material';
 import { AssociateTextImageSelectComponent } from './associate-text-image-select/associate-text-image-select.component';
@@ -19,9 +17,7 @@ import { QcmSelectImage2x2Component } from './qcm-select-image2x2/qcm-select-ima
 })
 export class WorkspaceComponent implements OnInit {
   @ViewChild(QcmSelectTextComponent) selectText : QcmSelectTextComponent;
-  @ViewChild(QcmSelectImageComponent) selectImage : QcmSelectImageComponent;
   @ViewChild(QcmSelectImage2x2Component) selectImage2x2 : QcmSelectImage2x2Component;
-  @ViewChild(AssociateTextImageComponent) associateTextImage : AssociateTextImageComponent;
   @ViewChild(AssociateTextImageSelectComponent) associateTextImageSelect : AssociateTextImageSelectComponent;
 
 
@@ -63,14 +59,8 @@ export class WorkspaceComponent implements OnInit {
     if (this.selectText) {
       this.correct = this.selectText.validateSelect();
     }
-    if (this.selectImage) {
-      this.correct = this.selectImage.validateSelect();
-    }
     if (this.selectImage2x2) {
       this.correct = this.selectImage2x2.validateSelect();
-    }
-    if (this.associateTextImage) {
-      this.correctAnswers = this.associateTextImage.validateMatch();
     }
     if (this.associateTextImageSelect) {
       this.correct = this.associateTextImageSelect.validateMatch();

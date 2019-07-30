@@ -13,37 +13,37 @@ export class ProgressService {
     },
     {
       name:"Administration", 
-      total: 10,
+      total: 5,
       doneQuestionIds: [],
     },
     {
       name:"Voyager", 
-      total: 10,
+      total: 3,
       doneQuestionIds: [],
     },
     {
       name:"Se loger", 
-      total: 10,
+      total: 5,
       doneQuestionIds: [],
     },
     {
       name:"Activité, sortir", 
-      total: 10,
+      total: 6,
       doneQuestionIds: [],
     },
     {
       name:"Santé", 
-      total: 10,
+      total: 13,
       doneQuestionIds: [],
     },
     {
       name:"Vie amoureuse", 
-      total: 10,
+      total: 2,
       doneQuestionIds: [],
     },
     {
       name:"Vie professionnelle", 
-      total: 10,
+      total: 3,
       doneQuestionIds: [],
     },
   ]

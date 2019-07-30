@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { QSET } from 'src/assets/activities';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { QCMSelectText, QCMSelectImage, AssociateTextToImage, AssociateImageToGoal, Question, SelectOnCalendar } from '../domain/question';
+import { QCMSelectText, QCMSelectImage, AssociateTextToImage, Question } from '../domain/question';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ export class QuestionsService {
 
   constructor() { }
 
-  getQuestions(): Observable<(QCMSelectText | QCMSelectImage | AssociateTextToImage | AssociateImageToGoal | SelectOnCalendar)[]> {
+  getQuestions(): Observable<(QCMSelectText | QCMSelectImage | AssociateTextToImage )[]> {
     return of(QSET);
   }
 
