@@ -626,34 +626,73 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
             }
         ]
     },
-    // {
-    //     qid: 404,
-    //     name: "Lire une annonce immobilière",
-    //     questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
-    //     desc: "De quoi ils parlent?",
-    //     choices: [
-    //         {
-    //             id: 1,
-    //             desc: "Mon code c'est 98A03.",
-    //             imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
-    //         },
-    //         {
-    //             id: 2,
-    //             desc: "Ferme les volets.",
-    //             imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
-    //         },
-    //         {
-    //             id: 3,
-    //             desc: "J'ai perdu mes clés.",
-    //             imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
-    //         },
-    //         {
-    //             id: 4,
-    //             desc: "Il faut sonner à la porte avant d'entrer",
-    //             imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
-    //         }
-    //     ]
-    // },
+    {
+        qid: 404,
+        name: "Lire une annonce immobilière",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Parmi les énoncés suivants, lequel est FAUX?",
+        imgDesc: "assets/qsets/qset4/annonce.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "Le logment peut contenir une chambre et un salon.",
+            },
+            {
+                id: 2,
+                desc: "Le loyer est 1180€ toute charges comprise.",
+            },
+            {
+                id: 3,
+                desc: "Le locataire ne peut pas demander la prestation de CAF.",
+            },
+            {
+                id: 4,
+                desc: "Le propriétaire n'accepte pas la colocation.",
+            }
+        ],
+        correctChoiceId:2
+    },
+    {
+        qid: 405,
+        name: "Lire un contrat de location",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Parmi les énoncés suivants, lequel est VRAI?",
+        imgDesc: "assets/qsets/qset4/etat_des_lieux.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "Il y a une téléviseur dans le logement.",
+            },
+            {
+                id: 2,
+                desc: "Les murs du séjour est en bon état.",
+            },
+            {
+                id: 3,
+                desc: "Le canapé est en bon état.",
+            },
+            {
+                id: 4,
+                desc: "Il y a des rayures sur le parquet du séjour.",
+            }
+        ],
+        correctChoiceId:3
+    },
+    // Workaround for end of question contents
+    {
+        qid: 406,
+        name: "End of category",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "You have reach the end of this category.",
+        imgDesc: "assets/qsets/cong.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "Please go back and try other activities."
+            },
+        ],
+        correctChoiceId:2
+    },
     
     // Cat5: Activités et sortir
     {
