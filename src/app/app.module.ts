@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+
 
 import { SharedModule } from './shared/shared.module';
 import { MainModule } from './main/main.moudule';
@@ -17,6 +20,10 @@ import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register';
+import { AlertComponent } from './alert';
+
+import { fakeBackendProvider, ErrorInterceptor, JwtInterceptor } from './_helpers';
 
 @NgModule({
   declarations: [
@@ -28,17 +35,27 @@ import { LoginComponent } from './login/login.component';
     SettingsComponent,
     HeaderComponent,
     LoginComponent,
+    RegisterComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     SharedModule,
     WorkspaceModule,
     MainModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+
+    // provider used to create fake backend
+    // fakeBackendProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

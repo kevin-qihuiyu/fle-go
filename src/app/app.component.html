@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<a *ngIf="currentUser" (click)="logout()">Logout</a>
 <app-header></app-header>
 <!-- <router-outlet></router-outlet> -->
 <div [@routeAnimation1]="getAnimationData(routerOutlet)"

@@ -5,13 +5,16 @@ import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CategoryListComponent } from './main/category-list/category-list.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { AuthGuard } from './_helpers/auth.guard';
 
 const routes: Routes = [
-  {path: 'categories', component: CategoryListComponent },
-  {path: 'progress', component: ProgressComponent},
-  {path: 'vocabulary', component: VocabularyComponent,      },
-  {path: 'settings', component: SettingsComponent },
-  // {path: 'login', component: LoginComponent },
+  {path: 'categories', component: CategoryListComponent, canActivate: [AuthGuard]},
+  {path: 'progress', component: ProgressComponent, canActivate: [AuthGuard]},
+  {path: 'vocabulary', component: VocabularyComponent,  canActivate: [AuthGuard]},
+  {path: 'settings', component: SettingsComponent, canActivate: [AuthGuard]},
+  {path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   {path: '', redirectTo: 'categories', pathMatch: 'full'}
 ];
 
