@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { AuthService } from '../_helpers';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProgressService {
+  currentUser
 
   progressData = [
     {
@@ -48,7 +51,13 @@ export class ProgressService {
     },
   ]
 
-  constructor() { }
+  constructor(private authenticationService: AuthService) { 
+    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+
+    this.progressData[0].doneQuestionIds = this.currentUser.cat1doneQuestionIds;
+    this.progressData[1].doneQuestionIds = this.currentUser.cat2doneQuestionIds;
+    this.progressData[2].doneQuestionIds = this.currentUser.cat3doneQuestionIds;
+  }
 
   getAllProgress() {
     return this.progressData;
