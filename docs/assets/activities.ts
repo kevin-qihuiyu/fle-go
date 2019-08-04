@@ -698,30 +698,29 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
     {
         qid: 501,
         name: "Assister à une soirée",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        desc: "Comment s'appellent ces pièces?",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
+        audioDesc: "assets/qsets/qset5/danse.mp3",
+        desc: "Quel type de danse on parle?",
+        imgDesc: "assets/qsets/qset5/danse.png",
         choices: [
             {
                 id: 1,
-                desc: "le salon",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+                desc: "la salsa",
             },
             {
                 id: 2,
-                desc: "la cuisine",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+                desc: "la danse pour les enfants",
             },
             {
                 id: 3,
-                desc: "la chambre",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+                desc: "la samba",
             },
             {
                 id: 4,
-                desc: "la salle de bain",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+                desc: "le strip-tease",
             }
-        ]
+        ],
+        correctChoiceId:4
     },
     {
         qid: 502,
@@ -731,23 +730,23 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
         choices: [
             {
                 id: 1,
-                desc: "Mon code c'est 98A03.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+                desc: "Les nocturnes des musée",
+                imgSrc: "assets/qsets/qset5/q2_images/nocturne.jpg"
             },
             {
                 id: 2,
-                desc: "Ferme les volets.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+                desc: "Gratuit pour les -26 ans ressortissants de l'UE.",
+                imgSrc: "assets/qsets/qset5/q2_images/gratuite.jpg"
             },
             {
                 id: 3,
-                desc: "J'ai perdu mes clés.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+                desc: "La Joconde est un chef d'œuvre!",
+                imgSrc: "assets/qsets/qset5/q2_images/chef.jpg"
             },
             {
                 id: 4,
-                desc: "Il faut sonner à la porte avant d'entrer",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+                desc: "Laisse ton manteau au vestiaire.",
+                imgSrc: "assets/qsets/qset5/q2_images/vestiaire.jpg"
             }
         ]
     },
