@@ -273,14 +273,15 @@ export const ACTIVITIES_5: Activity[] = [
     difficulty: Difficulty.DÉBUTANT,
     questionId: 501
   },
+  // boire l'alcool, danser, musique...
   {
-    name: "Aller au cinéma",
+    name: "Visiter un musée",
     categoryId: 5,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 502
   },
   {
-    name: "Visiter un musée",
+    name: "Aller au cinéma",
     categoryId: 5,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 503
