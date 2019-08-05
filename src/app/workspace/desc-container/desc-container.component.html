@@ -1,0 +1,14 @@
+<div class="container">
+  <div [ngSwitch]="questionType" id="sub-title">
+      <!-- Question Type 1: LISEZ_ET_CHOISISSEZ_TEXT -->
+      <h4 class="light-teal" *ngSwitchCase="1">Lisez et choississez</h4>
+      <!-- Question Type 2: LISEZ_ET_CHOISISSEZ_TEXT -->
+      <h4 class="light-teal" *ngSwitchCase="2">Lisez et choississez</h4>
+      <!-- Question Type 3: ECOUTEZ_ET_CHOISISSEZ_TEXT -->
+      <h4 class="light-teal" *ngSwitchCase="3">Écoutez et choississez</h4>
+      <!-- Question Type 4: ECOUTEZ_ET_CHOISISSEZ_TEXT -->
+      <h4 class="light-teal" *ngSwitchCase="4">Écoutez et choississez</h4>
+    </div>
+    <app-audio-desc *ngIf="audioDesc" [audioDesc]="audioDesc"></app-audio-desc>
+    <app-image-desc *ngIf="imgDesc" [imgDesc]="imgDesc"></app-image-desc>
+</div>

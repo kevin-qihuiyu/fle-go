@@ -1,14 +1,8 @@
 <div class="container">
   <h3 class="teal"><b>{{question.name}}</b></h3>
-  <div [ngSwitch]="question.questionType">
-    <!-- Question Type 1: LISEZ_ET_CHOISISSEZ_TEXT -->
-    <h3 class="light-teal" *ngSwitchCase="1">Lisez et choississez</h3>
-      <!-- Question Type 3: ECOUTEZ_ET_CHOISISSEZ_TEXT -->
-    <h3 class="light-teal" *ngSwitchCase="3">Écoutez et choississez</h3>
-  </div>
 
-  <app-audio-desc *ngIf="hasAudio" [audioDesc]="question.audioDesc"></app-audio-desc>
-  <app-image-desc *ngIf="hasImage" [imgDesc]="question.imgDesc"></app-image-desc>
+  <app-desc-container [questionType]="questionType" [imgDesc]="question.imgDesc" [audioDesc]="question.audioDesc"></app-desc-container>
+
 
   <div><p id="desc">{{question.desc}}</p></div>
   <div class="question-container">

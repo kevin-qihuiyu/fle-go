@@ -5,7 +5,9 @@
 
 <div class="container">
   <div class="item" *ngFor="let randomImage of randomImages; let index = index">
-    <img bind-src="randomImage.imgSrc" alt="Image not available">
+    <div class="img-container">
+      <img bind-src="randomImage.imgSrc" alt="Image not available">
+    </div> 
     <mat-form-field>
       <mat-label>CHOISISSEZ</mat-label>
       <mat-select [(ngModel)]="answers[index]" [ngClass]="{'match-correct': answersStatus[index] == 1 , 'match-incorrect': answersStatus[index] == 0}">
