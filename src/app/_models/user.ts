@@ -5,7 +5,7 @@
     firstName: string;
     lastName: string;
     token: string;
-    cat1doneQuestionIds: [];
-    cat2doneQuestionIds: [];
-    cat3doneQuestionIds: [];
+    cat1doneQuestionIds: string[];
+    cat2doneQuestionIds: string[];
+    cat3doneQuestionIds: string[];
 }

@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { AuthService } from '../_helpers';
+import { AuthService, UserService } from '../_helpers';
+import { User } from '../_models';
+import { first } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -51,7 +53,8 @@ export class ProgressService {
     },
   ]
 
-  constructor(private authenticationService: AuthService) { 
+  constructor(private authenticationService: AuthService,
+    private userService: UserService) { 
     this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
 
     this.progressData[0].doneQuestionIds = this.currentUser.cat1doneQuestionIds;
@@ -80,8 +83,33 @@ export class ProgressService {
   addDoneQuestionsWithId(id: string) {
     let index = +id.charAt(0) -1; // hardcoded solution: first digit of qid indicates category
     
-    if (!this.progressData[index].doneQuestionIds.includes(id))
-      this.progressData[index].doneQuestionIds.push(id);
+    // if (!this.progressData[index].doneQuestionIds.includes(id))
+    //   this.progressData[index].doneQuestionIds.push(id);
+
+    //update database via api
+    switch(index) {
+      case 0: { 
+        if (!this.currentUser.cat1doneQuestionIds.includes(id)) {
+          this.currentUser.cat1doneQuestionIds.push(id);
+          this.userService.update(this.currentUser._id, this.currentUser)
+          .pipe(first())
+          .subscribe();
+        }
+      break; 
+      }
+
+
+     } 
+    //   case 1: { 
+    //     this.currentUser.cat2doneQuestionIds.push(id);
+    //     this.userService.update(this.currentUser.id, this.currentUser);
+    //     break; 
+    //  } 
+    //   case 2: { 
+    //     this.currentUser.cat3doneQuestionIds.push(id);
+    //     this.userService.update(this.currentUser.id, this.currentUser);
+    //     break; 
+    //  } 
   }
 
   clearAllDoneQuestions() {
