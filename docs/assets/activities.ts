@@ -273,9 +273,35 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
             }
         ]
       },
-      // Workaround for end of question contents
       {
         qid: 111,
+        name: "Comprendre le français familier",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        desc: "De quoi il parle?",
+        audioDesc: "assets/qsets/qset1/audio_du_coup.mp3",
+        choices: [
+            {
+                id: 1,
+                imgSrc: 'assets/qsets/qset1/q8_images/chick.jpg'
+            },
+            {
+                id: 2,
+                imgSrc: 'assets/qsets/qset1/q8_images/and_so.jpg'
+            },
+            {
+                id: 3,
+                imgSrc: 'assets/qsets/qset1/q8_images/champignon.jpg'
+            },
+            {
+                id:4,
+                imgSrc: 'assets/qsets/qset1/q8_images/explosion.jpg'
+            }
+        ],
+        correctChoiceId:2 
+    },
+      // Workaround for end of question contents
+      {
+        qid: 112,
         name: "End of category",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "You have reach the end of this category.",
@@ -377,7 +403,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
         name: "Identifier la date de fin de validité d'un document",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Quelle est la date de fin de validité de ce titre de séjour?",
-        imgDesc: "assets/qsets/qset2/q5_image.png",
+        imgDesc: "assets/qsets/qset2/titre_de_sejour.png",
         choices: [
             {
                 id: 1,

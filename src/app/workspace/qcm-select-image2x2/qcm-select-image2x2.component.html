@@ -1,7 +1,7 @@
 <div class="container">
   <h3 class="teal"><b>{{question.name}}</b></h3>
 
-  <app-desc-container [questionType]="questionType" [imgDesc]="question.imgDesc" [audioDesc]="question.audioDesc"></app-desc-container>
+  <app-desc-container [questionType]="question.questionType" [imgDesc]="question.imgDesc" [audioDesc]="question.audioDesc"></app-desc-container>
 
   <div id="desc"><p>{{question.desc}}</p></div>
   <div class="question-container">
