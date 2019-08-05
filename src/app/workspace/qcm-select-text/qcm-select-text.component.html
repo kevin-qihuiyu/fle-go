@@ -10,7 +10,7 @@
   <app-audio-desc *ngIf="hasAudio" [audioDesc]="question.audioDesc"></app-audio-desc>
   <app-image-desc *ngIf="hasImage" [imgDesc]="question.imgDesc"></app-image-desc>
 
-  <div id="desc">{{question.desc}}</div>
+  <div><p id="desc">{{question.desc}}</p></div>
   <div class="question-container">
     <mat-radio-group
       class="qcm-group"

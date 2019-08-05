@@ -19,7 +19,7 @@ export const ACTIVITIES_1: Activity[] = [
       name: "Acheter des chaussures",
       categoryId: 3,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 101
+      questionId: 103
     },
     {
       name: "Identifier un moyen de paiement",
@@ -62,6 +62,12 @@ export const ACTIVITIES_1: Activity[] = [
       categoryId: 1,
       difficulty: Difficulty.DÉBUTANT,
       questionId: 110
+    },
+    {
+      name: "Comprendre le français familier",
+      categoryId: 1,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 111
     },
     // {
     //   name: "Choisir la garniture",
