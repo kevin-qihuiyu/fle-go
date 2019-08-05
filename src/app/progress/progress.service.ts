@@ -55,7 +55,8 @@ export class ProgressService {
 
   constructor(private authenticationService: AuthService,
     private userService: UserService) { 
-    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+    // this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+    this.currentUser = this.authenticationService.currentUserValue;
 
     this.progressData[0].doneQuestionIds = this.currentUser.cat1doneQuestionIds;
     this.progressData[1].doneQuestionIds = this.currentUser.cat2doneQuestionIds;
@@ -95,7 +96,7 @@ export class ProgressService {
           .pipe(first())
           .subscribe();
         }
-      break; 
+        break; 
       }
 
 
