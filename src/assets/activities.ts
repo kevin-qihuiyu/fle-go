@@ -42,7 +42,7 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
       choices: [
         {
             id: 1,
-            desc: '07 05 30 45 06 30 79'
+            desc: '07 35 30 43 79'
         },
         {
             id: 2,
@@ -50,11 +50,11 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
         },
         {
             id: 3,
-            desc:'Z'
+            desc:'45C'
         },
         {
             id:4,
-            desc:'Numéro 2'
+            desc:'Numéro 27'
         }
         ],
         correctChoiceId:2 
@@ -76,11 +76,11 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
           },
           {
               id: 3,
-              imgSrc:'assets/qsets/qset1/q1_images/q1_pantalon.jpg'
+              imgSrc:'assets/qsets/qset1/q4_images/q4_pantalon.jpg'
           },
           {
               id: 4,
-              imgSrc:'assets/qsets/qset1/q1_images/q1_pantalon.jpg'
+              imgSrc:'assets/qsets/qset1/q4_images/q4_chemise.jpg'
           }
          ],
          correctChoiceId:2 
