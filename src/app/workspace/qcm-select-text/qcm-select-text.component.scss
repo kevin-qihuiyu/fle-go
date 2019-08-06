@@ -1,8 +1,4 @@
-.container {
-    margin-top: 1em;
-}
-
-h2, h3 {
+h2, h3, h4 {
     text-align: center;
 }
 
@@ -23,7 +19,7 @@ h2, h3 {
 
 .qcm-button {
     font-size: 1.2em;
-    margin: 1em;
+    margin: 0.5em;
 }
 
 .wrap-mat-radio-label {
@@ -36,9 +32,13 @@ h2, h3 {
     margin-left: 2em;  /* Workaround for centering issue */
 }
 
+#sub-title {
+    margin-top: 0.5em;
+}
 
 #desc {
     font-size: 1.2em;
     text-align: center;
+    padding: 0 0.8em;
 }
 

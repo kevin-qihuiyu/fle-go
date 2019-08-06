@@ -10,6 +10,7 @@ import { ImageDescComponent } from './image-desc/image-desc.component';
 import { QcmSelectTextComponent } from './qcm-select-text/qcm-select-text.component';
 import { QcmSelectImage2x2Component } from './qcm-select-image2x2/qcm-select-image2x2.component';
 import { AssociateTextImageSelectComponent } from './associate-text-image-select/associate-text-image-select.component';
+import { DescContainerComponent } from './desc-container/desc-container.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { AssociateTextImageSelectComponent } from './associate-text-image-select
     QcmSelectTextComponent,    
     QcmSelectImage2x2Component,
     AssociateTextImageSelectComponent,
+    DescContainerComponent,
   ],
   imports: [
     FormsModule,

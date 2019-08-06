@@ -1,11 +1,14 @@
 <h3 class="teal"><b>{{question.name}}</b></h3>
-<h3 class="light-teal">Choissiez</h3>
+
+<h4 class="light-teal" style="margin-top: 0.8em;">Choissiez</h4>
 
 <app-audio-desc *ngIf="hasAudio" [audioDesc]="question.audioDesc"></app-audio-desc>
 
 <div class="container">
   <div class="item" *ngFor="let randomImage of randomImages; let index = index">
-    <img bind-src="randomImage.imgSrc" alt="Image not available">
+    <div class="img-container">
+      <img bind-src="randomImage.imgSrc" alt="Image not available">
+    </div> 
     <mat-form-field>
       <mat-label>CHOISISSEZ</mat-label>
       <mat-select [(ngModel)]="answers[index]" [ngClass]="{'match-correct': answersStatus[index] == 1 , 'match-incorrect': answersStatus[index] == 0}">

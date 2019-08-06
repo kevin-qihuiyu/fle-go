@@ -19,7 +19,7 @@ export const ACTIVITIES_1: Activity[] = [
       name: "Acheter des chaussures",
       categoryId: 3,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 101
+      questionId: 103
     },
     {
       name: "Identifier un moyen de paiement",
@@ -62,6 +62,12 @@ export const ACTIVITIES_1: Activity[] = [
       categoryId: 1,
       difficulty: Difficulty.DÉBUTANT,
       questionId: 110
+    },
+    {
+      name: "Comprendre le français familier",
+      categoryId: 1,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 111
     },
     // {
     //   name: "Choisir la garniture",
@@ -273,14 +279,15 @@ export const ACTIVITIES_5: Activity[] = [
     difficulty: Difficulty.DÉBUTANT,
     questionId: 501
   },
+  // boire l'alcool, danser, musique...
   {
-    name: "Aller au cinéma",
+    name: "Visiter un musée",
     categoryId: 5,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 502
   },
   {
-    name: "Visiter un musée",
+    name: "Aller au cinéma",
     categoryId: 5,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 503
