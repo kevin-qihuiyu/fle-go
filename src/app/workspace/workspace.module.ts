@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../_shared/shared.module';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { WorkspaceComponent } from './workspace.component';

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { QCMSelectImage } from 'src/app/domain/question';
+import { QCMSelectImage } from '@/_models';
 import { Router } from '@angular/router';
 
 @Component({

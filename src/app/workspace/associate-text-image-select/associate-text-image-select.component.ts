@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
-import { AssociateTextToImage, QuestionType, Question } from 'src/app/domain/question';
+import { Component, OnInit, Input } from '@angular/core';
+import { AssociateTextToImage, QuestionType } from '@/_models';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Router } from '@angular/router';
 

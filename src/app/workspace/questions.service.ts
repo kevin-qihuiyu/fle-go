@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { QSET } from 'src/assets/activities';
+import { QSET } from 'assets/activities';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { QCMSelectText, QCMSelectImage, AssociateTextToImage, Question } from '../domain/question';
+import { QCMSelectText, QCMSelectImage, AssociateTextToImage, Question } from '@/_models';
 
 @Injectable({
   providedIn: 'root'

@@ -1,5 +1,4 @@
-import { Activity } from 'src/app/domain/activity';
-import { Difficulty } from 'src/app/domain/activity';
+import { Activity, Difficulty } from '@/_models/activity';
 
 // Cat1: Vie quotidienne
 export const ACTIVITIES_1: Activity[] = [

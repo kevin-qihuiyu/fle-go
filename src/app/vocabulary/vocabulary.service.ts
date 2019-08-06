@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Vocabulary } from '../domain/vocabulary';
-import { VOCABULARY_1, VOCABULARY_2, VOCABULARY_3, VOCABULARY_4, VOCABULARY_5, VOCABULARY_6, VOCABULARY_7, VOCABULARY_8} from 'src/assets/vocabulary';
+import { Vocabulary } from '@/_models/vocabulary';
+import { VOCABULARY_1, VOCABULARY_2, VOCABULARY_3, VOCABULARY_4, VOCABULARY_5, VOCABULARY_6, VOCABULARY_7, VOCABULARY_8} from 'assets/vocabulary';
 
 @Injectable({
   providedIn: 'root'

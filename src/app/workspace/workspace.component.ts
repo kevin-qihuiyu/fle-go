@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
-import { Question } from '../domain/question';
+import { Question } from '../_models/question';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { QuestionsService } from './questions.service';

@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
-import { SharedModule } from './shared/shared.module';
+import { SharedModule } from './_shared/shared.module';
 import { MainModule } from './main/main.moudule';
 import { WorkspaceModule } from './workspace/workspace.module';
 

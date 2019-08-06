@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Vocabulary } from 'src/app/domain/vocabulary';
+import { Vocabulary } from '@/_models';
 
 @Component({
   selector: 'app-vocabulary-card',

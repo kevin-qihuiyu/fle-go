@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Vocabulary } from '../domain/vocabulary';
+import { Vocabulary } from '@/_models';
 import { VocabularyService } from "./vocabulary.service";
 import { Observable } from 'rxjs';
 

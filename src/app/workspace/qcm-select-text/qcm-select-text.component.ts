@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { QCMSelectText, QuestionType, Question } from 'src/app/domain/question';
-import { MatRadioChange } from '@angular/material';
+import { QCMSelectText, QuestionType } from '@/_models';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +9,6 @@ import { Router } from '@angular/router';
 })
 export class QcmSelectTextComponent implements OnInit {
 
-  //@Input() question: Question;
   @Input() question: QCMSelectText;
   
   @Input() userChoice: string;

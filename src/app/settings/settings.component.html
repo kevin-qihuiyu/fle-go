@@ -4,7 +4,7 @@
   <mat-card id="card-bg-colored">
     <img class="avatar" src="assets/img/avatar/1-avatar-1.png" alt="User Avatar">
     <h2>{{currentUser.username}}</h2>
-    <p>Since {{currentUser.createdDate}}</p>
+    <p>Since {{currentUser.createdDate | date}}</p>
   </mat-card>
 
   <mat-divider></mat-divider>

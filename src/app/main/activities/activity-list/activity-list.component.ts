@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from '../../../domain/category';
-import { Activity, Difficulty } from '../../../domain/activity';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
-import { CategoriesService } from '../../categories.service';
 import { Observable } from 'rxjs';
-import { ActivitiesService } from '../../activities.service';
-import { ProgressService } from 'src/app/progress/progress.service';
-import { AppTitleService } from 'src/app/app-title.service';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
+import { Category } from '@/_models/category';
+import { Activity, Difficulty } from '@/_models/activity';
+import { switchMap } from 'rxjs/operators';
+import { CategoriesService } from '@/main/categories.service';
+import { ActivitiesService } from '@/main/activities.service';
+import { ProgressService } from '@/progress/progress.service';
+import { AppTitleService } from '@/app-title.service';
 
 @Component({
   selector: 'app-activity-list',
