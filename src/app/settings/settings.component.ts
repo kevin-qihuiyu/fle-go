@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../_models';
 import { AuthService } from '../_helpers';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-settings',
@@ -13,12 +14,18 @@ export class SettingsComponent implements OnInit {
   modes: string[] = ['Free Browsing','Scheduled (Upcoming feature)'];
 
   constructor(
+    public router: Router,
     private authenticationService: AuthService,
     ) {
     this.currentUser = this.authenticationService.currentUserValue;
    }
 
   ngOnInit() {
+  }
+
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
   }
 
 }
