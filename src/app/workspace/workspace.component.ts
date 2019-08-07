@@ -85,7 +85,7 @@ export class WorkspaceComponent implements OnInit {
   }
 
   goBack() {
-    console.log(this.router.url)
+    // console.log(this.router.url)
     if(this.snackBarRef) this.snackBarRef.dismiss();
     this.router.navigate([ '../' ], { relativeTo: this.route });
   }

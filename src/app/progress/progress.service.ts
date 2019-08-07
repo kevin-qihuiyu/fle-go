@@ -57,7 +57,10 @@ export class ProgressService {
   constructor(private authenticationService: AuthService,
     private userService: UserService) { 
     this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+    this.updateServiceData();
+  }
 
+  private updateServiceData() {
     this.progressData[0].doneQuestionIds = this.currentUser.cat1doneQuestionIds;
     this.progressData[1].doneQuestionIds = this.currentUser.cat2doneQuestionIds;
     this.progressData[2].doneQuestionIds = this.currentUser.cat3doneQuestionIds;
@@ -156,7 +159,11 @@ export class ProgressService {
       .pipe(first())
       .subscribe();
     // update current user store in local storage (session)
-    localStorage.setItem('currentUser', JSON.stringify(user));
+    this.userService.getCurrent().subscribe(x => this.currentUser = x);
+    localStorage.setItem('currentUser', JSON.stringify(this.currentUser));
+    // update service data
+    this.updateServiceData();
+
   }
 
   clearAllDoneQuestions() {
