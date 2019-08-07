@@ -2,7 +2,7 @@ import { QCMSelectText,
     QCMSelectImage, 
     AssociateTextToImage, 
     QuestionType} 
-from 'src/app/domain/question';
+from '@/_models/question';
 
 export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
     // Cat1: Vie quotidienne

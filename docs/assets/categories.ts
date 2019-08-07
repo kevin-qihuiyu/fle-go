@@ -1,4 +1,4 @@
-import { Category } from 'src/app/domain/category';
+import { Category } from '@/_models/category';
 
 export const CATEGORIES: Category[] = [
 {

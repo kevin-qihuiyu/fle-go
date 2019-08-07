@@ -1,4 +1,4 @@
-import { Vocabulary } from 'src/app/domain/vocabulary';
+import { Vocabulary } from '@/_models/vocabulary';
 
 // Cat1: Vie quotidienne
 export const VOCABULARY_1: Vocabulary[] = [
