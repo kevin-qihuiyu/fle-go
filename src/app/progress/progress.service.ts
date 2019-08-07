@@ -14,7 +14,7 @@ export class ProgressService {
   progressData = [
     {
       name:"Vie Quotidienne", 
-      total: 10,
+      total: 11,
       doneQuestionIds: [],
     },
     {
