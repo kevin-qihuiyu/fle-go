@@ -11,6 +11,9 @@ export class AuthService {
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
 
+  //apiUrl = "http://localhost:3000"
+  apiUrl = "https://flego-server.herokuapp.com"
+  
   constructor(private http: HttpClient) {
       this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
       this.currentUser = this.currentUserSubject.asObservable();
@@ -21,7 +24,7 @@ export class AuthService {
   }
 
   login(username, password) {
-      return this.http.post<any>(`https://flego-server.herokuapp.com/users/authenticate`, { username, password })
+      return this.http.post<any>(this.apiUrl + `/users/authenticate`, { username, password })
           .pipe(map(user => {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('currentUser', JSON.stringify(user));

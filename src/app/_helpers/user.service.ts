@@ -7,7 +7,8 @@ import { User } from '../_models';
 export class UserService {
     constructor(private http: HttpClient) { }
 
-    apiUrl = "https://flego-server.herokuapp.com/"
+    apiUrl = "https://flego-server.herokuapp.com"
+    //apiUrl = "http://localhost:3000"
 
     getAll() {
         return this.http.get<User[]>(this.apiUrl + `users`);
