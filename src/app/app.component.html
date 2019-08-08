@@ -5,7 +5,7 @@
      [@routeAnimation2]="getAnimationData(routerOutlet)">
   <router-outlet #routerOutlet="outlet"></router-outlet>
 </div>
-<app-nav *ngIf="!router.url.includes('activities')"></app-nav>
+<app-nav *ngIf="!router.url.includes('activities') && !router.url.includes('login') && !router.url.includes('register')"></app-nav>
 <!-- <app-footer></app-footer> -->
 
 
