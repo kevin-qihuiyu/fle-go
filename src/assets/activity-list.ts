@@ -259,13 +259,13 @@ export const ACTIVITIES_4: Activity[] = [
   {
       name: "Lire une annonce immobilière",
       categoryId: 4,
-      difficulty: Difficulty.DÉBUTANT,
+      difficulty: Difficulty.INTERMÉDIAIRE,
       questionId: 404
   },
   {
       name: "Lire un contrat de location",
       categoryId: 4,
-      difficulty: Difficulty.DÉBUTANT,
+      difficulty: Difficulty.DIFFICILE,
       questionId: 405
   },
 ]

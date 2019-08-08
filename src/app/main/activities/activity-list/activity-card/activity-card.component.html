@@ -5,7 +5,9 @@
     </div> 
     <div class="titles">
       <div class="title"><h4>{{activity.name}}</h4></div>
-      <div class="subtitle"> <span class="difficulty-tag">{{activity.difficulty}}</span> </div>
+      <div class="subtitle"> <span class="difficulty-tag" [ngClass]="{'color-debutant': activity.difficulty == 'DÉBUTANT',
+        'color-intermediaire': activity.difficulty == 'INTERMÉDIAIRE',
+        'color-difficile': activity.difficulty == 'DIFFICILE'}">{{activity.difficulty}}</span> </div>
     </div>
   </div>
   <div id="action-sign">

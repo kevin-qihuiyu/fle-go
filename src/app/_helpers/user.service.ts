@@ -10,10 +10,6 @@ export class UserService {
     apiUrl = "https://flego-server.herokuapp.com"
     //apiUrl = "http://localhost:3000"
 
-    getAll() {
-        return this.http.get<User[]>(this.apiUrl + `users`);
-    }
-
     getCurrent() {
         return this.http.get(this.apiUrl + `/users/current`);
     }

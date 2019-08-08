@@ -12,12 +12,18 @@
     align-items: center;
 }
 
+/* Styles for the status bubble, ON/OFF */
 #status {
     display: flex;
     direction: column;
     justify-content: center;
 }
 
+.activity-done { 
+    color: rgb(0, 209, 185);
+}
+
+/* Styles for the activity title & subtitle (tag)*/
 .titles {
     display: flex;
     flex-direction: column;
@@ -34,20 +40,35 @@
     margin-top: 0.6em;
 }
 
+/* Styles for difficulty tag, colors are different  */
 .difficulty-tag {
-    border: 2px solid teal;
-    border-radius: 5px;
     padding: 0.3em;
-    color:teal;
     font-size: 0.8em;
 }
 
+.color-debutant {
+    border: 2px solid teal;
+    border-radius: 5px;
+    color:teal;
+}
+
+.color-intermediaire {
+    border: 2px solid #b8bb04;
+    border-radius: 5px;
+    color:#b8bb04;
+}
+
+.color-difficile {
+    border: 2px solid #800400;
+    border-radius: 5px;
+    color:#800400;
+}
+
+/* Style for the arrow button in the end, only use as indication */
 #action-sign {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.activity-done { 
-    color: rgb(0, 209, 185);
-}
+
