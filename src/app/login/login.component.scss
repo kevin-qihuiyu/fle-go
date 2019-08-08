@@ -6,6 +6,38 @@
     justify-content: center;
 }
 
+.login-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
 .form-control {
     border: solid lightgrey 1px;
+}
+
+.invalid-feedback {
+    color: red;
+}
+
+#btn-login {
+    width: 100%;
+    font-size: 1em;
+}
+
+#btn-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-up {
+    padding-top: 2.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-link {
+    color: teal;
 }

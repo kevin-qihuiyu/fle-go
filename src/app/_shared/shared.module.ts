@@ -13,9 +13,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatRippleModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
-
-import {DragDropModule} from '@angular/cdk/drag-drop';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [],
@@ -31,7 +31,9 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTabsModule,
-    DragDropModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
     MatSnackBarModule,
     MatRippleModule,
     MatSelectModule
@@ -47,7 +49,9 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTabsModule,
-    DragDropModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
     MatSnackBarModule,
     MatRippleModule,
     MatSelectModule
