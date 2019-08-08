@@ -20,7 +20,7 @@
     <div class="control">
         <button mat-raised-button id="validate" (click)="validateSelection()"><p>Check</p></button>
         <button mat-raised-button id="goback" *ngIf="tried"  (click)="goBack()"><p>Back</p></button>
-        <button mat-raised-button id="gonext" *ngIf="correct || (correctAnswers.length == 4)" (click)="goNext()"><p>Next</p></button>
+        <button mat-raised-button id="gonext" *ngIf="correct" (click)="goNext()"><p>Next</p></button>
     </div>
 </div>
 
