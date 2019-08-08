@@ -6,6 +6,7 @@
     height: 1em;
 }
 
+/* Styles for the control panel on the bottom, composed of floating buttons */
 .control-container {
     position: fixed;
     /* bottom: 0.8em; */
@@ -24,7 +25,6 @@
 
 
 #validate {
-    /* margin: auto; */
     padding: 1.1em;
     border-radius: 1.6em;
 
@@ -34,12 +34,16 @@
 }
 
 #goback {    
+    padding: 1.1em;
+    border-radius: 1.6em;
     font: 1em arial san-serif;
     background-color: rgb(11, 155, 138);
     color: white;
 }
 
-#gonext {    
+#gonext {
+    padding: 1.1em;
+    border-radius: 1.6em;    
     font: 1em arial san-serif;
     background-color: rgb(31, 192, 173);
     color: white;

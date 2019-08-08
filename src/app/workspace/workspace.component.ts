@@ -20,17 +20,16 @@ export class WorkspaceComponent implements OnInit {
   @ViewChild(QcmSelectImage2x2Component) selectImage2x2 : QcmSelectImage2x2Component;
   @ViewChild(AssociateTextImageSelectComponent) associateTextImageSelect : AssociateTextImageSelectComponent;
 
-
   question$: Observable<Question>
   qid$: Observable<string>
-  userAnswer = "Default"
-  correct = false
-  correctAnswers = []
-
-  //When tried, Next button and Goback button appear
-  tried: boolean = false;
-
   question;
+  userAnswer = "Default"
+
+  // When tried, Next button appear
+  tried: boolean = false;
+  // When correct, Goback button appear
+  correct = false
+
   snackBarRef;
 
   constructor(
@@ -56,6 +55,7 @@ export class WorkspaceComponent implements OnInit {
 
 
   validateSelection() {
+    // Get validation resutl from child components
     if (this.selectText) {
       this.correct = this.selectText.validateSelect();
     }
@@ -66,26 +66,18 @@ export class WorkspaceComponent implements OnInit {
       this.correct = this.associateTextImageSelect.validateMatch();
     }
 
-
+    // Update UI and Record qid to backend to update progress if correct
     if(this.correct) {
+      this.progressService.addDoneQuestionsWithId(this.question.qid.toString());
       this.snackBarRef = this.openSnackBar('Correct!', '', 'teal-snackbar');
     } 
-    else{
+    else {
       this.snackBarRef = this.openSnackBar("Wrong Answer.", '', 'red-snackbar');
     }
-    this.processDone();
-  }
-
-  private processDone() {
-    // When a try is attempted , Goback button appear;
-    // When answer is correct, GoNext button appear
     this.tried = true;
-
-    if (this.correct)  this.progressService.addDoneQuestionsWithId(this.question.qid.toString());
   }
 
   goBack() {
-    // console.log(this.router.url)
     if(this.snackBarRef) this.snackBarRef.dismiss();
     this.router.navigate([ '../' ], { relativeTo: this.route });
   }
@@ -98,7 +90,6 @@ export class WorkspaceComponent implements OnInit {
     this.tried = false;
     this.snackBarRef = null;
     this.correct = false
-    this.correctAnswers = []
   }
 
   // SnackBar showing Check result: appear for 1.5s

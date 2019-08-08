@@ -5,13 +5,10 @@
 <div [ngSwitch]="(question$ | async ).questionType">
     <!-- Question Type 1: LISEZ_ET_CHOISISSEZ -->
     <app-qcm-select-text *ngSwitchCase="1"[question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-text>
-
-    <!-- <app-qcm-select-image *ngSwitchCase="2" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image> -->
     <app-qcm-select-image2x2 *ngSwitchCase="2" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image2x2>
 
     <!-- Question Type 2: ECOUTEZ_ET_CHOISISSEZ -->
     <app-qcm-select-text *ngSwitchCase="3" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-text>
-    <!-- <app-qcm-select-image *ngSwitchCase="4" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image> -->
     <app-qcm-select-image2x2 *ngSwitchCase="4" [question] = "(question$ | async)" [(userChoice)] = "userAnswer"></app-qcm-select-image2x2>
 
     <!-- Question Type 3: ASSOCIEZ_SELECTION-->
@@ -22,8 +19,8 @@
 <div class="control-container">
     <div class="control">
         <button mat-raised-button id="validate" (click)="validateSelection()"><p>Check</p></button>
-        <button mat-fab id="goback" *ngIf="tried"  (click)="goBack()"><p>Back</p></button>
-        <button mat-fab id="gonext" *ngIf="correct || (correctAnswers.length == 4)" (click)="goNext()"><p>Next</p></button>
+        <button mat-raised-button id="goback" *ngIf="tried"  (click)="goBack()"><p>Back</p></button>
+        <button mat-raised-button id="gonext" *ngIf="correct || (correctAnswers.length == 4)" (click)="goNext()"><p>Next</p></button>
     </div>
 </div>
 

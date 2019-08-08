@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'vocabulary', component: VocabularyComponent,  canActivate: [AuthGuard]},
   {path: 'settings', component: SettingsComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  {path: 'register', component: RegisterComponent },
   {path: '', redirectTo: 'categories', pathMatch: 'full'}
 ];
 
