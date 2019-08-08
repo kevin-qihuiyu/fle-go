@@ -17,13 +17,13 @@
             <button mat-stroked-button color="primary" [disabled]="loading" id="btn-login">
                 <div id="btn-content">
                     <mat-spinner [diameter]="20" *ngIf="loading" id="load-spinner" ></mat-spinner>
-                    <p>LOGIN</p>
+                    <p>LOG IN</p>
                 </div>
             </button>
         </div>
     </form>
-    <div id="sign-up">
-        <span>Don't have an account?</span><a routerLink="/register" class="btn-link"><p>SIGN UP</p></a>
-    </div>
     <alert></alert>
+    <div id="switch-page">
+        <h4>Don't have an account? &nbsp;</h4><a routerLink="/register" class="btn-link"><p>SIGN UP</p></a>
+    </div>
 </div>

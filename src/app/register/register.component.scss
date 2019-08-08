@@ -1,11 +1,49 @@
 .container {
-    padding-top: 45%;
+    padding-top: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+h2 {
+    padding-bottom: 0.8em;
+}
+
+.signup-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
 .form-control {
     border: solid lightgrey 1px;
+}
+
+.invalid-feedback {
+    color: red;
+}
+
+#btn-login {
+    width: 100%;
+    font-size: 1em;
+}
+
+#btn-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#switch-page {
+    padding-top: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-link {
+    color: teal;
+    text-decoration: none;
 }
