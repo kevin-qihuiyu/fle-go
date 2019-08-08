@@ -13,41 +13,49 @@ export class ProgressService {
 
   progressData = [
     {
+      id: 1,
       name:"Vie Quotidienne", 
       total: 11,
       doneQuestionIds: [],
     },
     {
+      id: 2,
       name:"Administration", 
       total: 5,
       doneQuestionIds: [],
     },
     {
+      id: 3,
       name:"Voyager", 
       total: 3,
       doneQuestionIds: [],
     },
     {
+      id: 4,
       name:"Se loger", 
       total: 5,
       doneQuestionIds: [],
     },
     {
+      id: 5,
       name:"Activité, sortir", 
       total: 6,
       doneQuestionIds: [],
     },
     {
+      id: 6,
       name:"Santé", 
       total: 13,
       doneQuestionIds: [],
     },
     {
+      id: 7,
       name:"Vie amoureuse", 
       total: 2,
       doneQuestionIds: [],
     },
-    {
+    {      
+      id: 8,
       name:"Vie professionnelle", 
       total: 3,
       doneQuestionIds: [],

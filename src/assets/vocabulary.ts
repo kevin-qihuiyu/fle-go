@@ -6,7 +6,7 @@ export const VOCABULARY_1: Vocabulary[] = [
     id: 101,
     name: "Une livraison",
     categoryId: 1,
-    audioSrc: "",
+    audioSrc: "assets/vocabulary/1/101.mp3",
     attr: "n.",
     explanation: "Quand on a fait les courses par exemple sur Internet et que le magasin les apporte directment à la maison",
     usage: "Ouvre la porte, c'est la livraison de courses."
