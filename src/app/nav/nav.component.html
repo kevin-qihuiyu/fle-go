@@ -1,6 +1,5 @@
 <div class="container">
-  <button mat-button 
-    *ngFor="let navItem of navItems"
+  <button mat-button *ngFor="let navItem of navItems"
     [routerLink]="navItem.link" 
     routerLinkActive="active-link"
     #routerActiveStatus="routerLinkActive">

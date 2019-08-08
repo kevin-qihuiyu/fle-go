@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
  
+import { AuthGuard } from '@/_helpers';
+
 import { CategoryListComponent } from './category-list/category-list.component';
 import { ActivityListComponent } from './activities/activity-list/activity-list.component';
-import { WorkspaceComponent } from '../workspace/workspace.component';
 import { ActivitiesComponent } from './activities/activities.component';
-import { AuthGuard } from '../_helpers';
+import { WorkspaceComponent } from '@/workspace/workspace.component';
+
 
 const mainRoutes: Routes = [
   { path: 'categories', component: CategoryListComponent, data: {animation: 'categories'} ,canActivate: [AuthGuard]},

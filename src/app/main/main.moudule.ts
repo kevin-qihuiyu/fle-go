@@ -1,7 +1,7 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 import { FormsModule }    from '@angular/forms';
-import { SharedModule } from '../_shared/shared.module';
+import { SharedModule } from '@/_shared/shared.module';
  
 import { CategoryListComponent }    from './category-list/category-list.component';
 import { CategoryCardComponent }  from './category-list/category-card/category-card.component';

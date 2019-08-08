@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-audio-desc',
   templateUrl: './audio-desc.component.html',
   styleUrls: ['./audio-desc.component.scss']
 })
-export class AudioDescComponent implements OnInit {
+export class AudioDescComponent implements OnInit, OnDestroy {
   
   audio;
   @Input() audioDesc: string;
@@ -24,5 +24,13 @@ export class AudioDescComponent implements OnInit {
 
   togglePlayAudio(){
     return this.audio.paused ? this.audio.play() : this.audio.pause();
+  }
+
+  ngOnDestroy() {
+    // destroy audio here
+    if(this.audio) {
+      this.audio.pause();
+      this.audio = null;
+    }
   }
 }

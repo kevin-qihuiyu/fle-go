@@ -5,8 +5,7 @@
 .container {
     width: 100%;
     background: white;
-    box-shadow: 
-    inset 0px 11px 8px -10px #CCC;
+    box-shadow: inset 0px 11px 8px -10px #CCC;
 
     display: flex;
     flex-direction: row;

@@ -167,8 +167,16 @@ export class ProgressService {
   }
 
   clearAllDoneQuestions() {
-    this.progressData.forEach(progress => progress.doneQuestionIds = [])
-    //TODO: use API to update database
+    // this.progressData.forEach(progress => progress.doneQuestionIds = [])
+    this.currentUser.cat1doneQuestionIds = [];
+    this.currentUser.cat2doneQuestionIds = [];
+    this.currentUser.cat3doneQuestionIds = [];
+    this.currentUser.cat4doneQuestionIds = [];
+    this.currentUser.cat5doneQuestionIds = [];
+    this.currentUser.cat6doneQuestionIds = [];
+    this.currentUser.cat7doneQuestionIds = [];
+    this.currentUser.cat8doneQuestionIds = [];
+    this.updateUser(this.currentUser);
   }
 
 

@@ -3,7 +3,6 @@
 <mat-card id="card-bg">
   <mat-card-title>
       <span><h3>Global Progression</h3></span>
-      <!-- This fills the remaining space of the current row -->
       <span class="fill-remaining-space"></span>
       <span><h3>{{ globalTotalValue | percent }}</h3></span>
     </mat-card-title>
@@ -17,7 +16,6 @@
 <mat-card *ngFor="let progressItem of progressData">
   <mat-card-title>
     <span><h4>{{progressItem.name}}</h4></span>
-    <!-- This fills the remaining space of the current row -->
     <span class="fill-remaining-space"></span>
     <span><h4>{{progressItem.doneQuestionIds.length/progressItem.total | percent}}</h4></span>
   </mat-card-title>

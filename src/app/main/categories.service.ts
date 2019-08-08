@@ -4,9 +4,7 @@ import { CATEGORIES } from 'assets/categories';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
 export class CategoriesService {
 
   constructor() { }
