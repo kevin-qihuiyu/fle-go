@@ -1,8 +1,7 @@
 <div class="placeholder"></div>
 
 <div class="container">
-  <div class="cover-image" 
-  *ngIf="category$ | async as category"
+  <div class="cover-image" *ngIf="category$ | async as category"
   [ngStyle]="{'background-image': 'linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)), url(' + category.imgSrc +')'}">
       <div class="title"><h4>{{category.name}}</h4></div>
       <div class="content">
@@ -15,5 +14,4 @@
   </app-activity-card>
 </div>
 
-<div class="placeholder"></div>
-<div class="placeholder"></div>
+<div class="placeholder-bottom"></div>

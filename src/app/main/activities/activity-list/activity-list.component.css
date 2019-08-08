@@ -2,11 +2,13 @@
     height: 3em;
 }
 
+.placeholder-bottom {
+    height: 0.5em;
+}
+
 .cover-image {
     display: flex;
     flex-direction: column;
-    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)), 
-        url("../../../../assets/img/category/2-administration.jpg"); */
     height: 12em;
     /* container relative + .title absolute for bottom alignment */
     position: relative;

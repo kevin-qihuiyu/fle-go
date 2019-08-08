@@ -2,6 +2,10 @@
     height: 56px;
 }
 
+.placeholder-bottom {
+    height: 80px;
+}
+
 /* Style adjustments for mat-card */
 .mat-card {
     margin: 0.3em;
