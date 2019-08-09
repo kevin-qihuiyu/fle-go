@@ -6,6 +6,10 @@
     height: 1em;
 }
 
+.placeholder-bottom {
+    height: 80px;
+}
+
 /* Styles for the control panel on the bottom, composed of floating buttons */
 .control-container {
     position: fixed;

@@ -15,15 +15,15 @@ export class NavComponent implements OnInit {
       icon: 'face'
     },
     {
-      name: 'Progress',
-      link: '/progress',
-      icon: 'trending_up'
-    },    
-    {
       name: 'Vocabulary',
       link: '/vocabulary',
       icon: 'ballot'
-    },    
+    },
+    {
+      name: 'Progress',
+      link: '/progress',
+      icon: 'trending_up'
+    },  
     {
       name: 'Settings',
       link: '/settings',

@@ -4,8 +4,8 @@ import { VocabularyComponent } from './vocabulary/vocabulary.component';
 import { ProgressComponent } from './progress/progress.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CategoryListComponent } from './main/category-list/category-list.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './user-management/login/login.component';
+import { RegisterComponent } from './user-management/register/register.component';
 import { AuthGuard } from './_helpers/auth.guard';
 
 const routes: Routes = [

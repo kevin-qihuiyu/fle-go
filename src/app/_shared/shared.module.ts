@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
@@ -17,10 +19,14 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
+
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
+    CommonModule,    
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule,
     MatToolbarModule,
     MatButtonModule, 
     MatCheckboxModule,
@@ -39,6 +45,9 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatSelectModule
   ],
   exports: [
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule,
     MatToolbarModule,
     MatButtonModule, 
     MatCheckboxModule,
