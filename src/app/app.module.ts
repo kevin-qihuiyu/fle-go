@@ -17,7 +17,7 @@ import { NavComponent } from './nav/nav.component';
 import { VocabularyComponent } from './vocabulary/vocabulary.component';
 import { VocabularyCardComponent } from './vocabulary/vocabulary-card/vocabulary-card.component';
 import { ProgressComponent } from './progress/progress.component';
-import { SettingsComponent } from './settings/settings.component';
+import { SettingsComponent, DialogConfirmResetComponent } from './settings/settings.component';
 import { HeaderComponent } from './header/header.component';
 
 import { fakeBackendProvider, ErrorInterceptor, JwtInterceptor } from './_helpers';
@@ -30,6 +30,7 @@ import { fakeBackendProvider, ErrorInterceptor, JwtInterceptor } from './_helper
     VocabularyCardComponent,
     ProgressComponent,
     SettingsComponent,
+    DialogConfirmResetComponent,
     HeaderComponent
   ],
   imports: [
@@ -49,6 +50,8 @@ import { fakeBackendProvider, ErrorInterceptor, JwtInterceptor } from './_helper
     // provider used to create fake backend
     // fakeBackendProvider
   ],
+  //dynamically loaded component
+  entryComponents: [DialogConfirmResetComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

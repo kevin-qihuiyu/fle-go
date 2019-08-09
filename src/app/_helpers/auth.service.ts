@@ -4,6 +4,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { User } from '../_models/user';
+import { ProgressService } from '@/progress/progress.service';
 
 @Injectable({providedIn: 'root'})
 export class AuthService {
@@ -14,7 +15,8 @@ export class AuthService {
   //apiUrl = "http://localhost:3000"
   apiUrl = "https://flego-server.herokuapp.com"
   
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,
+    private progressService: ProgressService) {
       this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
       this.currentUser = this.currentUserSubject.asObservable();
   }
@@ -29,6 +31,10 @@ export class AuthService {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('currentUser', JSON.stringify(user));
               this.currentUserSubject.next(user);
+
+              // update progress data with new user
+              // fix issue in switching to another user but progress service is not reconstruct. 
+              this.progressService.updateServiceData();
               return user;
           }));
   }

@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { AuthService, UserService } from '../_helpers';
+import { UserService } from '@/_helpers/user.service';
 import { User } from '../_models';
 import { first } from 'rxjs/operators';
+import { AuthService } from '@/_helpers';
 
 @Injectable({
   providedIn: 'root'
@@ -62,13 +63,14 @@ export class ProgressService {
     },
   ]
 
-  constructor(private authenticationService: AuthService,
-    private userService: UserService) { 
-    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+  constructor(private userService: UserService) { 
+    // Always wants service data sync with currentUser in storage.
     this.updateServiceData();
   }
 
-  private updateServiceData() {
+  updateServiceData() {
+    this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
     this.progressData[0].doneQuestionIds = this.currentUser.cat1doneQuestionIds;
     this.progressData[1].doneQuestionIds = this.currentUser.cat2doneQuestionIds;
     this.progressData[2].doneQuestionIds = this.currentUser.cat3doneQuestionIds;
@@ -174,7 +176,7 @@ export class ProgressService {
 
   }
 
-  clearAllDoneQuestions() {
+  resetAllProgress() {
     // this.progressData.forEach(progress => progress.doneQuestionIds = [])
     this.currentUser.cat1doneQuestionIds = [];
     this.currentUser.cat2doneQuestionIds = [];

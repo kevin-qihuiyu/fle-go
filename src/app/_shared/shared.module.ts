@@ -18,7 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [],
@@ -42,7 +42,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatRippleModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule
   ],
   exports: [
     FormsModule,
@@ -63,7 +64,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatRippleModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule
   ]
 })
 export class SharedModule { }

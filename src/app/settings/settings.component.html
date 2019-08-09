@@ -9,7 +9,7 @@
 <div class="container">
   <button mat-button class="btn-secondary"><a href="mailto:qihui.yu0811@gmail.com" style="text-decoration: none; color: gray">Feedback and Function Requests</a> </button>
   <mat-divider></mat-divider>
-  <button mat-button class="btn-secondary" *ngIf="currentUser" (click)="clearProgress()">Reset all progress</button>
+  <button mat-button class="btn-secondary" *ngIf="currentUser" (click)="openConfirmDialog()">Reset all progress</button>
 
   <mat-divider></mat-divider>
   <mat-divider></mat-divider>
