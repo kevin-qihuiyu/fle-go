@@ -15,7 +15,8 @@ const routes: Routes = [
   {path: 'settings', component: SettingsComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent },
   {path: 'register', component: RegisterComponent },
-  {path: '', redirectTo: 'categories', pathMatch: 'full'}
+  {path: '', redirectTo: 'categories', pathMatch: 'full'},
+  {path: '**', redirectTo: 'categories'} // for page not found
 ];
 
 @NgModule({
