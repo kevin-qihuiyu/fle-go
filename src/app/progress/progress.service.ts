@@ -71,14 +71,16 @@ export class ProgressService {
   updateServiceData() {
     this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
-    this.progressData[0].doneQuestionIds = this.currentUser.cat1doneQuestionIds;
-    this.progressData[1].doneQuestionIds = this.currentUser.cat2doneQuestionIds;
-    this.progressData[2].doneQuestionIds = this.currentUser.cat3doneQuestionIds;
-    this.progressData[3].doneQuestionIds = this.currentUser.cat4doneQuestionIds;
-    this.progressData[4].doneQuestionIds = this.currentUser.cat5doneQuestionIds;
-    this.progressData[5].doneQuestionIds = this.currentUser.cat6doneQuestionIds;
-    this.progressData[6].doneQuestionIds = this.currentUser.cat7doneQuestionIds;
-    this.progressData[7].doneQuestionIds = this.currentUser.cat8doneQuestionIds;
+    if (this.currentUser){
+      this.progressData[0].doneQuestionIds = this.currentUser.cat1doneQuestionIds;
+      this.progressData[1].doneQuestionIds = this.currentUser.cat2doneQuestionIds;
+      this.progressData[2].doneQuestionIds = this.currentUser.cat3doneQuestionIds;
+      this.progressData[3].doneQuestionIds = this.currentUser.cat4doneQuestionIds;
+      this.progressData[4].doneQuestionIds = this.currentUser.cat5doneQuestionIds;
+      this.progressData[5].doneQuestionIds = this.currentUser.cat6doneQuestionIds;
+      this.progressData[6].doneQuestionIds = this.currentUser.cat7doneQuestionIds;
+      this.progressData[7].doneQuestionIds = this.currentUser.cat8doneQuestionIds;
+    }
   }
 
   getAllProgress() {
