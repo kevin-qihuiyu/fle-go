@@ -1,0 +1,65 @@
+.placeholder-header {
+    height: 55px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 2em;
+}
+
+#section1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)), url("assets/img/landing/porte_1.png");
+
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    
+    /* Background image is fixed in the viewport so that it doesn't move when 
+        the content's height is greater than the image's height */
+    // background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based
+        on the container's size */
+    background-size: cover;
+    
+    /* Set a background color that will be displayed
+        while the background image is loading */
+    background-color: #464646;
+    height: 520px;
+}
+
+.actions-container {
+    padding: 1em 2em;
+}
+
+.btn-action {
+    width: 100%;
+}
+
+.btn-register {
+    background-color: teal;
+    color: white;
+}
+
+.features {
+    margin-bottom: 0.5em;
+    padding: 2.5em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.point {
+    display: flex;
+    flex-direction: row;
+}

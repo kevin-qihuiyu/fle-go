@@ -21,6 +21,7 @@ import { SettingsComponent, DialogConfirmResetComponent } from './settings/setti
 import { HeaderComponent } from './header/header.component';
 
 import { fakeBackendProvider, ErrorInterceptor, JwtInterceptor } from './_helpers';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { fakeBackendProvider, ErrorInterceptor, JwtInterceptor } from './_helper
     ProgressComponent,
     SettingsComponent,
     DialogConfirmResetComponent,
-    HeaderComponent
+    HeaderComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

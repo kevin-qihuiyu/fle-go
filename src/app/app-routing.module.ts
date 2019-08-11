@@ -7,6 +7,7 @@ import { CategoryListComponent } from './main/category-list/category-list.compon
 import { LoginComponent } from './user-management/login/login.component';
 import { RegisterComponent } from './user-management/register/register.component';
 import { AuthGuard } from './_helpers/auth.guard';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
   {path: 'categories', component: CategoryListComponent, canActivate: [AuthGuard]},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'settings', component: SettingsComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent },
   {path: 'register', component: RegisterComponent },
-  {path: '', redirectTo: 'categories', pathMatch: 'full'},
+  {path: 'landing', component: LandingPageComponent },
+  {path: '', redirectTo: 'landing', pathMatch: 'full'},
   {path: '**', redirectTo: 'categories'} // for page not found
 ];
 
