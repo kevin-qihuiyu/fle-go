@@ -7,7 +7,12 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-  returnUrl: string;
+  returnUrl: string
+  screenshotImagePaths = [
+    'assets/img/landing/screenshots/1.PNG',
+    'assets/img/landing/screenshots/2.PNG',
+    'assets/img/landing/screenshots/3.PNG',
+  ];
 
   constructor(private route: ActivatedRoute,
     private router: Router) {

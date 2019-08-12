@@ -51,35 +51,35 @@
         </mat-card>
     </section>
     <section id="example">
-      <mat-card class="features">
+      <mat-card class="features-screenshots">
         <mat-card-title>
-          <h5>How it looks</h5>
+          <h4>Learn by activities</h4>
         </mat-card-title>
         <mat-card-content>
-          <p>We are working constantly to improve your learning experience.</p>
+          <p>Learning materials are present as different kind of interactive activities.</p>
         </mat-card-content>
       </mat-card>
       <div class="screenshots-scrolling-wrapper">
-        <div class="screenshoot-app" ><img src="assets/img/landing/icons8-learning-48.png" alt="Improve"><h2>Card</h2></div>
-        <div class="screenshoot-app">                <img src="assets/img/landing/icons8-learning-48.png" alt="Improve"><h2>Card</h2></div>
-        <div class="screenshoot-app">                <img src="assets/img/landing/icons8-learning-48.png" alt="Improve"><h2>Card</h2></div>
-        <div class="screenshoot-app"><h2>Card</h2></div>
+        <div *ngFor="let pathItem of screenshotImagePaths" class="screenshot-app">
+          <img class="screenshot-img" [src]="pathItem"><hr>
+        </div>
       </div>
     </section>
     <section id="platforms">
       <mat-card class="features">
           <mat-card-title>
-            <h5>Save to your home screen</h5>
+            <h5>Save to your home screen now.</h5>
           </mat-card-title>
           <mat-card-content>
-            <p>Native apps are still under developement. Use the "Save to home screen" function in your browser to create an easy access!</p>  
+            <p>Native apps are still under developement. 
+              Use the "Save to home screen" function in your browser to create an easy access to this website!</p>  
           </mat-card-content>
         </mat-card>
     </section>
-    <section id="call-to-action">
-      <mat-card class="features">
+    <section >
+      <mat-card class="features" id="call-to-action">
           <mat-card-title>
-            <h5>The French that you can apply immediately you step out off your door.</h5>
+            <h4>The French that you can apply immediately when you step out off your door.</h4>
           </mat-card-title>
           <div class="actions-container">  
             <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>Quick sign up and get started</p></button>
