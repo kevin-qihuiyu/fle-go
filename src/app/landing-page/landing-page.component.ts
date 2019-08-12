@@ -12,6 +12,11 @@ export class LandingPageComponent implements OnInit {
     'assets/img/landing/screenshots/1.PNG',
     'assets/img/landing/screenshots/2.PNG',
     'assets/img/landing/screenshots/3.PNG',
+    'assets/img/landing/screenshots/4.PNG',
+    'assets/img/landing/screenshots/5.PNG',
+    'assets/img/landing/screenshots/6.PNG',
+    'assets/img/landing/screenshots/7.PNG',
+    'assets/img/landing/screenshots/8.PNG'
   ];
 
   constructor(private route: ActivatedRoute,
