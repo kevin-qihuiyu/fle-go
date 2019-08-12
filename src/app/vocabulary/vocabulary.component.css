@@ -20,7 +20,7 @@
 } 
 
 ::ng-deep .mat-tab-body.mat-tab-body-active {
-    z-index: 9 !important;
+    z-index: 0 !important;
 }
 
 ::ng-deep .mat-tab-label-content {
