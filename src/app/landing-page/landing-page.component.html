@@ -3,12 +3,12 @@
 <div id="section1" class="section">
   <h1>Open the door to the real French life.</h1>
   <div class="actions-container">  
-    <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>Quick sign up and get started</p></button>
-    <button mat-stroked-button class="btn-action btn-login" (click)="login()"><p>Already have an accont</p></button>
+    <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>Quick sign up & start learning</p></button>
+    <button mat-stroked-button class="btn-action btn-login" (click)="login()"><p>Already have an account</p></button>
   </div>
 </div>
 
-<div id="section2" class="sec">
+<div id="section2" >
     <section id="feature-area">
         <mat-card class="features">
             <mat-card-title>
@@ -74,7 +74,12 @@
             <p class="desc">Native apps for iOS / Android are under developement. <br>
               Meanwhile, use the <b>"Save to home screen"</b> function in your browser to create an easy access to this web app.
             </p>
-            <img src="assets/img/landing/save-to-home.png" style="width:85%; margin-top: 1.5em; ">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>For Safari</mat-panel-title>
+              </mat-expansion-panel-header>
+              <img src="assets/img/landing/save-to-home.png" style="width:85%; margin-top: 1.5em; ">       
+              </mat-expansion-panel>
           </mat-card-content>
         </mat-card>
     </section>

@@ -62,6 +62,22 @@ h1 {
     border-color: lightgray;
 }
 
+@media (min-width: 768px) {
+    #section1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)), 
+            url("assets/img/landing/homepage-2.jpg");
+        background-size: cover;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+    }
+
+    #section1 .actions-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+// Section for features
 .features {
     margin-bottom: 0.5em;
     padding: 2.5em;
@@ -113,7 +129,27 @@ p {
     margin-top: 0.4em;
 }
 
+@media (min-width: 768px) {
+    .screenshots-scrolling-wrapper {
+        .screenshot-app {
+            width: 12.5%;
+        }    
+    }
+}
 
+
+// Availability
+.mat-expansion-panel {
+    margin-top: 0.75em;
+}
+
+@media (min-width: 768px) {
+    .mat-expansion-panel {
+        width: 30%;
+    }
+}
+
+// Section: Call to action
 #call-to-action {
     background-color: rgb(47, 179, 163);
     background-position: center center;
@@ -124,6 +160,18 @@ p {
     margin-bottom: 0.15em;
 }
 
+@media (min-width: 768px) {
+    #call-to-action {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .actions-container {
+        margin-top: 0;
+    }
+}
+
+// Footer 
 #footer-area {
     background-color: #00796B;
     color: white;
