@@ -3,8 +3,8 @@
 <div id="section1" class="section">
   <h1>Open the door to the real French life.</h1>
   <div class="actions-container">  
-    <button mat-stroked-button class="btn-action btn-register">Quick Sign Up and Get Started</button>
-    <button mat-stroked-button class="btn-action btn-login">Already have an accont</button>
+    <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>Quick sign up and get started</p></button>
+    <button mat-stroked-button class="btn-action btn-login" (click)="login()"><p>Already have an accont</p></button>
   </div>
 </div>
 
@@ -12,7 +12,7 @@
     <section id="feature-area">
         <mat-card class="features">
             <mat-card-title>
-              <h5>Learn the French language used in real life</h5>
+              <h4>Learn French used in real life</h4>
             </mat-card-title>
             <mat-card-content>
               <p>You have already taken French courses, but still got no confidence in real life situations? 
@@ -21,43 +21,78 @@
           </mat-card>
           <mat-card class="features">
             <mat-card-title>
-              <h4>Immersive experience</h4>
+              <h4>Learn what you need</h4>
             </mat-card-title>
             <mat-card-content>
-              <div class="point">
-                <span id="nature">icon</span>&nbsp;
-                <div>
-                  <h5>Personalized learning</h5>
-                  <p>Our apps propose fresh French materials used in real life for an expat new in France like you. Adapt faster to the new environment and breath the air like a local</p>
-                  </div>
-              </div>
-              <div class="point">
-                <span id="nature">icon</span>&nbsp;
-                <div>
-                  <h5>Personalized learning</h5>
-                  <p>Our apps propose fresh French materials used in real life for an expat new in France like you. Adapt faster to the new environment and breath the air like a local</p>
-                  </div>
-              </div>
-              <div class="point">
-                  <span id="nature">icon</span>&nbsp;
-                  <div>
-                    <h5>Personalized learning</h5>
-                    <p>Our apps propose fresh French materials used in real life for an expat new in France like you. Adapt faster to the new environment and breath the air like a local</p>
-                    </div>
+              <div class="feature-hightlight">
+                <span id="nature"><img src="assets/img/landing/icons8-abc-48.png" alt="ABC"></span>&nbsp;
+                <div class="desc-column">
+                  <h3><b>100% Useful language</b></h3>
+                  <p class="desc">Learning materials are designed based on real life experience of many expats in France just like you. 
+                    So these are language used by locals, and we keep updating it regulary.</p>
                 </div>
-
+              </div>
+              <div class="feature-hightlight">
+                <span id="nature"><img src="assets/img/landing/icons8-sorting-48.png" alt="Category"></span>&nbsp;
+                <div class="desc-column">
+                  <h3><b>Full category</b></h3>
+                  <p class="desc">From basic life skills like shopping, house-renting to professional situations like networking or job interviews,
+                    we provide the core language elements that help you make your first step.</p>
+                </div>
+              </div>
+              <div class="feature-hightlight">
+                <span id="nature"><img src="assets/img/landing/icons8-learning-48.png" alt="Improve"></span>&nbsp;
+                <div class="desc-column">
+                  <h3><b>Improve fast</b></h3>
+                  <p class="desc">You can keep track of your progress with your account, and practice at anytime anywhere without any limit.</p>
+                </div>
+              </div>
             </mat-card-content>
-          </mat-card>
+        </mat-card>
     </section>
     <section id="example">
       <mat-card class="features">
+        <mat-card-title>
+          <h5>How it looks</h5>
+        </mat-card-title>
+        <mat-card-content>
+          <p>We are working constantly to improve your learning experience.</p>
+        </mat-card-content>
+      </mat-card>
+      <div class="screenshots-scrolling-wrapper">
+        <div class="screenshoot-app" ><img src="assets/img/landing/icons8-learning-48.png" alt="Improve"><h2>Card</h2></div>
+        <div class="screenshoot-app">                <img src="assets/img/landing/icons8-learning-48.png" alt="Improve"><h2>Card</h2></div>
+        <div class="screenshoot-app">                <img src="assets/img/landing/icons8-learning-48.png" alt="Improve"><h2>Card</h2></div>
+        <div class="screenshoot-app"><h2>Card</h2></div>
+      </div>
+    </section>
+    <section id="platforms">
+      <mat-card class="features">
           <mat-card-title>
-            <h5>App Screenshots</h5>
+            <h5>Save to your home screen</h5>
           </mat-card-title>
           <mat-card-content>
-            <p>You have already taken French courses, but still got no confidence in real life situations? 
-                Our apps propose fresh French materials used in 100% real life.</p>  
+            <p>Native apps are still under developement. Use the "Save to home screen" function in your browser to create an easy access!</p>  
           </mat-card-content>
         </mat-card>
     </section>
+    <section id="call-to-action">
+      <mat-card class="features">
+          <mat-card-title>
+            <h5>The French that you can apply immediately you step out off your door.</h5>
+          </mat-card-title>
+          <div class="actions-container">  
+            <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>Quick sign up and get started</p></button>
+          </div>
+        </mat-card>
+    </section>
+
+    <footer id="footer-area" >
+      <div class="footer-note">
+        <h4>Contact</h4>
+      </div>
+      <div class="footer-text">
+        <h6>© 2019 qihui.yu</h6>
+      </div>
+    </footer>
 </div>

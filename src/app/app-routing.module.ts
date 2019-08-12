@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent },
   {path: 'register', component: RegisterComponent },
   {path: 'landing', component: LandingPageComponent },
-  {path: '', redirectTo: 'landing', pathMatch: 'full'},
+  {path: '', redirectTo: 'categories', pathMatch: 'full'},
   {path: '**', redirectTo: 'categories'} // for page not found
 ];
 

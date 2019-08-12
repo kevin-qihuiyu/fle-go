@@ -38,11 +38,18 @@ h1 {
 }
 
 .actions-container {
-    padding: 1em 2em;
+    margin-top: 0.65em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .btn-action {
-    width: 100%;
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    border-radius: 15px;
+    font-size: 1em;
 }
 
 .btn-register {
@@ -50,16 +57,69 @@ h1 {
     color: white;
 }
 
+.btn-login {
+    color: white;
+    border-color: lightgray;
+}
+
 .features {
     margin-bottom: 0.5em;
     padding: 2.5em;
+}
+
+
+.feature-hightlight {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.desc-column {
+    padding-left: 1em;
 }
 
 p {
     line-height: 1.5em;
 }
 
-.point {
+.desc {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 0.5em;
+}
+
+.screenshots-scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .screenshoot-app {
+        display: inline-block;
+        width: 300px;
+    }
+}
+
+
+#footer-area {
+    background-color: #00796B;
+    color: white;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+.footer-note {
+    text-align: center;
+}
+
+.footer-text {
+    margin-top: 0.5em;
+    text-align: center;
 }
