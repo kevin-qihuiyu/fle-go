@@ -53,6 +53,15 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "zh": {
+              "aot": true,
+              "outputPath": "dist/flego-zh/",
+              "baseHref": "/zh/",
+              "i18nFile": "src/locale/messages.zh.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -64,6 +73,9 @@
           "configurations": {
             "production": {
               "browserTarget": "fle-go:build:production"
+            },
+            "zh": {
+              "browserTarget": "fle-go:build:zh"
             }
           }
         },

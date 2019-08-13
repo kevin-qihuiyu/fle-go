@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1480232e0506de60f689f34c21ebb96a984e78fe" datatype="html">
+        <source>Open the door to the real French life.</source>
+        <target>打开通往法语生活的大门。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eed60be970fd58773733569b406f1adc265f2f11" datatype="html">
+        <source>Quick sign up &amp; start learning</source>
+        <target>快速注册 &amp; 开始学习</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="53931f64cd5b4157e9e0fd950a245ee4d74e77b4" datatype="html">
+        <source>Already have an account</source>
+        <target>已有账户</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3713d49a4b7a482203de88cb78d3a517f2084303" datatype="html">
+        <source>Learn French used in real life</source>
+        <target>学习真实生活中使用的法语</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a27d44a46c756e27e7bc2c17aad031a08e4e0422" datatype="html">
+        <source>You have already taken a bunch of French courses, but still got no confidence in real life situations? 
+                  Our app propose fresh French materials used in 100% real life.</source>
+        <target>已经上过一段时间的法语课，但是仍然在日常生活中自信不足？我们的应用提供真实生活中用到的法语内容。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c02dc11d7984e3ff6824186f5da90774cb21362c" datatype="html">
+        <source>Learn what you need</source>
+        <target>学习你想学的内容</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e80fde279a6270c56d5e660a431ac66ec0307ed6" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100% Useful language<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100% 有用<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b95bf8a8adce6d125bfc9a61573ea4e0ea3fedde" datatype="html">
+        <source>Learning materials are designed based on real life experience of many expats in France just like you. 
+                    These are language used by locals, and we keep updating it regulary.</source>
+        <target>学习材料基于学长学姐们在法国的多年生活工作经验，因此保证实用。我们还会定期更新内容。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e7416aaa434db17bfa35c611ab8f802cd1eb6569" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Full category<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>包罗万象<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="90e0c47d9920c3186edc4d4e7cf4de27268adbe3" datatype="html">
+        <source>From basic life skills like shopping, house-renting to professional situations like networking or job interviews,
+                    we provide the core language sets that help you make your first step.</source>
+        <target>从基本生活技能如买菜，租房，娱乐到职场社交，面试等专业场景，我们都提供最经典实用的语言素材。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ff3beb6f4deb639a586043fb51e49b5146789f2" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Improve fast<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>进步神速<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f99f95c84e941eea48a0e31d41bba79de847d6e9" datatype="html">
+        <source>You can keep track of your progress with your account, and practice at anytime anywhere without any limit.</source>
+        <target>通过注册你可以保存你的学习进度，可以随时随地不受限制地学习。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="235f1222ee07df6f29dcb65a4fce86e6156a1f6c" datatype="html">
+        <source>Learn by activities</source>
+        <target>通过活动学习</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="23f7ee74f760236f8d5cef1f0430ca98e1473840" datatype="html">
+        <source>Learning materials are present as different kind of interactive activities.</source>
+        <target>学习材料以各种交互式题目形式展示。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a1c82fc690f864169a68b23219c21c9116051ba7" datatype="html">
+        <source>Web app available now, native apps on the way.</source>
+        <target>网页版应用已经上线，手机版将紧随而来</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4dbe9d04d2855e877a5d2d79660a76f4aed648a5" datatype="html">
+        <source>Native apps for iOS / Android are under developement. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+              Meanwhile, use the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>&quot;Save to home screen&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> function in your browser to create an easy access to this web app.
+            </source>
+        <target>苹果和安卓的原生应用尚在开发当中。 <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+              与此同时，可以使用浏览器的 <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>&quot;保存到桌面&quot;<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> 功能以快速访问网页版应用。
+            </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="522525e29c1cbf12cafe73858fc60f9c795f79fa" datatype="html">
+        <source>French that you can use immediately on the street.</source>
+        <target>走下楼就能用到的法语，不学一波吗？</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a4c553c0c488ab3142bdad8140d9aab74ef7bb08" datatype="html">
+        <source>Quick sign up and get started</source>
+        <target>快速注册 &amp; 开始学习</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02e9e69ddcbf93de9fd38bc4d0f312142658610d" datatype="html">
+        <source>Contact Us</source>
+        <target>联系我们</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e922a921d4a56e1fff983a70471dd4b9d2ad5aa0" datatype="html">
+        <source>中文版</source>
+        <target>Engilish</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/landing-page/landing-page.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
