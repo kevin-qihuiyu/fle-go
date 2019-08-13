@@ -11,7 +11,7 @@ export class QuestionsService {
 
   constructor() { }
 
-  getQuestions(): Observable<(QCMSelectText | QCMSelectImage | AssociateTextToImage )[]> {
+  getQuestions(): Observable<(Question | QCMSelectText | QCMSelectImage | AssociateTextToImage )[]> {
     return of(QSET);
   }
 

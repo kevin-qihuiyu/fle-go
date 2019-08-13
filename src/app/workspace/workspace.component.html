@@ -14,11 +14,14 @@
     <!-- Question Type 3: ASSOCIEZ_SELECTION-->
     <!-- Improve Usability of associate question using selection instead of drag and drop. -->
     <app-associate-text-image-select *ngSwitchCase="5" [question] = "(question$ | async)"></app-associate-text-image-select> 
+
+    <!-- Question Type: END OF CATEGORY -->
+    <app-end-of-category *ngSwitchCase="9" [question] = "(question$ | async)"></app-end-of-category>
 </div>
 
 <div class="control-container">
     <div class="control">
-        <button mat-raised-button id="validate" (click)="validateSelection()"><p>Check</p></button>
+        <button mat-raised-button id="validate" *ngIf="!endOfCategory" (click)="validateSelection()"><p>Check</p></button>
         <button mat-raised-button id="goback" *ngIf="tried"  (click)="goBack()"><p>Back</p></button>
         <button mat-raised-button id="gonext" *ngIf="correct" (click)="goNext()"><p>Next</p></button>
     </div>

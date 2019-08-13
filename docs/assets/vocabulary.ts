@@ -4,7 +4,7 @@ import { Vocabulary } from '@/_models/vocabulary';
 export const VOCABULARY_1: Vocabulary[] = [
 {
     id: 101,
-    name: "Une livraison",
+    name: "une livraison",
     categoryId: 1,
     audioSrc: "assets/vocabulary/1/101.mp3",
     attr: "n.",
@@ -64,6 +64,33 @@ export const VOCABULARY_1: Vocabulary[] = [
     attr: "n.",
     explanation: "Aliments que l'on ajoute à un plat avant de le servir pour le compléter ou pour le décorer.",
     usage: "On prends les frites et les jeune pousse comme garniture."
+},
+{
+    id: 108,
+    name: "un abonnement",
+    categoryId: 1,
+    audioSrc: "",
+    attr: "n.",
+    explanation: "Accord conventionnel de fourniture régulière (d'un produit ou d'un service)",
+    usage: "Je dois résilier l'abonnement Internet de mon ancien appartement."
+},
+{
+    id: 109,
+    name: "un forfait",
+    categoryId: 1,
+    audioSrc: "",
+    attr: "n.",
+    explanation: "Ensemble des prestations et des services pour un prix déterminé",
+    usage: "Les forfaits sans engagement free : Internet 4G, SMS/MMS illimités, 100% en ligne."
+},
+{
+    id: 110,
+    name: "un engagement",
+    categoryId: 1,
+    audioSrc: "",
+    attr: "n.",
+    explanation: "Promesse ou contrat pour une durée déterminé. Si on résilie un service en engagement avant, cela engendrera des frais.",
+    usage: "Les forfaits sans engagement free : Internet 4G, SMS/MMS illimités, 100% en ligne."
 },
 
 ]

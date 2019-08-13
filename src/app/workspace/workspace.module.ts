@@ -11,6 +11,7 @@ import { QcmSelectTextComponent } from './qcm-select-text/qcm-select-text.compon
 import { QcmSelectImage2x2Component } from './qcm-select-image2x2/qcm-select-image2x2.component';
 import { AssociateTextImageSelectComponent } from './associate-text-image-select/associate-text-image-select.component';
 import { DescContainerComponent } from './desc-container/desc-container.component';
+import { EndOfCategoryComponent } from './end-of-category/end-of-category.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { DescContainerComponent } from './desc-container/desc-container.componen
     QcmSelectImage2x2Component,
     AssociateTextImageSelectComponent,
     DescContainerComponent,
+    EndOfCategoryComponent,
   ],
   imports: [
     FormsModule,

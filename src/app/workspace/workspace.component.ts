@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
-import { Question } from '../_models/question';
+import { Question, QuestionType } from '../_models/question';
 import { switchMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { QuestionsService } from './questions.service';
@@ -30,6 +30,8 @@ export class WorkspaceComponent implements OnInit {
   // When correct, Goback button appear
   correct = false
 
+  endOfCategory = false;
+
   snackBarRef;
 
   constructor(
@@ -51,6 +53,11 @@ export class WorkspaceComponent implements OnInit {
     );
 
     this.question$.subscribe(question => this.question = question);
+
+    if (this.question.questionType == QuestionType.END_OF_CATEGORY) {
+      this.endOfCategory = true;
+      this.tried = true;
+    }
   }
 
 

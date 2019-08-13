@@ -16,6 +16,10 @@ export enum QuestionType {
     // Question Type 3: ASSOCIEZ
     // Sub type: associate text to image, via multiple selection
     ASSOCIEZ_TEXT_TO_IMAGE = 5,
+
+    // Question Type : END
+    // This marks the end of question sets in a category.
+    END_OF_CATEGORY = 9,
 }
 
 export class Question {

@@ -1,10 +1,11 @@
 import { QCMSelectText, 
     QCMSelectImage, 
     AssociateTextToImage, 
-    QuestionType} 
+    QuestionType,
+    Question} 
 from '@/_models/question';
 
-export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
+export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
     // Cat1: Vie quotidienne
     {
         qid: 101,
@@ -302,17 +303,10 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
       // Workaround for end of question contents
       {
         qid: 112,
-        name: "End of category",
-        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
-        desc: "You have reach the end of this category.",
-        imgDesc: "assets/qsets/cong.jpg",
-        choices: [
-            {
-                id: 1,
-                desc: "Please go back and try other activities."
-            },
-        ],
-        correctChoiceId:2
+        name: "You have reach the end of this category.",
+        questionType: QuestionType.END_OF_CATEGORY,
+        desc: "Please go back and try other activities.",
+        imgDesc: "assets/qsets/cong.jpg"
     },
    
 
@@ -450,17 +444,10 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
     // Workaround for end of question contents
     {
         qid: 206,
-        name: "End of category",
-        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
-        desc: "You have reach the end of this category.",
-        imgDesc: "assets/qsets/cong.jpg",
-        choices: [
-            {
-                id: 1,
-                desc: "Please go back and try other activities."
-            },
-        ],
-        correctChoiceId:2
+        name: "You have reach the end of this category.",
+        questionType: QuestionType.END_OF_CATEGORY,
+        desc: "Please go back and try other activities.",
+        imgDesc: "assets/qsets/cong.jpg"
     },
 
 
@@ -554,17 +541,10 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
     // Workaround for end of question contents
     {
         qid: 304,
-        name: "End of category",
-        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
-        desc: "You have reach the end of this category.",
-        imgDesc: "assets/qsets/cong.jpg",
-        choices: [
-            {
-                id: 1,
-                desc: "Please go back and try other activities."
-            },
-        ],
-        correctChoiceId:2
+        name: "You have reach the end of this category.",
+        questionType: QuestionType.END_OF_CATEGORY,
+        desc: "Please go back and try other activities.",
+        imgDesc: "assets/qsets/cong.jpg"
     },
 
     // Cat4: Se loger
@@ -707,17 +687,10 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
     // Workaround for end of question contents
     {
         qid: 406,
-        name: "End of category",
-        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
-        desc: "You have reach the end of this category.",
-        imgDesc: "assets/qsets/cong.jpg",
-        choices: [
-            {
-                id: 1,
-                desc: "Please go back and try other activities."
-            },
-        ],
-        correctChoiceId:2
+        name: "You have reach the end of this category.",
+        questionType: QuestionType.END_OF_CATEGORY,
+        desc: "Please go back and try other activities.",
+        imgDesc: "assets/qsets/cong.jpg"
     },
     
     // Cat5: Activités et sortir
@@ -832,6 +805,13 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
             }
         ]
     },
+    {
+        qid: 505,
+        name: "You have reach the end of this category.",
+        questionType: QuestionType.END_OF_CATEGORY,
+        desc: "Please go back and try other activities.",
+        imgDesc: "assets/qsets/cong.jpg"
+    },
 
     // Cat6: Santé & Bien-être
     {
@@ -920,6 +900,13 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
             }
         ]
     },
+    {
+        qid: 603,
+        name: "You have reach the end of this category.",
+        questionType: QuestionType.END_OF_CATEGORY,
+        desc: "Please go back and try other activities.",
+        imgDesc: "assets/qsets/cong.jpg"
+    },
 
     // Cat7: Vie amoureuse
     {
@@ -978,6 +965,13 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
             }
         ]
     },
+    {
+        qid: 703,
+        name: "You have reach the end of this category.",
+        questionType: QuestionType.END_OF_CATEGORY,
+        desc: "Please go back and try other activities.",
+        imgDesc: "assets/qsets/cong.jpg"
+    },
 
     // Cat8: Vie professionnelle
     {
@@ -1035,5 +1029,12 @@ export const QSET: (QCMSelectText | QCMSelectImage | AssociateTextToImage)[] = [
                 imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
             }
         ]
+    },
+    {
+        qid: 803,
+        name: "You have reach the end of this category.",
+        questionType: QuestionType.END_OF_CATEGORY,
+        desc: "Please go back and try other activities.",
+        imgDesc: "assets/qsets/cong.jpg"
     },
 ]

@@ -1,0 +1,11 @@
+<div class="container">
+  <h3 class="teal"><b>{{question.name}}</b></h3>
+
+  <app-desc-container 
+    [questionType]="question.questionType" 
+    [imgDesc]="question.imgDesc" 
+    [audioDesc]="question.audioDesc">
+  </app-desc-container>
+
+  <div><p id="desc">{{question.desc}}</p></div>
+</div>
