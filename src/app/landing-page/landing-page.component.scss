@@ -183,10 +183,17 @@ p {
 }
 
 .footer-note {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     text-align: center;
 }
 
 .footer-text {
     margin-top: 0.5em;
     text-align: center;
+}
+
+h6 {
+    color: lightgray;
 }
