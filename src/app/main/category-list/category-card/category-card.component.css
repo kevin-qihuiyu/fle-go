@@ -24,3 +24,9 @@ mat-card-actions {
     font-family: 'Righteous', sans-serif;
     font-weight: bold;
 }
+
+@media (min-width: 768px) {
+    :host {
+        width: 90%;
+    }
+}

@@ -19,6 +19,14 @@
     }
 }
 
+@media (min-width: 768px) {
+    .container {
+        position: fixed;
+        bottom: 0;
+        justify-content: center;
+    }
+}
+
 .mat-button {
     padding-top: 15px;
     line-height: 30px;

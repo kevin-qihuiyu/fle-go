@@ -1,28 +1,31 @@
 <div class="placeholder"></div>
 
-<mat-card id="card-bg-colored">
-  <img class="avatar" src="assets/img/avatar/1-avatar-1.png" alt="User Avatar">
-  <h2>{{currentUser.username}}</h2>
-  <p>Since {{currentUser.createdDate | date}}</p>
-</mat-card>
-
 <div class="container">
-  <button mat-button class="btn-secondary"><a href="mailto:qihui.yu0811@gmail.com" style="text-decoration: none; color: gray">Feedback and Function Requests</a> </button>
-  <mat-divider></mat-divider>
-  <button mat-button class="btn-secondary" *ngIf="currentUser" (click)="openConfirmDialog()">Reset all progress</button>
-
-  <mat-divider></mat-divider>
-  <mat-divider></mat-divider>
-  <button mat-button class="btn-primary" *ngIf="currentUser" (click)="logout()">Logout</button>
-  <mat-divider></mat-divider>
+  <mat-card id="card-bg-colored">
+    <img class="avatar" src="assets/img/avatar/1-avatar-1.png" alt="User Avatar">
+    <h2>{{currentUser.username}}</h2>
+    <p>Since {{currentUser.createdDate | date}}</p>
+  </mat-card>
+  
+  <div class="actions-container">
+    <button mat-button class="btn-secondary"><a href="mailto:qihui.yu0811@gmail.com" style="text-decoration: none; color: gray">Feedback and Function Requests</a> </button>
+    <mat-divider></mat-divider>
+    <button mat-button class="btn-secondary" *ngIf="currentUser" (click)="openConfirmDialog()">Reset all progress</button>
+  
+    <mat-divider></mat-divider>
+    <mat-divider></mat-divider>
+    <button mat-button class="btn-primary" *ngIf="currentUser" (click)="logout()">Logout</button>
+    <mat-divider></mat-divider>
+  </div>
+  
+  <div id="version-info">
+    <div>Version 0.8.8(080819)</div>
+  </div>
+  <div id="copyright-info">
+    <div>Crafted by qihui.yu in Paris</div>
+  </div>
 </div>
 
-<div id="version-info">
-  <div>Version 0.8.8(080819)</div>
-</div>
-<div id="copyright-info">
-  <div>Crafted by qihui.yu in Paris</div>
-</div>
 
 <div class="placeholder-bottom"></div>
 

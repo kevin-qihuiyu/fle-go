@@ -1,3 +1,7 @@
+.container {
+    margin-top: 0.5em;
+}
+
 h2, h3, h4 {
     text-align: center;
 }
@@ -29,7 +33,9 @@ h2, h3, h4 {
 .question-container {
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 2em;  /* Workaround for centering issue */
+
+    display: flex;
+    justify-content: center;
 }
 
 #sub-title {

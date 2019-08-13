@@ -1,3 +1,11 @@
+@media (min-width: 768px) {
+    .container {
+        width: 25%;
+        margin: auto;
+        padding-top: 5%;
+    }
+}
+
 .placeholder {
     height: 55px;
 }
@@ -22,7 +30,7 @@ mat-card {
 }
 
 /* Styles for list of actions */
-.container {
+.actions-container {
     margin-top: 0.5em;
 }
 

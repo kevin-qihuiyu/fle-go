@@ -1,3 +1,7 @@
+.container {
+    margin-top: 0.5em;
+}
+
 h2, h3, h4 {
     text-align: center;
 }
@@ -25,6 +29,7 @@ h2, h3, h4 {
 .row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .q-picture {
@@ -36,6 +41,13 @@ h2, h3, h4 {
 .question-container {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+    .question-container {
+        width: 70%;
+        margin: auto;
+    }
 }
 
 #desc {
