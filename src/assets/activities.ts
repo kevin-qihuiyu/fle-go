@@ -418,27 +418,89 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         qid: 205,
         name: "Identifier un courrier administratif",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
-        desc: "Quel organisme vous écrit?",
+        desc: "De quoi il parle?",
         imgDesc: "assets/qsets/qset2/q6_image.jpg",
         choices: [
             {
                 id: 1,
-                desc: "C'est l'Assurance Maladie."
+                desc: "C'est pour la CAF."
             },
             {
                 id: 2,
-                desc: "C'est la banque."
+                desc: "C'est pour la carte navigo."
             },
             {
                 id: 3,
-                desc: "C'est la CAF."
+                desc: "C'est pour la carte vitale."
             },
             {
                 id: 4,
-                desc: "C'est Pôle Emploi."
+                desc: "C'est pour les impôts."
+            }
+        ],
+        correctChoiceId:3
+    },
+    {
+        qid: 206,
+        name: "Fournir un justicatif",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        desc: "De quoi il peut s'agir?",
+        audioDesc: "assets/qsets/qset2/justicatif_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                imgSrc: "assets/qsets/qset2/q2_images/carte_vitale.jpg"
+            },
+            {
+                id: 2,
+                imgSrc: "assets/qsets/qset2/q2_images/facture_edf.jpg"
+            },
+            {
+                id: 3,
+                imgSrc: "assets/qsets/qset2/q2_images/passeport.jpg"
+            },
+            {
+                id: 4,
+                imgSrc: "assets/qsets/qset2/q2_images/certificat_scolarite.jpg"
+            }
+        ],
+        correctChoiceId:2
+    },
+    {
+        qid: 207,
+        name: "Envoyer une lettre",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Qu'est ce-qu'on trouve dans cette zone d'une lettre?",
+        imgDesc: "assets/qsets/qset2/lettre_1.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "L'adresse de l'expéditeur."
+            },
+            {
+                id: 2,
+                desc: "L'adresse de la destinataire."
             }
         ],
         correctChoiceId:1
+    },
+    {
+        qid: 208,
+        name: "Envoyer une lettre",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Qu'est ce-qu'on trouve dans cette zone d'une lettre?",
+        imgDesc: "assets/qsets/qset2/lettre_2.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "L'adresse de l'expéditeur."
+            },
+            {
+                id: 2,
+                desc: "L'adresse de la destinataire."
+            }
+        ],
+        correctChoiceId:2
     },
     
     // Workaround for end of question contents
