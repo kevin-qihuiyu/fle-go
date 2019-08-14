@@ -16,7 +16,7 @@ span {
     color: white;
 }
 
-.left , .right {
+.left, .right {
     flex: 1;
     display: flex;
     justify-content: flex-start;
