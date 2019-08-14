@@ -1,4 +1,12 @@
-.container {
+h3, h4 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0.5em;
+}
+
+.question-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,29 +15,16 @@
 }
 
 @media (min-width: 768px) {
-    .container {
+    .question-container {
         width: 70%;
         margin: auto;
     }
 }
 
-h2, h3, h4 {
-    text-align: center;
-}
-
-h3 {
-    margin-top: 0.5em;
-}
-
+// Each item contains an image and a selection dropdown
 .item {
     margin: 0.5em;
     width: 45%;
-    height: auto;
-    overflow: auto;
-}
-
-.mat-form-field {
-    width: 98%;
 }
 
 .img-container {
@@ -39,8 +34,13 @@ h3 {
 }
 
 img {
-    max-width:100%;
-    max-height:100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+// Selection forms
+.mat-form-field {
+    width: 98%;
 }
 
 .match-correct {
