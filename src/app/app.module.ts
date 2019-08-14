@@ -22,6 +22,7 @@ import { HeaderComponent } from './header/header.component';
 
 import { fakeBackendProvider, ErrorInterceptor, JwtInterceptor } from './_helpers';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LandingPageCnComponent } from './landing-page/landing-page-cn/landing-page-cn.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     SettingsComponent,
     DialogConfirmResetComponent,
     HeaderComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    LandingPageCnComponent
   ],
   imports: [
     BrowserModule,
