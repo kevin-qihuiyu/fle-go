@@ -56,18 +56,31 @@ export class RegisterComponent implements OnInit {
             .pipe(first())
             .subscribe(
                 data => {
-                    this.alertService.success('Registration successful, redirecting to login...', true);
-                    // Wait a bit before redirecting
+                    this.alertService.success('Registration successful, procced to login...', true);
+                    // Wait a bit before redirect to login
                     setTimeout(() => 
                     {
-                        this.router.navigate(['/login']);
+                        this.loginWithFormValue();
                     },
-                    3000);
+                    500);
                 },
                 error => {
                     this.alertService.error(error);
                     this.loading = false;
                 });
+    }
+
+    loginWithFormValue() {
+        this.authenticationService.login(this.registerForm.value.username, this.registerForm.value.password)
+        .pipe(first())
+        .subscribe(
+            data => {
+                this.router.navigate(['/']);
+            },
+            error => {
+                this.alertService.error(error);
+                this.loading = false;
+            });
     }
 
 }
