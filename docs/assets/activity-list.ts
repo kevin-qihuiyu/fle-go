@@ -122,6 +122,24 @@ export const ACTIVITIES_2: Activity[] = [
       difficulty: Difficulty.DÉBUTANT,
       questionId: 205
     },
+    {
+      name: "Fournir un justicatif",
+      categoryId: 2,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 206
+    },
+    {
+      name: "Envoyer une lettre",
+      categoryId: 2,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 207
+    },
+    {
+      name: "Envoyer une lettre",
+      categoryId: 2,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 208
+    },
     // {
     //   name: "Se repérer à la préfecture",
     //   categoryId: 2,

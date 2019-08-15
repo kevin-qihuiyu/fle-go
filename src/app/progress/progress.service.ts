@@ -22,7 +22,7 @@ export class ProgressService {
     {
       id: 2,
       name:"Administration", 
-      total: 5,
+      total: 8,
       doneQuestionIds: [],
     },
     {
