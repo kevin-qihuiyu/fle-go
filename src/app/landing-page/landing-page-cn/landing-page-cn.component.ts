@@ -15,7 +15,7 @@ export class LandingPageCnComponent implements OnInit {
     'assets/img/landing/screenshots/4.PNG',
     'assets/img/landing/screenshots/5.PNG',
     'assets/img/landing/screenshots/6.PNG',
-    'assets/img/landing/screenshots/7.PNG',
+    'assets/img/landing/screenshots/7.jpg',
     'assets/img/landing/screenshots/8.PNG'
   ];
 

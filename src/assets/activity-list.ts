@@ -430,21 +430,39 @@ export const ACTIVITIES_7: Activity[] = [
 // Cat8: Vie professionnelle
 export const ACTIVITIES_8: Activity[] = [
   {
-    name: "Préparer son CV",
+    name: "Les signes de ponctuation",
     categoryId: 8,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 801
   },
   {
-    name: "Entretien téléphonique",
+    name: "Les signes de ponctuation",
     categoryId: 8,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 802
   },
   {
-    name: "Entretien",
+    name: "Les signes de ponctuation",
     categoryId: 8,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 803
+  },
+  {
+    name: "Les symboles sur clavier informatique",
+    categoryId: 8,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 804
+  },
+  {
+    name: "Les symboles sur clavier informatique",
+    categoryId: 8,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 805
+  },
+  {
+    name: "Les symboles sur clavier informatique",
+    categoryId: 8,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 806
   },
 ]

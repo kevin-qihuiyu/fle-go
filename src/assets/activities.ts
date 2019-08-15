@@ -1038,62 +1038,174 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     // Cat8: Vie professionnelle
     {
         qid: 801,
-        name: "Identifier les pièces d'un logement",
+        name: "Les signes de ponctuation",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        desc: "Comment s'appellent ces pièces?",
+        desc: "Comment s'appellent ces signes?",
         choices: [
             {
                 id: 1,
-                desc: "le salon",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+                desc: "le point",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/point.jpg"
             },
             {
                 id: 2,
-                desc: "la cuisine",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+                desc: "la virgule",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/virgule.jpg"
             },
             {
                 id: 3,
-                desc: "la chambre",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+                desc: "le point d'interrogation",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/interrogation.jpg"
             },
             {
                 id: 4,
-                desc: "la salle de bain",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+                desc: "le point d’exclamation",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/exclamation.jpg"
             }
         ]
     },
     {
         qid: 802,
-        name: "Identifier les pièces d'un logement",
+        name: "Les signes de ponctuation",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        desc: "De quoi ils parlent?",
+        desc: "Comment s'appellent ces signes?",
         choices: [
             {
                 id: 1,
-                desc: "Mon code c'est 98A03.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+                desc: "le deux-points",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/deux-points.jpg"
             },
             {
                 id: 2,
-                desc: "Ferme les volets.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+                desc: "le point-virgule",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/point-virgule.jpg"
             },
             {
                 id: 3,
-                desc: "J'ai perdu mes clés.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+                desc: "les points de suspension",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/suspension.jpg"
             },
             {
                 id: 4,
-                desc: "Il faut sonner à la porte avant d'entrer",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+                desc: "le tiret",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/tiret.jpg"
             }
         ]
     },
     {
         qid: 803,
+        name: "Les signes de ponctuation",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces signes?",
+        choices: [
+            {
+                id: 1,
+                desc: "les parenthèses",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/parentheses.jpg"
+            },
+            {
+                id: 2,
+                desc: "les crochets",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/crochets.jpg"
+            },
+            {
+                id: 3,
+                desc: "les accolades",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/accolades.jpg"
+            },
+            {
+                id: 4,
+                desc: "les guillemets",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/guillemets.jpg"
+            }
+        ]
+    },
+    {
+        qid: 804,
+        name: "Les symboles sur clavier",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces symboles?",
+        choices: [
+            {
+                id: 1,
+                desc: "inférieur à",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/inferieur.jpg"
+            },
+            {
+                id: 2,
+                desc: "supérieur à",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/superieur.jpg"
+            },
+            {
+                id: 3,
+                desc: "arobase",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/arobase.jpg"
+            },
+            {
+                id: 4,
+                desc: "dièse",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/diese.jpg"
+            }
+        ]
+    },
+    {
+        qid: 805,
+        name: "Les symboles sur clavier",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces symboles?",
+        choices: [
+            {
+                id: 1,
+                desc: "apostrophe",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/inferieur.jpg"
+            },
+            {
+                id: 2,
+                desc: "tilde",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/superieur.jpg"
+            },
+            {
+                id: 3,
+                desc: "souligné",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/arobase.jpg"
+            },
+            {
+                id: 4,
+                desc: "tiret",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/diese.jpg"
+            }
+        ]
+    },
+    {
+        qid: 806,
+        name: "Les symboles sur clavier informatique",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces symboles?",
+        choices: [
+            {
+                id: 1,
+                desc: "barre oblique (slash)",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/slash.jpg"
+            },
+            {
+                id: 2,
+                desc: "barre oblique inversé (backslash)",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/backslash.jpg"
+            },
+            {
+                id: 3,
+                desc: "retour arrière (backspace)",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/retour_arriere.jpg"
+            },
+            {
+                id: 4,
+                desc: "entrée",
+                imgSrc: "assets/qsets/qset8/images/ponctuation/entree.jpg"
+            }
+        ]
+    },
+    {
+        qid: 807,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",
