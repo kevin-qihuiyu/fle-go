@@ -1122,57 +1122,57 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     },
     {
         qid: 804,
-        name: "Les symboles sur clavier",
+        name: "Les symboles sur clavier informatique",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces symboles?",
         choices: [
             {
                 id: 1,
                 desc: "inférieur à",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/inferieur.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/inferieur.jpg"
             },
             {
                 id: 2,
                 desc: "supérieur à",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/superieur.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/superieur.jpg"
             },
             {
                 id: 3,
                 desc: "arobase",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/arobase.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/arobase.jpg"
             },
             {
                 id: 4,
                 desc: "dièse",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/diese.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/diese.jpg"
             }
         ]
     },
     {
         qid: 805,
-        name: "Les symboles sur clavier",
+        name: "Les symboles sur clavier informatique",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces symboles?",
         choices: [
             {
                 id: 1,
                 desc: "apostrophe",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/inferieur.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/apostrophe.jpg"
             },
             {
                 id: 2,
                 desc: "tilde",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/superieur.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/tilde.jpg"
             },
             {
                 id: 3,
                 desc: "souligné",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/arobase.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/souligne.jpg"
             },
             {
                 id: 4,
                 desc: "tiret",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/diese.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/tiret.jpg"
             }
         ]
     },
@@ -1185,22 +1185,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "barre oblique (slash)",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/slash.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/slash.jpg"
             },
             {
                 id: 2,
                 desc: "barre oblique inversé (backslash)",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/backslash.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/backslash.jpg"
             },
             {
                 id: 3,
                 desc: "retour arrière (backspace)",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/retour_arriere.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/retour_arriere.jpg"
             },
             {
                 id: 4,
                 desc: "entrée",
-                imgSrc: "assets/qsets/qset8/images/ponctuation/entree.jpg"
+                imgSrc: "assets/qsets/qset8/images/clavier/entree.jpg"
             }
         ]
     },
