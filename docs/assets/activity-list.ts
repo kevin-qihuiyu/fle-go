@@ -430,6 +430,14 @@ export const ACTIVITIES_7: Activity[] = [
 // Cat8: Vie professionnelle
 export const ACTIVITIES_8: Activity[] = [
   {
+    name: "Utiliser un ordinateur",
+    categoryId: 8,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 800
+  },  
+  // preparer cv: sections
+  // lire une annonce
+  {
     name: "Les signes de ponctuation",
     categoryId: 8,
     difficulty: Difficulty.DÉBUTANT,

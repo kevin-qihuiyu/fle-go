@@ -1037,6 +1037,34 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
 
     // Cat8: Vie professionnelle
     {
+        qid: 800,
+        name: "Utiliser un ordinateur",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "De quoi ils parlent?",
+        choices: [
+            {
+                id: 1,
+                desc: "Il fait la mise à jour.",
+                imgSrc: "assets/qsets/qset8/images/informatique/mise-a-jour.jpg"
+            },
+            {
+                id: 2,
+                desc: "J'éteins mon ordinateur.",
+                imgSrc: "assets/qsets/qset8/images/informatique/eteins.jpg"
+            },
+            {
+                id: 3,
+                desc: "Je redémarre.",
+                imgSrc: "assets/qsets/qset8/images/informatique/redemarrer.jpg"
+            },
+            {
+                id: 4,
+                desc: "Je n'arrive pas à déverrouiller l'écran.",
+                imgSrc: "assets/qsets/qset8/images/informatique/deverrouiller.jpg"
+            }
+        ]
+    },
+    {
         qid: 801,
         name: "Les signes de ponctuation",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
