@@ -1,16 +1,10 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { UserService } from '@/_helpers/user.service';
-import { User } from '../_models';
 import { first } from 'rxjs/operators';
-import { AuthService } from '@/_helpers';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class ProgressService {
   currentUser;
-  currentUserSnapshot;
 
   progressData = [
     {
@@ -58,7 +52,7 @@ export class ProgressService {
     {      
       id: 8,
       name:"Vie professionnelle", 
-      total: 3,
+      total: 8,
       doneQuestionIds: [],
     },
   ]

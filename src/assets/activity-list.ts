@@ -430,19 +430,19 @@ export const ACTIVITIES_7: Activity[] = [
 // Cat8: Vie professionnelle
 export const ACTIVITIES_8: Activity[] = [
   {
+    name: "Chercher un stage",
+    categoryId: 8,
+    difficulty: Difficulty.INTERMÉDIAIRE,
+    questionId: 800
+  },  
+  {
     name: "Utiliser un ordinateur",
     categoryId: 8,
     difficulty: Difficulty.DÉBUTANT,
-    questionId: 800
+    questionId: 801
   },  
   // preparer cv: sections
   // lire une annonce
-  {
-    name: "Les signes de ponctuation",
-    categoryId: 8,
-    difficulty: Difficulty.DÉBUTANT,
-    questionId: 801
-  },
   {
     name: "Les signes de ponctuation",
     categoryId: 8,
@@ -456,7 +456,7 @@ export const ACTIVITIES_8: Activity[] = [
     questionId: 803
   },
   {
-    name: "Les symboles sur clavier informatique",
+    name: "Les signes de ponctuation",
     categoryId: 8,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 804
@@ -472,5 +472,11 @@ export const ACTIVITIES_8: Activity[] = [
     categoryId: 8,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 806
+  },
+  {
+    name: "Les symboles sur clavier informatique",
+    categoryId: 8,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 807
   },
 ]

@@ -1038,6 +1038,32 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     // Cat8: Vie professionnelle
     {
         qid: 800,
+        name: "Chercher un stage",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Où on trouve cette offre de stage?",
+        imgDesc: "assets/qsets/qset8/images/recherche_emploi/offre_stage.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "Un site emploi spécialisé",
+            },
+            {
+                id: 2,
+                desc: "Le réseau alumni",
+            },
+            {
+                id: 3,
+                desc: "Les forums",
+            },
+            {
+                id: 4,
+                desc: "Le réseau personnel",
+            }
+        ],
+        correctChoiceId: 2
+    },
+    {
+        qid: 801,
         name: "Utiliser un ordinateur",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "De quoi ils parlent?",
@@ -1065,7 +1091,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 801,
+        qid: 802,
         name: "Les signes de ponctuation",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces signes?",
@@ -1093,7 +1119,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 802,
+        qid: 803,
         name: "Les signes de ponctuation",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces signes?",
@@ -1121,7 +1147,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 803,
+        qid: 804,
         name: "Les signes de ponctuation",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces signes?",
@@ -1149,7 +1175,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 804,
+        qid: 805,
         name: "Les symboles sur clavier informatique",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces symboles?",
@@ -1177,7 +1203,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 805,
+        qid: 806,
         name: "Les symboles sur clavier informatique",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces symboles?",
@@ -1205,7 +1231,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 806,
+        qid: 807,
         name: "Les symboles sur clavier informatique",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces symboles?",
@@ -1233,7 +1259,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 807,
+        qid: 808,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",
