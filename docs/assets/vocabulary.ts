@@ -302,6 +302,15 @@ export const VOCABULARY_6: Vocabulary[] = [
         explanation: "C'est un médicament qui contient du paracétamol, utilisé pour traiter la douleur et la fièvre.",
         usage: "Doliprane (Paracétamol), 500mg, 1 boîte, 16 comprimés"
     },
+    {
+        id: 606,
+        name: "Parapharmacie",
+        categoryId: 6,
+        attr: "n.",
+        audioSrc: "",
+        explanation: "Des produits de soins et d'hygiène, qui ne nécessitent pas de prescription médicale.",
+        usage: "On trouve des produits cosmétiques dans une parapharmacie."
+    },
 ]
 
 // Cat7: Vie amoureuse
@@ -354,5 +363,32 @@ export const VOCABULARY_8: Vocabulary[] = [
         attr: "n.",
         explanation: "En latin: Curriculum Vitae (carrière de la vie), c'est un dossier comportant des informations essentielles d'un candidat à un poste.",
         usage: "Pour éviter tout soucis de compatibilité, enregistrez votre CV au format PDF."
+    },
+    {
+        id: 804,
+        name: "une commande",
+        categoryId: 8,
+        audioSrc: "",
+        attr: "n.",
+        explanation: "Dans informatique: il permet d'indiquer un ordre d'exécution d'une tâche dans le cadre d'un système d'exploitation.",
+        usage: "La commande linux 'ls' permet d'afficher le contenu d'un répertoire."
+    },
+    {
+        id: 805,
+        name: "un raccourci",
+        categoryId: 8,
+        audioSrc: "",
+        attr: "n.",
+        explanation: "Raccourci clavier: une combinaison de touches qui une fois enfoncée permet d'exécuter une fonction.",
+        usage: "Je suis très familier avec les raccourcis Mac OS."
+    },
+    {
+        id: 806,
+        name: "un voyant",
+        categoryId: 8,
+        audioSrc: "",
+        attr: "n.",
+        explanation: "Informatique: un signal lumineux destiné à attirer l'attention.",
+        usage: "Le voyant @, situé sur votre Livebox, vous indique l'état de la connexion."
     },
 ]
