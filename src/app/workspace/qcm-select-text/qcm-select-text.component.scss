@@ -31,11 +31,17 @@ h2, h3, h4 {
 }
 
 .question-container {
-    margin-top: 1em;
+    // margin-top: 1em;
     margin-bottom: 1em;
 
     display: flex;
     justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .question-container {
+        margin-top: 1em;
+    }
 }
 
 #sub-title {
