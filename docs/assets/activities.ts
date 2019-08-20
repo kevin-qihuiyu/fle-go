@@ -9,6 +9,170 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     // Cat1: Vie quotidienne
     {
         qid: 101,
+        name: "Acheter un kebab",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        audioDesc: "assets/qsets/qset1/restaurant/kebab.mp3",
+        choices: [
+            {
+                id: 1,
+                desc: "un oignon",
+                imgSrc: "assets/qsets/qset1/restaurant/onion.jpg"
+            },
+            {
+                id: 2,
+                desc: "des salades",
+                imgSrc: "assets/qsets/qset1/restaurant/salade.jpg"
+            },
+            {
+                id: 3,
+                desc: "une tomates",
+                imgSrc: "assets/qsets/qset1/restaurant/tomate.jpg"
+            },
+            {
+                id: 4,
+                desc: "une tortilla",
+                imgSrc: "assets/qsets/qset1/restaurant/tortillas.jpg"
+            }
+        ]
+    },
+    {
+        qid: 102,
+        name: "Identifier la cuisine française",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        choices: [
+            {
+                id: 1,
+                desc: "la boeuf bouguignon",
+                imgSrc: "assets/qsets/qset1/restaurant/boeuf-bourguignon.jpg"
+            },
+            {
+                id: 2,
+                desc: "les escargots",
+                imgSrc: "assets/qsets/qset1/restaurant/escargots.jpg"
+            },
+            {
+                id: 3,
+                desc: "le confit de carnard",
+                imgSrc: "assets/qsets/qset1/restaurant/canard.jpg"
+            },
+            {
+                id: 4,
+                desc: "le steak tartare",
+                imgSrc: "assets/qsets/qset1/restaurant/tartare.jpg"
+            }
+        ]
+      },
+    {
+        qid: 103,
+        name: "Identifier la cuisine française",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        choices: [
+            {
+                id: 1,
+                desc: "la souris d'agneau",
+                imgSrc: "assets/qsets/qset1/restaurant/souris.jpg"
+            },
+            {
+                id: 2,
+                desc: "couscous royale",
+                imgSrc: "assets/qsets/qset1/restaurant/couscous-royale.jpg"
+            },
+            {
+                id: 3,
+                desc: "la paella",
+                imgSrc: "assets/qsets/qset1/restaurant/paella.jpg"
+            },
+            {
+                id: 4,
+                desc: "le cordon bleu",
+                imgSrc: "assets/qsets/qset1/restaurant/cordon-bleu.jpg"
+            }
+        ]
+      },
+    {
+        qid: 104,
+        name: "Choisir la cuisson",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        audioDesc: "assets/qsets/qset1/restaurant/cuisson.mp3",
+        choices: [
+            {
+                id: 1,
+                desc: "bleu",
+                imgSrc: "assets/qsets/qset1/restaurant/bleu.jpg"
+            },
+            {
+                id: 2,
+                desc: "saignant",
+                imgSrc: "assets/qsets/qset1/restaurant/saignant.jpg"
+            },
+            {
+                id: 3,
+                desc: "à point",
+                imgSrc: "assets/qsets/qset1/restaurant/a-point.jpg"
+            },
+            {
+                id: 4,
+                desc: "bien cuit",
+                imgSrc: "assets/qsets/qset1/restaurant/bien-cuit.jpg"
+            }
+        ]
+      },
+    {
+        qid: 105,
+        name: "Identifier un dessert",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        choices: [
+            {
+                id: 1,
+                desc: "Le flan",
+                imgSrc: "assets/qsets/qset1/dessert/flan.jpg"
+            },
+            {
+                id: 2,
+                desc: "La mousse au chocolat",
+                imgSrc: "assets/qsets/qset1/dessert/mousse.jpg"
+            },
+            {
+                id: 3,
+                desc: "L'Île flottante",
+                imgSrc: "assets/qsets/qset1/dessert/ile_flottante.jpg"
+            },
+            {
+                id: 4,
+                desc: "Le tiramisu",
+                imgSrc: "assets/qsets/qset1/dessert/tiramisu.jpg"
+            }
+        ]
+      },
+    {
+        qid: 106,
+        name: "Identifier un dessert",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        choices: [
+            {
+                id: 1,
+                desc: "La fôret-noire",
+                imgSrc: "assets/qsets/qset1/dessert/foret_noire.jpg"
+            },
+            {
+                id: 2,
+                desc: "Le cheesecake",
+                imgSrc: "assets/qsets/qset1/dessert/cheesecake.jpg"
+            },
+            {
+                id: 3,
+                desc: "La crème brûlée",
+                imgSrc: "assets/qsets/qset1/dessert/creme_brule.jpg"
+            },
+            {
+                id: 4,
+                desc: "Le mille-feuille",
+                imgSrc: "assets/qsets/qset1/dessert/mille_feuille.jpg"
+            }
+        ]
+      },
+    {
+        qid: 107,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -35,7 +199,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-      qid: 102,
+      qid: 108,
       name: "Acheter des vêtements",
       questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
       imgDesc: "assets/qsets/qset1/q2_image.jpg",
@@ -61,7 +225,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2 
     },
     {
-        qid: 103,
+        qid: 109,
         name: "Acheter des chaussures",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         desc: "De quoi elle parle?",
@@ -87,7 +251,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
          correctChoiceId:2 
     },  
     {
-        qid: 104,
+        qid: 110,
         name: "Identifier un moyen de paiement",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         audioDesc: "assets/qsets/qset1/q10_audio.mp3",
@@ -112,7 +276,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:3 
     },
     {
-        qid: 105,
+        qid: 111,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -139,7 +303,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 106,
+        qid: 112,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         audioDesc: "assets/qsets/qset1//q6_audio.mp3",
@@ -164,118 +328,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:3 
     },
     {
-        qid: 107,
-        name: "Acheter un kebab",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        audioDesc: "assets/qsets/qset1/q7_audio.mp3",
-        choices: [
-            {
-                id: 1,
-                desc: "un oignon",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_onion.jpg"
-            },
-            {
-                id: 2,
-                desc: "des salades",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_salade.jpg"
-            },
-            {
-                id: 3,
-                desc: "des tomates",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_tomate.jpg"
-            },
-            {
-                id: 4,
-                desc: "une tortilla",
-                imgSrc: "assets/qsets/qset1/q7_images/q7_tortillas.jpg"
-            }
-        ]
-    },
-    
-    {
-        qid: 108,
-        name: "Identifier la cuisine française",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        choices: [
-            {
-                id: 1,
-                desc: "la boeuf bouguignon",
-                imgSrc: "assets/qsets/qset1/q11_images/boeuf-bourguignon.jpg"
-            },
-            {
-                id: 2,
-                desc: "les escargots",
-                imgSrc: "assets/qsets/qset1/q11_images/escargots.jpg"
-            },
-            {
-                id: 3,
-                desc: "le confit de carnard",
-                imgSrc: "assets/qsets/qset1/q11_images/canard.jpg"
-            },
-            {
-                id: 4,
-                desc: "le steak tartare",
-                imgSrc: "assets/qsets/qset1/q11_images/tartare.jpg"
-            }
-        ]
-      },
-    {
-        qid: 109,
-        name: "Identifier la cuisine française",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        choices: [
-            {
-                id: 1,
-                desc: "la souris d'agneau",
-                imgSrc: "assets/qsets/qset1/q12_images/souris.jpg"
-            },
-            {
-                id: 2,
-                desc: "couscous royale",
-                imgSrc: "assets/qsets/qset1/q12_images/couscous-royale.jpg"
-            },
-            {
-                id: 3,
-                desc: "la paella",
-                imgSrc: "assets/qsets/qset1/q12_images/paella.jpg"
-            },
-            {
-                id: 4,
-                desc: "le cordon bleu",
-                imgSrc: "assets/qsets/qset1/q12_images/cordon-bleu.jpg"
-            }
-        ]
-      },
-    {
-        qid: 110,
-        name: "Choisir la cuisson",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        audioDesc: "assets/qsets/qset1/q13_audio.mp3",
-        choices: [
-            {
-                id: 1,
-                desc: "bleu",
-                imgSrc: "assets/qsets/qset1/q13_images/bleu.jpg"
-            },
-            {
-                id: 2,
-                desc: "saignant",
-                imgSrc: "assets/qsets/qset1/q13_images/saignant.jpg"
-            },
-            {
-                id: 3,
-                desc: "à point",
-                imgSrc: "assets/qsets/qset1/q13_images/a-point.jpg"
-            },
-            {
-                id: 4,
-                desc: "bien cuit",
-                imgSrc: "assets/qsets/qset1/q13_images/bien-cuit.jpg"
-            }
-        ]
-      },
-      {
-        qid: 111,
+        qid: 113,
         name: "Comprendre le français familier",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         desc: "De quoi il parle?",
@@ -302,7 +355,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     },
       // Workaround for end of question contents
       {
-        qid: 112,
+        qid: 114,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",

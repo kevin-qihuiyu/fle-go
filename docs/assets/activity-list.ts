@@ -2,72 +2,84 @@ import { Activity, Difficulty } from '@/_models/activity';
 
 // Cat1: Vie quotidienne
 export const ACTIVITIES_1: Activity[] = [
-    {
-      name: "Connaître les noms de vêtements",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 101
-    },
-    {
-      name: "Acheter des vêtements",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 102
-    },
-    {
-      name: "Acheter des chaussures",
-      categoryId: 3,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 103
-    },
-    {
-      name: "Identifier un moyen de paiement",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 104
-    },
-    {
-      name: "Connaître les noms de vêtements",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 105
-    },
-    {
-      name: "Connaître les noms de vêtements",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 106
-    },
-    {
-      name: "Acheter un kebab",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 107
-    },
-    {
-      name: "Identifier la cuisine française",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 108
-    },
-    {
-      name: "Identifier la cuisine française",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 109
-    },
-    {
-      name: "Choisir la cuisson",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 110
-    },
-    {
-      name: "Comprendre le français familier",
-      categoryId: 1,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 111
-    },
+  {
+    name: "Acheter un kebab",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 101
+  },
+  {
+    name: "Identifier la cuisine française",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 102
+  },
+  {
+    name: "Identifier la cuisine française",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 103
+  },
+  {
+    name: "Choisir la cuisson",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 104
+  },
+  {
+    name: "Identifier un dessert",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 105
+  },
+  {
+    name: "Identifier un dessert",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 106
+  },
+  {
+    name: "Connaître les noms de vêtements",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 107
+  },
+  {
+    name: "Acheter des vêtements",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 108
+  },
+  {
+    name: "Acheter des chaussures",
+    categoryId: 3,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 109
+  },
+  {
+    name: "Identifier un moyen de paiement",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 110
+  },
+  {
+    name: "Connaître les noms de vêtements",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 111
+  },
+  {
+    name: "Connaître les noms de vêtements",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 112
+  },
+  {
+    name: "Comprendre le français familier",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 113
+  },
     // {
     //   name: "Choisir la garniture",
     //   categoryId: 1,

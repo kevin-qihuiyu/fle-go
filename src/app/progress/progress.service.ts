@@ -10,7 +10,7 @@ export class ProgressService {
     {
       id: 1,
       name:"Vie Quotidienne", 
-      total: 11,
+      total: 13,
       doneQuestionIds: [],
     },
     {
