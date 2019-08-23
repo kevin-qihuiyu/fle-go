@@ -179,22 +179,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "un short",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_short.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/short.jpg"
             },
             {
                 id: 2,
                 desc: "un pantalon",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_pantalon.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/pantalon.jpg"
             },
             {
                 id: 3,
                 desc: "un t-shirt",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_t.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/t.jpg"
             },
             {
                 id: 4,
                 desc: "une chemise",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_chemise.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/chemise.jpg"
             }
         ]
     },
@@ -241,11 +241,11 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
           },
           {
               id: 3,
-              imgSrc:'assets/qsets/qset1/q4_images/q4_pantalon.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/pantalon.jpg'
           },
           {
               id: 4,
-              imgSrc:'assets/qsets/qset1/q4_images/q4_chemise.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/chemise.jpg'
           }
          ],
          correctChoiceId:2 
@@ -283,22 +283,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "un pull",
-                imgSrc: "assets/qsets/qset1/q5_images/q5_pull.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/pull.jpg"
             },
             {
                 id: 2,
                 desc: "un jean",
-                imgSrc: "assets/qsets/qset1/q5_images/q5_jean.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/jean.jpg"
             },
             {
                 id: 3,
                 desc: "un blouson",
-                imgSrc: "assets/qsets/qset1/q5_images/q5_blouson.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/blouson.jpg"
             },
             {
                 id: 4,
                 desc: "un manteau",
-                imgSrc: "assets/qsets/qset1/q5_images/q5_manteau.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/manteau.jpg"
             }
         ]
     },
@@ -310,19 +310,19 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         choices: [
             {
                 id: 1,
-                imgSrc: 'assets/qsets/qset1/q6_images/q6_beret_echarpe.jpg'
+                imgSrc: 'assets/qsets/qset1/vetements/q6_beret_echarpe.jpg'
             },
             {
                 id: 2,
-                imgSrc: 'assets/qsets/qset1/q6_images/q6_beret_gants.jpg'
+                imgSrc: 'assets/qsets/qset1/vetements/q6_beret_gants.jpg'
             },
             {
                 id: 3,
-                imgSrc: 'assets/qsets/qset1/q6_images/q6_bonnet_echarpe.jpg'
+                imgSrc: 'assets/qsets/qset1/vetements/q6_bonnet_echarpe.jpg'
             },
             {
                 id:4,
-                imgSrc: 'assets/qsets/qset1/q6_images/q6_bonnet_foulard.jpg'
+                imgSrc: 'assets/qsets/qset1/vetements/q6_bonnet_foulard.jpg'
             }
         ],
         correctChoiceId:3 
@@ -378,7 +378,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             },
             {
                 id: 2,
-                desc: "Prendre un abonnement de téléphone",
+                desc: "Envoyer une lettre recommandée",
                 imgSrc: "assets/qsets/qset2/q1_images/2-prendre-un-abonnement-mobile.jpg"
             },
             {
@@ -520,6 +520,32 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2
     },
     {
+        qid: 208,
+        name: "Rédiger une lettre de résiliation",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Parmi les énoncés suivants, lequel est FAUX?",
+        imgDesc: "assets/qsets/qset2/lettre_resiliation.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "C'est pour terminer un contrat/abonnement."
+            },
+            {
+                id: 2,
+                desc: "Il faut l'envoyer par lettre recommandée avec accusé de reception."
+            },
+            {
+                id: 3,
+                desc: "Elle a une valeur légale."
+            },
+            {
+                id: 4,
+                desc: "On ne peut pas le faire en ligne."
+            }
+        ],
+        correctChoiceId:1
+    },
+    {
         qid: 207,
         name: "Envoyer une lettre",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
@@ -576,22 +602,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "le rer",
-                imgSrc: "assets/qsets/qset3/q1_images/rer.jpg"
+                imgSrc: "assets/qsets/qset3/transport/rer.jpg"
             },
             {
                 id: 2,
                 desc: "le bus",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_bus.jpg"
+                imgSrc: "assets/qsets/qset3/transport/bus.jpg"
             },
             {
                 id: 3,
                 desc: "le tramway",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_tramway.jpg"
+                imgSrc: "assets/qsets/qset3/transport/tramway.jpg"
             },
             {
                 id: 4,
                 desc: "le métro",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
+                imgSrc: "assets/qsets/qset3/transport/metro.jpg"
             }
         ]
     },
@@ -605,22 +631,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "un vélo",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_velo.jpg"
+                imgSrc: "assets/qsets/qset3/transport/velo.jpg"
             },
             {
                 id: 2,
                 desc: "le bus",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_bus.jpg"
+                imgSrc: "assets/qsets/qset3/transport/bus.jpg"
             },
             {
                 id: 3,
                 desc: "le tramway",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_tramway.jpg"
+                imgSrc: "assets/qsets/qset3/transport/tramway.jpg"
             },
             {
                 id: 4,
                 desc: "le métro",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
+                imgSrc: "assets/qsets/qset3/transport/metro.jpg"
             }
         ],
         correctChoiceId:2
@@ -634,22 +660,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "une trottinette",
-                imgSrc: "assets/qsets/qset3/q3_images/trottinette.jpg"
+                imgSrc: "assets/qsets/qset3/transport/trottinette.jpg"
             },
             {
                 id: 2,
                 desc: "un vélo",
-                imgSrc: "assets/qsets/qset3/q3_images/velo.jpg"
+                imgSrc: "assets/qsets/qset3/transport/velo.jpg"
             },
             {
                 id: 3,
                 desc: "une voiture",
-                imgSrc: "assets/qsets/qset3/q3_images/voiture.jpg"
+                imgSrc: "assets/qsets/qset3/transport/voiture.jpg"
             },
             {
                 id: 4,
                 desc: "un skate",
-                imgSrc: "assets/qsets/qset3/q3_images/skate.jpg"
+                imgSrc: "assets/qsets/qset3/transport/skate.jpg"
             }
         ]
     },
@@ -672,22 +698,78 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "le salon",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+                imgSrc: "assets/qsets/qset4/house/q1_salon.jpg"
             },
             {
                 id: 2,
                 desc: "la cuisine",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+                imgSrc: "assets/qsets/qset4/house/q1_cuisine.jpg"
             },
             {
                 id: 3,
                 desc: "la chambre",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+                imgSrc: "assets/qsets/qset4/house/q1_chambre.jpg"
             },
             {
                 id: 4,
                 desc: "la salle de bain",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+                imgSrc: "assets/qsets/qset4/house/q1_salle_de_bain.jpg"
+            }
+        ]
+    },
+    {
+        qid: 401,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "une mezzanine",
+                imgSrc: "assets/qsets/qset4/house/mezzanine.jpg"
+            },
+            {
+                id: 2,
+                desc: "une véranda",
+                imgSrc: "assets/qsets/qset4/house/veranda.jpg"
+            },
+            {
+                id: 3,
+                desc: "une cave",
+                imgSrc: "assets/qsets/qset4/house/cave.jpg"
+            },
+            {
+                id: 4,
+                desc: "un garage",
+                imgSrc: "assets/qsets/qset4/house/garage.jpg"
+            }
+        ]
+    },
+    {
+        qid: 401,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "une terrasse",
+                imgSrc: "assets/qsets/qset4/house/terrasse.jpg"
+            },
+            {
+                id: 2,
+                desc: "un balcon",
+                imgSrc: "assets/qsets/qset4/house/balcon.jpg"
+            },
+            {
+                id: 3,
+                desc: "un parking",
+                imgSrc: "assets/qsets/qset4/house/parking.jpg"
+            },
+            {
+                id: 4,
+                desc: "un ascenseur",
+                imgSrc: "assets/qsets/qset4/house/ascenseur.jpg"
             }
         ]
     },
@@ -700,22 +782,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "un canapé",
-                imgSrc: "assets/qsets/qset4/q2_images/canape.jpg"
+                imgSrc: "assets/qsets/qset4/equipments/canape.jpg"
             },
             {
                 id: 2,
                 desc: "un lit double",
-                imgSrc: "assets/qsets/qset4/q2_images/lit.jpg"
+                imgSrc: "assets/qsets/qset4/equipments/lit.jpg"
             },
             {
                 id: 3,
                 desc: "une bibliotèque",
-                imgSrc: "assets/qsets/qset4/q2_images/biblioteque.jpg"
+                imgSrc: "assets/qsets/qset4/equipments/biblioteque.jpg"
             },
             {
                 id: 4,
                 desc: "une armoire",
-                imgSrc: "assets/qsets/qset4/q2_images/armoire.jpg"
+                imgSrc: "assets/qsets/qset4/equipments/armoire.jpg"
             }
         ]
     },
@@ -728,22 +810,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "Mon code c'est 98A03.",
-                imgSrc: "assets/qsets/qset4/q3_images/q2_digicode.jpg"
+                imgSrc: "assets/qsets/qset4/house/q2_digicode.jpg"
             },
             {
                 id: 2,
                 desc: "Ferme les volets.",
-                imgSrc: "assets/qsets/qset4/q3_images/q2_volets.jpg"
+                imgSrc: "assets/qsets/qset4/house/q2_volets.jpg"
             },
             {
                 id: 3,
                 desc: "J'ai perdu mes clés.",
-                imgSrc: "assets/qsets/qset4/q3_images/q2_cles.jpg"
+                imgSrc: "assets/qsets/qset4/house/q2_cles.jpg"
             },
             {
                 id: 4,
                 desc: "Il faut sonner à la porte avant d'entrer",
-                imgSrc: "assets/qsets/qset4/q3_images/q2_sonner.jpg"
+                imgSrc: "assets/qsets/qset4/house/q2_sonner.jpg"
             }
         ]
     },
@@ -872,12 +954,12 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         choices: [
             {
                 id: 1,
-                desc: "Mon code c'est 98A03.",
+                desc: "Le chasse-neige",
                 imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
             },
             {
                 id: 2,
-                desc: "Ferme les volets.",
+                desc: "Des virages",
                 imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
             },
             {
