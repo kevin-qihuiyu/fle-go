@@ -61,7 +61,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
                 imgSrc: "assets/qsets/qset1/restaurant/tartare.jpg"
             }
         ]
-      },
+    },
     {
         qid: 103,
         name: "Identifier la cuisine française",
@@ -116,7 +116,51 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
                 imgSrc: "assets/qsets/qset1/restaurant/bien-cuit.jpg"
             }
         ]
-      },
+    },
+    {
+        qid: 104,
+        name: "Choisir la garniture",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        audioDesc: "assets/qsets/qset1/restaurant/garniture.mp3",
+        choices: [
+            {
+                id: 1,
+                imgSrc: "assets/qsets/qset1/restaurant/escargots.jpg"
+            },
+            {
+                id: 2,
+                imgSrc: "assets/qsets/qset1/restaurant/frite.jpg"
+            },
+            {
+                id: 3,
+                imgSrc: "assets/qsets/qset1/restaurant/cordon-bleu.jpg"
+            },
+            {
+                id: 4,
+                imgSrc: "assets/qsets/qset1/restaurant/pilon.jpg"
+            }
+        ],
+        correctChoiceId:2 
+    },
+    {
+        qid: 108,
+        name: "Au restaurant, le serveur dit:",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
+        imgDesc: "assets/qsets/qset1/debarrasser.jpg",
+        audioDesc: "assets/qsets/qset1/debarrasser.mp3",
+        desc: "Je peux vous débarrasser?",
+        choices: [
+          {
+              id: 1,
+              desc: 'Oui'
+          },
+          {
+              id: 2,
+              desc: 'Non'
+          }
+        ],
+        correctChoiceId:2 
+    },
     {
         qid: 105,
         name: "Identifier un dessert",
@@ -233,11 +277,11 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         choices:[
           {
               id: 1,
-              imgSrc:'assets/qsets/qset1/q1_images/q1_blouson.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/q1_blouson.jpg'
           },
           {
               id: 2,
-              imgSrc:'assets/qsets/qset1/q1_images/q1_chaussure.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/q1_chaussure.jpg'
           },
           {
               id: 3,
@@ -394,58 +438,6 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 202,
-        name: "Apporter ses documents",
-        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_IMAGE,
-        desc: "Qu'est-ce qu'il faut apporter au rendez-vous?",
-        imgDesc: "assets/qsets/qset2/q2_images/img_desc.jpg",
-        choices: [
-            {
-                id: 1,
-                imgSrc: "assets/qsets/qset2/q2_images/option_1.jpg"
-            },
-            {
-                id: 2,
-                imgSrc: "assets/qsets/qset2/q2_images/option_2.jpg"
-            },
-            {
-                id: 3,
-                imgSrc: "assets/qsets/qset2/q2_images/option_3.jpg"
-            },
-            {
-                id: 4,
-                imgSrc: "assets/qsets/qset2/q2_images/option_4.jpg"
-            }
-        ],
-        correctChoiceId:2 
-    },
-    {
-        qid: 203,
-        name: "Comprendre un message d'annulation",
-        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
-        desc: "Qu'est-ce qui se passe pour le rendrez-vous?",
-        audioDesc: "assets/qsets/qset2/q3_audio.mp3",
-        choices: [
-            {
-                id: 1,
-                desc: "C'était hier."
-            },
-            {
-                id: 2,
-                desc:"Il faut y aller aujourd'hui à 15h."
-            },
-            {
-                id: 3,
-                desc: "Il est reporté le 15."
-            },
-            {
-                id:4,
-                desc: "Il est annulé."
-            }
-        ],
-        correctChoiceId:4
-    },
-    {
         qid: 204,
         name: "Identifier la date de fin de validité d'un document",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
@@ -580,6 +572,58 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             }
         ],
         correctChoiceId:1
+    },  
+    {
+        qid: 202,
+        name: "Apporter ses documents",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_IMAGE,
+        desc: "Qu'est-ce qu'il faut apporter au rendez-vous?",
+        imgDesc: "assets/qsets/qset2/q2_images/img_desc.jpg",
+        choices: [
+            {
+                id: 1,
+                imgSrc: "assets/qsets/qset2/q2_images/option_1.jpg"
+            },
+            {
+                id: 2,
+                imgSrc: "assets/qsets/qset2/q2_images/option_2.jpg"
+            },
+            {
+                id: 3,
+                imgSrc: "assets/qsets/qset2/q2_images/option_3.jpg"
+            },
+            {
+                id: 4,
+                imgSrc: "assets/qsets/qset2/q2_images/option_4.jpg"
+            }
+        ],
+        correctChoiceId:2 
+    },
+    {
+        qid: 203,
+        name: "Comprendre un message d'annulation",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Qu'est-ce qui se passe pour le rendrez-vous?",
+        audioDesc: "assets/qsets/qset2/q3_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                desc: "C'était hier."
+            },
+            {
+                id: 2,
+                desc:"Il faut y aller aujourd'hui à 15h."
+            },
+            {
+                id: 3,
+                desc: "Il est reporté le 15."
+            },
+            {
+                id:4,
+                desc: "Il est annulé."
+            }
+        ],
+        correctChoiceId:4
     },
     
     // Workaround for end of question contents
@@ -679,9 +723,36 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             }
         ]
     },
-    // Workaround for end of question contents
     {
         qid: 304,
+        name: "Incident au métro",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
+        audioDesc: "assets/qsets/qset3/perturbe.mp3",
+        imgDesc: "En répercussion d'un incident d'exploitation en gare de La Défense, le traffic est perturbé sur l'ensemble de la ligne RER A. Veuillez-nous excuser pour la gêne occasionnée.",
+        desc: "Qu'est-ce qui se passe?",
+        choices: [
+          {
+              id: 1,
+              desc: 'Le traffic est interrompu.'
+          },
+          {
+              id: 2,
+              desc: 'Un accident grave de voyageur.'
+          },
+          {
+              id: 3,
+              desc: 'Les ralentissements sont prévus.'
+          },
+          {
+              id: 4,
+              desc: 'Panne de signalisation.'
+          }
+        ],
+        correctChoiceId:3
+    },
+    // Workaround for end of question contents
+    {
+        qid: 305,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",

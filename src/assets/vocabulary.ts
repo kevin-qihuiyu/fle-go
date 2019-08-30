@@ -6,10 +6,19 @@ export const VOCABULARY_1: Vocabulary[] = [
         id: 101,
         name: "une livraison",
         categoryId: 1,
-        audioSrc: "assets/vocabulary/1/101.mp3",
+        audioSrc: "",
         attr: "n.",
         explanation: "Quand on a fait les courses par exemple sur Internet et que le magasin les apporte directment à la maison",
         usage: "Ouvre la porte, c'est la livraison de courses."
+    },
+    {
+        id: 101,
+        name: "un point relais",
+        categoryId: 1,
+        audioSrc: "",
+        attr: "n.",
+        explanation: "Un lieu physique auquel des marchandises achetées en ligne sont livrées par les services postaux, et récupérées par des clients particuliers.",
+        usage: "Dès que votre colis est au point relais de destination, nous vous en informons par SMS ou par e-mail."
     },
     {
         id: 102,
@@ -26,7 +35,7 @@ export const VOCABULARY_1: Vocabulary[] = [
         categoryId: 1,
         audioSrc: "",
         attr: "n.",
-        explanation: "On met une casquette usr la tête pour se protéger du soleil",
+        explanation: "On met une casquette sur la tête pour se protéger du soleil",
         usage: "N'oublie pas ta casquette pour aller pique-niquer."
     },
     {
@@ -36,7 +45,7 @@ export const VOCABULARY_1: Vocabulary[] = [
         audioSrc: "",
         attr: "n.",
         explanation: "Un papier où on écrit tout ce qu'on veux acheter avant d'aller dans le magasin.",
-        usage: "N'oublie pas de metter beurre et jus d'orange sue ta liste avant d'aller au supermarché."
+        usage: "N'oublie pas de mettre beurre et jus d'orange sur ta liste avant d'aller au supermarché."
     },
     {
         id: 105,
@@ -63,7 +72,16 @@ export const VOCABULARY_1: Vocabulary[] = [
         audioSrc: "",
         attr: "n.",
         explanation: "Aliments que l'on ajoute à un plat avant de le servir pour le compléter ou pour le décorer.",
-        usage: "On prends les frites et les jeune pousse comme garniture."
+        usage: "On prends les frites et les jeunes pousses comme garniture."
+    },
+    {
+        id: 110,
+        name: "des crustacés",
+        categoryId: 1,
+        audioSrc: "",
+        attr: "n.",
+        explanation: "Fruit de mer: des languoustines, du crabe, des crevettes... Ils ont une carapace.",
+        usage: "J’aime beaucoup les produits de la mer : coquillages, crustacés et poissons.."
     },
     {
         id: 108,
@@ -92,6 +110,7 @@ export const VOCABULARY_1: Vocabulary[] = [
         explanation: "Promesse ou contrat pour une durée déterminé. Si on résilie un service en engagement avant, cela engendrera des frais.",
         usage: "Les forfaits sans engagement free : Internet 4G, SMS/MMS illimités, 100% en ligne."
     },
+
 
 ]
 
@@ -148,7 +167,7 @@ export const VOCABULARY_2: Vocabulary[] = [
         categoryId: 1,
         attr: "n.",
         audioSrc: "",
-        explanation: "Un cahier ou sur un téléphone. Il y a les jours et les dates, et ça sert à noter des rendez-vous.",
+        explanation: "Un cahier ou sur un téléphone/laptop. Il y a les jours et les dates, et ça sert à noter des rendez-vous.",
         usage: "Elle note le rendez-vous sur son agenda."
     },
 ]
@@ -163,6 +182,42 @@ export const VOCABULARY_3: Vocabulary[] = [
         audioSrc: "",
         explanation: "Une personne qui contrôle les tickets dans le train, le bus ou le métro.",
         usage: "Le contrôleur lui a demnadé son ticket."
+    },
+    {
+        id: 302,
+        name: "une répercussion",
+        categoryId: 1,
+        attr: "n.",
+        audioSrc: "",
+        explanation: "L'effet résultant directement ou indirectement (de quelque chose).",
+        usage: "En répercussion d'un incident d'exploitation, le traffic est interrompu..."
+    },
+    {
+        id: 303,
+        name: "interrompu",
+        categoryId: 1,
+        attr: "adj.",
+        audioSrc: "",
+        explanation: "arrêté, sans être achevé",
+        usage: "Quand le traffic est interrompu, il n'y a plus de train qui arrive."
+    },
+    {
+        id: 304,
+        name: "perturbé",
+        categoryId: 1,
+        attr: "adj.",
+        audioSrc: "",
+        explanation: "le fonctionnement est empêché",
+        usage: "Un bagage oublié par un voyageur, c'est un traffic perturbé au moins 1 heure."
+    },
+    {
+        id: 304,
+        name: "termius",
+        categoryId: 1,
+        attr: "n.",
+        audioSrc: "",
+        explanation: "fin de ligne",
+        usage: "Terminus. Nous vous invitons à descendre."
     },
     {
         id: 302,

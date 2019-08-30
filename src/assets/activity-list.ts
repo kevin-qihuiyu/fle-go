@@ -216,18 +216,6 @@ export const ACTIVITIES_3: Activity[] = [
     difficulty: Difficulty.DÉBUTANT,
     questionId: 303
   },
-  // {
-  //   name: "Prendre le bus",
-  //   categoryId: 3,
-  //   difficulty: Difficulty.DÉBUTANT,
-  //   questionId: 301
-  // },
-  // {
-  //   name: "Prendre le métro",
-  //   categoryId: 3,
-  //   difficulty: Difficulty.DÉBUTANT,
-  //   questionId: 302
-  // },
   // train avec station non desservi; 
   // plusieur directions
   // Incident voyageur; Colis suspect; malaise voyageur
