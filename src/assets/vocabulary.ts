@@ -220,13 +220,22 @@ export const VOCABULARY_3: Vocabulary[] = [
         usage: "Terminus. Nous vous invitons à descendre."
     },
     {
-        id: 302,
+        id: 305,
         name: "un carrefour",
         categoryId: 1,
         attr: "n.",
         audioSrc: "",
         explanation: "Quand deux routes se croisent.",
         usage: "La pharmacie est au carrefour entre ces deux rues."
+    },
+    {
+        id: 306,
+        name: "sans-abri",
+        categoryId: 1,
+        attr: "n.",
+        audioSrc: "",
+        explanation: "Les personnes sans-abri ou sans domicile fixe (SDF) sont des personnes qui résident et dorment dans des lieux non prévus pour l'habitation, et errent habituellement dans la rue ou l'espace public.",
+        usage: "Je prends le métro quotidiennement et je suis confrontée à pas mal de SDF ou de personnes dans le besoin."
     },
 ]
 

@@ -12,8 +12,7 @@ import { ProgressService } from '@/progress/progress.service';
 })
 export class SettingsComponent implements OnInit {
   currentUser: User;
-  studyMode: string = 'Free Browsing';
-  modes: string[] = ['Free Browsing','Scheduled (Upcoming feature)'];
+  versionNumber = "0.8.8(080819)";
 
   constructor(
     public router: Router,
@@ -37,7 +36,7 @@ export class SettingsComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+      //console.log('The dialog was closed');
     });
   }
 
@@ -54,13 +53,10 @@ export class DialogConfirmResetComponent {
     ) {}
 
   onNoClick(): void {
-    console.log('NO');
-
     this.dialogRef.close();
   }
 
   onYesClick(): void {
-    console.log('YES');
     this.progressService.resetAllProgress();
     this.dialogRef.close();
   }
