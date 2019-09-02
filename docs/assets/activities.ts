@@ -146,8 +146,8 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         qid: 106,
         name: "Au restaurant, le serveur dit:",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
-        imgDesc: "assets/qsets/qset1/debarrasser.jpg",
-        audioDesc: "assets/qsets/qset1/debarrasser.mp3",
+        imgDesc: "assets/qsets/qset1/restaurant/debarrasser.jpg",
+        audioDesc: "assets/qsets/qset1/restaurant/debarrasser.mp3",
         desc: "Vous avez pas encore fini. Votre réponse?",
         choices: [
           {
@@ -350,7 +350,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         qid: 114,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "assets/qsets/qset1/bonnet_echarpe.mp3",
+        audioDesc: "assets/qsets/qset1/vetements/bonnet_echarpe.mp3",
         choices: [
             {
                 id: 1,
@@ -418,27 +418,27 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "Venir chercher un colis",
-                imgSrc: "assets/qsets/qset2/q1_images/1-envoyer-un-colis.jpg"
+                imgSrc: "assets/qsets/qset2/la-poste/1-envoyer-un-colis.jpg"
             },
             {
                 id: 2,
                 desc: "Envoyer une lettre recommandée",
-                imgSrc: "assets/qsets/qset2/q1_images/lettre-recommandee.jpg"
+                imgSrc: "assets/qsets/qset2/la-poste/lettre-recommandee.jpg"
             },
             {
                 id: 3,
                 desc: "Retirer de l'argent",
-                imgSrc: "assets/qsets/qset2/q1_images/3-retirer-l-argent.jpg"
+                imgSrc: "assets/qsets/qset2/la-poste/3-retirer-l-argent.jpg"
             },
             {
                 id: 4,
                 desc: "Timbrer/Affranchir son courrier",
-                imgSrc: "assets/qsets/qset2/q1_images/4-affranchir.jpg"
+                imgSrc: "assets/qsets/qset2/la-poste/4-affranchir.jpg"
             }
         ]
     },
     {
-        qid: 204,
+        qid: 202,
         name: "Identifier la date de fin de validité d'un document",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Quelle est la date de fin de validité de ce titre de séjour?",
@@ -460,7 +460,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:1
     },
     {
-        qid: 205,
+        qid: 203,
         name: "Identifier un courrier administratif",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "De quoi il peut s'agir?",
@@ -486,7 +486,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:3
     },
     {
-        qid: 206,
+        qid: 204,
         name: "Fournir un justicatif",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         desc: "De quoi il parle?",
@@ -512,7 +512,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2
     },
     {
-        qid: 208,
+        qid: 205,
         name: "Rédiger une lettre de résiliation",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Parmi les énoncés suivants, lequel est FAUX?",
@@ -538,7 +538,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:1
     },
     {
-        qid: 207,
+        qid: 206,
         name: "Envoyer une lettre",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Qu'est ce-qu'on trouve dans cette zone d'une enveloppe?",
@@ -556,7 +556,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2
     },
     {
-        qid: 208,
+        qid: 207,
         name: "Envoyer une lettre",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Qu'est ce-qu'on trouve dans cette zone d'une enveloppe?",
@@ -574,7 +574,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:1
     },  
     {
-        qid: 202,
+        qid: 208,
         name: "Apporter ses documents",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_IMAGE,
         desc: "Qu'est-ce qu'il faut apporter au rendez-vous?",
@@ -600,7 +600,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2 
     },
     {
-        qid: 203,
+        qid: 209,
         name: "Comprendre un message d'annulation",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
         desc: "Qu'est-ce qui se passe pour le rendrez-vous?",
@@ -628,7 +628,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     
     // Workaround for end of question contents
     {
-        qid: 209,
+        qid: 210,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",
@@ -728,7 +728,6 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         name: "Incident au métro",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
         audioDesc: "assets/qsets/qset3/perturbe.mp3",
-        imgDesc: "En répercussion d'un incident d'exploitation en gare de La Défense, le traffic est perturbé sur l'ensemble de la ligne RER A. Veuillez-nous excuser pour la gêne occasionnée.",
         desc: "Qu'est-ce qui se passe?",
         choices: [
           {
@@ -754,7 +753,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         qid: 305,
         name: "Lire une information",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
-        imgDesc: "SNCF : La gare Paris Gare du Nord non desservie",
+        imgDesc: "assets/qsets/qset3/gare_non_desservie.jpg",
         desc: "Qu'est-ce qui se passe?",
         choices: [
           {

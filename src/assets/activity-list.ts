@@ -120,25 +120,31 @@ export const ACTIVITIES_2: Activity[] = [
       name: "Identifier la date de fin de validité d'un document",
       categoryId: 2,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 204
+      questionId: 202
     },
     {
       name: "Identifier un courrier administratif",
       categoryId: 2,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 205
+      questionId: 203
     },
     {
       name: "Fournir un justicatif",
       categoryId: 2,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 206
+      questionId: 204
     },
     {
       name: "Rédiger une lettre de résiliation",
       categoryId: 2,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 209
+      questionId: 205
+    },
+    {
+      name: "Envoyer une lettre",
+      categoryId: 2,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 206
     },
     {
       name: "Envoyer une lettre",
@@ -147,22 +153,16 @@ export const ACTIVITIES_2: Activity[] = [
       questionId: 207
     },
     {
-      name: "Envoyer une lettre",
+      name: "Apporter ses documents",
       categoryId: 2,
       difficulty: Difficulty.DÉBUTANT,
       questionId: 208
     },
     {
-      name: "Apporter ses documents",
-      categoryId: 2,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 202
-    },
-    {
       name: "Comprendre un message d'annulation",
       categoryId: 2,
       difficulty: Difficulty.DÉBUTANT,
-      questionId: 203
+      questionId: 209
     },
 
     // {
@@ -229,7 +229,24 @@ export const ACTIVITIES_3: Activity[] = [
     difficulty: Difficulty.DÉBUTANT,
     questionId: 303
   },
-  // train avec station non desservi; 
+  {
+    name: "Incident au métro",
+    categoryId: 3,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 304
+  },
+  {
+    name: "Lire une information",
+    categoryId: 3,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 305
+  },
+  {
+    name: "À la gare",
+    categoryId: 3,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 306
+  },
   // plusieur directions
   // Incident voyageur; Colis suspect; malaise voyageur
   // Station fermer suite à manifestation
