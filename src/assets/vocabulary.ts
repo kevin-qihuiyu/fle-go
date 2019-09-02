@@ -170,6 +170,25 @@ export const VOCABULARY_2: Vocabulary[] = [
         explanation: "Un cahier ou sur un téléphone/laptop. Il y a les jours et les dates, et ça sert à noter des rendez-vous.",
         usage: "Elle note le rendez-vous sur son agenda."
     },
+    {
+        id: 206,
+        name: "des timbres fiscaux",
+        categoryId: 1,
+        attr: "n.",
+        audioSrc: "",
+        explanation: "Le timbre fiscal est un moyen de payer un impôt ou une taxe. On le trouve dans les bureaux de tabac ou les centres des impôts.",
+        usage: "Depuis le 1er janvier 2019, les timbres fiscaux sont vendus uniquement sous la forme dématérialisée (ou électronique)."
+    },
+    {
+        id: 206,
+        name: "taxe d'habitation",
+        categoryId: 1,
+        attr: "n.",
+        audioSrc: "",
+        explanation: "La taxe d'habitation est un impôt local qui dépend des caractéristiques de votre logement, de sa localisation et de votre situation personnelle au 1er janvier.",
+        usage: "La taxe d'habitation sera bien supprimée pour tous en 2023."
+    },
+    
 ]
 
 // Cat3: Voyager

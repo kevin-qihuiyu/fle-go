@@ -750,9 +750,63 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ],
         correctChoiceId:3
     },
-    // Workaround for end of question contents
     {
         qid: 305,
+        name: "Lire une information",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        imgDesc: "SNCF : La gare Paris Gare du Nord non desservie",
+        desc: "Qu'est-ce qui se passe?",
+        choices: [
+          {
+              id: 1,
+              desc: "Il n'y a pas de train dans cette gare."
+          },
+          {
+              id: 2,
+              desc: 'Les ralentissements sont prévus dans cette gare.'
+          },
+          {
+              id: 3,
+              desc: "Il n'y a pas de service voyager dans cette gare."
+          },
+          {
+              id: 4,
+              desc: 'Il y a un incident technique dans cette gare.'
+          }
+        ],
+        correctChoiceId:1
+    },
+    {
+        qid: 306,
+        name: "À la gare",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Qu'est-ce que vous faites à la gare?",
+        choices: [
+          {
+            id: 1,
+            desc: "Je regarde les horaires.",
+            imgSrc: "assets/qsets/qset3/gare/regarder-les-horaires.jpg"
+          },
+          {
+            id: 2,
+            desc: "J'achète un billet.",
+            imgSrc: "assets/qsets/qset3/gare/acheter-billet.jpg"
+          },
+          {
+            id: 3,
+            desc: "Je composte mon billet.",
+            imgSrc: "assets/qsets/qset3/gare/composter.jpg"
+          },
+          {
+            id: 4,
+            desc: "J'attends sur le quai.",
+            imgSrc: "assets/qsets/qset3/gare/sur-le-quai.jpg"
+          }
+        ]
+    },
+    // Workaround for end of question contents
+    {
+        qid: 307,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",
@@ -869,6 +923,62 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
                 id: 4,
                 desc: "une armoire",
                 imgSrc: "assets/qsets/qset4/equipments/armoire.jpg"
+            }
+        ]
+    },
+    {
+        qid: 403,
+        name: "Identifier l'équipement d'un appartement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces équipments?",
+        choices: [
+            {
+                id: 1,
+                desc: "une hotte aspirante",
+                imgSrc: "assets/qsets/qset4/equipments/hotte.jpg"
+            },
+            {
+                id: 2,
+                desc: "une plaque de cuisson électrique",
+                imgSrc: "assets/qsets/qset4/equipments/plaque.jpg"
+            },
+            {
+                id: 3,
+                desc: "un four",
+                imgSrc: "assets/qsets/qset4/equipments/four.jpg"
+            },
+            {
+                id: 4,
+                desc: "un évier",
+                imgSrc: "assets/qsets/qset4/equipments/evier.jpg"
+            }
+        ]
+    },
+    {
+        qid: 403,
+        name: "Identifier l'équipement d'un appartement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces équipments?",
+        choices: [
+            {
+                id: 1,
+                desc: "un lavabo",
+                imgSrc: "assets/qsets/qset4/equipments/lavabo.jpg"
+            },
+            {
+                id: 2,
+                desc: "une douche",
+                imgSrc: "assets/qsets/qset4/equipments/douche.jpg"
+            },
+            {
+                id: 3,
+                desc: "une baignoire",
+                imgSrc: "assets/qsets/qset4/equipments/baignoire.jpg"
+            },
+            {
+                id: 4,
+                desc: "des toilettes",
+                imgSrc: "assets/qsets/qset4/equipments/toilettes.jpg"
             }
         ]
     },
