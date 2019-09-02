@@ -118,7 +118,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 104,
+        qid: 105,
         name: "Choisir la garniture",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         audioDesc: "assets/qsets/qset1/restaurant/garniture.mp3",
@@ -143,12 +143,12 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2 
     },
     {
-        qid: 108,
+        qid: 106,
         name: "Au restaurant, le serveur dit:",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
         imgDesc: "assets/qsets/qset1/debarrasser.jpg",
         audioDesc: "assets/qsets/qset1/debarrasser.mp3",
-        desc: "Je peux vous débarrasser?",
+        desc: "Vous avez pas encore fini. Votre réponse?",
         choices: [
           {
               id: 1,
@@ -162,7 +162,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2 
     },
     {
-        qid: 105,
+        qid: 107,
         name: "Identifier un dessert",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -189,7 +189,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
       },
     {
-        qid: 106,
+        qid: 108,
         name: "Identifier un dessert",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -216,7 +216,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
       },
     {
-        qid: 107,
+        qid: 109,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -243,11 +243,11 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-      qid: 108,
+      qid: 110,
       name: "Acheter des vêtements",
       questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
-      imgDesc: "assets/qsets/qset1/q2_image.jpg",
-      audioDesc: "assets/qsets/qset1/q2_audio.mp3",
+      imgDesc: "assets/qsets/qset1/vetements/jean.jpg",
+      audioDesc: "assets/qsets/qset1/vetements/taille.mp3",
       choices: [
         {
             id: 1,
@@ -269,19 +269,19 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2 
     },
     {
-        qid: 109,
+        qid: 111,
         name: "Acheter des chaussures",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         desc: "De quoi elle parle?",
-        audioDesc: "assets/qsets/qset1/q1_audio.mp3",
+        audioDesc: "assets/qsets/qset1/vetements/pointure.mp3",
         choices:[
           {
               id: 1,
-              imgSrc:'assets/qsets/qset1/vetements/q1_blouson.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/blouson_1.jpg'
           },
           {
               id: 2,
-              imgSrc:'assets/qsets/qset1/vetements/q1_chaussure.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/chaussure.jpg'
           },
           {
               id: 3,
@@ -295,32 +295,32 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
          correctChoiceId:2 
     },  
     {
-        qid: 110,
+        qid: 112,
         name: "Identifier un moyen de paiement",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "assets/qsets/qset1/q10_audio.mp3",
+        audioDesc: "assets/qsets/qset1/paiement/paiement.mp3",
         choices: [
             {
                 id: 1,
-                imgSrc: "assets/qsets/qset1/q10_images/carte.jpg"
+                imgSrc: "assets/qsets/qset1/paiement/carte.jpg"
             },
             {
                 id: 2,
-                imgSrc: "assets/qsets/qset1/q10_images/cheque.jpg"
+                imgSrc: "assets/qsets/qset1/paiement/cheque.jpg"
             },
             {
                 id: 3,
-                imgSrc: "assets/qsets/qset1/q10_images/espece.jpg"
+                imgSrc: "assets/qsets/qset1/paiement/espece.jpg"
             },
             {
                 id: 4,
-                imgSrc: "assets/qsets/qset1/q10_images/wechat.jpg"
+                imgSrc: "assets/qsets/qset1/paiement/wechat.jpg"
             },
         ],
         correctChoiceId:3 
     },
     {
-        qid: 111,
+        qid: 113,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -347,10 +347,10 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 112,
+        qid: 114,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "assets/qsets/qset1//q6_audio.mp3",
+        audioDesc: "assets/qsets/qset1/bonnet_echarpe.mp3",
         choices: [
             {
                 id: 1,
@@ -372,34 +372,34 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:3 
     },
     {
-        qid: 113,
+        qid: 115,
         name: "Comprendre le français familier",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         desc: "De quoi il parle?",
-        audioDesc: "assets/qsets/qset1/audio_du_coup.mp3",
+        audioDesc: "assets/qsets/qset1/mot/du_coup.mp3",
         choices: [
             {
                 id: 1,
-                imgSrc: 'assets/qsets/qset1/q8_images/chick.jpg'
+                imgSrc: 'assets/qsets/qset1/mot/chick.jpg'
             },
             {
                 id: 2,
-                imgSrc: 'assets/qsets/qset1/q8_images/and_so.jpg'
+                imgSrc: 'assets/qsets/qset1/mot/and_so.jpg'
             },
             {
                 id: 3,
-                imgSrc: 'assets/qsets/qset1/q8_images/champignon.jpg'
+                imgSrc: 'assets/qsets/qset1/mot/champignon.jpg'
             },
             {
                 id:4,
-                imgSrc: 'assets/qsets/qset1/q8_images/explosion.jpg'
+                imgSrc: 'assets/qsets/qset1/mot/explosion.jpg'
             }
         ],
         correctChoiceId:2 
     },
       // Workaround for end of question contents
       {
-        qid: 114,
+        qid: 116,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",
@@ -423,7 +423,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 2,
                 desc: "Envoyer une lettre recommandée",
-                imgSrc: "assets/qsets/qset2/q1_images/2-prendre-un-abonnement-mobile.jpg"
+                imgSrc: "assets/qsets/qset2/q1_images/lettre-recommandee.jpg"
             },
             {
                 id: 3,

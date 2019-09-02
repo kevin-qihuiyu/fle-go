@@ -27,65 +27,71 @@ export const ACTIVITIES_1: Activity[] = [
     questionId: 104
   },
   {
-    name: "Identifier un dessert",
+    name: "Choisir la garniture",
     categoryId: 1,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 105
   },
   {
-    name: "Identifier un dessert",
+    name: "Comprendre le serveur",
     categoryId: 1,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 106
   },
   {
-    name: "Connaître les noms de vêtements",
+    name: "Identifier un dessert",
     categoryId: 1,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 107
   },
   {
-    name: "Acheter des vêtements",
+    name: "Identifier un dessert",
     categoryId: 1,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 108
   },
   {
-    name: "Acheter des chaussures",
-    categoryId: 3,
+    name: "Connaître les noms de vêtements",
+    categoryId: 1,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 109
   },
   {
-    name: "Identifier un moyen de paiement",
+    name: "Acheter des vêtements",
     categoryId: 1,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 110
   },
   {
-    name: "Connaître les noms de vêtements",
-    categoryId: 1,
+    name: "Acheter des chaussures",
+    categoryId: 3,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 111
   },
   {
-    name: "Connaître les noms de vêtements",
+    name: "Identifier un moyen de paiement",
     categoryId: 1,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 112
   },
   {
-    name: "Comprendre le français familier",
+    name: "Connaître les noms de vêtements",
     categoryId: 1,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 113
   },
-    // {
-    //   name: "Choisir la garniture",
-    //   categoryId: 1,
-    //   difficulty: Difficulty.DÉBUTANT,
-    //   questionId: 106
-    // },
+  {
+    name: "Connaître les noms de vêtements",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 114
+  },
+  {
+    name: "Comprendre le français familier",
+    categoryId: 1,
+    difficulty: Difficulty.DÉBUTANT,
+    questionId: 115
+  },
     // {
     //   name: "Retirer un colis",
     //   categoryId: 1,
@@ -111,18 +117,6 @@ export const ACTIVITIES_2: Activity[] = [
       questionId: 201
     },
     {
-      name: "Apporter ses documents",
-      categoryId: 2,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 202
-    },
-    {
-      name: "Comprendre un message d'annulation",
-      categoryId: 2,
-      difficulty: Difficulty.DÉBUTANT,
-      questionId: 203
-    },
-    {
       name: "Identifier la date de fin de validité d'un document",
       categoryId: 2,
       difficulty: Difficulty.DÉBUTANT,
@@ -141,6 +135,12 @@ export const ACTIVITIES_2: Activity[] = [
       questionId: 206
     },
     {
+      name: "Rédiger une lettre de résiliation",
+      categoryId: 2,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 209
+    },
+    {
       name: "Envoyer une lettre",
       categoryId: 2,
       difficulty: Difficulty.DÉBUTANT,
@@ -152,6 +152,19 @@ export const ACTIVITIES_2: Activity[] = [
       difficulty: Difficulty.DÉBUTANT,
       questionId: 208
     },
+    {
+      name: "Apporter ses documents",
+      categoryId: 2,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 202
+    },
+    {
+      name: "Comprendre un message d'annulation",
+      categoryId: 2,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 203
+    },
+
     // {
     //   name: "Se repérer à la préfecture",
     //   categoryId: 2,
@@ -216,18 +229,6 @@ export const ACTIVITIES_3: Activity[] = [
     difficulty: Difficulty.DÉBUTANT,
     questionId: 303
   },
-  // {
-  //   name: "Prendre le bus",
-  //   categoryId: 3,
-  //   difficulty: Difficulty.DÉBUTANT,
-  //   questionId: 301
-  // },
-  // {
-  //   name: "Prendre le métro",
-  //   categoryId: 3,
-  //   difficulty: Difficulty.DÉBUTANT,
-  //   questionId: 302
-  // },
   // train avec station non desservi; 
   // plusieur directions
   // Incident voyageur; Colis suspect; malaise voyageur

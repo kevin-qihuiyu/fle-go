@@ -61,7 +61,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
                 imgSrc: "assets/qsets/qset1/restaurant/tartare.jpg"
             }
         ]
-      },
+    },
     {
         qid: 103,
         name: "Identifier la cuisine française",
@@ -116,9 +116,53 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
                 imgSrc: "assets/qsets/qset1/restaurant/bien-cuit.jpg"
             }
         ]
-      },
+    },
     {
         qid: 105,
+        name: "Choisir la garniture",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
+        audioDesc: "assets/qsets/qset1/restaurant/garniture.mp3",
+        choices: [
+            {
+                id: 1,
+                imgSrc: "assets/qsets/qset1/restaurant/escargots.jpg"
+            },
+            {
+                id: 2,
+                imgSrc: "assets/qsets/qset1/restaurant/frite.jpg"
+            },
+            {
+                id: 3,
+                imgSrc: "assets/qsets/qset1/restaurant/cordon-bleu.jpg"
+            },
+            {
+                id: 4,
+                imgSrc: "assets/qsets/qset1/restaurant/pilon.jpg"
+            }
+        ],
+        correctChoiceId:2 
+    },
+    {
+        qid: 106,
+        name: "Au restaurant, le serveur dit:",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
+        imgDesc: "assets/qsets/qset1/debarrasser.jpg",
+        audioDesc: "assets/qsets/qset1/debarrasser.mp3",
+        desc: "Vous avez pas encore fini. Votre réponse?",
+        choices: [
+          {
+              id: 1,
+              desc: 'Oui'
+          },
+          {
+              id: 2,
+              desc: 'Non'
+          }
+        ],
+        correctChoiceId:2 
+    },
+    {
+        qid: 107,
         name: "Identifier un dessert",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -145,7 +189,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
       },
     {
-        qid: 106,
+        qid: 108,
         name: "Identifier un dessert",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
@@ -172,38 +216,38 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
       },
     {
-        qid: 107,
+        qid: 109,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
             {
                 id: 1,
                 desc: "un short",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_short.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/short.jpg"
             },
             {
                 id: 2,
                 desc: "un pantalon",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_pantalon.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/pantalon.jpg"
             },
             {
                 id: 3,
                 desc: "un t-shirt",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_t.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/t.jpg"
             },
             {
                 id: 4,
                 desc: "une chemise",
-                imgSrc: "assets/qsets/qset1/q4_images/q4_chemise.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/chemise.jpg"
             }
         ]
     },
     {
-      qid: 108,
+      qid: 110,
       name: "Acheter des vêtements",
       questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
-      imgDesc: "assets/qsets/qset1/q2_image.jpg",
-      audioDesc: "assets/qsets/qset1/q2_audio.mp3",
+      imgDesc: "assets/qsets/qset1/vetements/jean.jpg",
+      audioDesc: "assets/qsets/qset1/vetements/taille.mp3",
       choices: [
         {
             id: 1,
@@ -225,137 +269,137 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2 
     },
     {
-        qid: 109,
+        qid: 111,
         name: "Acheter des chaussures",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         desc: "De quoi elle parle?",
-        audioDesc: "assets/qsets/qset1/q1_audio.mp3",
+        audioDesc: "assets/qsets/qset1/vetements/pointure.mp3",
         choices:[
           {
               id: 1,
-              imgSrc:'assets/qsets/qset1/q1_images/q1_blouson.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/blouson_1.jpg'
           },
           {
               id: 2,
-              imgSrc:'assets/qsets/qset1/q1_images/q1_chaussure.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/chaussure.jpg'
           },
           {
               id: 3,
-              imgSrc:'assets/qsets/qset1/q4_images/q4_pantalon.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/pantalon.jpg'
           },
           {
               id: 4,
-              imgSrc:'assets/qsets/qset1/q4_images/q4_chemise.jpg'
+              imgSrc:'assets/qsets/qset1/vetements/chemise.jpg'
           }
          ],
          correctChoiceId:2 
     },  
     {
-        qid: 110,
+        qid: 112,
         name: "Identifier un moyen de paiement",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "assets/qsets/qset1/q10_audio.mp3",
+        audioDesc: "assets/qsets/qset1/paiement/paiement.mp3",
         choices: [
             {
                 id: 1,
-                imgSrc: "assets/qsets/qset1/q10_images/carte.jpg"
+                imgSrc: "assets/qsets/qset1/paiement/carte.jpg"
             },
             {
                 id: 2,
-                imgSrc: "assets/qsets/qset1/q10_images/cheque.jpg"
+                imgSrc: "assets/qsets/qset1/paiement/cheque.jpg"
             },
             {
                 id: 3,
-                imgSrc: "assets/qsets/qset1/q10_images/espece.jpg"
+                imgSrc: "assets/qsets/qset1/paiement/espece.jpg"
             },
             {
                 id: 4,
-                imgSrc: "assets/qsets/qset1/q10_images/wechat.jpg"
+                imgSrc: "assets/qsets/qset1/paiement/wechat.jpg"
             },
         ],
         correctChoiceId:3 
     },
     {
-        qid: 111,
+        qid: 113,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         choices: [
             {
                 id: 1,
                 desc: "un pull",
-                imgSrc: "assets/qsets/qset1/q5_images/q5_pull.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/pull.jpg"
             },
             {
                 id: 2,
                 desc: "un jean",
-                imgSrc: "assets/qsets/qset1/q5_images/q5_jean.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/jean.jpg"
             },
             {
                 id: 3,
                 desc: "un blouson",
-                imgSrc: "assets/qsets/qset1/q5_images/q5_blouson.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/blouson.jpg"
             },
             {
                 id: 4,
                 desc: "un manteau",
-                imgSrc: "assets/qsets/qset1/q5_images/q5_manteau.jpg"
+                imgSrc: "assets/qsets/qset1/vetements/manteau.jpg"
             }
         ]
     },
     {
-        qid: 112,
+        qid: 114,
         name: "Connaître les noms de vêtements",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
-        audioDesc: "assets/qsets/qset1//q6_audio.mp3",
+        audioDesc: "assets/qsets/qset1/bonnet_echarpe.mp3",
         choices: [
             {
                 id: 1,
-                imgSrc: 'assets/qsets/qset1/q6_images/q6_beret_echarpe.jpg'
+                imgSrc: 'assets/qsets/qset1/vetements/q6_beret_echarpe.jpg'
             },
             {
                 id: 2,
-                imgSrc: 'assets/qsets/qset1/q6_images/q6_beret_gants.jpg'
+                imgSrc: 'assets/qsets/qset1/vetements/q6_beret_gants.jpg'
             },
             {
                 id: 3,
-                imgSrc: 'assets/qsets/qset1/q6_images/q6_bonnet_echarpe.jpg'
+                imgSrc: 'assets/qsets/qset1/vetements/q6_bonnet_echarpe.jpg'
             },
             {
                 id:4,
-                imgSrc: 'assets/qsets/qset1/q6_images/q6_bonnet_foulard.jpg'
+                imgSrc: 'assets/qsets/qset1/vetements/q6_bonnet_foulard.jpg'
             }
         ],
         correctChoiceId:3 
     },
     {
-        qid: 113,
+        qid: 115,
         name: "Comprendre le français familier",
         questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_IMAGE,
         desc: "De quoi il parle?",
-        audioDesc: "assets/qsets/qset1/audio_du_coup.mp3",
+        audioDesc: "assets/qsets/qset1/mot/du_coup.mp3",
         choices: [
             {
                 id: 1,
-                imgSrc: 'assets/qsets/qset1/q8_images/chick.jpg'
+                imgSrc: 'assets/qsets/qset1/mot/chick.jpg'
             },
             {
                 id: 2,
-                imgSrc: 'assets/qsets/qset1/q8_images/and_so.jpg'
+                imgSrc: 'assets/qsets/qset1/mot/and_so.jpg'
             },
             {
                 id: 3,
-                imgSrc: 'assets/qsets/qset1/q8_images/champignon.jpg'
+                imgSrc: 'assets/qsets/qset1/mot/champignon.jpg'
             },
             {
                 id:4,
-                imgSrc: 'assets/qsets/qset1/q8_images/explosion.jpg'
+                imgSrc: 'assets/qsets/qset1/mot/explosion.jpg'
             }
         ],
         correctChoiceId:2 
     },
       // Workaround for end of question contents
       {
-        qid: 114,
+        qid: 116,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",
@@ -378,8 +422,8 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             },
             {
                 id: 2,
-                desc: "Prendre un abonnement de téléphone",
-                imgSrc: "assets/qsets/qset2/q1_images/2-prendre-un-abonnement-mobile.jpg"
+                desc: "Envoyer une lettre recommandée",
+                imgSrc: "assets/qsets/qset2/q1_images/lettre-recommandee.jpg"
             },
             {
                 id: 3,
@@ -392,58 +436,6 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
                 imgSrc: "assets/qsets/qset2/q1_images/4-affranchir.jpg"
             }
         ]
-    },
-    {
-        qid: 202,
-        name: "Apporter ses documents",
-        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_IMAGE,
-        desc: "Qu'est-ce qu'il faut apporter au rendez-vous?",
-        imgDesc: "assets/qsets/qset2/q2_images/img_desc.jpg",
-        choices: [
-            {
-                id: 1,
-                imgSrc: "assets/qsets/qset2/q2_images/option_1.jpg"
-            },
-            {
-                id: 2,
-                imgSrc: "assets/qsets/qset2/q2_images/option_2.jpg"
-            },
-            {
-                id: 3,
-                imgSrc: "assets/qsets/qset2/q2_images/option_3.jpg"
-            },
-            {
-                id: 4,
-                imgSrc: "assets/qsets/qset2/q2_images/option_4.jpg"
-            }
-        ],
-        correctChoiceId:2 
-    },
-    {
-        qid: 203,
-        name: "Comprendre un message d'annulation",
-        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
-        desc: "Qu'est-ce qui se passe pour le rendrez-vous?",
-        audioDesc: "assets/qsets/qset2/q3_audio.mp3",
-        choices: [
-            {
-                id: 1,
-                desc: "C'était hier."
-            },
-            {
-                id: 2,
-                desc:"Il faut y aller aujourd'hui à 15h."
-            },
-            {
-                id: 3,
-                desc: "Il est reporté le 15."
-            },
-            {
-                id:4,
-                desc: "Il est annulé."
-            }
-        ],
-        correctChoiceId:4
     },
     {
         qid: 204,
@@ -520,6 +512,32 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2
     },
     {
+        qid: 208,
+        name: "Rédiger une lettre de résiliation",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Parmi les énoncés suivants, lequel est FAUX?",
+        imgDesc: "assets/qsets/qset2/lettre_resiliation.jpg",
+        choices: [
+            {
+                id: 1,
+                desc: "C'est pour terminer un contrat/abonnement."
+            },
+            {
+                id: 2,
+                desc: "Il faut l'envoyer par lettre recommandée avec accusé de reception."
+            },
+            {
+                id: 3,
+                desc: "Elle a une valeur légale."
+            },
+            {
+                id: 4,
+                desc: "On ne peut pas le faire en ligne."
+            }
+        ],
+        correctChoiceId:1
+    },
+    {
         qid: 207,
         name: "Envoyer une lettre",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
@@ -554,6 +572,58 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             }
         ],
         correctChoiceId:1
+    },  
+    {
+        qid: 202,
+        name: "Apporter ses documents",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_IMAGE,
+        desc: "Qu'est-ce qu'il faut apporter au rendez-vous?",
+        imgDesc: "assets/qsets/qset2/q2_images/img_desc.jpg",
+        choices: [
+            {
+                id: 1,
+                imgSrc: "assets/qsets/qset2/q2_images/option_1.jpg"
+            },
+            {
+                id: 2,
+                imgSrc: "assets/qsets/qset2/q2_images/option_2.jpg"
+            },
+            {
+                id: 3,
+                imgSrc: "assets/qsets/qset2/q2_images/option_3.jpg"
+            },
+            {
+                id: 4,
+                imgSrc: "assets/qsets/qset2/q2_images/option_4.jpg"
+            }
+        ],
+        correctChoiceId:2 
+    },
+    {
+        qid: 203,
+        name: "Comprendre un message d'annulation",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Qu'est-ce qui se passe pour le rendrez-vous?",
+        audioDesc: "assets/qsets/qset2/q3_audio.mp3",
+        choices: [
+            {
+                id: 1,
+                desc: "C'était hier."
+            },
+            {
+                id: 2,
+                desc:"Il faut y aller aujourd'hui à 15h."
+            },
+            {
+                id: 3,
+                desc: "Il est reporté le 15."
+            },
+            {
+                id:4,
+                desc: "Il est annulé."
+            }
+        ],
+        correctChoiceId:4
     },
     
     // Workaround for end of question contents
@@ -576,22 +646,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "le rer",
-                imgSrc: "assets/qsets/qset3/q1_images/rer.jpg"
+                imgSrc: "assets/qsets/qset3/transport/rer.jpg"
             },
             {
                 id: 2,
                 desc: "le bus",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_bus.jpg"
+                imgSrc: "assets/qsets/qset3/transport/bus.jpg"
             },
             {
                 id: 3,
                 desc: "le tramway",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_tramway.jpg"
+                imgSrc: "assets/qsets/qset3/transport/tramway.jpg"
             },
             {
                 id: 4,
                 desc: "le métro",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
+                imgSrc: "assets/qsets/qset3/transport/metro.jpg"
             }
         ]
     },
@@ -605,22 +675,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "un vélo",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_velo.jpg"
+                imgSrc: "assets/qsets/qset3/transport/velo.jpg"
             },
             {
                 id: 2,
                 desc: "le bus",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_bus.jpg"
+                imgSrc: "assets/qsets/qset3/transport/bus.jpg"
             },
             {
                 id: 3,
                 desc: "le tramway",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_tramway.jpg"
+                imgSrc: "assets/qsets/qset3/transport/tramway.jpg"
             },
             {
                 id: 4,
                 desc: "le métro",
-                imgSrc: "assets/qsets/qset3/q1_images/q1_metro.jpg"
+                imgSrc: "assets/qsets/qset3/transport/metro.jpg"
             }
         ],
         correctChoiceId:2
@@ -634,28 +704,109 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "une trottinette",
-                imgSrc: "assets/qsets/qset3/q3_images/trottinette.jpg"
+                imgSrc: "assets/qsets/qset3/transport/trottinette.jpg"
             },
             {
                 id: 2,
                 desc: "un vélo",
-                imgSrc: "assets/qsets/qset3/q3_images/velo.jpg"
+                imgSrc: "assets/qsets/qset3/transport/velo.jpg"
             },
             {
                 id: 3,
                 desc: "une voiture",
-                imgSrc: "assets/qsets/qset3/q3_images/voiture.jpg"
+                imgSrc: "assets/qsets/qset3/transport/voiture.jpg"
             },
             {
                 id: 4,
                 desc: "un skate",
-                imgSrc: "assets/qsets/qset3/q3_images/skate.jpg"
+                imgSrc: "assets/qsets/qset3/transport/skate.jpg"
             }
+        ]
+    },
+    {
+        qid: 304,
+        name: "Incident au métro",
+        questionType: QuestionType.ECOUTEZ_ET_CHOISISSEZ_TEXT,
+        audioDesc: "assets/qsets/qset3/perturbe.mp3",
+        imgDesc: "En répercussion d'un incident d'exploitation en gare de La Défense, le traffic est perturbé sur l'ensemble de la ligne RER A. Veuillez-nous excuser pour la gêne occasionnée.",
+        desc: "Qu'est-ce qui se passe?",
+        choices: [
+          {
+              id: 1,
+              desc: 'Le traffic est interrompu.'
+          },
+          {
+              id: 2,
+              desc: 'Un accident grave de voyageur.'
+          },
+          {
+              id: 3,
+              desc: 'Les ralentissements sont prévus.'
+          },
+          {
+              id: 4,
+              desc: 'Panne de signalisation.'
+          }
+        ],
+        correctChoiceId:3
+    },
+    {
+        qid: 305,
+        name: "Lire une information",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        imgDesc: "SNCF : La gare Paris Gare du Nord non desservie",
+        desc: "Qu'est-ce qui se passe?",
+        choices: [
+          {
+              id: 1,
+              desc: "Il n'y a pas de train dans cette gare."
+          },
+          {
+              id: 2,
+              desc: 'Les ralentissements sont prévus dans cette gare.'
+          },
+          {
+              id: 3,
+              desc: "Il n'y a pas de service voyager dans cette gare."
+          },
+          {
+              id: 4,
+              desc: 'Il y a un incident technique dans cette gare.'
+          }
+        ],
+        correctChoiceId:1
+    },
+    {
+        qid: 306,
+        name: "À la gare",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Qu'est-ce que vous faites à la gare?",
+        choices: [
+          {
+            id: 1,
+            desc: "Je regarde les horaires.",
+            imgSrc: "assets/qsets/qset3/gare/regarder-les-horaires.jpg"
+          },
+          {
+            id: 2,
+            desc: "J'achète un billet.",
+            imgSrc: "assets/qsets/qset3/gare/acheter-billet.jpg"
+          },
+          {
+            id: 3,
+            desc: "Je composte mon billet.",
+            imgSrc: "assets/qsets/qset3/gare/composter.jpg"
+          },
+          {
+            id: 4,
+            desc: "J'attends sur le quai.",
+            imgSrc: "assets/qsets/qset3/gare/sur-le-quai.jpg"
+          }
         ]
     },
     // Workaround for end of question contents
     {
-        qid: 304,
+        qid: 307,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",
@@ -672,22 +823,78 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "le salon",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salon.jpg"
+                imgSrc: "assets/qsets/qset4/house/q1_salon.jpg"
             },
             {
                 id: 2,
                 desc: "la cuisine",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_cuisine.jpg"
+                imgSrc: "assets/qsets/qset4/house/q1_cuisine.jpg"
             },
             {
                 id: 3,
                 desc: "la chambre",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_chambre.jpg"
+                imgSrc: "assets/qsets/qset4/house/q1_chambre.jpg"
             },
             {
                 id: 4,
                 desc: "la salle de bain",
-                imgSrc: "assets/qsets/qset4/q1_images/q1_salle_de_bain.jpg"
+                imgSrc: "assets/qsets/qset4/house/q1_salle_de_bain.jpg"
+            }
+        ]
+    },
+    {
+        qid: 401,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "une mezzanine",
+                imgSrc: "assets/qsets/qset4/house/mezzanine.jpg"
+            },
+            {
+                id: 2,
+                desc: "une véranda",
+                imgSrc: "assets/qsets/qset4/house/veranda.jpg"
+            },
+            {
+                id: 3,
+                desc: "une cave",
+                imgSrc: "assets/qsets/qset4/house/cave.jpg"
+            },
+            {
+                id: 4,
+                desc: "un garage",
+                imgSrc: "assets/qsets/qset4/house/garage.jpg"
+            }
+        ]
+    },
+    {
+        qid: 401,
+        name: "Identifier les pièces d'un logement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces pièces?",
+        choices: [
+            {
+                id: 1,
+                desc: "une terrasse",
+                imgSrc: "assets/qsets/qset4/house/terrasse.jpg"
+            },
+            {
+                id: 2,
+                desc: "un balcon",
+                imgSrc: "assets/qsets/qset4/house/balcon.jpg"
+            },
+            {
+                id: 3,
+                desc: "un parking",
+                imgSrc: "assets/qsets/qset4/house/parking.jpg"
+            },
+            {
+                id: 4,
+                desc: "un ascenseur",
+                imgSrc: "assets/qsets/qset4/house/ascenseur.jpg"
             }
         ]
     },
@@ -700,22 +907,78 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "un canapé",
-                imgSrc: "assets/qsets/qset4/q2_images/canape.jpg"
+                imgSrc: "assets/qsets/qset4/equipments/canape.jpg"
             },
             {
                 id: 2,
                 desc: "un lit double",
-                imgSrc: "assets/qsets/qset4/q2_images/lit.jpg"
+                imgSrc: "assets/qsets/qset4/equipments/lit.jpg"
             },
             {
                 id: 3,
                 desc: "une bibliotèque",
-                imgSrc: "assets/qsets/qset4/q2_images/biblioteque.jpg"
+                imgSrc: "assets/qsets/qset4/equipments/biblioteque.jpg"
             },
             {
                 id: 4,
                 desc: "une armoire",
-                imgSrc: "assets/qsets/qset4/q2_images/armoire.jpg"
+                imgSrc: "assets/qsets/qset4/equipments/armoire.jpg"
+            }
+        ]
+    },
+    {
+        qid: 403,
+        name: "Identifier l'équipement d'un appartement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces équipments?",
+        choices: [
+            {
+                id: 1,
+                desc: "une hotte aspirante",
+                imgSrc: "assets/qsets/qset4/equipments/hotte.jpg"
+            },
+            {
+                id: 2,
+                desc: "une plaque de cuisson électrique",
+                imgSrc: "assets/qsets/qset4/equipments/plaque.jpg"
+            },
+            {
+                id: 3,
+                desc: "un four",
+                imgSrc: "assets/qsets/qset4/equipments/four.jpg"
+            },
+            {
+                id: 4,
+                desc: "un évier",
+                imgSrc: "assets/qsets/qset4/equipments/evier.jpg"
+            }
+        ]
+    },
+    {
+        qid: 403,
+        name: "Identifier l'équipement d'un appartement",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "Comment s'appellent ces équipments?",
+        choices: [
+            {
+                id: 1,
+                desc: "un lavabo",
+                imgSrc: "assets/qsets/qset4/equipments/lavabo.jpg"
+            },
+            {
+                id: 2,
+                desc: "une douche",
+                imgSrc: "assets/qsets/qset4/equipments/douche.jpg"
+            },
+            {
+                id: 3,
+                desc: "une baignoire",
+                imgSrc: "assets/qsets/qset4/equipments/baignoire.jpg"
+            },
+            {
+                id: 4,
+                desc: "des toilettes",
+                imgSrc: "assets/qsets/qset4/equipments/toilettes.jpg"
             }
         ]
     },
@@ -728,22 +991,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "Mon code c'est 98A03.",
-                imgSrc: "assets/qsets/qset4/q3_images/q2_digicode.jpg"
+                imgSrc: "assets/qsets/qset4/house/q2_digicode.jpg"
             },
             {
                 id: 2,
                 desc: "Ferme les volets.",
-                imgSrc: "assets/qsets/qset4/q3_images/q2_volets.jpg"
+                imgSrc: "assets/qsets/qset4/house/q2_volets.jpg"
             },
             {
                 id: 3,
                 desc: "J'ai perdu mes clés.",
-                imgSrc: "assets/qsets/qset4/q3_images/q2_cles.jpg"
+                imgSrc: "assets/qsets/qset4/house/q2_cles.jpg"
             },
             {
                 id: 4,
                 desc: "Il faut sonner à la porte avant d'entrer",
-                imgSrc: "assets/qsets/qset4/q3_images/q2_sonner.jpg"
+                imgSrc: "assets/qsets/qset4/house/q2_sonner.jpg"
             }
         ]
     },
@@ -872,12 +1135,12 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         choices: [
             {
                 id: 1,
-                desc: "Mon code c'est 98A03.",
+                desc: "Le chasse-neige",
                 imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
             },
             {
                 id: 2,
-                desc: "Ferme les volets.",
+                desc: "Des virages",
                 imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
             },
             {
