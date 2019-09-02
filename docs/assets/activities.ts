@@ -842,7 +842,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 401,
+        qid: 402,
         name: "Identifier les pièces d'un logement",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces pièces?",
@@ -870,7 +870,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 401,
+        qid: 403,
         name: "Identifier les pièces d'un logement",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces pièces?",
@@ -898,7 +898,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 402,
+        qid: 404,
         name: "Identifier l'équipement d'un appartement",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces équipment?",
@@ -926,7 +926,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 403,
+        qid: 405,
         name: "Identifier l'équipement d'un appartement",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces équipments?",
@@ -954,7 +954,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 403,
+        qid: 406,
         name: "Identifier l'équipement d'un appartement",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "Comment s'appellent ces équipments?",
@@ -982,7 +982,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 403,
+        qid: 407,
         name: "Comprendre l'information sur le logement",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
         desc: "De quoi ils parlent?",
@@ -1010,7 +1010,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         ]
     },
     {
-        qid: 404,
+        qid: 408,
         name: "Lire une annonce immobilière",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Parmi les énoncés suivants, lequel est FAUX?",
@@ -1036,7 +1036,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
         correctChoiceId:2
     },
     {
-        qid: 405,
+        qid: 409,
         name: "Lire un contrat de location",
         questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
         desc: "Parmi les énoncés suivants, lequel est VRAI?",
@@ -1063,7 +1063,7 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     },
     // Workaround for end of question contents
     {
-        qid: 406,
+        qid: 410,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",

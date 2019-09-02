@@ -10,25 +10,25 @@ export class ProgressService {
     {
       id: 1,
       name:"Vie Quotidienne", 
-      total: 13,
+      total: 15,
       doneQuestionIds: [],
     },
     {
       id: 2,
       name:"Administration", 
-      total: 8,
+      total: 9,
       doneQuestionIds: [],
     },
     {
       id: 3,
       name:"Voyager", 
-      total: 3,
+      total: 6,
       doneQuestionIds: [],
     },
     {
       id: 4,
       name:"Se loger", 
-      total: 5,
+      total: 9,
       doneQuestionIds: [],
     },
     {

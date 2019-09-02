@@ -293,28 +293,52 @@ export const ACTIVITIES_4: Activity[] = [
       questionId: 401
   },
   {
-      name: "Identifier l'équipement d'un appartement",
+      name: "Identifier les pièces d'un logement",
       categoryId: 4,
       difficulty: Difficulty.DÉBUTANT,
       questionId: 402
   },
   {
-      name: "Comprendre l'information sur le logement",
+      name: "Identifier les pièces d'un logement",
       categoryId: 4,
       difficulty: Difficulty.DÉBUTANT,
       questionId: 403
   },
   {
+      name: "Identifier l'équipement d'un appartement",
+      categoryId: 4,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 404
+  },
+  {
+      name: "Identifier l'équipement d'un appartement",
+      categoryId: 4,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 405
+  },
+  {
+      name: "Identifier l'équipement d'un appartement",
+      categoryId: 4,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 406
+  },
+  {
+      name: "Comprendre l'information sur le logement",
+      categoryId: 4,
+      difficulty: Difficulty.DÉBUTANT,
+      questionId: 407
+  },
+  {
       name: "Lire une annonce immobilière",
       categoryId: 4,
       difficulty: Difficulty.INTERMÉDIAIRE,
-      questionId: 404
+      questionId: 408
   },
   {
       name: "Lire un contrat de location",
       categoryId: 4,
       difficulty: Difficulty.DIFFICILE,
-      questionId: 405
+      questionId: 409
   },
 ]
 
