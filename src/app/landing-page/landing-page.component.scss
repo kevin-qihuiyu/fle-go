@@ -2,6 +2,12 @@
     height: 55px;
 }
 
+// Chinese font
+h1, h3, h4, h5, p {
+    font-family: 'Noto Sans SC', sans-serif !important;
+}
+
+
 h1 {
     color: white;
     text-align: center;
@@ -27,13 +33,12 @@ h1 {
         the content's height is greater than the image's height */
     // background-attachment: fixed;
     
-    /* This is what makes the background image rescale based
-        on the container's size */
+    /* This is what makes the background image rescale based on the container's size */
     background-size: cover;
     
-    /* Set a background color that will be displayed
-        while the background image is loading */
+    /* Set a background color that will be displayed while the background image is loading */
     background-color: #464646;
+    
     height: 450px;
 }
 
@@ -90,8 +95,7 @@ h1 {
 .feature-hightlight {
     display: flex;
     flex-direction: row;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
 }
 
 .desc-column {
@@ -107,6 +111,23 @@ p {
     text-justify: inter-word;
     margin-top: 0.5em;
 }
+
+@media (min-width: 768px) {
+    .features {
+        padding: 2.5em 15% 3em 15%;
+    }
+
+    .feature-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .feature-hightlight {
+        width: 30%;
+    }
+}
+// End
+
 
 .screenshots-scrolling-wrapper {
     overflow-x: scroll;
@@ -140,7 +161,7 @@ p {
 
 // Availability
 .mat-expansion-panel {
-    margin-top: 0.75em;
+    margin-top: 1em;
 }
 
 @media (min-width: 768px) {
@@ -165,6 +186,7 @@ p {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
     .actions-container {
         margin-top: 0;
@@ -185,7 +207,7 @@ p {
 .footer-note {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -198,6 +220,16 @@ p {
     margin-top: 0.5em;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    #footer-area {
+        align-items: center;
+    }
+    .footer-note {
+        width:20%;
+    }
+}
+
 
 h6 {
     color: lightgray;
