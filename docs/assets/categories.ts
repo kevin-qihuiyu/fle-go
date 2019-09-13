@@ -3,7 +3,7 @@ import { Category } from '@/_models/category';
 export const CATEGORIES: Category[] = [
 {
     id: 1,
-    name: "Faire des courses",
+    name: "Vie quotidienne",
     desc: "J'achète des merchandises, je mange chez un restaurant...",
     imgSrc: "assets/img/category/1-faire-des-course.jpg"
 },

@@ -2,3 +2,6 @@
 cp src/flego.png docs/
 cd docs
 cp index.html 404.html
+
+touch CNAME
+echo 'flego.app' > CNAME
