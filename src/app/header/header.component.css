@@ -28,3 +28,7 @@ span {
     display: flex;
     justify-content: center;
 }
+
+.material-icons {
+    cursor: pointer;
+}

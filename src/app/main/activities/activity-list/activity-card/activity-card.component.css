@@ -4,6 +4,7 @@
     display: flex;
     direction: row;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .activity-info-container {
