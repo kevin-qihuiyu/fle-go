@@ -1201,22 +1201,22 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "Asseyez-vous",
-                imgSrc: "assets/qsets/qset6/q1_images/q1_sit.jpg"
+                imgSrc: "assets/qsets/qset6/q1_images/sit.jpg"
             },
             {
                 id: 2,
                 desc: "Balance",
-                imgSrc: "assets/qsets/qset6/q1_images/q1_scale.jpg"
+                imgSrc: "assets/qsets/qset6/q1_images/scale.jpg"
             },
             {
                 id: 3,
                 desc: "Allongez-vous",
-                imgSrc: "assets/qsets/qset6/q1_images/q1_long_chair.jpg"
+                imgSrc: "assets/qsets/qset6/q1_images/long_chair.jpg"
             },
             {
                 id: 4,
                 desc: "Ouvrez la bouche",
-                imgSrc: "assets/qsets/qset6/q1_images/q1_mouth.jpg"
+                imgSrc: "assets/qsets/qset6/q1_images/mouth.jpg"
             }
         ],
         correctChoiceId: 4

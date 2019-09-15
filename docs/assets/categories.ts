@@ -5,7 +5,7 @@ export const CATEGORIES: Category[] = [
     id: 1,
     name: "Vie quotidienne",
     desc: "J'achète des merchandises, je mange chez un restaurant...",
-    imgSrc: "assets/img/category/1-faire-des-course.jpg"
+    imgSrc: "assets/img/category/1-faire-des-course-2.png"
 },
 {
     id: 2,

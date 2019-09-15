@@ -26,3 +26,11 @@
 ::ng-deep .mat-tab-label-content {
     font-family: 'Raleway', sans-serif !important;
 }
+
+@media (min-width: 768px) {
+    ::ng-deep .mat-tab-body.mat-tab-body-active{
+        padding-left: 30%;
+        padding-right: 20%;
+        background-color: #f1f1f1;
+    }
+}

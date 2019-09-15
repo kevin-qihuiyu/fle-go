@@ -1,37 +1,39 @@
-﻿<div class="container">
-    <h2>Sign up</h2>
-    <form class="signup-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-        <mat-form-field>
-            <input type="text" matInput placeholder="Your username" formControlName="username" />
-            <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-                <div *ngIf="f.username.errors.required">Required Field</div>
-            </div>
-        </mat-form-field>
-        <mat-form-field>
-            <input type="text" matInput placeholder="Your first name (Optional)" formControlName="firstName"/>
-        </mat-form-field>
-        <mat-form-field>
-            <input type="text" matInput placeholder="Your last name (Optional)" formControlName="lastName"/>
-        </mat-form-field>
-        <mat-form-field>
-            <input type="password" matInput placeholder="Your password" formControlName="password" />
-            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-                <div *ngIf="f.password.errors.required">Required Field</div>
-                <div *ngIf="f.password.errors.minlength">Must be at least 6 characters</div>
-            </div>
-        </mat-form-field>
-        <alert></alert>
-        <div class="form-group">
-            <button mat-stroked-button color="primary" [disabled]="loading" id="btn-login">
-                <div id="btn-content">
-                    <mat-spinner [diameter]="20" *ngIf="loading" id="load-spinner" ></mat-spinner>
-                    <p>SIGN UP</p>
+﻿<div class="bg">
+    <div class="container">
+        <h2>Sign up</h2>
+        <form class="signup-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <input type="text" matInput placeholder="Your username" formControlName="username" />
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required">Required Field</div>
                 </div>
-            </button>
-        </div>
-        <div id="switch-page">
-            <h4>Already have an account? &nbsp;</h4><a routerLink="/login" class="btn-link"><p>LOG IN</p></a>
-        </div>
-    </form>
-    
+            </mat-form-field>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Your first name (Optional)" formControlName="firstName"/>
+            </mat-form-field>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Your last name (Optional)" formControlName="lastName"/>
+            </mat-form-field>
+            <mat-form-field>
+                <input type="password" matInput placeholder="Your password" formControlName="password" />
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">Required Field</div>
+                    <div *ngIf="f.password.errors.minlength">Must be at least 6 characters</div>
+                </div>
+            </mat-form-field>
+            <alert></alert>
+            <div class="form-group">
+                <button mat-stroked-button color="primary" [disabled]="loading" id="btn-login">
+                    <div id="btn-content">
+                        <mat-spinner [diameter]="20" *ngIf="loading" id="load-spinner" ></mat-spinner>
+                        <p>SIGN UP</p>
+                    </div>
+                </button>
+            </div>
+            <div id="switch-page">
+                <h4>Already have an account? &nbsp;</h4><a routerLink="/login" class="btn-link"><p>LOG IN</p></a>
+            </div>
+        </form>      
+    </div>
 </div>
+

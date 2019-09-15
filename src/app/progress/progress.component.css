@@ -20,10 +20,19 @@ mat-card-title {
     margin: 0.8em 0.3em;
 }
 
+@media (min-width: 768px) {
+    .mat-card {
+        padding: 25px;
+    }
+    .mat-card-content {
+        margin: 2.5em 0.3em;
+    }
+}
+
 /* Styles for the "Global Progress" section */
 #card-bg {
     padding: 50px;  
-    background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.575)), url("assets/img/category/7-vie-amoureuse-2.jpg");
+    background-color: teal;
     background-size: cover;
     color: white;
 }
@@ -31,6 +40,10 @@ mat-card-title {
 /* Styles for text and layout  */
 h2 {
     padding: 0.5em 1em;
+}
+
+.sub-title{
+    text-align: center;
 }
 
 span {
@@ -41,4 +54,25 @@ span {
     /* This fills the remaining space, by using flexbox. 
         Every row uses a flexbox row layout. */
     flex: 1 1 auto;
+}
+
+@media (min-width: 768px) {
+    #card-bg{
+        padding: 5% 30% 5% 30%;
+        margin: 0;
+    }
+    .sub-title{
+        background-color: #f1f1f1;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #f1f1f1;
+        height: 70vh;
+    }
+    .progress-item {
+        width: 32%;
+    }
 }

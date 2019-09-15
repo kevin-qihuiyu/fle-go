@@ -14,6 +14,21 @@
     position: relative;
 }
 
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    app-activity-card {
+        width: 32%;
+    }
+    .cover-image {
+        height: 20em;
+    }
+}
+
 .content {
     color: white;
     position: absolute;
