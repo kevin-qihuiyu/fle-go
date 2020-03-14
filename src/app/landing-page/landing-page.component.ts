@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '@/_helpers';
+import { first } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-landing-page',
@@ -8,6 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class LandingPageComponent implements OnInit {
   returnUrl: string
+  loading: boolean
   screenshotImagePaths = [
     'assets/img/landing/screenshots/1.PNG',
     'assets/img/landing/screenshots/2.PNG',
@@ -20,7 +24,8 @@ export class LandingPageComponent implements OnInit {
   ];
 
   constructor(private route: ActivatedRoute,
-    private router: Router) {
+    private router: Router,
+    private authenticationService: AuthService) {
     
   }
 
@@ -37,4 +42,20 @@ export class LandingPageComponent implements OnInit {
     this.router.navigate(['/register'], { queryParams: { returnUrl: this.returnUrl }});
   }
 
+  try() {
+    const TRIAL_ACCOUNT = {
+      username : 'kevinyu',
+      password : 'password'
+    }
+    this.loading = true;
+    this.authenticationService.login(TRIAL_ACCOUNT.username, TRIAL_ACCOUNT.password)
+      .pipe(first())
+      .subscribe(
+          data => {
+              this.router.navigate(['/']);
+          },
+          error => {
+              console.log("error using trial account for login")
+          });
+  }
 }

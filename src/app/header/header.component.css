@@ -27,8 +27,15 @@ span {
     flex: 1;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
+.center:focus {outline:0;}
+
 
 .material-icons {
     cursor: pointer;
+}
+
+.logo {
+    object-fit: contain;
 }

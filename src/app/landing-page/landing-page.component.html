@@ -5,6 +5,10 @@
   <div class="actions-container">  
     <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>Quick sign up & start learning</p></button>
     <button mat-stroked-button class="btn-action btn-login" (click)="login()"><p>Already have an account</p></button>
+    <button mat-stroked-button class="btn-action btn-special" (click)="try()">                        
+      <mat-spinner [diameter]="20" *ngIf="loading" id="load-spinner" ></mat-spinner>
+      <p>Try it</p>
+    </button>
   </div>
 </div>
 
@@ -90,6 +94,10 @@
         </mat-card-title>
         <div class="actions-container">  
           <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>Quick sign up and get started</p></button>
+          <button mat-stroked-button class="btn-action btn-login" (click)="try()">                        
+            <mat-spinner [diameter]="20" *ngIf="loading" id="load-spinner" ></mat-spinner>
+            <p>Try it</p>
+          </button>
         </div>
       </mat-card>
     </section>

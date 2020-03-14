@@ -5,6 +5,10 @@
   <div class="actions-container">  
     <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>快速注册 & 开始学习</p></button>
     <button mat-stroked-button class="btn-action btn-login" (click)="login()"><p>已有账户</p></button>
+    <button mat-stroked-button class="btn-action btn-special" (click)="try()">                        
+      <mat-spinner [diameter]="20" *ngIf="loading" id="load-spinner" ></mat-spinner>
+      <p>直接试用</p>
+    </button>
   </div>
 </div>
 
@@ -87,6 +91,10 @@
       </mat-card-title>
       <div class="actions-container">  
         <button mat-stroked-button class="btn-action btn-register" (click)="register()"><p>快速注册 & 开始学习</p></button>
+        <button mat-stroked-button class="btn-action btn-login" (click)="try()">                        
+          <mat-spinner [diameter]="20" *ngIf="loading" id="load-spinner" ></mat-spinner>
+          <p>直接试用</p>
+        </button>
       </div>
     </mat-card>
   </section>
