@@ -1135,55 +1135,73 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
             {
                 id: 1,
                 desc: "Le chasse-neige",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
+                imgSrc: "assets/qsets/qset5/ski/le_chasse_neige.png"
             },
             {
                 id: 2,
                 desc: "Des virages",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
+                imgSrc: "assets/qsets/qset5/ski/des_virages.png"
             },
             {
                 id: 3,
-                desc: "J'ai perdu mes clés.",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
+                desc: "Un télésiège",
+                imgSrc: "assets/qsets/qset5/ski/telesiege.png"
             },
             {
                 id: 4,
-                desc: "Il faut sonner à la porte avant d'entrer",
-                imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
+                desc: "Un snowboard",
+                imgSrc: "assets/qsets/qset5/ski/snowboard.png"
             }
         ]
     },
     {
         qid: 504,
-        name: "Au poney club",
-        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        desc: "De quoi ils parlent?",
+        name: "Aller au cinéma",
+        questionType: QuestionType.LISEZ_ET_CHOISISSEZ_TEXT,
+        desc: "Est-ce que tous les séances sont en version française?",
+        imgDesc: "assets/qsets/qset5/cinema.png",
         choices: [
             {
                 id: 1,
-                desc: "Mon code c'est 98A03.",
+                desc: "Oui",
+            },
+            {
+                id: 2,
+                desc: "Non",
+            },
+        ],
+        correctChoiceId:2
+    },
+    {
+        qid: 505,
+        name: "Au poney club",
+        questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
+        desc: "This activity is under creation",
+        choices: [
+            {
+                id: 1,
+                desc: "na",
                 imgSrc: "assets/qsets/qset4/q2_images/q2_digicode.jpg"
             },
             {
                 id: 2,
-                desc: "Ferme les volets.",
+                desc: "na",
                 imgSrc: "assets/qsets/qset4/q2_images/q2_volets.jpg"
             },
             {
                 id: 3,
-                desc: "J'ai perdu mes clés.",
+                desc: "na",
                 imgSrc: "assets/qsets/qset4/q2_images/q2_cles.jpg"
             },
             {
                 id: 4,
-                desc: "Il faut sonner à la porte avant d'entrer",
+                desc: "na",
                 imgSrc: "assets/qsets/qset4/q2_images/q2_sonner.jpg"
             }
         ]
     },
     {
-        qid: 505,
+        qid: 506,
         name: "You have reach the end of this category.",
         questionType: QuestionType.END_OF_CATEGORY,
         desc: "Please go back and try other activities.",

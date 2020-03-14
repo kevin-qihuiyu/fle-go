@@ -358,28 +358,22 @@ export const ACTIVITIES_5: Activity[] = [
     questionId: 502
   },
   {
-    name: "Aller au cinéma",
+    name: "À la station de ski",
     categoryId: 5,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 503
   },
   {
-    name: "Aller à la piscine",
+    name: "Aller au cinéma",
     categoryId: 5,
     difficulty: Difficulty.DÉBUTANT,
     questionId: 504
   },
   {
-    name: "À la station de ski",
-    categoryId: 5,
-    difficulty: Difficulty.DÉBUTANT,
-    questionId: 505
-  },
-  {
     name: "Au poney club",
     categoryId: 5,
     difficulty: Difficulty.DÉBUTANT,
-    questionId: 506
+    questionId: 505
   },
 ]
 
