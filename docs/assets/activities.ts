@@ -1288,9 +1288,9 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     // Cat7: Vie amoureuse
     {
         qid: 701,
-        name: "Identifier les pièces d'un logement",
+        name: "Work in Progress",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        desc: "Comment s'appellent ces pièces?",
+        desc: "This activity is under creation.",
         choices: [
             {
                 id: 1,
@@ -1316,9 +1316,9 @@ export const QSET: (Question | QCMSelectText | QCMSelectImage | AssociateTextToI
     },
     {
         qid: 702,
-        name: "Identifier les pièces d'un logement",
+        name: "Work in Progress",
         questionType: QuestionType.ASSOCIEZ_TEXT_TO_IMAGE,
-        desc: "De quoi ils parlent?",
+        desc: "This activity is under creation.",
         choices: [
             {
                 id: 1,
