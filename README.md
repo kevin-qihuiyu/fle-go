@@ -1,6 +1,7 @@
 # FleGo
-![Logo](documentation/0.jpg?raw=true "Logo")
-This project is a language learning app built with Angular framework.
+![Logo](documentation/0-logo.jpg "Logo")
+<br>
+This is a language learning app built with Angular framework.
 Design for new comers in France who are interested in learning French.
 
 ## Features
@@ -15,18 +16,18 @@ Design for new comers in France who are interested in learning French.
 - First-party libraries: Angular forms, Angular router for lazy-loading, nested routes etc, Angular animations and transitions
 ### Backend: User registration, authentication, learning contents rich media API
 - NodeJS + MongoDB based backend API, with Angular HttpClient for communications
+<br>
 
-![FleGo](documentation/1-category-1.jpg "FleGo")
+![FleGo](documentation/1-category-1.jpg "FleGo" )
 ![FleGo](documentation/1-category-2.jpg "FleGo")
 ![FleGo](documentation/1-category-3.jpg "FleGo")
 ![FleGo](documentation/2-activities-1.jpg "FleGo")
 ![FleGo](documentation/2-activities-2.jpg "FleGo")
-![FleGo](documentation/2-activities-3.jpg "FleGo")
 ![FleGo](documentation/2-activities-4.jpg "FleGo")
 ![FleGo](documentation/2-activities-5.jpg "FleGo")
 ![FleGo](documentation/2-activities-6.jpg "FleGo")
 ![FleGo](documentation/3-vocabulary.jpg "FleGo")
-![FleGo](documentation/4-progress.jpg "FleGo")
+![FleGo](documentation/4-progress-status.jpg "FleGo")
 
 
 
