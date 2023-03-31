@@ -1,27 +1,33 @@
 # FleGo
+![Logo](documentation/0.jpg?raw=true "Logo")
+This project is a language learning app built with Angular framework.
+Design for new comers in France who are interested in learning French.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+## Features
+- Learn french in real world situations, with QCM questions on readings, image - text matching, and listening to audio.
+- 8 Categories: Daily life, Administration, Travel, Housing, Activities, Health, Love, Professional life
+- A vocabulary list with explanations and example sentences, sorted by categories.
+- Management of learning progress: global view of progress, reset progress, etc.
 
-## Development server
+## Technical Points
+### Build a responsive, mobile friendly web app with Angular framework and Angular Material UI
+- Componentization: templates, directives and data bindings, dependency injection, NgModules
+- First-party libraries: Angular forms, Angular router for lazy-loading, nested routes etc, Angular animations and transitions
+### Backend: User registration, authentication, learning contents rich media API
+- NodeJS + MongoDB based backend API, with Angular HttpClient for communications
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![FleGo](documentation/1-category-1.jpg "FleGo")
+![FleGo](documentation/1-category-2.jpg "FleGo")
+![FleGo](documentation/1-category-3.jpg "FleGo")
+![FleGo](documentation/2-activities-1.jpg "FleGo")
+![FleGo](documentation/2-activities-2.jpg "FleGo")
+![FleGo](documentation/2-activities-3.jpg "FleGo")
+![FleGo](documentation/2-activities-4.jpg "FleGo")
+![FleGo](documentation/2-activities-5.jpg "FleGo")
+![FleGo](documentation/2-activities-6.jpg "FleGo")
+![FleGo](documentation/3-vocabulary.jpg "FleGo")
+![FleGo](documentation/4-progress.jpg "FleGo")
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
